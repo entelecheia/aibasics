@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-04-26)
+### Fix
+* Project name change ([`0f22599`](https://github.com/chu-aie/aibasics/commit/0f22599b62197e15fa916f71a8ea07825be74952))
+
 ## v0.2.0 (2023-04-26)
 ### Feature
 * Project name change ([`cef0cea`](https://github.com/chu-aie/aibasics/commit/cef0cea37aa8e0436027af3feedba6e6ddfd988a))
