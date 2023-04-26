@@ -1,4 +1,4 @@
-# Week 15: 인공지능 사회와 윤리, 기말고사
+# Week 15: 인공지능 사회와 윤리
 
 AI Society and Ethics, Final Exam
 
