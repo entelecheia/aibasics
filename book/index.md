@@ -18,7 +18,7 @@
 [jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
 [repo-url]: https://github.com/chu-aie/aibasics
 [pypi-url]: https://pypi.org/project/aibasics
-[docs-url]: https://chu-aie.github.io/aibasics/
+[docs-url]: https://aibasics.entelecheia.ai/
 [changelog]: https://github.com/chu-aie/aibasics/blob/main/CHANGELOG.md
 [contributing guidelines]: https://github.com/chu-aie/aibasics/blob/main/CONTRIBUTING.md
 

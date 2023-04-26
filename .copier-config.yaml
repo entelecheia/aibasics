@@ -7,7 +7,7 @@ code_template_answers_file: .copier-hyfi-config.yaml
 code_template_source: gh:entelecheia/hyfi-template
 copyright_year: 2023
 documentaion_tool: jupyter-book
-documentation_url: https://chu-aie.github.io/aibasics
+documentation_url: https://aibasics.entelecheia.ai
 email: yj.lee@chu.ac.kr
 friendly_name: AI Uncovered
 github_repo_name: aibasics
