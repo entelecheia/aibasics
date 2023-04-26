@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "aibsics"
-version = "0.1.2"
+name = "aibasics"
+version = "0.0.0"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = ["Young Joon Lee <yj.lee@chu.ac.kr>"]
 license = "CC-BY-4.0"
-homepage = "https://chu-aie.github.io/aig/"
-repository = "https://github.com/chu-aie/aig"
+homepage = "https://chu-aie.github.io/aibasics"
+repository = "https://github.com/chu-aie/aibasics"
 readme = "README.md"
 packages = [{ include = "aibasics", from = "src" }]
 

@@ -7,10 +7,10 @@ code_template_answers_file: .copier-hyfi-config.yaml
 code_template_source: gh:entelecheia/hyfi-template
 copyright_year: 2023
 documentaion_tool: jupyter-book
-documentation_url: https://chu-aie.github.io/aig/
+documentation_url: https://chu-aie.github.io/aibasics
 email: yj.lee@chu.ac.kr
 friendly_name: AI Uncovered
-github_repo_name: aig
+github_repo_name: aibasics
 github_username: chu-aie
 package_name: aibasics
 project_description: AI Uncovered is a 15-week, beginner-friendly course in Korean,
