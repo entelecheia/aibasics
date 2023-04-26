@@ -389,7 +389,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lab">
 <h1>Lab<a class="headerlink" href="#lab" title="Permalink to this heading">#</a></h1>
-<p>This Jupyter Notebook demonstrates the usage of the <code class="docutils literal notranslate"><span class="pre">aig</span></code> package, including initializing a workspace, mounting Google Drive on Colab, and using HyFI to manage configurations.</p>
+<p>This Jupyter Notebook demonstrates the usage of the <code class="docutils literal notranslate"><span class="pre">aibasics</span></code> package, including initializing a workspace, mounting Google Drive on Colab, and using HyFI to manage configurations.</p>
 <section id="initialize-workspace">
 <h2>Initialize Workspace<a class="headerlink" href="#initialize-workspace" title="Permalink to this heading">#</a></h2>
 <p>We’ll initialize the workspace using the <code class="docutils literal notranslate"><span class="pre">HyFI.init_workspace</span></code> function. The function takes the following parameters:</p>
@@ -403,7 +403,7 @@ document.write(`
 <p>We’ll check if we’re running in Google Colab, and if so, we’ll mount Google Drive.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aig</span> <span class="kn">import</span> <span class="n">HyFI</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aibasics</span> <span class="kn">import</span> <span class="n">HyFI</span>
 
 <span class="k">if</span> <span class="n">HyFI</span><span class="o">.</span><span class="n">is_colab</span><span class="p">():</span>
     <span class="n">HyFI</span><span class="o">.</span><span class="n">mount_google_drive</span><span class="p">()</span>
@@ -422,19 +422,16 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:hyfi.utils.notebook:Google Colab not detected.
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>project_dir: /workspace/projects/aig/examples
 
-name        : AIG
+name        : AI Uncovered
 authors     : Young Joon Lee &lt;yj.lee@chu.ac.kr&gt;
 description : AI Uncovered: A Comprehensive Guide to AI Basics and Applications
-homepage    : https://chu-aie.github.io/aig/
+homepage    : https://chu-aie.github.io/aibasics
 license     : CC-BY-4.0
-version     : 0.1.0
+version     : 0.0.0
 
-Execute `aig --help` to see what you can do with AIG
+Execute `aibasics --help` to see what you can do with AI Uncovered
 </pre></div>
 </div>
 </div>
