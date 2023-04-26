@@ -29,15 +29,24 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://aibasics.entelecheia.ai # Online location of your book
+  url: https://github.com/chu-aie/aibasics # Online location of your book
   path_to_book: book # Optional path to your book, relative to the repository root
   branch: main # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: true
-  use_repository_button: true
+  favicon: chu-favicon.png
+  baseurl: https://aibasics.entelecheia.ai/
+  use_issues_button: false
+  use_repository_button: false
+  google_analytics_id: G-BQJE5V9RK2
+  announcement: |
+    <p>
+      <strong>Announcement:</strong>
+      You can install the accompanying AI tutor <a href="https://chrome.google.com/webstore/detail/lecturebot-for-%E1%BC%90%CE%BD%CF%84%CE%B5%CE%BB%CE%AD%CF%87%CE%B5%CE%B9%CE%B1/lfgfgbomindbccgidgalhhndggddpagd" target="_blank">here</a>.
+      <a class="reference external" href="https://chrome.google.com/webstore/detail/lecturebot-for-%E1%BC%90%CE%BD%CF%84%CE%B5%CE%BB%CE%AD%CF%87%CE%B5%CE%B9%CE%B1/lfgfgbomindbccgidgalhhndggddpagd" target="_blank"><img alt="chrome-web-store-image" src="https://img.shields.io/chrome-web-store/v/lfgfgbomindbccgidgalhhndggddpagd" /></a>
+    </p>
 
 sphinx:
   config:
