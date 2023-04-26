@@ -5,7 +5,7 @@ description: "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 homepage: "https://chu-aie.github.io/aig/"
 license: "CC-BY-4.0"
 <<<<<<< HEAD:src/aig/conf/about/__init__.yaml
-version: "0.1.1"
+version: "0.1.2"
 =======
-version: "0.0.0"
+version: "0.1.2"
 >>>>>>> af6052d (fix: project name change):src/aibasics/conf/about/__init__.yaml

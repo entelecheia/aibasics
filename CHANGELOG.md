@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.1.2 (2023-04-26)
+### Fix
+* Project name change ([`14a0cb2`](https://github.com/chu-aie/aig/commit/14a0cb2162c50acf6c9ca3b72f88bb0d8581d5cb))
+
 ## v0.1.1 (2023-04-26)
 ### Fix
 * Docs url ([`06b9e43`](https://github.com/chu-aie/aig/commit/06b9e4335a12817e30744f971ef3fc7995233fd4))
