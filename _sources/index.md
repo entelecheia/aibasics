@@ -18,7 +18,7 @@
 [jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
 [repo-url]: https://github.com/chu-aie/aig
 [pypi-url]: https://pypi.org/project/aig
-[docs-url]: https://aig.entelecheia.ai
+[docs-url]: https://chu-aie.github.io/aig/
 [changelog]: https://github.com/chu-aie/aig/blob/main/CHANGELOG.md
 [contributing guidelines]: https://github.com/chu-aie/aig/blob/main/CONTRIBUTING.md
 
