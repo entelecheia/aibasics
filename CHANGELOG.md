@@ -1,5 +1,12 @@
 <!--next-version-placeholder-->
 
+## v0.2.2 (2023-04-26)
+### Fix
+* Change authors ([`40e8fc5`](https://github.com/chu-aie/aibasics/commit/40e8fc570a266d89a9f80a11ca95f64af78fd5ae))
+
+### Documentation
+* Add all weeks ([`02f2f3f`](https://github.com/chu-aie/aibasics/commit/02f2f3f0078d416e8a7170cec397897036a1c24b))
+
 ## v0.2.1 (2023-04-26)
 ### Fix
 * Project name change ([`0f22599`](https://github.com/chu-aie/aibasics/commit/0f22599b62197e15fa916f71a8ea07825be74952))

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aibasics"
-version = "0.2.1"
+version = "0.2.2"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = [
     "Yongjun Chang <yongnjin@chu.ac.kr>",
