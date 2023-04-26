@@ -501,16 +501,33 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">verbose</span></code>: Whether to print verbose messages.</p></li>
 </ul>
 <p>We’ll check if we’re running in Google Colab, and if so, we’ll mount Google Drive.</p>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install aibasics package</span>
+<span class="o">%</span><span class="k">pip</span> install aibasics
+</pre></div>
+</div>
+</div>
+</details>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aibasics</span> <span class="kn">import</span> <span class="n">HyFI</span>
 
 <span class="k">if</span> <span class="n">HyFI</span><span class="o">.</span><span class="n">is_colab</span><span class="p">():</span>
+    <span class="n">workspace_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/workspace&quot;</span>
     <span class="n">HyFI</span><span class="o">.</span><span class="n">mount_google_drive</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">workspace_dir</span> <span class="o">=</span> <span class="s2">&quot;/workspace&quot;</span>
 
 <span class="n">ws</span> <span class="o">=</span> <span class="n">HyFI</span><span class="o">.</span><span class="n">init_workspace</span><span class="p">(</span>
-    <span class="n">workspace</span><span class="o">=</span><span class="s2">&quot;/workspace&quot;</span><span class="p">,</span>
-    <span class="n">project</span><span class="o">=</span><span class="s2">&quot;aig/examples&quot;</span><span class="p">,</span>
+    <span class="n">workspace</span><span class="o">=</span><span class="n">workspace_dir</span><span class="p">,</span>
+    <span class="n">project</span><span class="o">=</span><span class="s2">&quot;aibasics/examples&quot;</span><span class="p">,</span>
     <span class="n">task</span><span class="o">=</span><span class="s2">&quot;test&quot;</span><span class="p">,</span>
     <span class="n">log_level</span><span class="o">=</span><span class="s2">&quot;WARNING&quot;</span><span class="p">,</span>
     <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -522,14 +539,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>project_dir: /workspace/projects/aig/examples
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>project_dir: /workspace/projects/aibasics/examples
 
 name        : AI Uncovered
 authors     : Yongjun Chang &lt;yongnjin@chu.ac.kr&gt;,  Sungjin Kim &lt;r3dzon3@chu.ac.kr&gt;, Young Joon Lee &lt;yj.lee@chu.ac.kr&gt;
 description : AI Uncovered: A Comprehensive Guide to AI Basics and Applications
 homepage    : https://aibasics.entelecheia.ai
 license     : CC-BY-4.0
-version     : 0.0.0
+version     : 0.2.2
 
 Execute `aibasics --help` to see what you can do with AI Uncovered
 </pre></div>
