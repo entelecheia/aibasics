@@ -1,4 +1,4 @@
-# Week 8: 머신러닝 복습, 중간고사
+# Week 8: 머신러닝 복습
 
 Machine Learning Review, Midterm Exam
 
