@@ -1,0 +1,30 @@
+# Changes here will be overwritten by Copier; do NOT edit manually
+_commit: v0.2.23
+_src_path: gh:entelecheia/hyperfast-python-template
+author: Young Joon Lee
+build_and_release: true
+code_template_answers_file: .copier-hyfi-config.yaml
+code_template_source: gh:entelecheia/hyfi-template
+copyright_year: 2023
+documentaion_tool: jupyter-book
+documentation_url: https://aig.entelecheia.ai
+email: yj.lee@chu.ac.kr
+friendly_name: AIG
+github_repo_name: aig
+github_username: chu-aie
+package_name: aig
+project_description: AI Uncovered is a 15-week, beginner-friendly course in Korean,
+    designed to provide a comprehensive introduction to artificial intelligence (AI)
+    and its real-world applications. Students will explore various AI concepts and
+    techniques, such as machine learning, deep learning, natural language processing,
+    and object detection. The course includes hands-on lab sessions using Google Colab,
+    allowing students to practice what they've learned. By the end, students will
+    have a solid understanding of AI fundamentals and be prepared for an AI-driven
+    future.
+project_license: CC-BY-4.0
+project_name: aig
+project_short_description: 'AI Uncovered: A Comprehensive Guide to AI Basics and Applications'
+upload_to_release: true
+upload_to_repository: true
+use_source_code_skeleton: true
+

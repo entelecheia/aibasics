@@ -7,6 +7,8 @@
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->
+[hyperfast python template]: https://github.com/entelecheia/hyperfast-python-template
+
 [pypi-image]: https://img.shields.io/pypi/v/aig
 [license-image]: https://img.shields.io/github/license/chu-aie/aig
 [license-url]: https://github.com/chu-aie/aig/blob/main/LICENSE
@@ -30,6 +32,8 @@ AI Uncovered: A Comprehensive Guide to AI Basics and Applications
 
 AI Uncovered is a 15-week, beginner-friendly course in Korean, designed to provide a comprehensive introduction to artificial intelligence (AI) and its real-world applications. Students will explore various AI concepts and techniques, such as machine learning, deep learning, natural language processing, and object detection. The course includes hands-on lab sessions using Google Colab, allowing students to practice what they've learned. By the end, students will have a solid understanding of AI fundamentals and be prepared for an AI-driven future.
 
+
+
 ## Changelog
 
 See the [CHANGELOG] for more information.
@@ -41,3 +45,9 @@ Contributions are welcome! Please see the [contributing guidelines] for more inf
 ## License
 
 This project is released under the [CC-BY-4.0 License][license-url].
+
+
+## Table of Contents
+
+```{tableofcontents}
+```
