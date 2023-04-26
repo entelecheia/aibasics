@@ -17,14 +17,14 @@
 
 [repo-url]: https://github.com/chu-aie/aig
 [pypi-url]: https://pypi.org/project/aig
-[docs-url]: https://aig.entelecheia.ai
+[docs-url]: https://chu-aie.github.io/aig/
 [changelog]: https://github.com/chu-aie/aig/blob/main/CHANGELOG.md
 [contributing guidelines]: https://github.com/chu-aie/aig/blob/main/CONTRIBUTING.md
 <!-- Links: -->
 
 AI Uncovered: A Comprehensive Guide to AI Basics and Applications
 
-- Documentation: [https://aig.entelecheia.ai][docs-url]
+- Documentation: [https://chu-aie.github.io/aig/][docs-url]
 - GitHub: [https://github.com/chu-aie/aig][repo-url]
 - PyPI: [https://pypi.org/project/aig][pypi-url]
 

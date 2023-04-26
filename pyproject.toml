@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = ["Young Joon Lee <yj.lee@chu.ac.kr>"]
 license = "CC-BY-4.0"
-homepage = "https://aig.entelecheia.ai"
+homepage = "https://chu-aie.github.io/aig/"
 repository = "https://github.com/chu-aie/aig"
 readme = "README.md"
 packages = [{ include = "aig", from = "src" }]

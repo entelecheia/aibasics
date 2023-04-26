@@ -7,7 +7,7 @@ code_template_answers_file: .copier-hyfi-config.yaml
 code_template_source: gh:entelecheia/hyfi-template
 copyright_year: 2023
 documentaion_tool: jupyter-book
-documentation_url: https://aig.entelecheia.ai
+documentation_url: https://chu-aie.github.io/aig/
 email: yj.lee@chu.ac.kr
 friendly_name: AIG
 github_repo_name: aig
