@@ -64,7 +64,7 @@ sphinx:
         - "https://sphinx-proof.readthedocs.io/en/latest/"
         - null
     hoverxref_intersphinx:
-     - "sphinxproof"
+      - "sphinxproof"
     mathjax3_config:
       tex:
         macros:
@@ -83,3 +83,7 @@ sphinx:
     - sphinxcontrib.video
     - sphinxcontrib.mermaid
     - sphinx_thebe
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+  thebe: true
