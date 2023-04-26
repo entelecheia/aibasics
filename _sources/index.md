@@ -1,4 +1,4 @@
-# 강의소개
+# 인공지능이 여는 가능성: 기초부터 응용까지
 
 [![pypi-image]][pypi-url]
 [![license-image]][license-url]
@@ -23,8 +23,6 @@
 [contributing guidelines]: https://github.com/chu-aie/aibasics/blob/main/CONTRIBUTING.md
 
 <!-- Links: -->
-
-**강좌 제목: 인공지능이 여는 가능성: 기초부터 응용까지**
 
 **강좌 설명:**
 
