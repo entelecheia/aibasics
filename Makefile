@@ -60,7 +60,7 @@ lint: lint-black lint-isort lint-flake8 ## run all linters
 
 .PHONY: run
 run: ## run the main script
-	@poetry run aig
+	@poetry run aibasics
 
 ##@ Testing
 

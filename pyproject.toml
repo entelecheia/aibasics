@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "aig"
-version = "0.1.1"
+name = "aibsics"
+version = "0.1.0"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = ["Young Joon Lee <yj.lee@chu.ac.kr>"]
 license = "CC-BY-4.0"
 homepage = "https://chu-aie.github.io/aig/"
 repository = "https://github.com/chu-aie/aig"
 readme = "README.md"
-packages = [{ include = "aig", from = "src" }]
+packages = [{ include = "aibasics", from = "src" }]
 
 [tool.poetry.scripts]
-aig = 'aig.__cli__:main'
+aibasics = 'aibasics.__cli__:main'
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<3.12"
@@ -25,7 +25,6 @@ mypy = "^1.0.0"
 flake8-pyproject = "^1.2.2"
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
-ipykernel = "^6.22.0"
 
 [tool.black]
 exclude = ['_version.py', 'node_modules', '_build', 'docs', 'tests', 'venv', '.copier-template', '.refs']
@@ -81,8 +80,8 @@ tag_format = "v$version"
 [tool.semantic_release]
 branch = "main"
 version_toml = "pyproject.toml:tool.poetry.version"
-version_variable = "src/aig/_version.py:__version__"
-version_pattern = 'src/aig/conf/about/__init__.yaml:version: "{version}"'
+version_variable = "src/aibasics/_version.py:__version__"
+version_pattern = 'src/aibasics/conf/about/__init__.yaml:version: "{version}"'
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
 commit_subject = "chore(release): :rocket: {version} [skip ci]"

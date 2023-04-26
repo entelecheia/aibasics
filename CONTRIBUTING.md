@@ -25,8 +25,8 @@ and "help wanted" is open to whoever wants to implement it.
 
 ## Write Documentation
 
-AIG could always use more documentation, whether as part of the
-official AIG docs, in docstrings, or even on the web in blog posts,
+AI Uncovered could always use more documentation, whether as part of the
+official AI Uncovered docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 ## Submit Feedback
@@ -42,7 +42,7 @@ If you are proposing a feature:
 
 ## Get Started
 
-Ready to contribute? Here's how to set up `AIG` for local development.
+Ready to contribute? Here's how to set up `AI Uncovered` for local development.
 
 1. Fork the repo on GitHub.
 2. Clone your fork locally.
@@ -52,4 +52,4 @@ Ready to contribute? Here's how to set up `AIG` for local development.
 
 ## Code of Conduct
 
-Please note that the AIG project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project you agree to abide by its terms.
+Please note that the AI Uncovered project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project you agree to abide by its terms.

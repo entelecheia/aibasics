@@ -1,4 +1,4 @@
-"""Command line interface for aig"""
+"""Command line interface for aibasics"""
 
 # Importing the libraries
 from hyfi import hydra_main
