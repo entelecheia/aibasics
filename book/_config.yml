@@ -5,8 +5,8 @@
 
 #######################################################################################
 # Book settings
-title: "AIG" # The title of the book. Will be placed in the left navbar.
-author: "Young Joon Lee" # The author of the book
+title: "AI Uncovered" # The title of the book. Will be placed in the left navbar.
+author: "김성진, 이영준, 장용준" # The author of the book
 copyright: "2023" # Copyright year to be placed in the footer
 # logo: logo.png # A path to the book logo
 
