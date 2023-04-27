@@ -1,9 +1,9 @@
 # 인공지능, 머신러닝, 딥러닝 그게 뭐야
 
 [![pypi-image]][pypi-url]
-[![license-image]][license-url]
 [![version-image]][release-url]
 [![release-date-image]][release-url]
+[![license-image]][license-url]
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->
