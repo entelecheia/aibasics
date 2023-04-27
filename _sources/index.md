@@ -1,4 +1,4 @@
-# 인공지능이 여는 가능성: 기초부터 응용까지
+# 인공지능, 머신러닝, 딥러닝 그게 뭐야
 
 [![pypi-image]][pypi-url]
 [![license-image]][license-url]
@@ -23,6 +23,10 @@
 [contributing guidelines]: https://github.com/chu-aie/aibasics/blob/main/CONTRIBUTING.md
 
 <!-- Links: -->
+
+**강좌 제목:**
+
+**AI 세상 속으로: 인공지능, 머신러닝, 딥러닝 그게 뭐제**
 
 **강좌 설명:**
 
