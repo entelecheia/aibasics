@@ -24,7 +24,7 @@ Lab Session:
 2. 감성 분석 및 텍스트 분류 실습 (Hands-on Sentiment Analysis and Text Classification)
 3. 토픽 모델링 실습 (Hands-on Topic Modeling)
 4. BERT와 GPT를 활용한 자연어처리 실습 (Hands-on NLP with BERT and GPT)
-5. 트랜스포머 기반 챗봇 및 기계 번역 실습 (Hands-on Chatbot and Machine Translation using Transformers)
+5. 트랜스포머 기반 챗봇 실습 (Hands-on Chatbot using Transformers)
 
 ```{tableofcontents}
 
