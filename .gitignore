@@ -1,10 +1,13 @@
-examples/
+# hypothesis: https://github.com/HypothesisWorks/hypothesis
+.hypothesis/
+.vscode/
 
 # Ignore node_modules directory
 node_modules/
 
 # Jupyter Notebook
 _build/
+_autosummary/
 
 # Python
 *.py[cod]
@@ -26,4 +29,3 @@ coverage.xml
 *.cover
 htmlcov/
 pytest-coverage.*
-

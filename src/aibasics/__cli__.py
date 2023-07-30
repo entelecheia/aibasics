@@ -1,11 +1,10 @@
 """Command line interface for aibasics"""
-
-# Importing the libraries
-from hyfi import hydra_main
+from hyfi import hyfi_main
 
 
 def main() -> None:
-    hydra_main()
+    """Main function for the CLI"""
+    hyfi_main()
 
 
 if __name__ == "__main__":
