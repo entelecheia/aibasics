@@ -1,5 +1,21 @@
 <!--next-version-placeholder-->
 
+## v0.1.0 (2023-07-30)
+### Feature
+* Project name change ([`cef0cea`](https://github.com/entelecheia/aibasics/commit/cef0cea37aa8e0436027af3feedba6e6ddfd988a))
+* Initial version ([`a623c7d`](https://github.com/entelecheia/aibasics/commit/a623c7d3403a00a3ea5c7561aee2d712d646168f))
+
+### Fix
+* **pyproject.toml:** Update dependencies and configurations ([`ce7c6c8`](https://github.com/entelecheia/aibasics/commit/ce7c6c87e1cef97e4e28a3bf87315cc4e3de4737))
+* Change authors ([`40e8fc5`](https://github.com/entelecheia/aibasics/commit/40e8fc570a266d89a9f80a11ca95f64af78fd5ae))
+* Project name change ([`0f22599`](https://github.com/entelecheia/aibasics/commit/0f22599b62197e15fa916f71a8ea07825be74952))
+* Project name change ([`14a0cb2`](https://github.com/entelecheia/aibasics/commit/14a0cb2162c50acf6c9ca3b72f88bb0d8581d5cb))
+* Docs url ([`06b9e43`](https://github.com/entelecheia/aibasics/commit/06b9e4335a12817e30744f971ef3fc7995233fd4))
+
+### Documentation
+* Add all weeks ([`02f2f3f`](https://github.com/entelecheia/aibasics/commit/02f2f3f0078d416e8a7170cec397897036a1c24b))
+* Add intitial contents ([`2b85508`](https://github.com/entelecheia/aibasics/commit/2b855082e73b25e96cab36bc8613f8f514ad0182))
+
 ## v0.2.3 (2023-07-30)
 ### Fix
 * **pyproject.toml:** Update dependencies and configurations ([`ce7c6c8`](https://github.com/chu-aie/aibasics/commit/ce7c6c87e1cef97e4e28a3bf87315cc4e3de4737))
