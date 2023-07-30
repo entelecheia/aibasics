@@ -1,18 +1,28 @@
 # Changes here will be overwritten by Copier; do NOT edit manually
-_commit: v0.2.23
+_commit: v0.11.4
 _src_path: gh:entelecheia/hyperfast-python-template
 author: Young Joon Lee
 build_and_release: true
 code_template_answers_file: .copier-hyfi-config.yaml
 code_template_source: gh:entelecheia/hyfi-template
+codecov_graph_token: dzfp4tGZ87
 copyright_year: 2023
 documentaion_tool: jupyter-book
 documentation_url: https://aibasics.entelecheia.ai
 email: yj.lee@chu.ac.kr
+favicon_path: https://assets.entelecheia.ai/favicon.png
 friendly_name: AI Uncovered
 github_repo_name: aibasics
 github_username: chu-aie
+google_analytics_id: G-BQJE5V9RK2
+logo_path: ''
+main_branch: main
 package_name: aibasics
+package_scripts:
+- aibasics = 'aibasics.__cli__:main'
+poe_task_files:
+- .tasks.toml
+- .tasks-extra.toml
 project_description: AI Uncovered is a 15-week, beginner-friendly course in Korean,
     designed to provide a comprehensive introduction to artificial intelligence (AI)
     and its real-world applications. Students will explore various AI concepts and
@@ -26,5 +36,6 @@ project_name: aibasics
 project_short_description: 'AI Uncovered: A Comprehensive Guide to AI Basics and Applications'
 upload_to_release: true
 upload_to_repository: true
+use_launch_buttons: true
 use_source_code_skeleton: true
 

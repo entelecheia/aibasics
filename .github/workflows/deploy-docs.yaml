@@ -24,6 +24,10 @@ jobs:
         with:
           python-version: 3.x
 
+      # install the source code
+      - name: Install the source code
+        run: pip install .
+
       # Build the book
       - name: Build the book
         run: |
@@ -36,4 +40,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: book/_build/html
-          cname: ${{ vars.CNAME }}
+          cname: aibasics.entelecheia.ai

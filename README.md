@@ -1,12 +1,15 @@
 # AI Uncovered
 
 [![pypi-image]][pypi-url]
-[![license-image]][license-url]
 [![version-image]][release-url]
 [![release-date-image]][release-url]
+[![license-image]][license-url]
+[![codecov][codecov-image]][codecov-url]
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->
+[codecov-image]: https://codecov.io/gh/chu-aie/aibasics/branch/main/graph/badge.svg?token=dzfp4tGZ87
+[codecov-url]: https://codecov.io/gh/chu-aie/aibasics
 [pypi-image]: https://img.shields.io/pypi/v/aibasics
 [license-image]: https://img.shields.io/github/license/chu-aie/aibasics
 [license-url]: https://github.com/chu-aie/aibasics/blob/main/LICENSE

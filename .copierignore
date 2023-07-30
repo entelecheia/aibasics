@@ -1,0 +1,8 @@
+.copierignore
+.tasks-extra.toml
+CHANGELOG.md
+pyproject.toml
+src/aibasics/__cli__.py
+src/aibasics/_version.py
+src/aibasics/__init__.py
+tests/aibasics/test_cli.py
