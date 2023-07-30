@@ -5,8 +5,8 @@
 
 #######################################################################################
 # Book settings
-title: "AI Uncovered" # The title of the book. Will be placed in the left navbar.
-author: "Young Joon Lee" # The author of the book
+title: "AI 세상 속으로" # The title of the book. Will be placed in the left navbar.
+author: "김성진, 이영준, 장용준" # The author of the book
 copyright: "2023" # Copyright year to be placed in the footer
 # logo: Path to the book logo
 
@@ -39,7 +39,7 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
-  favicon: https://assets.entelecheia.ai/favicon.png # favicon: Path to the favicon image
+  favicon: chu-favicon.png
   google_analytics_id: G-BQJE5V9RK2 # google_analytics_id: Google Analytics ID
 
 sphinx:
