@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.3 (2023-07-30)
+### Fix
+* **pyproject.toml:** Update dependencies and configurations ([`ce7c6c8`](https://github.com/chu-aie/aibasics/commit/ce7c6c87e1cef97e4e28a3bf87315cc4e3de4737))
+
 ## v0.2.2 (2023-04-26)
 ### Fix
 * Change authors ([`40e8fc5`](https://github.com/chu-aie/aibasics/commit/40e8fc570a266d89a9f80a11ca95f64af78fd5ae))
