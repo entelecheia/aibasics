@@ -8,7 +8,7 @@
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->
-[codecov-image]: https://codecov.io/gh/chu-aie/aibasics/branch/main/graph/badge.svg?token=[REPLACE_ME]
+[codecov-image]: https://codecov.io/gh/chu-aie/aibasics/branch/main/graph/badge.svg?token=dzfp4tGZ87
 [codecov-url]: https://codecov.io/gh/chu-aie/aibasics
 [pypi-image]: https://img.shields.io/pypi/v/aibasics
 [license-image]: https://img.shields.io/github/license/chu-aie/aibasics
