@@ -1074,20 +1074,20 @@ packaging = "*"
 
 [[package]]
 name = "hyfi"
-version = "1.17.2"
+version = "1.20.0"
 description = "Hydra Fast Interface (Hydra and Pydantic based interface framework)"
 optional = false
 python-versions = ">=3.8.1,<3.12"
 files = [
-    {file = "hyfi-1.17.2-py3-none-any.whl", hash = "sha256:0671d320a66fa10ff65ba1b2a80638652a4a2679707fddd9e8db2c5aedd937bb"},
-    {file = "hyfi-1.17.2.tar.gz", hash = "sha256:87e506a72118d14db677cd0efc163e01567134425d69eade63f1bf6354caba2e"},
+    {file = "hyfi-1.20.0-py3-none-any.whl", hash = "sha256:6e29de76ab2794f750240503c4200cde863c5a4fc77bdeea1dbe2e254b61c29b"},
+    {file = "hyfi-1.20.0.tar.gz", hash = "sha256:d6fae6c7a5ff705f18e264b5cb3e0a3d7f911f0316dc42fdbc73e52d5a2501bf"},
 ]
 
 [package.dependencies]
 chardet = "<=5.2.0"
 click = "<=8.1.6"
 colorama = ">=0.4.3,<0.5.0"
-datasets = ">=2.0.0,<=2.14.2"
+datasets = ">=2.0.0,<=2.14.3"
 filelock = ">=3.4,<=3.12.2"
 gdown = "<=4.6.6"
 huggingface-hub = ">=0.8.1,<=0.16.4"
