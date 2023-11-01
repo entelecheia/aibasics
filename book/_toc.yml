@@ -7,7 +7,7 @@ chapters:
   - file: week01/index
     sections:
       - file: week01/session1
-      - file: week01/session1-en
+      # - file: week01/session1-en
       - file: week01/session2
       - file: week01/lab
   - file: week02/index
