@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - "**/issue*"
     # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
     paths:
       - "book/**"
@@ -22,7 +23,7 @@ jobs:
 
       - uses: actions/setup-python@v4
         with:
-          python-version: 3.x
+          python-version: 3.9
 
       # install the source code
       - name: Install the source code
@@ -40,4 +41,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: book/_build/html
-          cname: aibasics.entelecheia.ai
+          cname: ${{ vars.CNAME }}
