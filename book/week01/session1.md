@@ -90,7 +90,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ## 인공지능과 인간 지능의 차이
 
-### Introduction
+### 도입
 
 ```{image} figs/image-1-2-1.png
 :alt: A visual comparing a human brain and a computer/AI system.
@@ -105,7 +105,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 기술적 구현과 인간의 정신 과정의 차이 강조
 - 두 개념의 기본적인 정의와 소개
 
-### Basis of Intelligence
+### 인공지능과 인간 지능의 기반
 
 ```{image} figs/image-1-2-2.png
 :alt: A chart comparing the biological basis of human intelligence to the silicon-based systems of AI.
@@ -120,7 +120,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 복잡한 연결망을 통한 정보 처리의 유사점
 - 구조적 차이에 대한 이해
 
-### Learning Process
+### 학습 과정
 
 ```{image} figs/image-1-2-3.png
 :alt: Two side-by-side infographics showing the learning process in humans and AI.
@@ -135,7 +135,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 적응과 일반화에서의 차이
 - 학습 방식의 본질적 차이 이해
 
-### Cognitive Abilities
+### 인지 능력
 
 ```{image} figs/image-1-2-4.png
 :alt: A Venn diagram highlighting the cognitive abilities unique to humans, unique to AI, and those that overlap.
@@ -150,7 +150,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 공통 인지 능력: 언어 이해, 문제 해결
 - 인간과 AI의 인지 능력 비교
 
-### Decision Making
+### 결정 과정
 
 ```{image} figs/image-1-2-5.png
 :alt: A flowchart depicting human decision-making vs. AI decision-making processes.
@@ -165,7 +165,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 결정 메커니즘의 차이점
 - 결정 과정에서의 인간과 AI의 다른 접근 방식
 
-### Creativity and Innovation
+### 창의성과 혁신성
 
 인간은 미술, 음악, 문학 등에서 **창의성**을 발휘합니다. 이는 개인의 감정, 생각, 경험에서 비롯됩니다. 인공지능은 **알고리즘 생성 콘텐츠**, **데이터 기반 설계** 등으로 '창의적' 작업을 수행할 수 있지만, 이는 데이터와 규칙에 의해 제한됩니다.
 
@@ -174,7 +174,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 창의적 접근의 차이점
 - 인간과 AI의 창의성 비교
 
-### Ethical and Moral Reasoning
+### 윤리적 추론과 도덕성
 
 인간은 문화적, 사회적 맥락에 기반한 **도덕성**과 **가치관**을 가지고 윤리적 판단을 내립니다. 인공지능은 주어진 **프로그래밍된 규칙**과 알고리즘에 따라 결정을 내리므로, 복잡한 인간의 윤리적 문제에 적절히 대응하기 어려울 수 있습니다.
 
@@ -183,7 +183,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 - 윤리적 추론에서의 인간과 AI의 차이
 - AI의 윤리적 도전 과제 이해
 
-### Conclusion
+### 결론
 
 AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 명확히 존재합니다. 그러나 이러한 차이점을 인식하고 이해함으로써, 우리는 두 지능이 협력하여 더 큰 가능성을 탐색할 수 있습니다. AI의 강점과 한계를 인지하고, 인간의 창의성과 복잡한 인지 능력을 결합함으로써 새로운 가치를 창출할 수 있습니다.
 
