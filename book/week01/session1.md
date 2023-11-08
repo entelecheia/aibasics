@@ -4,7 +4,7 @@
 
 ### 서론
 
-```{image} figs/image1-1.png
+```{image} figs/image-1-1-1.png
 :width: 80%
 :align: center
 ```
@@ -15,7 +15,7 @@
 
 ### 인공 지능이란 무엇인가?
 
-```{image} figs/image1-2.png
+```{image} figs/image-1-1-2.png
 :width: 50%
 :align: center
 ```
@@ -30,7 +30,7 @@
 
 ### 초기 시작 - 1950년대
 
-```{image} figs/image1-3.png
+```{image} figs/image-1-1-3.png
 :width: 50%
 :align: center
 ```
@@ -44,7 +44,7 @@
 
 ### 규칙 기반 시스템 - 1960년대 ~ 1970년대
 
-```{image} figs/image1-4.png
+```{image} figs/image-1-1-4.png
 :width: 80%
 :align: center
 ```
@@ -58,7 +58,7 @@
 
 ### 기계 학습 패러다임 - 1980년대 이후
 
-```{image} figs/image1-5.png
+```{image} figs/image-1-1-5.png
 :width: 80%
 :align: center
 ```
@@ -72,7 +72,7 @@
 
 ### 딥 러닝과 그 이후 - 2010년대 이후
 
-```{image} figs/image1-6.png
+```{image} figs/image-1-1-6.png
 :width: 80%
 :align: center
 ```
