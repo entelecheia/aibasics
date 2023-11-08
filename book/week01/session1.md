@@ -90,6 +90,11 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ## 인공지능과 인간 지능의 차이
 
+```{image} figs/image-1-2-0.png
+:width: 80%
+:align: center
+```
+
 ### 도입
 
 ```{image} figs/image-1-2-1.png
