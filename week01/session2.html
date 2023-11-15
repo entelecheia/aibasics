@@ -182,7 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    인공지능, 머신러닝, 딥러닝 그게 뭐야
+                    인공지능, 머신러닝, 딥러닝 그게 뭐야?
                 </a>
             </li>
         </ul>
@@ -464,7 +464,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -480,6 +482,25 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-and-data-science">1. 인공지능과 데이터 사이언스 (AI and Data Science)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">AI에서의 데이터의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터 사이언스: 기초</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI와 데이터 사이언스의 통합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝: 핵심 요소</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-research-tools-and-frameworks">2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-application-fields">3. 인공지능 적용 분야 (AI Application Fields)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges-of-ai-technologies">4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-mathematics-for-ai">5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -523,6 +544,71 @@ document.write(`
 <li><p>통계학, 선형대수, 미적분학의 기초</p></li>
 <li><p>실제 AI 문제에 수학 적용 사례</p></li>
 </ul>
+<section id="ai-and-data-science">
+<h2>1. 인공지능과 데이터 사이언스 (AI and Data Science)<a class="headerlink" href="#ai-and-data-science" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3>서론<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-1.png"><img alt="../_images/image-2-1-1.png" class="align-center" src="../_images/image-2-1-1.png" style="width: 80%;" /></a>
+<ul class="simple">
+<li><p><strong>인공지능</strong>과 <strong>데이터 사이언스</strong>의 교차점 탐험에 오신 것을 환영합니다. 이 두 분야는 독립적으로 존재하지만, 함께 기술 혁신과 창의적인 해결책을 만들어냅니다.</p></li>
+<li><p>AI는 인간 지능이 필요한 작업을 수행하는 기계를 만드는 것을 목표로 합니다.</p></li>
+<li><p>AI는 <strong>학습, 문제 해결, 의사 결정</strong>과 같은 다양한 기능을 포함합니다.</p></li>
+<li><p>이 강의에서는 AI와 데이터 사이언스가 어떻게 서로 보완하며 협력하는지에 대해 알아볼 것입니다.</p></li>
+</ul>
+</section>
+<section id="ai">
+<h3>AI에서의 데이터의 역할<a class="headerlink" href="#ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-2.png"><img alt="../_images/image-2-1-2.png" class="align-center" src="../_images/image-2-1-2.png" style="width: 80%;" /></a>
+<ul class="simple">
+<li><p>AI 시스템은 대량의 데이터를 사용하여 훈련됩니다. 이 데이터는 AI 알고리즘이 학습하고 정보에 기반한 결정을 내리는 데 필요한 정보를 제공합니다.</p></li>
+<li><p><strong>데이터</strong>는 AI가 세계를 이해하고 패턴을 인식하는 데 중요한 역할을 합니다.</p></li>
+<li><p>데이터 없이 AI는 효과적으로 작동할 수 없습니다.</p></li>
+<li><p>데이터는 <strong>통찰력</strong>과 <strong>지식</strong>을 추출하는 데 필요한 기본적인 요소입니다.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>데이터 사이언스: 기초<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-3.png"><img alt="../_images/image-2-1-3.png" class="align-center" src="../_images/image-2-1-3.png" style="width: 80%;" /></a>
+<ul class="simple">
+<li><p>데이터 사이언스는 데이터에서 지식과 통찰력을 추출하는 다학제적 분야입니다.</p></li>
+<li><p><strong>통계적 방법, 데이터 마이닝, 예측 모델링</strong>과 같은 다양한 데이터 분석 기법이 포함됩니다.</p></li>
+<li><p>데이터 사이언스는 정보의 숨겨진 패턴을 발견하고 이해하는 데 중점을 둡니다.</p></li>
+<li><p>데이터 사이언스는 데이터를 <strong>가치 있는 정보</strong>로 전환하는 과정입니다.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>AI와 데이터 사이언스의 통합<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-4.png"><img alt="../_images/image-2-1-4.png" class="align-center" src="../_images/image-2-1-4.png" style="width: 80%;" /></a>
+<ul class="simple">
+<li><p>AI는 데이터 사이언스 기법을 사용하여 데이터를 처리하고 분석하며, 이는 지능형 시스템 개발에 중요합니다.</p></li>
+<li><p>데이터 사이언스는 AI에게 <strong>필수적인 통찰력</strong>을 제공합니다.</p></li>
+<li><p><strong>데이터 분석</strong>은 AI의 학습 과정에 필수적인 부분입니다.</p></li>
+<li><p>이 통합은 AI가 보다 정확하고 효과적인 결정을 내리는 데 도움을 줍니다.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>머신러닝: 핵심 요소<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-5.png"><img alt="../_images/image-2-1-5.png" class="align-center" src="../_images/image-2-1-5.png" style="width: 80%;" /></a>
+<ul class="simple">
+<li><p>머신러닝은 AI의 하위 집합으로, 데이터를 기반으로 학습하고 예측이나 결정을 내리는 알고리즘을 훈련시킵니다.</p></li>
+<li><p>머신러닝은 AI에게 <strong>자율적인 학습 능력</strong>을 부여합니다.</p></li>
+<li><p>머신러닝은 패턴 인식과 데이터 분석에 필수적입니다.</p></li>
+<li><p>이를 통해 AI는 <strong>더 정교하고 정확한</strong> 예측을 할 수 있습니다.</p></li>
+</ul>
+</section>
+</section>
+<section id="ai-research-tools-and-frameworks">
+<h2>2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)<a class="headerlink" href="#ai-research-tools-and-frameworks" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="ai-application-fields">
+<h2>3. 인공지능 적용 분야 (AI Application Fields)<a class="headerlink" href="#ai-application-fields" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="limitations-and-challenges-of-ai-technologies">
+<h2>4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)<a class="headerlink" href="#limitations-and-challenges-of-ai-technologies" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="basic-mathematics-for-ai">
+<h2>5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)<a class="headerlink" href="#basic-mathematics-for-ai" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -579,6 +665,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-and-data-science">1. 인공지능과 데이터 사이언스 (AI and Data Science)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">AI에서의 데이터의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터 사이언스: 기초</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI와 데이터 사이언스의 통합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝: 핵심 요소</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-research-tools-and-frameworks">2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-application-fields">3. 인공지능 적용 분야 (AI Application Fields)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges-of-ai-technologies">4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-mathematics-for-ai">5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
