@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aibasics"
-version = "0.2.3"
+version = "0.3.0"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = ["Young Joon Lee <yj.lee@chu.ac.kr>"]
 license = "CC-BY-4.0"
