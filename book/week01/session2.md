@@ -1,4 +1,4 @@
-# Session 2
+# Session 2: 인공지능과 도구들
 
 **기본을 탐험하다: 인공지능과 그 도구들** (Exploring the Fundamentals: AI and Its Tools)
 
