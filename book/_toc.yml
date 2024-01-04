@@ -8,8 +8,8 @@ chapters:
     sections:
       - file: week01/session1
       # - file: week01/session1-en
-      - file: week01/session2
-      - file: week01/lab
+      # - file: week01/session2
+      # - file: week01/lab
   - file: week02/index
     sections:
       - file: week02/session1
