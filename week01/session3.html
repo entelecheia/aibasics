@@ -30,7 +30,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -46,7 +46,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -58,9 +58,10 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script src="../_static/tabs.js"></script>
     <script src="../_static/js/hoverxref.js"></script>
     <script src="../_static/js/tooltipster.bundle.min.js"></script>
@@ -179,7 +180,18 @@ const thebe_selector_output = ".output, .cell_output"
     <p class="title logo__title">AI 세상 속으로</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -1542,12 +1554,6 @@ document.write(`
 <li><p>적절한 휴리스틱 함수 선택 시 최적해 찾기 가능.</p></li>
 </ul>
 </li>
-<li><p><strong>복잡한 문제에 대한 A* 알고리즘의 적용</strong>:</p>
-<ul>
-<li><p>경로 찾기, 최적화, 스케줄링 문제 등.</p></li>
-<li><p>A* 알고리즘을 통한 효과적 해결.</p></li>
-</ul>
-</li>
 <li><p><strong>A* 알고리즘을 사용하여 문제 해결의 최적 경로 찾기</strong>:</p>
 <ul>
 <li><p>시작 상태에서 목표 상태까지의 최적 경로 탐색.</p></li>
@@ -1575,12 +1581,6 @@ document.write(`
 <ul>
 <li><p>백트래킹, 휴리스틱, 유전 알고리즘 등 사용.</p></li>
 <li><p>다양한 방식으로 문제 해결 가능.</p></li>
-</ul>
-</li>
-<li><p><strong>8-Queens 문제를 통한 알고리즘 설계와 문제 해결 능력의 이해</strong>:</p>
-<ul>
-<li><p>알고리즘 설계, 문제 해결 능력 이해.</p></li>
-<li><p>실제 문제 해결에 적용 방법 배우기.</p></li>
 </ul>
 </li>
 </ul>
