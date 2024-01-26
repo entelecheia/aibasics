@@ -523,8 +523,22 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.4. 추론에 대한 다양한 접근 방식</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 탐색 전략</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">6. 탐색 알고리즘</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 탐색 전략</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">5.1. 탐색 전략 평가</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.2. 무정보 탐색 전략의 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">5.3. 너비 우선 탐색과 균일 비용 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">5.4. 깊이 우선 탐색과 깊이 제한 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">5.5. 반복적 심화와 휴리스틱 탐색</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">6. 탐색 알고리즘</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">6.1. 알고리즘의 정의와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">6.2. 일상 생활 속의 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">6.3. 인공지능에서의 휴리스틱 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a">6.4. A* 알고리즘과 그 응용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#queens">6.5. 인공지능 알고리즘: 8-Queens 문제</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1229,89 +1243,348 @@ document.write(`
 </section>
 <section id="id24">
 <h2>5. 탐색 전략<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h2>
-<p><strong>5.1. 탐색 전략 평가</strong></p>
+<section id="id25">
+<h3>5.1. 탐색 전략 평가<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>다양한 탐색 전략의 효과성을 평가하는 <strong>기준</strong>.</p></li>
-<li><p>인공지능에서 사용되는 여러 탐색 전략 비교.</p></li>
-<li><p>각 탐색 전략의 목적과 적용 분야.</p></li>
-<li><p>탐색 효율성, 속도, 정확도 등을 고려한 평가 방법.</p></li>
-<li><p>최적의 탐색 전략 선택을 위한 고려 사항.</p></li>
+<li><p><strong>평가 기준</strong>:</p>
+<ul>
+<li><p>탐색 전략의 효과성 평가에 필요한 다양한 기준.</p></li>
+<li><p>탐색 속도, 메모리 사용량, 정확도, 완전성 등 포함.</p></li>
 </ul>
-<p><strong>5.2. 무정보 탐색 전략의 유형</strong></p>
-<ul class="simple">
-<li><p>BFS(Breadth-First Search) 및 DFS(Depth-First Search)와 같은 무정보 탐색 전략 개요.</p></li>
-<li><p>각 전략의 장단점 분석.</p></li>
-<li><p>너비 우선 탐색(BFS)의 특징과 적용 사례.</p></li>
-<li><p>깊이 우선 탐색(DFS)의 구현 방법과 사용 분야.</p></li>
-<li><p>특정 문제 상황에 적합한 탐색 전략 선택 기준.</p></li>
+</li>
+<li><p><strong>탐색 전략 비교</strong>:</p>
+<ul>
+<li><p>다양한 인공지능 탐색 전략의 비교와 분석.</p></li>
+<li><p>DFS, BFS, 최선 우선 탐색, A* 탐색 등 포함.</p></li>
 </ul>
-<p><strong>5.3. 너비 우선 탐색과 균일 비용 탐색</strong></p>
-<ul class="simple">
-<li><p>너비 우선 탐색(BFS)의 <strong>상세한 설명</strong> 및 응용.</p></li>
-<li><p>균일 비용 탐색의 개념과 인공지능에서의 사용 사례.</p></li>
-<li><p>BFS의 장점과 적용 가능한 문제 유형.</p></li>
-<li><p>균일 비용 탐색의 효율성 및 적합한 시나리오.</p></li>
-<li><p>실제 AI 시스템에서의 BFS와 균일 비용 탐색의 활용 사례.</p></li>
+</li>
+<li><p><strong>목적과 적용 분야</strong>:</p>
+<ul>
+<li><p>각 탐색 전략의 목적 및 적용 분야 파악.</p></li>
+<li><p>BFS는 최단 경로, DFS는 미로 찾기 문제에 적합.</p></li>
 </ul>
-<p><strong>5.4. 깊이 우선 탐색과 깊이 제한 탐색</strong></p>
-<ul class="simple">
-<li><p>깊이 우선 탐색(DFS)의 이해와 <strong>구현 방법</strong>.</p></li>
-<li><p>깊이 제한 탐색의 개념 및 응용.</p></li>
-<li><p>DFS의 주요 특징과 한계.</p></li>
-<li><p>특정 문제에 적합한 깊이 제한 탐색의 설계.</p></li>
-<li><p>깊이 우선 탐색과 깊이 제한 탐색의 실제 적용 예.</p></li>
+</li>
+<li><p><strong>평가 방법</strong>:</p>
+<ul>
+<li><p>효율성, 속도, 정확도 등을 고려한 평가 방법.</p></li>
+<li><p>문제의 크기, 복잡성, 제한사항에 따른 평가.</p></li>
 </ul>
-<p><strong>5.5. 반복적 심화와 휴리스틱 탐색</strong></p>
-<ul class="simple">
-<li><p>AI 탐색 전략에서 반복적 심화의 역할.</p></li>
-<li><p><strong>휴리스틱 탐색</strong>의 소개 및 문제 해결에서의 효과.</p></li>
-<li><p>반복적 심화 탐색의 원리와 장점.</p></li>
-<li><p>휴리스틱 탐색 방법의 다양한 예시.</p></li>
-<li><p>복잡한 문제에 대한 휴리스틱 탐색 전략의 성공적 적용 사례.</p></li>
+</li>
+<li><p><strong>최적의 탐색 전략 선택</strong>:</p>
+<ul>
+<li><p>문제 특성, 리소스, 성능 요구사항을 고려한 최적 전략 선택.</p></li>
+</ul>
+</li>
 </ul>
 </section>
-<section id="id25">
-<h2>6. 탐색 알고리즘<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h2>
-<p><strong>6.1. 알고리즘의 정의와 중요성</strong></p>
+<section id="id26">
+<h3>5.2. 무정보 탐색 전략의 유형<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>인공지능에서 <strong>알고리즘의 개념</strong> 탐구.</p></li>
-<li><p>효율적인 문제 해결을 위한 알고리즘의 역할.</p></li>
-<li><p>알고리즘을 통한 데이터 처리 및 의사결정 과정.</p></li>
-<li><p>다양한 AI 시스템에서의 알고리즘 적용 사례.</p></li>
-<li><p>알고리즘의 발전이 AI의 능력 향상에 미치는 영향.</p></li>
+<li><p><strong>무정보 탐색 전략 개요</strong>:</p>
+<ul>
+<li><p>추가 정보 없이 문제 공간 탐색하는 전략.</p></li>
+<li><p>BFS, DFS 등의 무정보 탐색 전략 포함.</p></li>
 </ul>
-<p><strong>6.2. 일상 생활 속의 알고리즘</strong></p>
+</li>
+<li><p><strong>전략의 장단점 분석</strong>:</p>
+<ul>
+<li><p>BFS의 공평한 탐색 vs 메모리 사용량.</p></li>
+<li><p>DFS의 메모리 효율성 vs 최적해 미발견 가능성.</p></li>
+</ul>
+</li>
+<li><p><strong>BFS의 특징과 적용 사례</strong>:</p>
+<ul>
+<li><p>최단 경로 문제에 적합한 BFS.</p></li>
+<li><p>지도에서의 최단 경로 찾기 등의 적용.</p></li>
+</ul>
+</li>
+<li><p><strong>DFS의 구현 방법과 사용 분야</strong>:</p>
+<ul>
+<li><p>깊게 탐색하는 DFS의 구현 및 적용.</p></li>
+<li><p>미로 찾기, 트리/그래프 탐색 등의 적용.</p></li>
+</ul>
+</li>
+<li><p><strong>탐색 전략 선택 기준</strong>:</p>
+<ul>
+<li><p>문제 상황에 맞는 탐색 전략 선택의 중요성.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id27">
+<h3>5.3. 너비 우선 탐색과 균일 비용 탐색<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>AI 알고리즘과 <strong>일상적 문제 해결</strong> 상황과의 연관성.</p></li>
-<li><p>알고리즘적 사고의 보편적인 적용.</p></li>
-<li><p>일상적 결정에서 알고리즘의 역할과 예시.</p></li>
-<li><p>사용자 친화적 인터페이스 뒤의 복잡한 알고리즘.</p></li>
-<li><p>생활 속에서 접하는 다양한 AI 알고리즘 예시.</p></li>
+<li><p><strong>BFS의 상세한 설명 및 응용</strong>:</p>
+<ul>
+<li><p>너비 우선으로 탐색하는 BFS의 원리.</p></li>
+<li><p>최단 경로, 네트워크 라우팅 문제에 적용.</p></li>
 </ul>
-<p><strong>6.3. 인공지능에서의 휴리스틱 알고리즘</strong></p>
+</li>
+<li><p><strong>균일 비용 탐색의 개념과 사용 사례</strong>:</p>
+<ul>
+<li><p>비용을 기준으로 탐색하는 균일 비용 탐색.</p></li>
+<li><p>네트워크 라우팅, 경로 찾기 문제에 적용.</p></li>
+</ul>
+</li>
+<li><p><strong>BFS의 장점과 적용 가능한 문제 유형</strong>:</p>
+<ul>
+<li><p>모든 노드를 공평하게 탐색하는 BFS의 장점.</p></li>
+<li><p>최단 경로 문제에 적합하지만 메모리 사용량 큼.</p></li>
+</ul>
+</li>
+<li><p><strong>균일 비용 탐색의 효율성 및 적합한 시나리오</strong>:</p>
+<ul>
+<li><p>비용 기준 탐색의 효율성과 적합한 시나리오.</p></li>
+<li><p>비용 중요시하는 문제에 적합하나 속도 느릴 수 있음.</p></li>
+</ul>
+</li>
+<li><p><strong>실제 AI 시스템에서의 BFS와 균일 비용 탐색의 활용 사례</strong>:</p>
+<ul>
+<li><p>지도의 최단 경로, 네트워크 라우팅 등의 적용 사례.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id28">
+<h3>5.4. 깊이 우선 탐색과 깊이 제한 탐색<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>휴리스틱 알고리즘과 그 <strong>응용 분야에 대한 상세한 논의</strong>.</p></li>
-<li><p>최적의 해결책을 제공한 휴리스틱 알고리즘 사례 연구.</p></li>
-<li><p>문제 해결을 위한 휴리스틱 접근 방식의 설명.</p></li>
-<li><p>복잡한 문제에 대한 휴리스틱 알고리즘의 효과적인 적용.</p></li>
-<li><p>휴리스틱 알고리즘의 장단점 및 적절한 사용 조건.</p></li>
+<li><p><strong>DFS의 이해와 구현 방법</strong>:</p>
+<ul>
+<li><p>깊이를 우선하여 탐색하는 DFS의 원리.</p></li>
+<li><p>스택 사용하여 구현되는 DFS 방법.</p></li>
 </ul>
-<p><strong>6.4. A* 알고리즘과 그 응용</strong></p>
+</li>
+<li><p><strong>깊이 제한 탐색의 개념 및 응용</strong>:</p>
+<ul>
+<li><p>특정 깊이까지만 탐색하는 깊이 제한 탐색.</p></li>
+<li><p>무한 루프 방지, 탐색 범위 제한에 사용.</p></li>
+</ul>
+</li>
+<li><p><strong>DFS의 주요 특징과 한계</strong>:</p>
+<ul>
+<li><p>메모리 효율적인 DFS의 특징과 최적해 미발견 한계.</p></li>
+<li><p>탐색 시간 오래 걸릴 수 있는 단점.</p></li>
+</ul>
+</li>
+<li><p><strong>특정 문제에 적합한 깊이 제한 탐색의 설계</strong>:</p>
+<ul>
+<li><p>문제 특성에 따라 깊이 조절하여 설계하는 깊이 제한 탐색.</p></li>
+<li><p>탐색 범위 제한 및 효율성 향상에 사용.</p></li>
+</ul>
+</li>
+<li><p><strong>깊이 우선 탐색과 깊이 제한 탐색의 실제 적용 예</strong>:</p>
+<ul>
+<li><p>미로 찾기, 트리/그래프 전체 방문 등의 적용 사례.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id29">
+<h3>5.5. 반복적 심화와 휴리스틱 탐색<a class="headerlink" href="#id29" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>A* 알고리즘의 <strong>작동 원리에 대한 심층 분석</strong>.</p></li>
-<li><p>실제 세계에서의 A* 알고리즘 구현 사례.</p></li>
-<li><p>A* 알고리즘의 효율성과 적용 범위.</p></li>
-<li><p>경로 찾기와 같은 복잡한 문제에 대한 A* 알고리즘의 적용.</p></li>
-<li><p>A* 알고리즘을 사용하여 문제 해결의 최적 경로 찾기.</p></li>
+<li><p><strong>반복적 심화의 역할</strong>:</p>
+<ul>
+<li><p>깊이 제한 탐색을 반복하여 깊이 점진적 확장.</p></li>
+<li><p>탐색 범위 점진적 확장 및 최적해 탐색에 사용.</p></li>
 </ul>
-<p><strong>6.5. 인공지능 알고리즘: 8-Queens 문제</strong></p>
+</li>
+<li><p><strong>휴리스틱 탐색의 소개 및 효과</strong>:</p>
+<ul>
+<li><p>휴리스틱 함수 사용하여 탐색 방향 결정.</p></li>
+<li><p>탐색 효율성 향상 및 문제 해결 속도 증가.</p></li>
+</ul>
+</li>
+<li><p><strong>반복적 심화 탐색의 원리와 장점</strong>:</p>
+<ul>
+<li><p>깊이 제한 탐색 장점 활용 및 단점 보완.</p></li>
+<li><p>깊이 점진적 확장을 통한 최적해 탐색.</p></li>
+</ul>
+</li>
+<li><p><strong>휴리스틱 탐색의 소개 및 효과</strong>:</p>
+<ul>
+<li><p>휴리스틱 함수 사용하여 탐색 방향 결정.</p></li>
+<li><p>탐색 효율성 향상 및 문제 해결 속도 증가.</p></li>
+</ul>
+</li>
+<li><p><strong>복잡한 문제 해결을 위한 혁신적인 추론 전략의 예시</strong>:</p>
+<ul>
+<li><p>강화 학습, 딥러닝, 진화 알고리즘 활용 전략.</p></li>
+<li><p>복잡한 문제에 대한 효과적 해결 방안 제시.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id30">
+<h2>6. 탐색 알고리즘<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h2>
+<section id="id31">
+<h3>6.1. 알고리즘의 정의와 중요성<a class="headerlink" href="#id31" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>8-Queens 문제 소개 및 인공지능에서의 <strong>중요성</strong>.</p></li>
-<li><p>AI 알고리즘이 8-Queens 문제를 어떻게 접근하고 해결하는지 설명.</p></li>
-<li><p>8-Queens 문제 해결을 위한 알고리즘적 접근법.</p></li>
-<li><p>여러 알고리즘을 사용한 8-Queens 문제의 다양한 해결 방식.</p></li>
-<li><p>8-Queens 문제를 통한 알고리즘 설계와 문제 해결 능력의 이해.</p></li>
+<li><p><strong>알고리즘의 개념</strong>:</p>
+<ul>
+<li><p>문제 해결을 위한 단계별 절차.</p></li>
+<li><p>입력에서 출력까지의 처리 과정 포함.</p></li>
 </ul>
+</li>
+<li><p><strong>알고리즘의 역할</strong>:</p>
+<ul>
+<li><p>효율적인 문제 해결을 위한 필수 요소.</p></li>
+<li><p>데이터 처리, 의사결정, 최적화 등에 사용.</p></li>
+</ul>
+</li>
+<li><p><strong>데이터 처리 및 의사결정 과정</strong>:</p>
+<ul>
+<li><p>데이터 분석, 패턴 인식, 의사결정 지원.</p></li>
+<li><p>AI 시스템의 복잡한 문제 해결 지원.</p></li>
+</ul>
+</li>
+<li><p><strong>AI 시스템에서의 알고리즘 적용 사례</strong>:</p>
+<ul>
+<li><p>검색, 정렬, 최적화, 머신러닝 알고리즘 등.</p></li>
+<li><p>AI 시스템의 다양한 작업 수행에 필수적.</p></li>
+</ul>
+</li>
+<li><p><strong>알고리즘의 발전이 AI의 능력 향상에 미치는 영향</strong>:</p>
+<ul>
+<li><p>더 빠른 처리, 정확한 예측, 효율적 리소스 사용 가능.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id32">
+<h3>6.2. 일상 생활 속의 알고리즘<a class="headerlink" href="#id32" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>일상적 문제 해결과의 연관성</strong>:</p>
+<ul>
+<li><p>경로 찾기, 일정 관리, 온라인 쇼핑 등에 적용.</p></li>
+<li><p>일상 생활의 다양한 상황에서 활용.</p></li>
+</ul>
+</li>
+<li><p><strong>알고리즘적 사고의 보편적인 적용</strong>:</p>
+<ul>
+<li><p>문제 분석, 해결 전략 계획, 효율적 해결책 찾기.</p></li>
+<li><p>과학, 공학, 비즈니스 등 다양한 분야 활용.</p></li>
+</ul>
+</li>
+<li><p><strong>일상적 결정에서의 알고리즘의 역할</strong>:</p>
+<ul>
+<li><p>최적의 경로 찾기, 제품 선택, 시간 관리 등.</p></li>
+<li><p>일상적 결정에 중요한 역할 수행.</p></li>
+</ul>
+</li>
+<li><p><strong>사용자 친화적 인터페이스 뒤의 복잡한 알고리즘</strong>:</p>
+<ul>
+<li><p>검색 엔진, 추천 시스템, 네비게이션 앱 등.</p></li>
+<li><p>사용자 경험 향상을 위한 알고리즘 활용.</p></li>
+</ul>
+</li>
+<li><p><strong>생활 속에서 접하는 다양한 AI 알고리즘 예시</strong>:</p>
+<ul>
+<li><p>Google 검색, Netflix 추천, Waze 경로 찾기 등.</p></li>
+<li><p>일상 생활에서 접할 수 있는 AI 알고리즘.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id33">
+<h3>6.3. 인공지능에서의 휴리스틱 알고리즘<a class="headerlink" href="#id33" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>휴리스틱 알고리즘과 응용 분야</strong>:</p>
+<ul>
+<li><p>문제 해결을 위한 빠른 방법.</p></li>
+<li><p>탐색, 경로 찾기, 스케줄링 문제 등에 활용.</p></li>
+</ul>
+</li>
+<li><p><strong>휴리스틱 알고리즘 사례 연구</strong>:</p>
+<ul>
+<li><p>A* 탐색, 유전 알고리즘, 입자 군집 최적화 등.</p></li>
+<li><p>다양한 문제에 최적의 해결책 제공.</p></li>
+</ul>
+</li>
+<li><p><strong>휴리스틱 접근 방식</strong>:</p>
+<ul>
+<li><p>문제 특성 고려, 해결책 찾기.</p></li>
+<li><p>휴리스틱 함수 사용, 탐색 공간 축소.</p></li>
+</ul>
+</li>
+<li><p><strong>복잡한 문제에 대한 휴리스틱 알고리즘의 적용</strong>:</p>
+<ul>
+<li><p>대규모 데이터셋, 복잡한 제약 조건 처리.</p></li>
+<li><p>다양한 목표 함수에 적용 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>휴리스틱 알고리즘의 장단점 및 적절한 사용 조건</strong>:</p>
+<ul>
+<li><p>빠른 해결책 제공, 최적해 보장 여부 고려.</p></li>
+<li><p>문제 특성, 리소스, 성능 요구사항 고려 필요.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="a">
+<h3>6.4. A* 알고리즘과 그 응용<a class="headerlink" href="#a" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>A* 알고리즘의 작동 원리</strong>:</p>
+<ul>
+<li><p>휴리스틱 함수 사용, 탐색 방향 결정.</p></li>
+<li><p>목표 상태까지의 예상 비용 추정.</p></li>
+</ul>
+</li>
+<li><p><strong>실제 세계에서의 A* 알고리즘 구현 사례</strong>:</p>
+<ul>
+<li><p>경로 찾기, 퍼즐 해결, 로봇 경로 계획 등.</p></li>
+<li><p>다양한 실제 문제 해결에 적용.</p></li>
+</ul>
+</li>
+<li><p><strong>A* 알고리즘의 효율성과 적용 범위</strong>:</p>
+<ul>
+<li><p>효율적 탐색 제공, 다양한 문제에 적용.</p></li>
+<li><p>적절한 휴리스틱 함수 선택 시 최적해 찾기 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>복잡한 문제에 대한 A* 알고리즘의 적용</strong>:</p>
+<ul>
+<li><p>경로 찾기, 최적화, 스케줄링 문제 등.</p></li>
+<li><p>A* 알고리즘을 통한 효과적 해결.</p></li>
+</ul>
+</li>
+<li><p><strong>A* 알고리즘을 사용하여 문제 해결의 최적 경로 찾기</strong>:</p>
+<ul>
+<li><p>시작 상태에서 목표 상태까지의 최적 경로 탐색.</p></li>
+<li><p>비용이 가장 낮은 경로 찾기에 활용.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="queens">
+<h3>6.5. 인공지능 알고리즘: 8-Queens 문제<a class="headerlink" href="#queens" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>8-Queens 문제 소개 및 중요성</strong>:</p>
+<ul>
+<li><p>8x8 체스판에 퀸 배치하는 제약 충족 문제.</p></li>
+<li><p>AI 연구에서 중요한 주제.</p></li>
+</ul>
+</li>
+<li><p><strong>8-Queens 문제 해결을 위한 알고리즘적 접근법</strong>:</p>
+<ul>
+<li><p>문제 특성, 리소스, 성능 고려한 알고리즘 선택.</p></li>
+<li><p>다양한 알고리즘적 접근법 포함 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>여러 알고리즘을 사용한 8-Queens 문제의 다양한 해결 방식</strong>:</p>
+<ul>
+<li><p>백트래킹, 휴리스틱, 유전 알고리즘 등 사용.</p></li>
+<li><p>다양한 방식으로 문제 해결 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>8-Queens 문제를 통한 알고리즘 설계와 문제 해결 능력의 이해</strong>:</p>
+<ul>
+<li><p>알고리즘 설계, 문제 해결 능력 이해.</p></li>
+<li><p>실제 문제 해결에 적용 방법 배우기.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -1410,8 +1683,22 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.4. 추론에 대한 다양한 접근 방식</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 탐색 전략</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">6. 탐색 알고리즘</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 탐색 전략</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">5.1. 탐색 전략 평가</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.2. 무정보 탐색 전략의 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">5.3. 너비 우선 탐색과 균일 비용 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">5.4. 깊이 우선 탐색과 깊이 제한 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">5.5. 반복적 심화와 휴리스틱 탐색</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">6. 탐색 알고리즘</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">6.1. 알고리즘의 정의와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">6.2. 일상 생활 속의 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">6.3. 인공지능에서의 휴리스틱 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a">6.4. A* 알고리즘과 그 응용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#queens">6.5. 인공지능 알고리즘: 8-Queens 문제</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
