@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Session 2: 인공지능과 도구들 &#8212; AI 세상 속으로</title>
+    <title>인공지능의 유형들 &#8212; AI 세상 속으로</title>
   
   
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -49,9 +49,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -90,6 +90,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 2: 인공지능 활용사례" href="../week02/index.html" />
+    <link rel="prev" title="인공지능의 역사" href="session1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -99,10 +101,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -143,11 +144,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -185,9 +189,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 1: 인공지능 소개</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">인공지능의 역사</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">인공지능의 유형들</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week02/index.html">Week 2: 인공지능 활용사례</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -476,7 +481,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Session 2: 인공지능과 도구들</h1>
+    <h1>인공지능의 유형들</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -486,54 +491,37 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-and-data-science">1. 인공지능과 데이터 사이언스 (AI and Data Science)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">AI에서의 데이터의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터 사이언스: 기초</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI와 데이터 사이언스의 통합</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝: 핵심 요소</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>서론: 인공지능의 다양성과 중요성</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">1. <strong>AI 기본 개념 재고찰</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. <strong>AI 유형 이해의 중요성</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. <strong>핵심 특징과 차이점</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. <strong>AI 발전 전망</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-research-tools-and-frameworks">2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">데이터 과학자의 도구 상자</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">AI 연구에서의 클라우드 컴퓨팅</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 알고리즘 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">실제 애플리케이션에서의 AI 프레임워크</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">오픈 소스 협업</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>인공지능의 능력에 따른 분류</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-narrow-ai">1. <strong>인공 좁은 지능 (Artificial Narrow AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-general-intelligence-agi">2. <strong>인공 일반 지능 (Artificial General Intelligence, AGI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-superintelligence">3. <strong>인공 초지능 (Artificial Superintelligence)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. <strong>현재 연구와 한계</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. <strong>윤리적 고려사항</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-application-fields">3. 인공지능 적용 분야 (AI Application Fields)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-healthcare">AI in Healthcare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-automotive-industry">AI in Automotive Industry</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-finance">AI in Finance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-education">AI in Education</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-retail-and-e-commerce">AI in Retail and E-Commerce</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-smart-cities-and-urban-planning">AI in Smart Cities and Urban Planning</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-entertainment-and-media">AI in Entertainment and Media</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><strong>기능에 따른 인공지능 분류</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactive-machines">1. <strong>반응형 기계 (Reactive Machines)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-limited-memory-ai">2. <strong>제한된 기억력을 가진 AI (Limited Memory AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-theory-of-mind-ai">3. <strong>마음이론 AI (Theory of Mind AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-self-aware-ai">4. <strong>자아인식 AI (Self-Aware AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5. <strong>미래의 연구 및 전망</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges-of-ai-technologies">4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-bias-and-ethical-concerns">AI Bias and Ethical Concerns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-privacy-and-security">Data Privacy and Security</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explainability-and-transparency">Explainability and Transparency</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependence-and-automation-bias">Dependence and Automation Bias</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-integration">Scalability and Integration</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility-and-inclusivity">Accessibility and Inclusivity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><strong>인공지능 기술의 실용적 응용 분야</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1. <strong>컴퓨터 비전</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2. <strong>로봇공학</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3. <strong>전문가 시스템</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">4. <strong>산업에 미치는 영향</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-mathematics-for-ai">5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">통계학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">선형대수학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">미적분학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">확률론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">이산수학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">최적화 기법</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">요약</a></li>
 </ul>
             </nav>
         </div>
@@ -543,399 +531,245 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="session-2">
-<h1>Session 2: 인공지능과 도구들<a class="headerlink" href="#session-2" title="Permalink to this heading">#</a></h1>
-<p><strong>기본을 탐험하다: 인공지능과 그 도구들</strong> (Exploring the Fundamentals: AI and Its Tools)</p>
-<a class="reference internal image-reference" href="week01/figs/image-2.png"><img alt="week01/figs/image-2.png" class="align-center" src="week01/figs/image-2.png" style="width: 100%;" /></a>
-<p><strong>1. 인공지능과 데이터 사이언스 (AI and Data Science)</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>인공지능의 유형들<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p><strong>서론: 인공지능의 다양한 유형과 중요성</strong></p>
 <ul class="simple">
-<li><p>데이터 사이언스의 개념과 인공지능과의 관계</p></li>
-<li><p>데이터 처리 및 분석의 중요성</p></li>
-<li><p>인공지능에서 데이터 사이언스의 역할과 응용 사례</p></li>
+<li><p>인공지능의 기본 개념 재고찰</p></li>
+<li><p>능력과 기능성에 따른 AI의 다양한 유형 소개</p></li>
+<li><p>각 유형의 핵심적인 특징과 차이점 설명</p></li>
+<li><p>현재와 미래에 걸친 AI 유형의 발전 전망</p></li>
 </ul>
-<p><strong>2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)</strong></p>
+</li>
+<li><p><strong>인공지능의 능력에 따른 분류</strong></p>
 <ul class="simple">
-<li><p>주요 AI 프레임워크 소개 (예: TensorFlow, PyTorch)</p></li>
-<li><p>각 프레임워크의 특징과 장단점</p></li>
-<li><p>프레임워크 선택 기준과 사용 사례</p></li>
+<li><p>인공 좁은 지능 (Artificial Narrow AI)</p></li>
+<li><p>인공 일반 지능 (Artificial General Intelligence, AGI)</p></li>
+<li><p>인공 초지능 (Artificial Superintelligence)</p></li>
 </ul>
-<p><strong>3. 인공지능 적용 분야 (AI Application Fields)</strong></p>
+</li>
+<li><p><strong>인공지능의 기능적 분류</strong></p>
 <ul class="simple">
-<li><p>다양한 산업에서의 인공지능 적용 사례</p></li>
-<li><p>의료, 금융, 교육 등 특정 분야에서의 AI 활용</p></li>
-<li><p>인공지능의 사회적, 경제적 영향</p></li>
+<li><p>반응형 기계 (Reactive Machines)</p></li>
+<li><p>제한된 기억력을 가진 AI (Limited Memory AI)</p></li>
+<li><p>마음이론 AI (Theory of Mind AI)</p></li>
+<li><p>자아인식 AI (Self-Aware AI)</p></li>
 </ul>
-<p><strong>4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)</strong></p>
+</li>
+<li><p><strong>AI의 실용적 응용 분야</strong></p>
 <ul class="simple">
-<li><p>기술적 한계와 윤리적 도전</p></li>
-<li><p>AI의 미해결 문제와 미래 연구 방향</p></li>
-<li><p>인공지능의 안전성과 편향 문제</p></li>
+<li><p>컴퓨터 비전: 이미지 인식, 객체 추적의 현황과 전망</p></li>
+<li><p>로봇공학: 산업용 로봇, 의료 보조 로봇의 발전</p></li>
+<li><p>전문가 시스템: 데이터 분석, 의사 결정 지원 시스템의 중요성</p></li>
 </ul>
-<p><strong>5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)</strong></p>
-<ul class="simple">
-<li><p>인공지능 연구에 필수적인 수학 분야 소개</p></li>
-<li><p>통계학, 선형대수, 미적분학의 기초</p></li>
-<li><p>실제 AI 문제에 수학 적용 사례</p></li>
-</ul>
-<section id="ai-and-data-science">
-<h2>1. 인공지능과 데이터 사이언스 (AI and Data Science)<a class="headerlink" href="#ai-and-data-science" title="Permalink to this heading">#</a></h2>
-<section id="id1">
-<h3>서론<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-1-1.png"><img alt="week01/figs/image-2-1-1.png" class="align-center" src="week01/figs/image-2-1-1.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p><strong>인공지능</strong>과 <strong>데이터 사이언스</strong>의 교차점 탐험에 오신 것을 환영합니다. 이 두 분야는 독립적으로 존재하지만, 함께 기술 혁신과 창의적인 해결책을 만들어냅니다.</p></li>
-<li><p>AI는 인간 지능이 필요한 작업을 수행하는 기계를 만드는 것을 목표로 합니다.</p></li>
-<li><p>AI는 <strong>학습, 문제 해결, 의사 결정</strong>과 같은 다양한 기능을 포함합니다.</p></li>
-<li><p>이 강의에서는 AI와 데이터 사이언스가 어떻게 서로 보완하며 협력하는지에 대해 알아볼 것입니다.</p></li>
-</ul>
-</section>
-<section id="ai">
-<h3>AI에서의 데이터의 역할<a class="headerlink" href="#ai" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-1-2.png"><img alt="week01/figs/image-2-1-2.png" class="align-center" src="week01/figs/image-2-1-2.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI 시스템은 대량의 데이터를 사용하여 훈련됩니다. 이 데이터는 AI 알고리즘이 학습하고 정보에 기반한 결정을 내리는 데 필요한 정보를 제공합니다.</p></li>
-<li><p><strong>데이터</strong>는 AI가 세계를 이해하고 패턴을 인식하는 데 중요한 역할을 합니다.</p></li>
-<li><p>데이터 없이 AI는 효과적으로 작동할 수 없습니다.</p></li>
-<li><p>데이터는 <strong>통찰력</strong>과 <strong>지식</strong>을 추출하는 데 필요한 기본적인 요소입니다.</p></li>
-</ul>
-</section>
+</li>
+</ol>
 <section id="id2">
-<h3>데이터 사이언스: 기초<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-1-3.png"><img alt="week01/figs/image-2-1-3.png" class="align-center" src="week01/figs/image-2-1-3.png" style="width: 80%;" /></a>
+<h2><strong>서론: 인공지능의 다양성과 중요성</strong><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="ai">
+<h3>1. <strong>AI 기본 개념 재고찰</strong><a class="headerlink" href="#ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-1.jpeg"><img alt="../_images/image-2-1-1.jpeg" class="align-center" src="../_images/image-2-1-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>데이터 사이언스는 데이터에서 지식과 통찰력을 추출하는 다학제적 분야입니다.</p></li>
-<li><p><strong>통계적 방법, 데이터 마이닝, 예측 모델링</strong>과 같은 다양한 데이터 분석 기법이 포함됩니다.</p></li>
-<li><p>데이터 사이언스는 정보의 숨겨진 패턴을 발견하고 이해하는 데 중점을 둡니다.</p></li>
-<li><p>데이터 사이언스는 데이터를 <strong>가치 있는 정보</strong>로 전환하는 과정입니다.</p></li>
+<li><p>AI는 전통적 컴퓨팅 방식과 구별되는 현대 기술</p></li>
+<li><p>AI는 문제 해결, 결정 구조, 학습 능력을 포함</p></li>
+<li><p><strong>기계학습</strong>과 <strong>딥러닝</strong>이 AI의 핵심 구성 요소</p></li>
+<li><p>AI는 다양한 산업에 혁신을 가져왔음</p></li>
+<li><p>AI는 지속적으로 발전하고 있음</p></li>
 </ul>
 </section>
 <section id="id3">
-<h3>AI와 데이터 사이언스의 통합<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-1-4.png"><img alt="week01/figs/image-2-1-4.png" class="align-center" src="week01/figs/image-2-1-4.png" style="width: 80%;" /></a>
+<h3>2. <strong>AI 유형 이해의 중요성</strong><a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-2.jpeg"><img alt="../_images/image-2-1-2.jpeg" class="align-center" src="../_images/image-2-1-2.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>AI는 데이터 사이언스 기법을 사용하여 데이터를 처리하고 분석하며, 이는 지능형 시스템 개발에 중요합니다.</p></li>
-<li><p>데이터 사이언스는 AI에게 <strong>필수적인 통찰력</strong>을 제공합니다.</p></li>
-<li><p><strong>데이터 분석</strong>은 AI의 학습 과정에 필수적인 부분입니다.</p></li>
-<li><p>이 통합은 AI가 보다 정확하고 효과적인 결정을 내리는 데 도움을 줍니다.</p></li>
+<li><p>AI 유형을 구분하는 것은 그 <strong>능력과 한계</strong>를 이해하는 데 중요</p></li>
+<li><p>다양한 유형은 다른 <strong>응용 분야와 가능성</strong>을 가지고 있음</p></li>
+<li><p>이 분류는 AI의 미래 발전을 예측하는 데 도움을 줌</p></li>
+<li><p><strong>실용적 적용</strong>과 연구 방향에 영향을 미침</p></li>
 </ul>
 </section>
 <section id="id4">
-<h3>머신러닝: 핵심 요소<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-1-5.png"><img alt="week01/figs/image-2-1-5.png" class="align-center" src="week01/figs/image-2-1-5.png" style="width: 80%;" /></a>
+<h3>3. <strong>핵심 특징과 차이점</strong><a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-4.jpeg"><img alt="../_images/image-2-1-4.jpeg" class="align-center" src="../_images/image-2-1-4.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>머신러닝은 AI의 하위 집합으로, 데이터를 기반으로 학습하고 예측이나 결정을 내리는 알고리즘을 훈련시킵니다.</p></li>
-<li><p>머신러닝은 AI에게 <strong>자율적인 학습 능력</strong>을 부여합니다.</p></li>
-<li><p>머신러닝은 패턴 인식과 데이터 분석에 필수적입니다.</p></li>
-<li><p>이를 통해 AI는 <strong>더 정교하고 정확한</strong> 예측을 할 수 있습니다.</p></li>
+<li><p>각 유형은 <strong>독특한 특징과 한계</strong>를 가짐</p></li>
+<li><p>이러한 차이점이 <strong>실용적 응용</strong>에 어떻게 영향을 미치는지 알아야 함</p></li>
 </ul>
 </section>
-</section>
-<section id="ai-research-tools-and-frameworks">
-<h2>2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)<a class="headerlink" href="#ai-research-tools-and-frameworks" title="Permalink to this heading">#</a></h2>
 <section id="id5">
-<h3>서론<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-1.png"><img alt="week01/figs/image-2-2-1.png" class="align-center" src="week01/figs/image-2-2-1.png" style="width: 80%;" /></a>
+<h3>4. <strong>AI 발전 전망</strong><a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-5.jpeg"><img alt="../_images/image-2-1-5.jpeg" class="align-center" src="../_images/image-2-1-5.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>오늘은 <strong>인공지능 연구 도구 및 프레임워크</strong>의 중요한 세계에 대해 탐구합니다.</p></li>
-<li><p>이 도구들은 인공지능 개발의 근간을 이루며, 지능형 시스템을 만들기 위한 환경과 능력을 제공합니다.</p></li>
-<li><p>AI 연구 도구는 기초적인 통계 소프트웨어에서부터 고급 프레임워크로 발전해 왔습니다.</p></li>
-<li><p><strong>TensorFlow</strong>와 <strong>PyTorch</strong>는 현대의 가장 인기 있는 프레임워크 중 일부입니다.</p></li>
-<li><p>초기 도구들은 기능적으로 제한적이었지만, 현대의 프레임워크는 유연성, 확장성, 효율성을 제공합니다.</p></li>
+<li><p>AI는 미래에 어떻게 발전할 수 있는지 탐색</p></li>
+<li><p>현재 연구의 상태와 미래의 기술적 도전 과제를 논의</p></li>
 </ul>
+</section>
 </section>
 <section id="id6">
-<h3>데이터 과학자의 도구 상자<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-2.png"><img alt="week01/figs/image-2-2-2.png" class="align-center" src="week01/figs/image-2-2-2.png" style="width: 80%;" /></a>
+<h2><strong>인공지능의 능력에 따른 분류</strong><a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<section id="artificial-narrow-ai">
+<h3>1. <strong>인공 좁은 지능 (Artificial Narrow AI)</strong><a class="headerlink" href="#artificial-narrow-ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-1.jpeg"><img alt="../_images/image-2-2-1.jpeg" class="align-center" src="../_images/image-2-2-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>AI 연구에는 Python과 같은 프로그래밍 언어, 데이터 처리 유틸리티, 시각화 소프트웨어 등 다양한 도구가 필요합니다.</p></li>
-<li><p>Jupyter 노트북과 같은 도구는 실험과 문서화에 유용합니다.</p></li>
-<li><p>이러한 도구의 효과적인 사용은 AI 개발과 실험을 가속화합니다.</p></li>
-<li><p>오늘날의 AI 연구 환경에서 협업 도구도 중요한 역할을 합니다.</p></li>
-<li><p>이 도구들은 데이터 과학자들이 복잡한 AI 모델을 효과적으로 구축하고 실험할 수 있도록 도와줍니다.</p></li>
+<li><p><strong>특정 작업에 특화</strong>: Siri, Amazon Alexa 등과 같이 특정 작업 수행에 최적화된 AI</p></li>
+<li><p><strong>한정된 적용 범위</strong>: 효율적이지만 한정된 작업에만 적용 가능</p></li>
+<li><p><strong>현대 AI 응용 프로그램의 대다수</strong>: 대부분의 AI 응용 프로그램이 이 유형에 속함</p></li>
+<li><p><strong>높은 정확도와 속도</strong>: 우수한 성능을 보이지만 유연성은 부족</p></li>
+<li><p><strong>다양한 분야에서 활용</strong>: 의료, 금융, 고객 서비스 등 다양한 영역에서 사용</p></li>
+</ul>
+</section>
+<section id="artificial-general-intelligence-agi">
+<h3>2. <strong>인공 일반 지능 (Artificial General Intelligence, AGI)</strong><a class="headerlink" href="#artificial-general-intelligence-agi" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-2.jpeg"><img alt="../_images/image-2-2-2.jpeg" class="align-center" src="../_images/image-2-2-2.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>이론적 개념</strong>: 인간과 유사한 다양한 작업 수행 가능한 AI, 아직 실현되지 않음</p></li>
+<li><p><strong>자율적 학습과 문제 해결 능력</strong>: 인간 지능 모방, 다양한 상황에 적응 가능</p></li>
+<li><p><strong>인공지능 연구의 궁극적 목표</strong>: AGI 실현은 AI 연구의 중요한 목표 중 하나</p></li>
+<li><p><strong>기술적 한계와 도전</strong>: 현재 기술로는 실현이 어려움</p></li>
+</ul>
+</section>
+<section id="artificial-superintelligence">
+<h3>3. <strong>인공 초지능 (Artificial Superintelligence)</strong><a class="headerlink" href="#artificial-superintelligence" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-3.jpeg"><img alt="../_images/image-2-2-3.jpeg" class="align-center" src="../_images/image-2-2-3.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>인간 지능을 뛰어넘는 이론적 AI</strong>: 자아인식, 창의성, 사회적 능력 등을 포함할 수 있음</p></li>
+<li><p><strong>극적인 변화와 윤리적 고려사항</strong>: 인류의 미래에 큰 변화를 가져올 수 있음</p></li>
+<li><p><strong>완전히 추측적인 영역</strong>: 현재로서는 상상할 수 있는 최상위 단계의 AI</p></li>
 </ul>
 </section>
 <section id="id7">
-<h3>AI 연구에서의 클라우드 컴퓨팅<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-3.png"><img alt="week01/figs/image-2-2-3.png" class="align-center" src="week01/figs/image-2-2-3.png" style="width: 80%;" /></a>
+<h3>4. <strong>현재 연구와 한계</strong><a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-4.jpeg"><img alt="../_images/image-2-2-4.jpeg" class="align-center" src="../_images/image-2-2-4.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>클라우드 플랫폼은 강력한 컴퓨팅 리소스에 대한 접근을 제공함으로써 AI 연구에 혁명을 일으켰습니다.</p></li>
-<li><p>이들은 확장성과 접근성을 제공하여, 연구자들이 하드웨어 제한 없이 복잡한 모델을 작업할 수 있게 해줍니다.</p></li>
-<li><p>AWS, Google Cloud, Azure와 같은 클라우드 서비스는 현대 AI 연구에 필수적입니다.</p></li>
-<li><p>이러한 서비스는 전 세계적으로 자원을 공유하고 협업할 수 있는 기능을 제공합니다.</p></li>
-<li><p>클라우드 컴퓨팅은 연구자들이 어디서든 AI 실험을 수행할 수 있게 해줍니다.</p></li>
+<li><p><strong>기술적 도전 과제</strong>: AGI와 ASI 개발에 있어서의 데이터 처리, 알고리즘 개발, 하드웨어 한계</p></li>
+<li><p><strong>국제적 협력과 투자 필요</strong>: 발전을 위한 국제적인 협력과 자금 투자의 중요성</p></li>
+<li><p><strong>윤리적, 사회적 문제에 대한 지속적인 논의</strong>: 발전에 따른 윤리적, 사회적 영향 평가 필요</p></li>
 </ul>
 </section>
 <section id="id8">
-<h3>AI 알고리즘 비교<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-4.png"><img alt="week01/figs/image-2-2-4.png" class="align-center" src="week01/figs/image-2-2-4.png" style="width: 80%;" /></a>
+<h3>5. <strong>윤리적 고려사항</strong><a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-5.jpeg"><img alt="../_images/image-2-2-5.jpeg" class="align-center" src="../_images/image-2-2-5.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>서로 다른 AI 프로젝트는 각기 다른 알고리즘을 필요로 하며, 각 알고리즘은 고유의 장단점을 가지고 있습니다.</p></li>
-<li><p>결정 트리, 신경망, 서포트 벡터 머신 등은 주요 사용되는 알고리즘들입니다.</p></li>
-<li><p>이러한 차이점을 이해하는 것은 적합한 도구를 선택하는 데 중요합니다.</p></li>
-<li><p>TensorFlow와 PyTorch와 같은 프레임워크는 다양한 알고리즘을 지원합니다.</p></li>
-<li><p>알고리즘 선택은 프로젝트의 성공에 중대한 영향을 미칩니다.</p></li>
+<li><p><strong>고도로 발전된 AI의 윤리적 책임</strong>: 프라이버시, 안전성, 공정성 등에 대한 책임</p></li>
+<li><p><strong>법적, 도덕적 통제 필요성</strong>: AI의 자율성과 결정에 대한 적절한 통제 및 규제 필요</p></li>
+<li><p><strong>기술 오용 방지</strong>: AI 기술의 오용 방지 및 윤리적 사용 촉진 필요</p></li>
 </ul>
 </section>
+</section>
 <section id="id9">
-<h3>실제 애플리케이션에서의 AI 프레임워크<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-5.png"><img alt="week01/figs/image-2-2-5.png" class="align-center" src="week01/figs/image-2-2-5.png" style="width: 80%;" /></a>
+<h2><strong>기능에 따른 인공지능 분류</strong><a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<section id="reactive-machines">
+<h3>1. <strong>반응형 기계 (Reactive Machines)</strong><a class="headerlink" href="#reactive-machines" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-1.jpeg"><img alt="../_images/image-2-3-1.jpeg" class="align-center" src="../_images/image-2-3-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>AI 프레임워크는 연구용으로만 사용되는 것이 아니라, 다양한 산업 분야의 실제 애플리케이션에서 활발히 사용됩니다.</p></li>
-<li><p>의료, 금융, 자동차 산업 등 AI가 중요한 영향을 미치는 분야들입니다.</p></li>
-<li><p>이 프레임워크들은 AI 기반 솔루션으로 산업을 변혁하는 데 중요합니다.</p></li>
-<li><p>이들은 AI 연구를 실제 결과로 전환하는 데 필수적입니다.</p></li>
-<li><p>실제 환경에서의 프레임워크 적용은 AI의 실용성을 증명합니다.</p></li>
+<li><p><strong>현재 데이터 사용</strong>: IBM Deep Blue와 같이 현재 데이터에만 기반한 AI</p></li>
+<li><p><strong>과거 경험 무시</strong>: 과거의 경험을 기억하거나 활용하지 않음</p></li>
+<li><p><strong>단순 작업 효율성</strong>: 단순한 작업 수행에 효율적</p></li>
+<li><p><strong>적응성 부족</strong>: 환경 변화에 적응하지 못함</p></li>
+<li><p><strong>주요 사용 분야</strong>: 예측 및 패턴 인식</p></li>
+</ul>
+</section>
+<section id="ai-limited-memory-ai">
+<h3>2. <strong>제한된 기억력을 가진 AI (Limited Memory AI)</strong><a class="headerlink" href="#ai-limited-memory-ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-2.jpeg"><img alt="../_images/image-2-3-2.jpeg" class="align-center" src="../_images/image-2-3-2.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>단기적 결정 지원</strong>: ChatGPT, 자율 주행 차량 등 과거 데이터를 기반으로 결정 내림</p></li>
+<li><p><strong>진화하는 데이터 학습</strong>: 지속적으로 변화하는 데이터에 대응하여 학습</p></li>
+<li><p><strong>복잡한 작업 수행 가능</strong>: 더 복잡한 작업에 적용 가능</p></li>
+<li><p><strong>데이터 변화 이해</strong>: 시간 경과에 따른 데이터 변화 파악</p></li>
+</ul>
+</section>
+<section id="ai-theory-of-mind-ai">
+<h3>3. <strong>마음이론 AI (Theory of Mind AI)</strong><a class="headerlink" href="#ai-theory-of-mind-ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-3.jpeg"><img alt="../_images/image-2-3-3.jpeg" class="align-center" src="../_images/image-2-3-3.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>인간 감정 이해</strong>: 인간의 감정과 생각을 이해하는 이론적 AI</p></li>
+<li><p><strong>상호작용 개선 가능성</strong>: 인간과의 상호작용 개선에 사용될 수 있음</p></li>
+<li><p><strong>사회적 상호작용 및 감정 인식</strong>: 사회적 상호작용과 감정 인식에 중점을 둠</p></li>
+<li><p><strong>인간-AI 관계 혁신</strong>: 인간과 AI 관계에 새로운 혁신을 가져올 수 있음</p></li>
+</ul>
+</section>
+<section id="ai-self-aware-ai">
+<h3>4. <strong>자아인식 AI (Self-Aware AI)</strong><a class="headerlink" href="#ai-self-aware-ai" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-4.jpeg"><img alt="../_images/image-2-3-4.jpeg" class="align-center" src="../_images/image-2-3-4.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>자기 인식 능력</strong>: 자신의 내부 상태와 감정을 인식할 수 있는 이론적 AI</p></li>
+<li><p><strong>진보된 AI 형태</strong>: 현재 AI 연구에서 가장 진보된 형태로 여겨짐</p></li>
+<li><p><strong>사회적, 윤리적 도전</strong>: 미래의 사회적, 윤리적 문제 발생 가능성</p></li>
+<li><p><strong>인간 역할 재정의</strong>: 인간의 역할과 관계를 새롭게 재정의할 가능성</p></li>
 </ul>
 </section>
 <section id="id10">
-<h3>오픈 소스 협업<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-2-7.png"><img alt="week01/figs/image-2-2-7.png" class="align-center" src="week01/figs/image-2-2-7.png" style="width: 80%;" /></a>
+<h3>5. <strong>미래의 연구 및 전망</strong><a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-5.jpeg"><img alt="../_images/image-2-3-5.jpeg" class="align-center" src="../_images/image-2-3-5.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>AI 커뮤니티는 TensorFlow와 PyTorch와 같은 오픈 소스 협업을 통해 번성합니다.</p></li>
-<li><p>이러한 협업은 혁신을 가속화하고 복잡한 문제를 더 효율적으로 해결하는 데 도움이 됩니다.</p></li>
-<li><p>오픈 소스 도구는 더 큰 투명성과 지식 공유를 가능하게 합니다.</p></li>
-<li><p>이들은 AI 분야의 발전에 필수적인 협력 정신을 구현합니다.</p></li>
-<li><p>오픈 소스는 지식과 경험을 공유하는 플랫폼으로서 AI 연구의 진보를 촉진합니다.</p></li>
+<li><p><strong>미래 발전 가능성 탐구</strong>: 기능적 AI의 미래 발전 가능성에 대한 탐구</p></li>
+<li><p><strong>기술적 한계와 도전</strong>: 현재 연구가 직면한 기술적 한계와 도전 과제</p></li>
+<li><p><strong>능력 확장 연구</strong>: AI 능력의 큰 확장을 위한 연구 중요성</p></li>
+<li><p><strong>인간-AI 상호작용 개선</strong>: 인간과 AI 간의 상호작용을 개선하는 데 중요한 역할</p></li>
+<li><p><strong>사회적 영향력</strong>: 새로운 기능적 AI 개발이 사회 전반에 미칠 영향</p></li>
 </ul>
 </section>
 </section>
-<section id="ai-application-fields">
-<h2>3. 인공지능 적용 분야 (AI Application Fields)<a class="headerlink" href="#ai-application-fields" title="Permalink to this heading">#</a></h2>
 <section id="id11">
-<h3>서론<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>다양한 산업 분야에서 인공지능(AI)의 변혁적인 영향력을 탐구합니다.</p></li>
-<li><p>AI의 다재다능함은 효율성, 정확성, 혁신성을 강화하며 여러 분야에서 게임 체인저 역할을 합니다.</p></li>
-<li><p>AI는 기술 발전뿐만 아니라 산업 전반에 걸쳐 혁신을 촉진합니다.</p></li>
-<li><p>오늘날 AI는 생활의 모든 영역에서 중요한 역할을 하고 있습니다.</p></li>
-<li><p>이 강의에서는 AI가 어떻게 각각의 분야를 변화시키고 있는지 살펴볼 것입니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-healthcare">
-<h3>AI in Healthcare<a class="headerlink" href="#ai-in-healthcare" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-1.png"><img alt="week01/figs/image-2-3-1.png" class="align-center" src="week01/figs/image-2-3-1.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI는 진단, 치료 계획 수립, 환자 관리 등 의료 분야에서 혁명적인 변화를 가져오고 있습니다.</p></li>
-<li><p>의료 영상 분석, 환자 결과 예측, 수술 보조 등에 AI가 사용됩니다.</p></li>
-<li><p>AI는 개인의 유전적 프로필에 맞춘 맞춤형 의약품을 제공하는 데 도움을 줍니다.</p></li>
-<li><p>환자 모니터링 시스템 및 로봇 보조를 통해 환자 관리를 향상시킵니다.</p></li>
-<li><p>AI는 의학 과학의 중요한 발전을 약속합니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-automotive-industry">
-<h3>AI in Automotive Industry<a class="headerlink" href="#ai-in-automotive-industry" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-2.png"><img alt="week01/figs/image-2-3-2.png" class="align-center" src="week01/figs/image-2-3-2.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>자동차 산업에서 AI는 자율 주행 차량과 스마트 제조에 중요한 역할을 합니다.</p></li>
-<li><p>자율 주행 차량은 도로 안전성과 효율성을 향상시킵니다.</p></li>
-<li><p>예측 유지보수를 통해 다운타임을 줄이고 비용을 절감합니다.</p></li>
-<li><p>공급망 최적화 및 제조 공정 향상에도 AI가 사용됩니다.</p></li>
-<li><p>AI의 통합은 스마트하고 연결된 교통의 미래로 이끕니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-finance">
-<h3>AI in Finance<a class="headerlink" href="#ai-in-finance" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-3.png"><img alt="week01/figs/image-2-3-3.png" class="align-center" src="week01/figs/image-2-3-3.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>금융 분야에서 AI는 자동 거래, 사기 탐지, 위험 관리를 통해 변화를 가져옵니다.</p></li>
-<li><p>대량의 금융 데이터를 분석하여 투자 통찰력과 시장 동향을 제공합니다.</p></li>
-<li><p>실시간 사기 탐지에 AI 기반 알고리즘을 사용하여 보안을 강화합니다.</p></li>
-<li><p>맞춤형 은행 서비스를 제공하여 고객에게 맞춤형 금융 조언을 제공합니다.</p></li>
-<li><p>AI의 분석 능력은 금융을 더 효율적이고 안전하게 만듭니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-education">
-<h3>AI in Education<a class="headerlink" href="#ai-in-education" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-4.png"><img alt="week01/figs/image-2-3-4.png" class="align-center" src="week01/figs/image-2-3-4.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI는 학습 경험을 개인화하고, 적응형 학습 플랫폼과 가상 튜터를 제공합니다.</p></li>
-<li><p>교육자에게 데이터 기반 통찰력을 제공하여 교육 전략을 개선하는 데 도움을 줍니다.</p></li>
-<li><p>AI는 행정적인 작업을 자동화하여 교육자가 교육에 더 많은 시간을 할애할 수 있게 합니다.</p></li>
-<li><p>AI는 언어 학습 및 특수 교육에서 적응형 기술을 통해 지원합니다.</p></li>
-<li><p>AI의 사용은 학습 과정을 더 접근 가능하고 맞춤화된 방식으로 변형시킵니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-retail-and-e-commerce">
-<h3>AI in Retail and E-Commerce<a class="headerlink" href="#ai-in-retail-and-e-commerce" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-5.png"><img alt="week01/figs/image-2-3-5.png" class="align-center" src="week01/figs/image-2-3-5.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI는 소매 및 전자 상거래에서 고객 경험을 개선하고, 맞춤형 추천 및 재고 관리를 통해 향상시킵니다.</p></li>
-<li><p>공급망을 최적화하고, 수요를 예측하며, 낭비를 줄입니다.</p></li>
-<li><p>AI 기반 챗봇은 효율적인 고객 서비스를 제공하여 참여도를 높입니다.</p></li>
-<li><p>타겟 마케팅 및 판매 예측에서도 중요한 역할을 합니다.</p></li>
-<li><p>소매 분야는 AI 덕분에 더 고객 중심적이고 효율적으로 변모하고 있습니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-smart-cities-and-urban-planning">
-<h3>AI in Smart Cities and Urban Planning<a class="headerlink" href="#ai-in-smart-cities-and-urban-planning" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-6.png"><img alt="week01/figs/image-2-3-6.png" class="align-center" src="week01/figs/image-2-3-6.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI는 교통 시스템 관리, 공공 서비스 최적화, 지속 가능성 노력 강화 등 스마트 도시 개발에 기여합니다.</p></li>
-<li><p>에너지 사용을 최적화하고 환경적 영향을 줄이는 데 도움을 줍니다.</p></li>
-<li><p>데이터 분석 및 예측 모델링을 통해 더 나은 도시 계획을 가능하게 합니다.</p></li>
-<li><p>스마트 인프라를 통해 공공 안전과 편의를 향상시킵니다.</p></li>
-<li><p>AI의 도시 개발 통합은 더 지속 가능하고 효율적인 도시로 이끕니다.</p></li>
-</ul>
-</section>
-<section id="ai-in-entertainment-and-media">
-<h3>AI in Entertainment and Media<a class="headerlink" href="#ai-in-entertainment-and-media" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-3-7.png"><img alt="week01/figs/image-2-3-7.png" class="align-center" src="week01/figs/image-2-3-7.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI는 콘텐츠를 개인화하고 사용자 경험을 향상시켜 엔터테인먼트를 변화시킵니다.</p></li>
-<li><p>시청자 선호도를 분석하여 영화 및 쇼 추천에 사용됩니다.</p></li>
-<li><p>콘텐츠 생성에서 관객 참여를 최적화하기 위해 사용됩니다.</p></li>
-<li><p>관객 분석을 통해 미디어 제작자에게 통찰력을 제공합니다.</p></li>
-<li><p>AI 덕분에 엔터테인먼트 산업은 더욱 창의적이고 사용자 중심적으로 변화하고 있습니다.</p></li>
-</ul>
-</section>
-</section>
-<section id="limitations-and-challenges-of-ai-technologies">
-<h2>4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)<a class="headerlink" href="#limitations-and-challenges-of-ai-technologies" title="Permalink to this heading">#</a></h2>
+<h2><strong>인공지능 기술의 실용적 응용 분야</strong><a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
 <section id="id12">
-<h3>서론<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>1. <strong>컴퓨터 비전</strong><a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-1.jpeg"><img alt="../_images/image-2-4-1.jpeg" class="align-center" src="../_images/image-2-4-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>현재 인공지능(AI) 기술이 직면한 <strong>한계와 도전 과제</strong>에 대해 논의합니다.</p></li>
-<li><p>이러한 도전 과제들은 AI 시스템의 개발과 배포를 형성하는 데 중요한 역할을 합니다.</p></li>
-<li><p>AI의 한계를 이해하는 것은 그 가능성을 최대화하는 데 필수적입니다.</p></li>
-<li><p>AI 기술의 발전과 함께 이러한 도전 과제를 해결하는 것이 중요합니다.</p></li>
-<li><p>오늘 강의에서는 AI가 직면한 주요 문제들을 살펴볼 것입니다.</p></li>
+<li><p><strong>응용 분야</strong>: 이미지 인식, 객체 추적 등에 활용</p></li>
+<li><p><strong>실시간 데이터 처리</strong>: 데이터 분석을 통한 실시간 응용</p></li>
+<li><p><strong>다양한 적용</strong>: 의료, 보안, 엔터테인먼트 분야에서 사용</p></li>
+<li><p><strong>능력</strong>: 고급 패턴 인식과 분류 능력 보유</p></li>
+<li><p><strong>지속적 발전</strong>: 기술의 지속적인 발전과 혁신</p></li>
 </ul>
 </section>
-<section id="ai-bias-and-ethical-concerns">
-<h3>AI Bias and Ethical Concerns<a class="headerlink" href="#ai-bias-and-ethical-concerns" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-1.png"><img alt="week01/figs/image-2-4-1.png" class="align-center" src="week01/figs/image-2-4-1.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI 시스템은 훈련 데이터에 존재하는 <strong>편향</strong>을 물려받을 수 있으며, 이는 불공정하거나 비윤리적인 결과를 초래할 수 있습니다.</p></li>
-<li><p>이러한 편향은 고용, 법 집행, 대출 승인 등 중요한 영역의 의사 결정에 영향을 미칠 수 있습니다.</p></li>
-<li><p>다양한 데이터셋과 지속적인 모니터링을 통해 이러한 편향을 해결해야 합니다.</p></li>
-<li><p>AI 개발에서 윤리적 고려는 해를 피하고 공정성을 보장하기 위해 필수적입니다.</p></li>
-</ul>
-</section>
-<section id="data-privacy-and-security">
-<h3>Data Privacy and Security<a class="headerlink" href="#data-privacy-and-security" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-2.png"><img alt="week01/figs/image-2-4-2.png" class="align-center" src="week01/figs/image-2-4-2.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI 시스템은 종종 민감한 개인 데이터를 다루며, 이로 인해 <strong>프라이버시와 보안에 대한 우려</strong>가 증가합니다.</p></li>
-<li><p>데이터 유출 위협과 AI를 이용한 감시의 오남용 가능성이 큽니다.</p></li>
-<li><p>데이터 보호를 보장하고 강력한 보안 조치를 구현하는 것이 필수적입니다.</p></li>
-<li><p>AI를 활용하면서 개인 프라이버시를 보호하는 균형을 맞추는 것이 주요한 도전 과제입니다.</p></li>
-</ul>
-</section>
-<section id="explainability-and-transparency">
-<h3>Explainability and Transparency<a class="headerlink" href="#explainability-and-transparency" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-3.png"><img alt="week01/figs/image-2-4-3.png" class="align-center" src="week01/figs/image-2-4-3.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>많은 AI 시스템은 <strong>설명 가능성이 부족</strong>하여, 그들의 의사 결정 과정을 이해하기 어렵습니다.</p></li>
-<li><p>AI의 “블랙 박스” 성격은 특히 중요한 응용 분야에서 신뢰 문제를 야기할 수 있습니다.</p></li>
-<li><p>AI를 더 해석 가능하고 투명하게 만들기 위한 노력이 계속되고 있습니다.</p></li>
-<li><p>설명 가능성은 AI 시스템의 책임감과 신뢰성을 위해 필수적입니다.</p></li>
-</ul>
-</section>
-<section id="dependence-and-automation-bias">
-<h3>Dependence and Automation Bias<a class="headerlink" href="#dependence-and-automation-bias" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-4.png"><img alt="week01/figs/image-2-4-4.png" class="align-center" src="week01/figs/image-2-4-4.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI에 대한 <strong>과도한 의존</strong>은 자동화 편향으로 이어질 수 있으며, 이는 인간이 AI 결정을 우선시하게 만듭니다.</p></li>
-<li><p>AI 시스템이 실패하거나 오류를 범할 때, 이러한 의존성은 문제가 될 수 있습니다.</p></li>
-<li><p>AI 지원과 인간 의사 결정 간의 균형을 유지하는 것이 중요합니다.</p></li>
-<li><p>사용자들에게 AI의 한계를 교육하는 것은 이 위험을 완화하는 데 중요합니다.</p></li>
-</ul>
-</section>
-<section id="scalability-and-integration">
-<h3>Scalability and Integration<a class="headerlink" href="#scalability-and-integration" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-5.png"><img alt="week01/figs/image-2-4-5.png" class="align-center" src="week01/figs/image-2-4-5.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>기존 시스템에 AI를 통합하는 것은 호환성 및 확장성 문제로 인해 도전적일 수 있습니다.</p></li>
-<li><p>AI 시스템은 다양한 환경과 요구 사항에 맞게 확장 가능하고 적응 가능해야 합니다.</p></li>
-<li><p>기술적 및 인프라 장벽을 극복하는 것은 성공적인 AI 구현의 핵심입니다.</p></li>
-<li><p>효과적인 통합은 AI 개발자, 이해관계자 및 최종 사용자 간의 협력을 필요로 합니다.</p></li>
-</ul>
-</section>
-<section id="accessibility-and-inclusivity">
-<h3>Accessibility and Inclusivity<a class="headerlink" href="#accessibility-and-inclusivity" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-4-7.png"><img alt="week01/figs/image-2-4-7.png" class="align-center" src="week01/figs/image-2-4-7.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>모든 사용자가 배경이나 능력에 관계없이 AI 기술을 접근하고 사용할 수 있도록 하는 것은 도전 과제입니다.</p></li>
-<li><p>AI 도구와 인터페이스는 종종 다양한 사용자 요구를 고려하지 않습니다.</p></li>
-<li><p>범용 디자인 원칙에 중점을 두고 AI를 개발하는 것이 필수적입니다.</p></li>
-<li><p>포괄성은 사용자 경험을 향상시킬 뿐만 아니라 AI의 영향력을 확대합니다.</p></li>
-</ul>
-</section>
-</section>
-<section id="basic-mathematics-for-ai">
-<h2>5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)<a class="headerlink" href="#basic-mathematics-for-ai" title="Permalink to this heading">#</a></h2>
 <section id="id13">
-<h3>서론<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<h3>2. <strong>로봇공학</strong><a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-2.jpeg"><img alt="../_images/image-2-4-2.jpeg" class="align-center" src="../_images/image-2-4-2.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>수학은 인공지능(AI)을 이해하고 개발하는 데 필수적인 기초입니다.</p></li>
-<li><p>AI에 필수적인 핵심 수학 개념들을 탐구할 것입니다.</p></li>
-<li><p>AI 알고리즘의 설계와 개선에 수학적 지식이 중요합니다.</p></li>
-<li><p>AI의 다양한 기능과 알고리즘의 이해에 수학이 기본적인 역할을 합니다.</p></li>
-<li><p>이 강의에서는 AI에 적용되는 주요 수학 분야들을 다룰 것입니다.</p></li>
+<li><p><strong>적용 분야</strong>: 산업용 로봇, 의료 보조 로봇 등에 적용</p></li>
+<li><p><strong>자율성과 효율성</strong>: AI를 통한 로봇의 자율성 및 효율성 강화</p></li>
+<li><p><strong>일상 생활 적용</strong>: 스마트 홈 기기 등 일상생활에서의 활용</p></li>
+<li><p><strong>작업 수행 능력</strong>: 다양한 환경에서의 효율적 작업 수행</p></li>
+<li><p><strong>노동 보조 및 향상</strong>: 인간 노동의 보조 및 효율성 향상</p></li>
 </ul>
 </section>
 <section id="id14">
-<h3>통계학<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-1.png"><img alt="week01/figs/image-2-5-1.png" class="align-center" src="week01/figs/image-2-5-1.png" style="width: 80%;" /></a>
+<h3>3. <strong>전문가 시스템</strong><a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-3.jpeg"><img alt="../_images/image-2-4-3.jpeg" class="align-center" src="../_images/image-2-4-3.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>통계학은 데이터 이해, 예측, AI 의사결정 과정에 중요합니다.</p></li>
-<li><p><strong>확률 분포, 평균, 중앙값, 분산, 표준편차</strong> 등의 개념을 포함합니다.</p></li>
-<li><p>데이터의 패턴과 추세 분석은 AI 모델 훈련의 기본입니다.</p></li>
-<li><p>AI 모델 검증을 위해 통계적 유의성과 가설 검정 이해가 중요합니다.</p></li>
+<li><p><strong>응용 분야</strong>: 데이터 분석 및 의사결정 지원</p></li>
+<li><p><strong>지식 모방</strong>: 인간 전문가의 지식을 모방하여 문제 해결</p></li>
+<li><p><strong>핵심 역할</strong>: 비즈니스, 금융, 의료 분야에서 중요한 역할 수행</p></li>
+<li><p><strong>효율적 분석</strong>: 복잡한 패턴과 경향의 효율적 분석</p></li>
+<li><p><strong>지식 기반 결정</strong>: 지식 기반의 의사결정 가능</p></li>
 </ul>
 </section>
 <section id="id15">
-<h3>선형대수학<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-2.png"><img alt="week01/figs/image-2-5-2.png" class="align-center" src="week01/figs/image-2-5-2.png" style="width: 80%;" /></a>
+<h3>4. <strong>산업에 미치는 영향</strong><a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-4.jpeg"><img alt="../_images/image-2-4-4.jpeg" class="align-center" src="../_images/image-2-4-4.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>선형대수학, 특히 <strong>행렬과 벡터</strong>는 기계 학습 및 신경망에서 중요합니다.</p></li>
-<li><p>행렬 곱셈과 같은 연산은 딥러닝 알고리즘에서 필수적입니다.</p></li>
-<li><p>고유값과 고유벡터는 데이터 변환을 이해하는 데 중요합니다.</p></li>
-<li><p>선형대수학은 AI 알고리즘의 계산 효율성을 최적화하는 데 사용됩니다.</p></li>
+<li><p><strong>산업 혁신</strong>: 다양한 산업에 AI를 통한 혁신 및 변화</p></li>
+<li><p><strong>생산성 및 효율성 향상</strong>: 생산성과 효율성의 증대</p></li>
+<li><p><strong>직업 및 기회 창출</strong>: 새로운 직업과 기회의 창출</p></li>
+<li><p><strong>소비자 경험 개선</strong>: 소비자 경험 및 서비스의 질적 향상</p></li>
+<li><p><strong>경제적 가치 증대</strong>: AI의 발전이 경제적 가치를 높일 잠재력</p></li>
 </ul>
+</section>
 </section>
 <section id="id16">
-<h3>미적분학<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-3.png"><img alt="week01/figs/image-2-5-3.png" class="align-center" src="week01/figs/image-2-5-3.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>미적분학, 특히 <strong>도함수와 적분</strong>은 AI의 최적화 문제에서 중요한 역할을 합니다.</p></li>
-<li><p>경사 하강법 알고리즘에 사용되며, AI 모델의 오류를 최소화하는 데 도움이 됩니다.</p></li>
-<li><p>변화율과 누적 이해는 시간에 따라 적응하는 AI 알고리즘에 필수적입니다.</p></li>
-<li><p>머신러닝 훈련 알고리즘 개발과 이해에 미적분학이 중요합니다.</p></li>
-</ul>
-</section>
-<section id="id17">
-<h3>확률론<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-4.png"><img alt="week01/figs/image-2-5-4.png" class="align-center" src="week01/figs/image-2-5-4.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>확률론은 AI에서 예측과 결정을 내리는 데 기본적입니다.</p></li>
-<li><p><strong>베이즈 정리, 확률 분포, 확률 변수</strong> 등의 개념이 포함됩니다.</p></li>
-<li><p>확률은 AI 예측의 불확실성과 변동성을 이해하는 데 도움을 줍니다.</p></li>
-<li><p>자연어 처리 및 로보틱스와 같은 분야에서 특히 중요합니다.</p></li>
-</ul>
-</section>
-<section id="id18">
-<h3>이산수학<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-5.png"><img alt="week01/figs/image-2-5-5.png" class="align-center" src="week01/figs/image-2-5-5.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>이산수학, 특히 <strong>알고리즘과 그래프 이론</strong>은 AI 문제를 구조화하고 해결하는 데 필수적입니다.</p></li>
-<li><p>알고리즘 설계, 복잡도 분석, AI 논리 이해에 사용됩니다.</p></li>
-<li><p>그래프와 트리와 같은 이산 구조는 경로 찾기 및 네트워크 분석과 같은 AI 솔루션에 중요합니다.</p></li>
-<li><p>이산수학은 효율적이고 효과적인 AI 알고리즘 설계에 필요한 도구를 제공합니다.</p></li>
-</ul>
-</section>
-<section id="id19">
-<h3>최적화 기법<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="week01/figs/image-2-5-6.png"><img alt="week01/figs/image-2-5-6.png" class="align-center" src="week01/figs/image-2-5-6.png" style="width: 80%;" /></a>
-<ul class="simple">
-<li><p>AI에서 성능과 정확성을 향상시키기 위한 최적화 기법이 중요합니다.</p></li>
-<li><p><strong>경사 하강법, 비용 함수</strong>와 같은 개념은 AI 모델 조정에 핵심적입니다.</p></li>
-<li><p>최적화는 원하는 출력을 달성하기 위해 AI 모델의 최적 파라미터를 찾는 것을 포함합니다.</p></li>
-<li><p>효율적인 AI 모델 훈련과 더 나은 결과 달성을 위해 필수적입니다.</p></li>
-</ul>
-</section>
+<h2>요약<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-2-wrapup.jpeg"><img alt="../_images/image-2-wrapup.jpeg" class="align-center" src="../_images/image-2-wrapup.jpeg" style="width: 90%;" /></a>
+<ol class="arabic simple">
+<li><p><strong>인공 좁은 지능 (Artificial Narrow AI)</strong>: 특정 작업에 최적화된 AI로, 현대 AI 응용 프로그램의 대부분을 차지합니다. 높은 정확도와 속도를 가지나, 유연성은 부족합니다.</p></li>
+<li><p><strong>인공 일반 지능 (Artificial General Intelligence, AGI)</strong>: 인간과 유사한 다양한 작업을 수행할 수 있는 이론적 AI로, 현재까지 실현되지 않았으나 AI 연구의 궁극적 목표 중 하나입니다.</p></li>
+<li><p><strong>인공 초지능 (Artificial Superintelligence)</strong>: 인간의 지능을 뛰어넘는 이론적 AI로, 자아인식, 창의성, 사회적 능력 등을 포함할 수 있으며, 인류의 미래에 극적인 변화를 가져올 수 있습니다.</p></li>
+<li><p><strong>현재 연구와 한계</strong>: AGI와 ASI는 여전히 많은 기술적 도전을 안고 있으며, 데이터 처리, 알고리즘 개발, 하드웨어 한계 등이 주요 문제입니다.</p></li>
+<li><p><strong>윤리적 고려사항</strong>: 고도로 발전된 AI는 윤리적 책임을 요구하며, 프라이버시, 안전성, 공정성 문제가 중요합니다.</p></li>
+</ol>
 </section>
 </section>
 
@@ -969,6 +803,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="session1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">인공지능의 역사</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../week02/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 2: 인공지능 활용사례</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -978,60 +830,44 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-and-data-science">1. 인공지능과 데이터 사이언스 (AI and Data Science)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">AI에서의 데이터의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터 사이언스: 기초</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI와 데이터 사이언스의 통합</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝: 핵심 요소</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>서론: 인공지능의 다양성과 중요성</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">1. <strong>AI 기본 개념 재고찰</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. <strong>AI 유형 이해의 중요성</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. <strong>핵심 특징과 차이점</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. <strong>AI 발전 전망</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-research-tools-and-frameworks">2. 인공지능 연구 도구 및 프레임워크 (AI Research Tools and Frameworks)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">데이터 과학자의 도구 상자</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">AI 연구에서의 클라우드 컴퓨팅</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 알고리즘 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">실제 애플리케이션에서의 AI 프레임워크</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">오픈 소스 협업</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>인공지능의 능력에 따른 분류</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-narrow-ai">1. <strong>인공 좁은 지능 (Artificial Narrow AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-general-intelligence-agi">2. <strong>인공 일반 지능 (Artificial General Intelligence, AGI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-superintelligence">3. <strong>인공 초지능 (Artificial Superintelligence)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. <strong>현재 연구와 한계</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. <strong>윤리적 고려사항</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-application-fields">3. 인공지능 적용 분야 (AI Application Fields)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-healthcare">AI in Healthcare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-automotive-industry">AI in Automotive Industry</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-finance">AI in Finance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-education">AI in Education</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-retail-and-e-commerce">AI in Retail and E-Commerce</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-smart-cities-and-urban-planning">AI in Smart Cities and Urban Planning</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-entertainment-and-media">AI in Entertainment and Media</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><strong>기능에 따른 인공지능 분류</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactive-machines">1. <strong>반응형 기계 (Reactive Machines)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-limited-memory-ai">2. <strong>제한된 기억력을 가진 AI (Limited Memory AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-theory-of-mind-ai">3. <strong>마음이론 AI (Theory of Mind AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-self-aware-ai">4. <strong>자아인식 AI (Self-Aware AI)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5. <strong>미래의 연구 및 전망</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges-of-ai-technologies">4. 인공지능 기술의 한계 및 도전 과제 (Limitations and Challenges of AI Technologies)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-bias-and-ethical-concerns">AI Bias and Ethical Concerns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-privacy-and-security">Data Privacy and Security</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explainability-and-transparency">Explainability and Transparency</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependence-and-automation-bias">Dependence and Automation Bias</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-integration">Scalability and Integration</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility-and-inclusivity">Accessibility and Inclusivity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><strong>인공지능 기술의 실용적 응용 분야</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1. <strong>컴퓨터 비전</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2. <strong>로봇공학</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3. <strong>전문가 시스템</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">4. <strong>산업에 미치는 영향</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-mathematics-for-ai">5. 인공지능을 위한 기초 수학 지식 (Basic Mathematics for AI)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">서론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">통계학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">선형대수학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">미적분학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">확률론</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">이산수학</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">최적화 기법</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">요약</a></li>
 </ul>
   </nav></div>
 
@@ -1080,8 +916,8 @@ By 김성진, 이영준, 장용준
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
