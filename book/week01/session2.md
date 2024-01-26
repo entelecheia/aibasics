@@ -1,31 +1,5 @@
 # 인공지능의 유형들
 
-1. **서론: 인공지능의 다양한 유형과 중요성**
-
-   - 인공지능의 기본 개념 재고찰
-   - 능력과 기능성에 따른 AI의 다양한 유형 소개
-   - 각 유형의 핵심적인 특징과 차이점 설명
-   - 현재와 미래에 걸친 AI 유형의 발전 전망
-
-2. **인공지능의 능력에 따른 분류**
-
-   - 인공 좁은 지능 (Artificial Narrow AI)
-   - 인공 일반 지능 (Artificial General Intelligence, AGI)
-   - 인공 초지능 (Artificial Superintelligence)
-
-3. **인공지능의 기능적 분류**
-
-   - 반응형 기계 (Reactive Machines)
-   - 제한된 기억력을 가진 AI (Limited Memory AI)
-   - 마음이론 AI (Theory of Mind AI)
-   - 자아인식 AI (Self-Aware AI)
-
-4. **AI의 실용적 응용 분야**
-
-   - 컴퓨터 비전: 이미지 인식, 객체 추적의 현황과 전망
-   - 로봇공학: 산업용 로봇, 의료 보조 로봇의 발전
-   - 전문가 시스템: 데이터 분석, 의사 결정 지원 시스템의 중요성
-
 ## **인공지능의 다양성과 중요성**
 
 ### 1. **AI 기본 개념 재고찰**
@@ -259,6 +233,27 @@
 ```
 
 1. **인공지능의 다양한 유형과 중요성**
+
+   - 인공지능의 기본 개념 재고찰
+   - 능력과 기능성에 따른 AI의 다양한 유형 소개
+   - 각 유형의 핵심적인 특징과 차이점 설명
+   - 현재와 미래에 걸친 AI 유형의 발전 전망
+
 2. **인공지능의 능력에 따른 분류**
+
+   - 인공 좁은 지능 (Artificial Narrow AI)
+   - 인공 일반 지능 (Artificial General Intelligence, AGI)
+   - 인공 초지능 (Artificial Superintelligence)
+
 3. **인공지능의 기능적 분류**
+
+   - 반응형 기계 (Reactive Machines)
+   - 제한된 기억력을 가진 AI (Limited Memory AI)
+   - 마음이론 AI (Theory of Mind AI)
+   - 자아인식 AI (Self-Aware AI)
+
 4. **AI의 실용적 응용 분야**
+
+   - 컴퓨터 비전: 이미지 인식, 객체 추적의 현황과 전망
+   - 로봇공학: 산업용 로봇, 의료 보조 로봇의 발전
+   - 전문가 시스템: 데이터 분석, 의사 결정 지원 시스템의 중요성
