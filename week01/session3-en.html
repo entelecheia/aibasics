@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Session 1 &#8212; AI 세상 속으로</title>
+    <title>Problem Solving and Search Strategies in AI &#8212; AI 세상 속으로</title>
   
   
   
@@ -86,12 +86,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'week06/session1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week01/session3-en';</script>
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Session 2" href="session2.html" />
-    <link rel="prev" title="Week 6: 추천시스템" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,6 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -189,11 +189,11 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../week01/index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../week01/session1.html">인공지능의 역사</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../week01/session2.html">인공지능의 유형들</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../week01/session3.html">인공지능 문제 해결 및 탐색전략</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">인공지능의 역사</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">인공지능의 유형들</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session3.html">인공지능 문제 해결 및 탐색전략</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week02/index.html">Week 2: 인공지능 활용사례</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -220,10 +220,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../week05/lab.html">Lab</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 6: 추천시스템</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Session 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week06/index.html">Week 6: 추천시스템</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week06/session1.html">Session 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week06/session2.html">Session 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week06/lab.html">Lab</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week07/index.html">Week 7: 군집분석</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -351,7 +351,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week06/session1.md" target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week01/session3-en.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek06/session1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek01/session3-en.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -398,7 +398,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/week06/session1.md" target="_blank"
+      <li><a href="../_sources/week01/session3-en.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -469,7 +469,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -480,11 +482,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Session 1</h1>
+    <h1>Problem Solving and Search Strategies in AI</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-intelligence-and-problem-solving">1. Artificial Intelligence and Problem Solving</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-approaches-to-problem-solving">2. Key Approaches to Problem Solving</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-strategies">3. Problem Solving Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-based-ai-and-logic">4. Rule-Based AI and Logic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-strategies">5. Search Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-algorithms">6. Search Algorithms</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -494,8 +509,176 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="session-1">
-<h1>Session 1<a class="headerlink" href="#session-1" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-solving-and-search-strategies-in-ai">
+<h1>Problem Solving and Search Strategies in AI<a class="headerlink" href="#problem-solving-and-search-strategies-in-ai" title="Permalink to this heading">#</a></h1>
+<section id="artificial-intelligence-and-problem-solving">
+<h2>1. Artificial Intelligence and Problem Solving<a class="headerlink" href="#artificial-intelligence-and-problem-solving" title="Permalink to this heading">#</a></h2>
+<p><strong>1.1. Comparison Between Human and AI Problem Solving</strong></p>
+<ul class="simple">
+<li><p>Overview of how AI and humans approach problems differently.</p></li>
+<li><p>Discussion on AI’s data-driven approach versus human intuition.</p></li>
+</ul>
+<p><strong>1.2. Importance of Problem Solving in the AI Era</strong></p>
+<ul class="simple">
+<li><p>Explaining the growing role of AI in complex problem-solving scenarios.</p></li>
+<li><p>Examples of AI applications in healthcare, finance, and other industries.</p></li>
+</ul>
+<p><strong>1.3. Necessity of a Specific Mindset for AI Problem Solving</strong></p>
+<ul class="simple">
+<li><p>The need for logical and structured thinking in AI.</p></li>
+<li><p>How AI developers and users need to understand AI capabilities and limitations.</p></li>
+</ul>
+<p><strong>1.4. AI Problem-Solving Techniques</strong></p>
+<ul class="simple">
+<li><p>Overview of algorithms and models used in AI problem solving.</p></li>
+<li><p>Case studies of successful AI problem-solving instances.</p></li>
+</ul>
+<p><strong>1.5. Future of AI in Problem Solving</strong></p>
+<ul class="simple">
+<li><p>Predictions and upcoming trends in AI development.</p></li>
+<li><p>Ethical considerations and potential societal impacts of AI problem-solving.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="key-approaches-to-problem-solving">
+<h2>2. Key Approaches to Problem Solving<a class="headerlink" href="#key-approaches-to-problem-solving" title="Permalink to this heading">#</a></h2>
+<p><strong>2.1. Application of Basic Concepts and Principles</strong></p>
+<ul class="simple">
+<li><p>Introduction to fundamental AI concepts relevant to problem solving.</p></li>
+<li><p>How these principles guide AI behavior and decision-making.</p></li>
+</ul>
+<p><strong>2.2. Applying Similar Methods to Similar Types of Problems</strong></p>
+<ul class="simple">
+<li><p>Discussing pattern recognition and its role in AI problem-solving.</p></li>
+<li><p>Examples of AI systems learning from similar past problems.</p></li>
+</ul>
+<p><strong>2.3. Simplification and Decomposition of Complex Problems</strong></p>
+<ul class="simple">
+<li><p>Techniques for breaking down complex problems into manageable parts.</p></li>
+<li><p>The role of algorithms in simplifying problem-solving processes.</p></li>
+</ul>
+<p><strong>2.4. Approaching Problems from Various Perspectives</strong></p>
+<ul class="simple">
+<li><p>The importance of diverse datasets and multidisciplinary approaches.</p></li>
+<li><p>Case studies demonstrating successful multi-perspective approaches.</p></li>
+</ul>
+<p><strong>2.5. Significance of Creative Thinking in AI</strong></p>
+<ul class="simple">
+<li><p>How creativity impacts AI’s ability to solve new and unusual problems.</p></li>
+<li><p>Examples of AI systems displaying creative problem-solving.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="problem-solving-strategies">
+<h2>3. Problem Solving Strategies<a class="headerlink" href="#problem-solving-strategies" title="Permalink to this heading">#</a></h2>
+<p><strong>3.1. Utilizing Computers in Problem Solving</strong></p>
+<ul class="simple">
+<li><p>How computer algorithms enhance problem-solving efficiency.</p></li>
+<li><p>The role of computing power in complex calculations and data analysis.</p></li>
+</ul>
+<p><strong>3.2. Step-by-Step Analysis Using Block Diagrams</strong></p>
+<ul class="simple">
+<li><p>The use of block diagrams to visualize and solve problems.</p></li>
+<li><p>Practical examples of block diagram applications in AI.</p></li>
+</ul>
+<p><strong>3.3. Application of Rule-Based AI</strong></p>
+<ul class="simple">
+<li><p>Understanding rule-based systems and their applications in AI.</p></li>
+<li><p>Differences between rule-based and other types of AI.</p></li>
+</ul>
+<p><strong>3.4. Leveraging Neural Networks and Deep Learning</strong></p>
+<ul class="simple">
+<li><p>Exploring the capabilities of neural networks in problem-solving.</p></li>
+<li><p>Deep learning applications in image recognition and language processing.</p></li>
+</ul>
+<p><strong>3.5. Data Science and Big Data Applications</strong></p>
+<ul class="simple">
+<li><p>The role of big data in AI problem-solving.</p></li>
+<li><p>Case studies showing the impact of data science on AI solutions.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="rule-based-ai-and-logic">
+<h2>4. Rule-Based AI and Logic<a class="headerlink" href="#rule-based-ai-and-logic" title="Permalink to this heading">#</a></h2>
+<p><strong>4.1. Logical Reasoning in Rule-Based AI</strong></p>
+<ul class="simple">
+<li><p>Introduction to logic in rule-based systems.</p></li>
+<li><p>Examples of logical operations in AI applications.</p></li>
+</ul>
+<p><strong>4.2. Types and Applications of Logical Operations</strong></p>
+<ul class="simple">
+<li><p>Discussing different logical operations used in AI.</p></li>
+<li><p>Practical applications of these operations in various AI systems.</p></li>
+</ul>
+<p><strong>4.3. Meaning and Types of Inference in AI</strong></p>
+<ul class="simple">
+<li><p>Explaining the concept of inference in AI.</p></li>
+<li><p>Differentiating between types of inference methods used in AI.</p></li>
+</ul>
+<p><strong>4.4. Diverse Approaches to Inference</strong></p>
+<ul class="simple">
+<li><p>The importance of diverse inferential approaches in improving AI effectiveness.</p></li>
+<li><p>Case studies of successful inference strategies in AI.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="search-strategies">
+<h2>5. Search Strategies<a class="headerlink" href="#search-strategies" title="Permalink to this heading">#</a></h2>
+<p><strong>5.1. Evaluating Search Strategies</strong></p>
+<ul class="simple">
+<li><p>Criteria for evaluating the effectiveness of different search strategies.</p></li>
+<li><p>Comparisons of various search strategies used in AI.</p></li>
+</ul>
+<p><strong>5.2. Types of Uninformed Search Strategies</strong></p>
+<ul class="simple">
+<li><p>Overview of uninformed search strategies like BFS and DFS.</p></li>
+<li><p>Pros and cons of each strategy.</p></li>
+</ul>
+<p><strong>5.3. Breadth-First and Uniform-Cost Search</strong></p>
+<ul class="simple">
+<li><p>Detailed explanation of BFS and its applications.</p></li>
+<li><p>Uniform-cost search and its use cases in AI.</p></li>
+</ul>
+<p><strong>5.4. Depth-First and Depth-Limited Search</strong></p>
+<ul class="simple">
+<li><p>Understanding DFS and its implementation.</p></li>
+<li><p>The concept and application of depth-limited search.</p></li>
+</ul>
+<p><strong>5.5. Iterative Deepening and Heuristic Search</strong></p>
+<ul class="simple">
+<li><p>The role of iterative deepening in AI search strategies.</p></li>
+<li><p>Introduction to heuristic search and its effectiveness in problem-solving.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="search-algorithms">
+<h2>6. Search Algorithms<a class="headerlink" href="#search-algorithms" title="Permalink to this heading">#</a></h2>
+<p><strong>6.1. Definition and Importance of Algorithms</strong></p>
+<ul class="simple">
+<li><p>Exploring the concept of algorithms in AI.</p></li>
+<li><p>The role of algorithms in efficient problem-solving.</p></li>
+</ul>
+<p><strong>6.2. Algorithms in Everyday Life</strong></p>
+<ul class="simple">
+<li><p>Relating AI algorithms to everyday problem-solving scenarios.</p></li>
+<li><p>Demonstrating the ubiquitous nature of algorithmic thinking.</p></li>
+</ul>
+<p><strong>6.3. Heuristic Algorithms in AI</strong></p>
+<ul class="simple">
+<li><p>Detailed discussion on heuristic algorithms and their applications.</p></li>
+<li><p>Case studies where heuristic algorithms provided optimal solutions.</p></li>
+</ul>
+<p><strong>6.4. A* Algorithm and Its Applications</strong></p>
+<ul class="simple">
+<li><p>In-depth look at the A* algorithm and its workings.</p></li>
+<li><p>Real-world examples of A* algorithm implementations.</p></li>
+</ul>
+<p><strong>6.5. AI Algorithms: The 8-Queens Problem</strong></p>
+<ul class="simple">
+<li><p>Introduction to the 8-Queens problem and its significance in AI.</p></li>
+<li><p>How AI algorithms approach and solve the 8-Queens problem.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -511,7 +694,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./week06"
+            path: "./week01"
         },
         predefinedOutput: true
     }
@@ -528,24 +711,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="index.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Week 6: 추천시스템</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="session2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Session 2</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -553,7 +718,25 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-intelligence-and-problem-solving">1. Artificial Intelligence and Problem Solving</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-approaches-to-problem-solving">2. Key Approaches to Problem Solving</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-strategies">3. Problem Solving Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-based-ai-and-logic">4. Rule-Based AI and Logic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-strategies">5. Search Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-algorithms">6. Search Algorithms</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
