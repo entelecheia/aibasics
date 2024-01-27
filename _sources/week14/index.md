@@ -1,30 +1,30 @@
-# Week 14: 강화학습
+# Week 14: 자연어처리
 
-Reinforcement Learning
+Natural Language Processing
 
 Lecture Session 1:
 
-1. 강화학습 개요 (Overview of Reinforcement Learning)
-2. 마르코프 결정 과정 (Markov Decision Process)
-3. 벨만 방정식 (Bellman Equation)
-4. 정책 반복 및 가치 반복 (Policy Iteration and Value Iteration)
-5. Q-러닝 (Q-learning)
+1. 자연어처리 개요 (Overview of Natural Language Processing)
+2. 텍스트 전처리 (Text Preprocessing)
+3. 텍스트 표현 방법 (Text Representation Methods)
+4. 감성 분석 (Sentiment Analysis)
+5. 토픽 모델링 (Topic Modeling)
 
 Lecture Session 2:
 
-1. 딥 Q-러닝 (Deep Q-learning)
-2. 정책 그래디언트 (Policy Gradient)
-3. 액터-크리틱 방법 (Actor-Critic Methods)
-4. 신경망 기반 강화학습 알고리즘 (Neural Network-based Reinforcement Learning Algorithms)
-5. 강화학습 응용 분야 및 전망 (Applications and Future Prospects of Reinforcement Learning)
+1. 딥러닝 기반 자연어처리 (Deep Learning-based Natural Language Processing)
+2. 언어 모형 (Language Models)
+3. 트랜스포머 (Transformers)
+4. 인코더 기반 모델: BERT (Encoder-based Model: BERT)
+5. 디코더 기반 모델: GPT (Decoder-based Model: GPT)
 
 Lab Session:
 
-1. 강화학습 환경 소개: OpenAI Gym (Introduction to Reinforcement Learning Environments: OpenAI Gym)
-2. 기본 강화학습 알고리즘 실습 (Hands-on Basic Reinforcement Learning Algorithms)
-3. 딥 Q-러닝 실습 (Hands-on Deep Q-learning)
-4. 정책 그래디언트 및 액터-크리틱 방법 실습 (Hands-on Policy Gradient and Actor-Critic Methods)
-5. 강화학습 프로젝트 및 최적화 (Reinforcement Learning Projects and Optimization)
+1. 텍스트 전처리 및 표현 실습 (Hands-on Text Preprocessing and Representation)
+2. 감성 분석 및 텍스트 분류 실습 (Hands-on Sentiment Analysis and Text Classification)
+3. 토픽 모델링 실습 (Hands-on Topic Modeling)
+4. BERT와 GPT를 활용한 자연어처리 실습 (Hands-on NLP with BERT and GPT)
+5. 트랜스포머 기반 챗봇 실습 (Hands-on Chatbot using Transformers)
 
 ```{tableofcontents}
 

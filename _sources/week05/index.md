@@ -1,30 +1,30 @@
-# Week 5: 기계학습
+# Week 5: 분류
 
-**Machine Learning**
+Classification
 
-**Lecture Session 1:**
+Lecture Session 1:
 
-1. 기계학습 개요 (Overview of Machine Learning)
-2. 지도학습, 비지도학습, 준지도학습 (Supervised, Unsupervised, and Semi-supervised Learning)
-3. 기계학습 알고리즘 종류 (Types of Machine Learning Algorithms)
-4. 훈련 데이터와 테스트 데이터 (Training and Test Data)
-5. 모델 평가 지표 (Model Evaluation Metrics)
+1. 분류 문제 개요 (Overview of Classification Problems)
+2. k-최근접 이웃 (k-Nearest Neighbors)
+3. 의사결정나무 (Decision Trees)
+4. 나이브 베이즈 분류 (Naive Bayes Classification)
+5. 서포트 벡터 머신 (Support Vector Machines)
 
-**Lecture Session 2:**
+Lecture Session 2:
 
-1. 과적합과 과소적합 (Overfitting and Underfitting)
-2. 교차 검증 (Cross-validation)
-3. 하이퍼파라미터 최적화 (Hyperparameter Optimization)
-4. 특성 선택과 차원 축소 (Feature Selection and Dimensionality Reduction)
-5. 기계학습 알고리즘 선택 가이드라인 (Guidelines for Choosing Machine Learning Algorithms)
+1. 앙상블 기법: 배깅, 부스팅, 스태킹 (Ensemble Methods: Bagging, Boosting, and Stacking)
+2. 랜덤 포레스트 (Random Forests)
+3. 그래디언트 부스팅 (Gradient Boosting)
+4. 분류 모델 성능 지표 (Classification Model Performance Metrics)
+5. 분류 모델 선택 및 최적화 (Classification Model Selection and Optimization)
 
-**Lab Session:**
+Lab Session:
 
-1. 기계학습 라이브러리 소개: scikit-learn (Introduction to Machine Learning Library: scikit-learn)
-2. 지도학습 알고리즘 실습 (Hands-on Supervised Learning Algorithms)
-3. 비지도학습 알고리즘 실습 (Hands-on Unsupervised Learning Algorithms)
-4. 모델 선택 및 하이퍼파라미터 최적화 실습 (Hands-on Model Selection and Hyperparameter Optimization)
-5. 모델 평가 및 결과 분석 실습 (Hands-on Model Evaluation and Result Analysis)
+1. k-최근접 이웃 분류 실습 (Hands-on k-Nearest Neighbors Classification)
+2. 의사결정나무 분류 실습 (Hands-on Decision Trees Classification)
+3. 나이브 베이즈 분류 실습 (Hands-on Naive Bayes Classification)
+4. 서포트 벡터 머신 분류 실습 (Hands-on Support Vector Machines Classification)
+5. 앙상블 기법 및 고급 분류 기법 실습 (Hands-on Ensemble and Advanced Classification Techniques)
 
 ```{tableofcontents}
 
