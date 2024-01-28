@@ -91,6 +91,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="머신러닝 알고리즘 실습" href="lab.html" />
+    <link rel="prev" title="머신러닝 학습 방법" href="session2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,8 +154,6 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -201,16 +201,17 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week01/index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session1.html">인공지능의 역사</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session2.html">인공지능의 유형들</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session3.html">인공지능 문제 해결 및 탐색전략</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">머신러닝의 개요</a></li>
 <li class="toctree-l2"><a class="reference internal" href="session2.html">머신러닝 학습 방법</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">머신러닝 모델의 학습과 평가</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">머신러닝 알고리즘 실습</a></li>
 </ul>
 </li>
@@ -444,11 +445,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 머신러닝 모델 최적화의 기초</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 비용함수와 손실함수</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">3. 경사하강법 (Gradient Descent)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 머신러닝 모델의 일반화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 좋은 머신러닝 모델의 조건</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">목표와 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">선형 회귀 모델의 기본 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">최소 제곱법 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델의 일반화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">좋은 머신러닝 모델의 조건</a></li>
 </ul>
             </nav>
         </div>
@@ -463,44 +470,130 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>머신러닝 모델의 학습과 평가<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 머신러닝 모델 최적화의 기초<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>목표와 개요</strong>: 머신러닝에서 모델 최적화의 중요성 이해하기.</p></li>
-<li><p><strong>선형 회귀 모델의 기본 개념</strong>: y = ax + b 형태의 일차함수 설명.</p></li>
-<li><p><strong>최소 제곱법 소개</strong>: 최소 제곱법을 사용하여 기울기(a)와 y절편(b) 계산하는 방법.</p></li>
-<li><p><strong>평균 제곱 오차(MSE) 이해</strong>: 평균 제곱 오차가 무엇인지, 왜 중요한지 알아보기.</p></li>
-</ul>
-</section>
+<h2>머신러닝 모델 최적화의 기초<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <section id="id3">
-<h2>2. 비용함수와 손실함수<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h3>목표와 개요<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-1.jpeg"><img alt="../_images/image-3-1-1.jpeg" class="align-center" src="../_images/image-3-1-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>비용함수와 손실함수의 정의</strong>: 두 용어의 정의와 머신러닝에서의 역할 설명.</p></li>
-<li><p><strong>평균제곱오차의 역할</strong>: 모델 평가에 있어서 MSE의 중요성 탐구.</p></li>
-<li><p><strong>오차 함수와 목적 함수의 비교</strong>: 오차 함수와 목적 함수의 차이점 및 사용 예시.</p></li>
-</ul>
-</section>
-<section id="gradient-descent">
-<h2>3. 경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>경사하강법의 기본 원리</strong>: 비용함수를 최소화하기 위한 경사하강법의 원리 설명.</p></li>
-<li><p><strong>경사하강법의 다양한 변형</strong>: SGD, Momentum, AdaGrad, Adam 등의 변형 방법 및 각각의 장단점 비교.</p></li>
-<li><p><strong>경사하강법 시각화</strong>: 비용함수와 가중치 관계를 그래픽으로 설명하기.</p></li>
+<li><p>머신러닝 모델 최적화는 모델의 예측 성능을 극대화하는 과정입니다.</p></li>
+<li><p>이 과정을 통해 데이터의 패턴을 더 잘 이해하고, 실제 세계의 복잡한 문제를 해결할 수 있습니다.</p></li>
 </ul>
 </section>
 <section id="id4">
-<h2>4. 머신러닝 모델의 일반화<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-21.jpeg"><img alt="../_images/image-3-1-21.jpeg" class="align-center" src="../_images/image-3-1-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>과대적합과 과소적합</strong>: 이 두 현상이 무엇인지, 왜 중요한지 설명.</p></li>
-<li><p><strong>최적화 알고리즘의 중요성</strong>: 모델의 일반화를 위한 최적화 알고리즘의 역할 탐구.</p></li>
-<li><p><strong>과대적합과 과소적합 방지 전략</strong>: 실용적인 방법들 소개.</p></li>
+<li><p>선형 회귀 모델은 가장 기본적인 머신러닝 모델 중 하나입니다.</p></li>
+<li><p>이 모델은 데이터의 관계를 y = ax + b 형태의 직선으로 나타냅니다.</p>
+<ul>
+<li><p>여기서 y는 종속 변수, x는 독립 변수, a는 기울기, b는 y절편입니다.</p></li>
+</ul>
+</li>
+<li><p>선형 회귀는 데이터 포인트들과 가장 잘 맞는 직선을 찾는 과정입니다.</p></li>
 </ul>
 </section>
 <section id="id5">
-<h2>5. 좋은 머신러닝 모델의 조건<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<h3>최소 제곱법 소개<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-31.jpeg"><img alt="../_images/image-3-1-31.jpeg" class="align-center" src="../_images/image-3-1-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>데이터의 양과 질의 중요성</strong>: 양질의 데이터가 모델 성능에 미치는 영향.</p></li>
-<li><p><strong>모델 복잡도 조절</strong>: PCA 등을 사용하여 모델 복잡도 및 특성 수 줄이는 방법.</p></li>
-<li><p><strong>일반화, 정규화, 가중치 규제</strong>: 모델의 일반화를 향상시키는 기술들 소개.</p></li>
+<li><p>최소 제곱법은 선형 회귀 모델에서 매개변수 a와 b를 찾는 표준 방법입니다.</p></li>
+<li><p>이 방법은 데이터 포인트와 선형 모델 간의 거리(오차)의 제곱을 최소화합니다.</p></li>
+<li><p>수학적으로는 오차의 제곱 합을 최소화하는 a와 b를 찾는 것을 의미합니다.</p></li>
+</ul>
+</section>
+<section id="mse">
+<h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-41.jpeg"><img alt="../_images/image-3-1-41.jpeg" class="align-center" src="../_images/image-3-1-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>평균 제곱 오차(MSE)는 모델의 예측값과 실제값 간의 차이를 수치화하는 방법입니다.</p></li>
+<li><p>MSE = (1/n) Σ(actual - prediction)²</p>
+<ul>
+<li><p>여기서 n은 샘플의 수, actual은 실제값, prediction은 예측값입니다.</p></li>
+</ul>
+</li>
+<li><p>MSE가 작을수록 모델의 예측 성능이 좋다고 할 수 있습니다.</p></li>
+<li><p>MSE는 모델의 성능을 평가하고 비교하는 데 중요한 지표로 사용됩니다.</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2>비용함수와 손실함수<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>비용함수와 손실함수의 정의</strong></p>
+<ul>
+<li><p>모델의 예측이 얼마나 잘못되었는지 나타내는 함수.</p></li>
+</ul>
+</li>
+<li><p><strong>평균제곱오차의 역할</strong></p>
+<ul>
+<li><p>MSE는 모델의 예측 오차를 측정하는 데 사용됩니다.</p></li>
+</ul>
+</li>
+<li><p><strong>오차 함수와 목적 함수의 비교</strong></p>
+<ul>
+<li><p>오차 함수는 개별 예측의 오류를, 목적 함수는 전체 데이터셋에 대한 모델의 성능을 평가.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="gradient-descent">
+<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>경사하강법의 기본 원리</strong></p>
+<ul>
+<li><p>비용함수의 최소점을 찾기 위해 기울기(gradient)를 사용하는 방법.</p></li>
+</ul>
+</li>
+<li><p><strong>경사하강법의 다양한 변형</strong></p>
+<ul>
+<li><p>다양한 변형 방법(SGD, Momentum 등)과 각각의 특징 및 적용 상황.</p></li>
+</ul>
+</li>
+<li><p><strong>경사하강법 시각화</strong></p>
+<ul>
+<li><p>비용함수의 모양과 경사하강법의 경로를 시각적으로 이해하기.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id7">
+<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>과대적합과 과소적합</strong></p>
+<ul>
+<li><p>모델이 학습 데이터에 지나치게 적합되거나, 충분히 학습되지 않는 현상.</p></li>
+</ul>
+</li>
+<li><p><strong>최적화 알고리즘의 중요성</strong></p>
+<ul>
+<li><p>모델의 일반화 능력을 향상시키는 최적화 알고리즘.</p></li>
+</ul>
+</li>
+<li><p><strong>과대적합과 과소적합 방지 전략</strong></p>
+<ul>
+<li><p>데이터 증강, 교차 검증, 정규화 기법 등의 전략 소개.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id8">
+<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>데이터의 양과 질의 중요성</strong></p>
+<ul>
+<li><p>충분하고 다양한, 고품질의 데이터의 중요성 강조.</p></li>
+</ul>
+</li>
+<li><p><strong>모델 복잡도 조절</strong></p>
+<ul>
+<li><p>PCA 등을 사용하여 모델의 복잡도 및 특성 수를 조절하는 방법.</p></li>
+</ul>
+</li>
+<li><p><strong>일반화, 정규화, 가중치 규제</strong></p>
+<ul>
+<li><p>모델의 과적합을 방지하고 일반화 성능을 향상시키는 기법들 소개.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 </section>
@@ -535,6 +628,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="session2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">머신러닝 학습 방법</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="lab.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">머신러닝 알고리즘 실습</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -551,11 +662,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 머신러닝 모델 최적화의 기초</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 비용함수와 손실함수</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">3. 경사하강법 (Gradient Descent)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 머신러닝 모델의 일반화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 좋은 머신러닝 모델의 조건</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">목표와 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">선형 회귀 모델의 기본 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">최소 제곱법 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델의 일반화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">좋은 머신러닝 모델의 조건</a></li>
 </ul>
   </nav></div>
 
