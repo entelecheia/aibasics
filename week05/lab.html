@@ -506,6 +506,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습 알고리즘 적용</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">선형 회귀 모델 및 평균 제곱 오차(MSE) 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">선형 회귀 모델</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균 제곱 오차(MSE)</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -858,6 +863,65 @@ max            2.500000    2.000000
 <p>위의 그래프들은 비지도 학습을 통해 Iris 데이터셋의 숨겨진 구조를 탐색하는 방법을 보여줍니다. 각 알고리즘은 데이터를 다른 방식으로 그룹화하여, 데이터의 다양한 특성을 강조합니다.</p>
 </section>
 </section>
+<section id="mse">
+<h2>선형 회귀 모델 및 평균 제곱 오차(MSE) 시각화<a class="headerlink" href="#mse" title="Permalink to this heading">#</a></h2>
+<section id="id7">
+<h3>선형 회귀 모델<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Iris 데이터셋의 꽃받침 길이(독립 변수)와 꽃잎 길이(종속 변수)를 사용하여 선형 회귀 모델을 구현하였습니다.</p></li>
+<li><p>실제 데이터 포인트(파란색)와 선형 회귀 모델에 의한 예측값(빨간색)을 그래프로 나타냈습니다.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>평균 제곱 오차(MSE)<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>계산된 평균 제곱 오차(MSE)는 약 0.743 입니다.</p></li>
+<li><p>이 값은 모델이 데이터를 얼마나 잘 예측하는지를 나타내는 지표로, 낮을수록 예측 정확도가 높음을 의미합니다.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="c1"># Iris 데이터셋 로드 및 준비</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 첫 번째 특성만 사용 (꽃받침 길이)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>  <span class="c1"># 세 번째 특성을 종속 변수로 사용 (꽃잎 길이)</span>
+
+<span class="c1"># 선형 회귀 모델 생성 및 학습</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># 예측 및 MSE 계산</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
+
+<span class="c1"># 선형 회귀 모델 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">predictions</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Linear Regression on Iris Dataset&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Sepal Length (cm)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Petal Length (cm)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># MSE 출력</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;평균 제곱 오차(MSE):&quot;</span><span class="p">,</span> <span class="n">mse</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/92bd5ec511a0bfd6894b6ce0186f9c3e85b9dbfe11c212531fc4f866be97c9d8.png" src="../_images/92bd5ec511a0bfd6894b6ce0186f9c3e85b9dbfe11c212531fc4f866be97c9d8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>평균 제곱 오차(MSE): 0.7430610341321241
+</pre></div>
+</div>
+</div>
+</div>
+<p>위의 그래프와 MSE 값은 선형 회귀 모델이 어떻게 데이터의 패턴을 학습하고, 이를 통해 예측을 수행하는지 보여줍니다. 이를 통해 학생들은 선형 회귀 모델의 기본 원리와 성능 평가 방법을 이해할 수 있습니다.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -934,6 +998,11 @@ max            2.500000    2.000000
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습 알고리즘 적용</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">선형 회귀 모델 및 평균 제곱 오차(MSE) 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">선형 회귀 모델</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균 제곱 오차(MSE)</a></li>
 </ul>
 </li>
 </ul>

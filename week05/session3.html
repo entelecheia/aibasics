@@ -452,10 +452,25 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델의 일반화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">좋은 머신러닝 모델의 조건</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">비용함수와 손실함수의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균제곱오차의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">오차 함수와 목적 함수의 비교</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">경사하강법의 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">경사하강법의 다양한 변형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">경사하강법 시각화</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">과대적합과 과소적합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">최적화 알고리즘의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">과대적합과 과소적합 방지 전략</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">좋은 머신러닝 모델의 조건</a></li>
 </ul>
             </nav>
         </div>
@@ -518,66 +533,182 @@ document.write(`
 </section>
 <section id="id6">
 <h2>비용함수와 손실함수<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>비용함수와 손실함수의 정의</strong></p>
-<ul>
-<li><p>모델의 예측이 얼마나 잘못되었는지 나타내는 함수.</p></li>
-</ul>
-</li>
-<li><p><strong>평균제곱오차의 역할</strong></p>
-<ul>
-<li><p>MSE는 모델의 예측 오차를 측정하는 데 사용됩니다.</p></li>
-</ul>
-</li>
-<li><p><strong>오차 함수와 목적 함수의 비교</strong></p>
-<ul>
-<li><p>오차 함수는 개별 예측의 오류를, 목적 함수는 전체 데이터셋에 대한 모델의 성능을 평가.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="gradient-descent">
-<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>경사하강법의 기본 원리</strong></p>
-<ul>
-<li><p>비용함수의 최소점을 찾기 위해 기울기(gradient)를 사용하는 방법.</p></li>
-</ul>
-</li>
-<li><p><strong>경사하강법의 다양한 변형</strong></p>
-<ul>
-<li><p>다양한 변형 방법(SGD, Momentum 등)과 각각의 특징 및 적용 상황.</p></li>
-</ul>
-</li>
-<li><p><strong>경사하강법 시각화</strong></p>
-<ul>
-<li><p>비용함수의 모양과 경사하강법의 경로를 시각적으로 이해하기.</p></li>
-</ul>
-</li>
-</ul>
-</section>
 <section id="id7">
-<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<h3>비용함수와 손실함수의 정의<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>과대적합과 과소적합</strong></p>
+<li><p><strong>정의</strong>:</p>
 <ul>
-<li><p>모델이 학습 데이터에 지나치게 적합되거나, 충분히 학습되지 않는 현상.</p></li>
+<li><p>손실함수(Loss Function): 개별 데이터 포인트에 대한 모델의 오차를 측정합니다.</p></li>
+<li><p>비용함수(Cost Function): 전체 데이터셋에 대한 모델의 성능을 측정합니다.</p></li>
 </ul>
 </li>
-<li><p><strong>최적화 알고리즘의 중요성</strong></p>
+<li><p><strong>중요성</strong>:</p>
 <ul>
-<li><p>모델의 일반화 능력을 향상시키는 최적화 알고리즘.</p></li>
-</ul>
-</li>
-<li><p><strong>과대적합과 과소적합 방지 전략</strong></p>
-<ul>
-<li><p>데이터 증강, 교차 검증, 정규화 기법 등의 전략 소개.</p></li>
+<li><p>이 함수들은 모델이 얼마나 잘 또는 잘못 예측하는지를 나타내며, 이를 최소화하는 것이 모델 학습의 목표입니다.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="id8">
-<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<h3>평균제곱오차의 역할<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong>:</p>
+<ul>
+<li><p>MSE = (1/n) Σ(actual - prediction)²</p></li>
+<li><p>여기서 Σ는 합계, n은 샘플 수, actual은 실제 값, prediction은 예측 값입니다.</p></li>
+</ul>
+</li>
+<li><p><strong>역할</strong>:</p>
+<ul>
+<li><p>MSE는 회귀 문제에서 자주 사용되는 손실 함수입니다.</p></li>
+<li><p>모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 내, 오차의 크기를 나타냅니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id9">
+<h3>오차 함수와 목적 함수의 비교<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>오차 함수(Error Function)</strong>:</p>
+<ul>
+<li><p>개별 예측값과 실제값의 차이를 측정합니다.</p></li>
+<li><p>주로 손실 함수로 사용되며, 모델이 개별 데이터 포인트에서 얼마나 잘못 예측하는지를 나타냅니다.</p></li>
+</ul>
+</li>
+<li><p><strong>목적 함수(Objective Function)</strong>:</p>
+<ul>
+<li><p>전체 데이터셋을 기반으로 한 모델의 전반적인 성능을 측정합니다.</p></li>
+<li><p>비용 함수와 같은 의미로 사용되며, 모델의 성능 최적화를 위한 목표를 설정합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>차이점</strong>:</p>
+<ul>
+<li><p>오차 함수는 개별 데이터 포인트에 초점을 맞추고, 목적 함수는 전체 데이터셋에 대한 성능을 고려합니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="gradient-descent">
+<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h3>경사하강법의 기본 원리<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>:</p>
+<ul>
+<li><p>경사하강법은 비용 함수의 최소점을 찾기 위한 반복적인 최적화 기법입니다.</p></li>
+<li><p>기울기(gradient)를 사용하여 각 단계에서 비용 함수를 줄여나가는 방식입니다.</p></li>
+</ul>
+</li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>현재 위치에서 비용 함수의 기울기를 계산하고, 이를 통해 비용이 감소하는 방향으로 이동합니다.</p></li>
+<li><p>학습률(learning rate)은 이동 거리를 조절하는 파라미터로, 적절한 크기 설정이 중요합니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id11">
+<h3>경사하강법의 다양한 변형<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>SGD (Stochastic Gradient Descent)</strong>:</p>
+<ul>
+<li><p>매 반복에서 하나의 훈련 샘플을 사용하여 기울기를 계산합니다.</p></li>
+<li><p>빠른 계산이 가능하지만, 비용 함수의 변동이 클 수 있습니다.</p></li>
+</ul>
+</li>
+<li><p><strong>Momentum</strong>:</p>
+<ul>
+<li><p>이전 단계의 기울기를 고려하여 관성의 개념을 도입합니다.</p></li>
+<li><p>이를 통해 더 안정적이고 빠르게 최소점에 도달할 수 있습니다.</p></li>
+</ul>
+</li>
+<li><p><strong>AdaGrad, RMSprop, Adam</strong>:</p>
+<ul>
+<li><p>이 방법들은 학습률을 동적으로 조절하여 더 효율적인 최적화를 달성합니다.</p></li>
+<li><p>각각의 방법은 다른 방식으로 학습률을 조정합니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id12">
+<h3>경사하강법 시각화<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>비용함수의 모양과 경로</strong>:</p>
+<ul>
+<li><p>비용함수의 모양은 고차원이지만, 일반적으로 2D 또는 3D로 시각화하여 경사하강법의 경로를 이해합니다.</p></li>
+<li><p>시각화는 비용함수의 기울기와 학습률이 경로에 어떤 영향을 미치는지 보여줍니다.</p></li>
+</ul>
+</li>
+<li><p><strong>시각적 이해</strong>:</p>
+<ul>
+<li><p>경사하강법의 진행 과정을 그래픽으로 나타내어 비용 함수의 최소점에 도달하는 과정을 시각적으로 이해합니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id13">
+<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<section id="id14">
+<h3>과대적합과 과소적합<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>과대적합(Overfitting)</strong>:</p>
+<ul>
+<li><p>모델이 학습 데이터에 너무 적합되어 새로운 데이터에 대한 예측 성능이 떨어지는 현상.</p></li>
+<li><p>학습 데이터의 노이즈나 비정상적인 패턴까지 학습하는 경우 발생.</p></li>
+</ul>
+</li>
+<li><p><strong>과소적합(Underfitting)</strong>:</p>
+<ul>
+<li><p>모델이 학습 데이터의 패턴을 충분히 학습하지 못해 일반화 성능이 낮은 상태.</p></li>
+<li><p>모델이 너무 단순하거나 학습이 충분히 이루어지지 않은 경우 발생.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id15">
+<h3>최적화 알고리즘의 중요성<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>일반화 능력 향상</strong>:</p>
+<ul>
+<li><p>최적화 알고리즘은 모델이 학습 데이터뿐만 아니라 새로운 데이터에도 잘 작동하도록 도와줍니다.</p></li>
+<li><p>모델의 일반화 능력을 향상시켜 실제 세계의 다양한 데이터에 적용 가능하게 합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>적절한 모델 복잡도</strong>:</p>
+<ul>
+<li><p>최적화를 통해 모델의 복잡도를 조절하고, 과대적합과 과소적합 사이의 균형을 맞춥니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id16">
+<h3>과대적합과 과소적합 방지 전략<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>데이터 증강(Data Augmentation)</strong>:</p>
+<ul>
+<li><p>기존 데이터에 변형을 가해 데이터셋의 다양성을 증가시키는 방법.</p></li>
+<li><p>과대적합을 방지하고 모델의 일반화 능력을 향상시킵니다.</p></li>
+</ul>
+</li>
+<li><p><strong>교차 검증(Cross-Validation)</strong>:</p>
+<ul>
+<li><p>학습 데이터를 여러 부분으로 나누고, 이들을 교차하여 검증하는 방법.</p></li>
+<li><p>모델의 성능을 보다 객관적으로 평가할 수 있습니다.</p></li>
+</ul>
+</li>
+<li><p><strong>정규화(Regularization)</strong>:</p>
+<ul>
+<li><p>모델의 가중치에 제약을 두어 복잡도를 감소시키는 기술.</p></li>
+<li><p>L1, L2 정규화 등이 있으며, 과대적합을 방지하는 데 효과적입니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id17">
+<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>데이터의 양과 질의 중요성</strong></p>
 <ul>
@@ -669,10 +800,25 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델의 일반화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">좋은 머신러닝 모델의 조건</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">비용함수와 손실함수의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균제곱오차의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">오차 함수와 목적 함수의 비교</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">경사하강법의 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">경사하강법의 다양한 변형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">경사하강법 시각화</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">과대적합과 과소적합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">최적화 알고리즘의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">과대적합과 과소적합 방지 전략</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">좋은 머신러닝 모델의 조건</a></li>
 </ul>
   </nav></div>
 
