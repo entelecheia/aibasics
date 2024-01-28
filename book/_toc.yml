@@ -30,7 +30,7 @@ chapters:
     sections:
       - file: week05/session1
       - file: week05/session2
-      # - file: week05/session3
+      - file: week05/session3
       - file: week05/lab
   - file: week06/index
     sections:
