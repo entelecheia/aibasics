@@ -501,6 +501,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 분류 알고리즘 적용 결과</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습 알고리즘 적용</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -785,6 +789,74 @@ max            2.500000    2.000000
 <p>이 결과들은 Iris 데이터셋에 세 가지 다른 분류 알고리즘을 적용한 것으로, 각 모델의 성능을 평가할 수 있는 좋은 예시가 됩니다. 의사결정 트리와 SVM이 완벽한 정확도를 보인 반면, 나이브 베이즈는 약간 낮은 정확도를 나타냈습니다. 이러한 차이는 각 알고리즘의 특성과 데이터셋의 특징에 기인할 수 있습니다.</p>
 </section>
 </section>
+<section id="unsupervised-learning">
+<h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h3>비지도 학습 알고리즘 적용<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>K-means 클러스터링 결과</strong>:</p>
+<ul class="simple">
+<li><p>K-means 클러스터링을 사용하여 Iris 데이터셋을 3개의 클러스터로 그룹화한 결과입니다.</p></li>
+<li><p>주성분 분석(PCA)을 통해 차원을 축소하여 시각화를 수행했습니다.</p></li>
+</ul>
+</li>
+<li><p><strong>가우스 혼합 모델 클러스터링 결과</strong>:</p>
+<ul class="simple">
+<li><p>가우스 혼합 모델을 사용하여 클러스터링을 수행한 결과입니다.</p></li>
+<li><p>이 또한 PCA를 사용하여 차원을 축소하고 시각화를 진행했습니다.</p></li>
+</ul>
+</li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GaussianMixture</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="c1"># K-means 클러스터링</span>
+<span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">clusters_kmeans</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span>
+
+<span class="c1"># 가우스 혼합 모델</span>
+<span class="n">gmm</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">gmm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">clusters_gmm</span> <span class="o">=</span> <span class="n">gmm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="c1"># 주성분 분석 (PCA)을 통한 차원 축소</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">X_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="c1"># 클러스터링 결과 시각화를 위한 준비</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># K-means 클러스터링 결과 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_pca</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_pca</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">clusters_kmeans</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;K-means Clustering Results&quot;</span><span class="p">)</span>
+
+<span class="c1"># 가우스 혼합 모델 클러스터링 결과 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_pca</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_pca</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">clusters_gmm</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;GMM Clustering Results&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/4ad0ce340fec2576628c9c48bc2635af6a79c87bb3e80553f0d50a0a5ab7fa4e.png" src="../_images/4ad0ce340fec2576628c9c48bc2635af6a79c87bb3e80553f0d50a0a5ab7fa4e.png" />
+</div>
+</div>
+<p>코드 설명:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">KMeans</span></code>와 <code class="docutils literal notranslate"><span class="pre">GaussianMixture</span></code>를 각각 사용하여 클러스터링을 수행합니다.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PCA</span></code>를 사용하여 데이터의 차원을 축소하고, 이를 시각화합니다.</p></li>
+<li><p>첫 번째 그래프는 K-means 클러스터링 결과를, 두 번째 그래프는 가우스 혼합 모델 클러스터링 결과를 보여줍니다.</p></li>
+</ul>
+<p>위의 그래프들은 비지도 학습을 통해 Iris 데이터셋의 숨겨진 구조를 탐색하는 방법을 보여줍니다. 각 알고리즘은 데이터를 다른 방식으로 그룹화하여, 데이터의 다양한 특성을 강조합니다.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -857,6 +929,10 @@ max            2.500000    2.000000
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 의사결정 트리</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm-support-vector-machine">4. SVM (Support Vector Machine)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 분류 알고리즘 적용 결과</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습 알고리즘 적용</a></li>
 </ul>
 </li>
 </ul>
