@@ -470,8 +470,21 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">실제 적용 사례</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">행렬 인수분해 기반 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">행렬 인수분해의 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">사용자-아이템 상호작용 행렬</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">행렬 인수분해의 알고리즘과 구현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">예측 정확도 향상 방법</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">하이브리드 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">하이브리드 추천 시스템의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">다양한 하이브리드 방식의 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">콘텐츠 기반과 협업 필터링의 조합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">하이브리드 시스템의 장점 및 적용 분야</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">실제 하이브리드 추천 시스템 사례</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -630,23 +643,86 @@ document.write(`
 </section>
 <section id="id20">
 <h2>행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h2>
+<section id="id21">
+<h3>행렬 인수분해의 개념<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-4-11.jpeg"><img alt="../_images/image-1-4-11.jpeg" class="align-center" src="../_images/image-1-4-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>행렬 인수분해의 개념</p></li>
-<li><p>사용자-아이템 상호작용 행렬</p></li>
-<li><p>행렬 인수분해의 알고리즘과 구현</p></li>
-<li><p>예측 정확도 향상 방법</p></li>
-<li><p>실생활에서의 응용 예</p></li>
+<li><p>행렬 인수분해(Matrix Factorization)는 큰 행렬을 여러 개의 작은 행렬로 분해하는 방법</p></li>
+<li><p>목적은 사용자-아이템 상호작용을 표현하는 큰 행렬을 더 작고 의미 있는 특성 행렬로 변환</p></li>
+<li><p>이러한 변환을 통해 사용자와 아이템 간의 잠재적인 관계를 발견할 수 있음</p></li>
 </ul>
 </section>
-<section id="id21">
-<h2>하이브리드 추천 시스템<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h2>
+<section id="id22">
+<h3>사용자-아이템 상호작용 행렬<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-4-21.jpeg"><img alt="../_images/image-1-4-21.jpeg" class="align-center" src="../_images/image-1-4-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>하이브리드 추천 시스템의 정의</p></li>
-<li><p>다양한 하이브리드 방식의 소개</p></li>
-<li><p>콘텐츠 기반과 협업 필터링의 조합</p></li>
-<li><p>하이브리드 시스템의 장점 및 적용 분야</p></li>
-<li><p>실제 하이브리드 추천 시스템 사례</p></li>
+<li><p>사용자-아이템 상호작용 행렬은 사용자와 아이템 간의 관계를 수치로 표현한 행렬</p></li>
+<li><p>예를 들어, 사용자가 아이템에 부여한 평점이나 구매 여부 등의 정보를 담음</p></li>
+<li><p>이 행렬은 일반적으로 매우 크고 희소한(sparse) 특성을 가짐</p></li>
 </ul>
+</section>
+<section id="id23">
+<h3>행렬 인수분해의 알고리즘과 구현<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-4-31.jpeg"><img alt="../_images/image-1-4-31.jpeg" class="align-center" src="../_images/image-1-4-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>대표적인 알고리즘으로는 SVD(특이값 분해), ALS(교대 최소 제곱법) 등이 있음</p></li>
+<li><p>이러한 알고리즘들은 원본 행렬을 더 작은 특성 행렬로 분해하여 잠재 요인을 찾아냄</p></li>
+<li><p>구현 시, 행렬의 희소성과 계산 효율성을 고려해야 함</p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>예측 정확도 향상 방법<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-4-41.jpeg"><img alt="../_images/image-1-4-41.jpeg" class="align-center" src="../_images/image-1-4-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>정규화, 하이퍼파라미터 튜닝 등을 통한 오버피팅 방지</p></li>
+<li><p>추가 데이터 소스 활용, 잠재 요인의 수 증가 등으로 모델의 복잡성 증가</p></li>
+<li><p>교차 검증과 같은 기법을 사용하여 모델의 일반화 능력 강화</p></li>
+</ul>
+</section>
+</section>
+<section id="id25">
+<h2>하이브리드 추천 시스템<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h2>
+<section id="id26">
+<h3>하이브리드 추천 시스템의 정의<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>하이브리드 추천 시스템은 콘텐츠 기반 추천과 협업 필터링 추천 기법을 결합한 시스템</p></li>
+<li><p>이 시스템은 두 방법의 장점을 통합하여 더 정확하고 개인화된 추천을 제공</p></li>
+<li><p>사용자의 다양한 요구와 상황에 더 잘 대응할 수 있도록 설계됨</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3>다양한 하이브리드 방식의 소개<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>가중 평균 방식</strong>: 두 추천 기법의 결과에 가중치를 적용하여 결합</p></li>
+<li><p><strong>스위칭 방식</strong>: 특정 조건에 따라 콘텐츠 기반 또는 협업 필터링 방식 선택</p></li>
+<li><p><strong>피쳐 조합 방식</strong>: 두 기법의 피쳐를 결합하여 새로운 추천 모델 생성</p></li>
+<li><p><strong>메타 레벨 방식</strong>: 한 추천 시스템의 출력을 다른 시스템의 입력으로 사용</p></li>
+</ul>
+</section>
+<section id="id28">
+<h3>콘텐츠 기반과 협업 필터링의 조합<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>콘텐츠 기반 추천의 개인화된 특성과 협업 필터링의 사회적 필터링 장점 결합</p></li>
+<li><p>두 방법의 조합으로 추천의 정확도와 다양성을 동시에 향상</p></li>
+<li><p>사용자의 명시적, 암시적 피드백을 모두 활용하는 효과적인 접근 방법</p></li>
+</ul>
+</section>
+<section id="id29">
+<h3>하이브리드 시스템의 장점 및 적용 분야<a class="headerlink" href="#id29" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>장점</strong>: 콜드 스타트 문제 해결, 다양한 데이터 소스 활용, 추천의 정확도 향상</p></li>
+<li><p><strong>적용 분야</strong>: 전자상거래, 온라인 미디어 스트리밍, 소셜 네트워킹 사이트 등</p></li>
+<li><p>비즈니스 및 사용자 경험 개선을 위한 광범위한 적용 가능</p></li>
+</ul>
+</section>
+<section id="id30">
+<h3>실제 하이브리드 추천 시스템 사례<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>넷플릭스</strong>: 콘텐츠 기반의 메타데이터와 사용자의 시청 패턴을 결합한 추천 시스템</p></li>
+<li><p><strong>아마존</strong>: 사용자 구매 이력과 상품 정보를 통합하여 개인화된 상품 추천</p></li>
+<li><p><strong>유튜브</strong>: 사용자 시청 행동과 콘텐츠 속성을 결합한 비디오 추천</p></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -738,8 +814,21 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">실제 적용 사례</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">행렬 인수분해 기반 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">행렬 인수분해의 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">사용자-아이템 상호작용 행렬</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">행렬 인수분해의 알고리즘과 구현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">예측 정확도 향상 방법</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">하이브리드 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">하이브리드 추천 시스템의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">다양한 하이브리드 방식의 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">콘텐츠 기반과 협업 필터링의 조합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">하이브리드 시스템의 장점 및 적용 분야</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">실제 하이브리드 추천 시스템 사례</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
