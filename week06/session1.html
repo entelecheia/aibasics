@@ -446,11 +446,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템 개요</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 콘텐츠 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 협업 필터링 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">추천 시스템 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">추천 시스템의 정의 및 필요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">추천 시스템의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">다양한 추천 시스템의 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">사용자 경험 향상을 위한 추천 시스템의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">추천 시스템의 기본 원리</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">하이브리드 추천 시스템</a></li>
 </ul>
             </nav>
         </div>
@@ -465,17 +472,55 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>추천 시스템의 기본 개념<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 추천 시스템 개요<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>추천 시스템 개요<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h3>추천 시스템의 정의 및 필요성<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-1-12.jpeg"><img alt="../_images/image-1-1-12.jpeg" class="align-center" src="../_images/image-1-1-12.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>추천 시스템의 정의 및 필요성</p></li>
-<li><p>추천 시스템의 역할과 중요성</p></li>
-<li><p>다양한 추천 시스템의 예시</p></li>
-<li><p>사용자 경험 향상을 위한 추천 시스템의 역할</p></li>
-<li><p>추천 시스템의 기본 원리</p></li>
+<li><p>추천 시스템이란 사용자의 취향과 선호에 맞는 아이템을 자동으로 추천하는 시스템</p></li>
+<li><p>온라인 쇼핑, 스트리밍 서비스 등에서 사용자 경험을 개인화하고 만족도를 높이는 데 중요</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>2. 콘텐츠 기반 추천 시스템<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="id4">
+<h3>추천 시스템의 역할과 중요성<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-1-21.jpeg"><img alt="../_images/image-1-1-21.jpeg" class="align-center" src="../_images/image-1-1-21.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>사용자의 선택을 돕고, 정보 과부하 문제를 해결</p></li>
+<li><p>사용자의 행동과 선호를 분석하여 관련 아이템 추천</p></li>
+<li><p>비즈니스 측면에서 고객 유지와 매출 증대에 기여</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>다양한 추천 시스템의 예시<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-1-32.jpeg"><img alt="../_images/image-1-1-32.jpeg" class="align-center" src="../_images/image-1-1-32.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>영화 추천: 넷플릭스의 사용자 취향 기반 영화 추천</p></li>
+<li><p>상품 추천: 아마존의 구매 이력 기반 상품 추천</p></li>
+<li><p>음악 추천: 스포티파이의 장르 및 가수 선호도에 따른 음악 추천</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>사용자 경험 향상을 위한 추천 시스템의 역할<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-1-42.jpeg"><img alt="../_images/image-1-1-42.jpeg" class="align-center" src="../_images/image-1-1-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>사용자에게 맞춤형 컨텐츠 제공으로 만족도 향상</p></li>
+<li><p>새로운 아이템 발견 촉진, 사용자 충성도 증가</p></li>
+<li><p>사용자가 원하는 것을 빠르게 찾도록 도움</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>추천 시스템의 기본 원리<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-1-52.jpeg"><img alt="../_images/image-1-1-52.jpeg" class="align-center" src="../_images/image-1-1-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>사용자 데이터 수집: 검색 기록, 구매 이력, 평가 등</p></li>
+<li><p>데이터 분석: 사용자의 패턴과 선호 파악</p></li>
+<li><p>아이템 필터링: 콘텐츠 기반, 협업 필터링 등의 방법 사용</p></li>
+<li><p>개인화된 추천: 분석 결과를 바탕으로 개인에게 맞는 아이템 추천</p></li>
+</ul>
+</section>
+</section>
+<section id="id8">
+<h2>콘텐츠 기반 추천 시스템<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>콘텐츠 기반 시스템의 정의와 작동 원리</p></li>
 <li><p>사용자 프로필과 아이템의 특성 매칭</p></li>
@@ -484,8 +529,8 @@ document.write(`
 <li><p>실제 사례 연구</p></li>
 </ul>
 </section>
-<section id="id4">
-<h2>3. 협업 필터링 추천 시스템<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<section id="id9">
+<h2>협업 필터링 추천 시스템<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>협업 필터링의 기본 개념</p></li>
 <li><p>사용자 기반 협업 필터링과 아이템 기반 협업 필터링</p></li>
@@ -494,8 +539,8 @@ document.write(`
 <li><p>실제 적용 사례</p></li>
 </ul>
 </section>
-<section id="id5">
-<h2>4. 행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h2>행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>행렬 인수분해의 개념</p></li>
 <li><p>사용자-아이템 상호작용 행렬</p></li>
@@ -504,8 +549,8 @@ document.write(`
 <li><p>실생활에서의 응용 예</p></li>
 </ul>
 </section>
-<section id="id6">
-<h2>5. 하이브리드 추천 시스템<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<section id="id11">
+<h2>하이브리드 추천 시스템<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>하이브리드 추천 시스템의 정의</p></li>
 <li><p>다양한 하이브리드 방식의 소개</p></li>
@@ -580,11 +625,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템 개요</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 콘텐츠 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 협업 필터링 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">추천 시스템 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">추천 시스템의 정의 및 필요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">추천 시스템의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">다양한 추천 시스템의 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">사용자 경험 향상을 위한 추천 시스템의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">추천 시스템의 기본 원리</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">하이브리드 추천 시스템</a></li>
 </ul>
   </nav></div>
 
