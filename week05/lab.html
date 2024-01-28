@@ -495,11 +495,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 데이터셋 준비 및 분석</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 나이브 베이즈 분류기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 의사결정 트리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm-support-vector-machine">4. SVM (Support Vector Machine)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 분류 알고리즘 적용 결과</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터셋 준비 및 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">나이브 베이즈 분류기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">의사결정 트리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm-support-vector-machine">SVM (Support Vector Machine)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">분류 알고리즘 적용 결과</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
@@ -539,7 +539,7 @@ document.write(`
 <section id="supervised-learning">
 <h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Permalink to this heading">#</a></h2>
 <section id="id2">
-<h3>1. 데이터셋 준비 및 분석<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>데이터셋 준비 및 분석<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <p>Iris 데이터셋은 세 가지 종류의 아이리스 꽃(세토사, 버시컬러, 버지니카)에 대한 꽃받침과 꽃잎의 길이와 너비 정보를 담고 있습니다. 이 데이터셋을 이용해 다음의 알고리즘을 적용해보겠습니다: 나이브 베이즈, 의사결정 트리, SVM.</p>
 <p>먼저, 데이터셋을 살펴보겠습니다.</p>
 <div class="cell docutils container">
@@ -709,7 +709,7 @@ max            2.500000    2.000000
 <p>이러한 분석을 통해 Iris 데이터셋의 기본적인 특성을 이해하고, 각 아이리스 종별로 특성이 어떻게 다른지 파악할 수 있습니다. 이는 향후 머신러닝 모델을 설계하고 훈련하는 데 있어 중요한 기초 정보를 제공합니다.</p>
 </section>
 <section id="id3">
-<h3>2. 나이브 베이즈 분류기<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>나이브 베이즈 분류기<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <p>나이브 베이즈는 조건부 확률을 기반으로 분류를 수행하는 간단하면서도 효과적인 알고리즘입니다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -738,7 +738,7 @@ max            2.500000    2.000000
 </div>
 </section>
 <section id="id4">
-<h3>3. 의사결정 트리<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>의사결정 트리<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
 <p>의사결정 트리는 데이터를 나누는 결정 규칙을 트리 구조로 나타내어 분류를 수행합니다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -762,7 +762,7 @@ max            2.500000    2.000000
 </div>
 </section>
 <section id="svm-support-vector-machine">
-<h3>4. SVM (Support Vector Machine)<a class="headerlink" href="#svm-support-vector-machine" title="Permalink to this heading">#</a></h3>
+<h3>SVM (Support Vector Machine)<a class="headerlink" href="#svm-support-vector-machine" title="Permalink to this heading">#</a></h3>
 <p>SVM은 데이터를 가장 잘 구분하는 경계를 찾아내어 분류를 수행하는 알고리즘입니다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -786,7 +786,7 @@ max            2.500000    2.000000
 </div>
 </section>
 <section id="id5">
-<h3>5. 분류 알고리즘 적용 결과<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>분류 알고리즘 적용 결과<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>나이브 베이즈 분류기 (Naive Bayes Classifier)</strong>:</p>
 <ul class="simple">
@@ -1190,11 +1190,11 @@ max            2.500000    2.000000
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 데이터셋 준비 및 분석</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 나이브 베이즈 분류기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 의사결정 트리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm-support-vector-machine">4. SVM (Support Vector Machine)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 분류 알고리즘 적용 결과</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">데이터셋 준비 및 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">나이브 베이즈 분류기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">의사결정 트리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm-support-vector-machine">SVM (Support Vector Machine)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">분류 알고리즘 적용 결과</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
