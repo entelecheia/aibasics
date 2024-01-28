@@ -460,9 +460,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">실생활에서의 지도 학습 활용 사례</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">비지도 학습의 다양한 응용 분야</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝 학습 방법의 선택과 적용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">머신러닝 학습 방법의 선택과 적용</a></li>
 </ul>
             </nav>
         </div>
@@ -670,12 +677,99 @@ document.write(`
 </section>
 <section id="unsupervised-learning">
 <h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Permalink to this heading">#</a></h2>
+<section id="id12">
+<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-11.jpeg"><img alt="../_images/image-2-3-11.jpeg" class="align-center" src="../_images/image-2-3-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>비지도 학습의 정의 및 핵심 개념</p></li>
-<li><p>클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</p></li>
-<li><p>비지도 학습의 대표적인 알고리즘 소개 (K-means, 가우스 혼합 모델 등)</p></li>
-<li><p>비지도 학습의 장단점 및 도전 과제</p></li>
-<li><p>비지도 학습의 다양한 응용 분야</p></li>
+<li><p><strong>정의</strong>: 레이블이나 분류가 없는 데이터를 분석하여 패턴, 구조, 관계 등을 찾아내는 학습 방법</p></li>
+<li><p><strong>핵심 개념</strong>: 입력 데이터만을 사용하여 데이터의 숨겨진 특성이나 구조를 발견</p></li>
+<li><p><strong>목적</strong>: 데이터의 내재된 구조를 이해하거나 새로운 통찰력을 얻는 것</p></li>
+</ul>
+</section>
+<section id="clustering-dimensionality-reduction">
+<h3>클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해<a class="headerlink" href="#clustering-dimensionality-reduction" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-21.jpeg"><img alt="../_images/image-2-3-21.jpeg" class="align-center" src="../_images/image-2-3-21.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>클러스터링(Clustering)</strong>:</p>
+<ul>
+<li><p>유사한 특성을 가진 데이터 포인트들을 그룹화</p></li>
+<li><p>예: 고객 세분화, 사회적 네트워크 분석</p></li>
+</ul>
+</li>
+<li><p><strong>차원 축소(Dimensionality Reduction)</strong>:</p>
+<ul>
+<li><p>고차원 데이터를 저차원으로 표현하여 복잡성 감소</p></li>
+<li><p>예: 시각화, 노이즈 제거, 효율적인 저장 및 계산</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id13">
+<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-31.jpeg"><img alt="../_images/image-2-3-31.jpeg" class="align-center" src="../_images/image-2-3-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>K-means 클러스터링</strong>:</p>
+<ul>
+<li><p>데이터 포인트를 K개의 클러스터로 그룹화</p></li>
+<li><p>각 클러스터의 중심을 계산하고 데이터 포인트를 가장 가까운 클러스터에 할당</p></li>
+</ul>
+</li>
+<li><p><strong>가우스 혼합 모델(Gaussian Mixture Models)</strong>:</p>
+<ul>
+<li><p>데이터가 여러 개의 가우스 분포의 혼합으로 구성됨을 가정</p></li>
+<li><p>데이터 포인트가 각 가우스 분포에 속할 확률을 계산하여 클러스터링 수행</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id14">
+<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-41.jpeg"><img alt="../_images/image-2-3-41.jpeg" class="align-center" src="../_images/image-2-3-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>레이블링 되지 않은 데이터로도 학습 가능</p></li>
+<li><p>데이터의 숨겨진 특성을 발견할 수 있음</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>결과의 해석이 주관적일 수 있음</p></li>
+<li><p>최적의 결과를 얻기 위한 적절한 파라미터 설정이 필요</p></li>
+</ul>
+</li>
+<li><p><strong>도전 과제</strong>:</p>
+<ul>
+<li><p>최적의 클러스터 수 결정</p></li>
+<li><p>고차원 데이터에 대한 효과적인 처리</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id15">
+<h3>비지도 학습의 다양한 응용 분야<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-51.jpeg"><img alt="../_images/image-2-3-51.jpeg" class="align-center" src="../_images/image-2-3-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>시장 분석</strong>:</p>
+<ul>
+<li><p>고객 세분화를 통한 타겟 마케팅 전략 수립</p></li>
+</ul>
+</li>
+<li><p><strong>생물정보학</strong>:</p>
+<ul>
+<li><p>유전자 데이터의 패턴 분석 및 질병 연구</p></li>
+</ul>
+</li>
+<li><p><strong>사회 네트워크 분석</strong>:</p>
+<ul>
+<li><p>온라인 커뮤니티 내에서의 그룹 동질성 연구</p></li>
+</ul>
+</li>
+<li><p><strong>추천 시스템</strong>:</p>
+<ul>
+<li><p>사용자의 취향과 행동을 기반으로 한 맞춤형 추천</p></li>
+</ul>
+</li>
 </ul>
 <table class="colwidths-auto table">
 <thead>
@@ -708,6 +802,7 @@ document.write(`
 </tbody>
 </table>
 </section>
+</section>
 <section id="reinforcement-learning">
 <h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -718,8 +813,8 @@ document.write(`
 <li><p>강화 학습의 현재 연구 동향 및 미래 가능성</p></li>
 </ul>
 </section>
-<section id="id12">
-<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<section id="id16">
+<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>특정 문제에 적합한 학습 방법 결정하기</p></li>
 <li><p>데이터의 종류와 양에 따른 학습 방법의 선택</p></li>
@@ -810,9 +905,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">실생활에서의 지도 학습 활용 사례</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">비지도 학습의 다양한 응용 분야</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝 학습 방법의 선택과 적용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">머신러닝 학습 방법의 선택과 적용</a></li>
 </ul>
   </nav></div>
 
