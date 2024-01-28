@@ -52,6 +52,11 @@
 
 ### 비용함수와 손실함수의 정의
 
+```{image} figs/image-3-2-1.jpeg
+:width: 90%
+:align: center
+```
+
 - **정의**:
   - 손실함수(Loss Function): 개별 데이터 포인트에 대한 모델의 오차를 측정합니다.
   - 비용함수(Cost Function): 전체 데이터셋에 대한 모델의 성능을 측정합니다.
@@ -59,6 +64,11 @@
   - 이 함수들은 모델이 얼마나 잘 또는 잘못 예측하는지를 나타내며, 이를 최소화하는 것이 모델 학습의 목표입니다.
 
 ### 평균제곱오차의 역할
+
+```{image} figs/image-3-2-2.jpeg
+:width: 90%
+:align: center
+```
 
 - **평균 제곱 오차(Mean Squared Error, MSE)**:
   - MSE = (1/n) Σ(actual - prediction)²
@@ -68,6 +78,11 @@
   - 모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 내, 오차의 크기를 나타냅니다.
 
 ### 오차 함수와 목적 함수의 비교
+
+```{image} figs/image-3-2-3.jpeg
+:width: 90%
+:align: center
+```
 
 - **오차 함수(Error Function)**:
   - 개별 예측값과 실제값의 차이를 측정합니다.
