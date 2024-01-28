@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Session 2 &#8212; AI 세상 속으로</title>
+    <title>머신러닝 학습 방법 &#8212; AI 세상 속으로</title>
   
   
   
@@ -210,6 +210,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="session1.html">머신러닝의 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab.html">머신러닝 알고리즘 실습</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week06/index.html">Week 6: 추천시스템</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -419,7 +420,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -430,11 +433,53 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Session 2</h1>
+    <h1>머신러닝 학습 방법</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">머신러닝 학습 방법</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">실생활에서의 지도 학습 활용 사례</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝 학습 방법의 선택과 적용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝의 학습 방법</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">머신러닝의 학습 방법 3가지</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">지도학습(supervised learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">비지도학습(unsupervised learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">강화학습(reinforcement learning)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">지도 학습</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">지도 학습</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">지도학습의장단점</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">분류의 다양한 예</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">분류의 다양한 응용 예</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -444,8 +489,549 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="session-2">
-<h1>Session 2<a class="headerlink" href="#session-2" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>머신러닝 학습 방법<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-11.jpeg"><img alt="../_images/image-2-1-11.jpeg" class="align-center" src="../_images/image-2-1-11.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>머신러닝의 정의</strong>: 컴퓨터가 데이터를 기반으로 학습하고, 예측하거나 결정을 내리는 과정</p></li>
+<li><p><strong>학습 방법의 중요성</strong>: 알고리즘의 성능과 정확도에 직접적인 영향을 미침</p></li>
+<li><p><strong>데이터와 알고리즘의 상호작용</strong>: 데이터를 통해 학습되며, 알고리즘에 따라 다른 결과 도출</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-21.jpeg"><img alt="../_images/image-2-1-21.jpeg" class="align-center" src="../_images/image-2-1-21.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>지도 학습(Supervised Learning)</strong>:</p>
+<ul>
+<li><p>레이블링된 데이터셋 사용</p></li>
+<li><p>예: 분류(Classification), 회귀(Regression)</p></li>
+</ul>
+</li>
+<li><p><strong>비지도 학습(Unsupervised Learning)</strong>:</p>
+<ul>
+<li><p>레이블 없는 데이터셋 사용</p></li>
+<li><p>예: 클러스터링(Clustering), 차원 축소</p></li>
+</ul>
+</li>
+<li><p><strong>강화 학습(Reinforcement Learning)</strong>:</p>
+<ul>
+<li><p>보상 시스템을 통한 학습</p></li>
+<li><p>예: 로봇 제어, 게임 AI</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id5">
+<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-3.jpeg"><img alt="../_images/image-2-1-3.jpeg" class="align-center" src="../_images/image-2-1-3.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>지도 학습 예시</strong>:</p>
+<ul>
+<li><p>이미지 분류: 고양이와 개 구분</p></li>
+<li><p>주가 예측: 과거 데이터를 바탕으로 미래 주가 예측</p></li>
+</ul>
+</li>
+<li><p><strong>비지도 학습 예시</strong>:</p>
+<ul>
+<li><p>고객 세분화: 구매 패턴을 기반으로 유사한 고객 그룹화</p></li>
+<li><p>차원 축소: 데이터의 복잡성 감소</p></li>
+</ul>
+</li>
+<li><p><strong>강화 학습 예시</strong>:</p>
+<ul>
+<li><p>체스 게임: 각 수에 대한 보상을 통해 최적의 전략 학습</p></li>
+<li><p>자율 주행 자동차: 다양한 시나리오에서 최적의 운전 방법 학습</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id6">
+<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-41.jpeg"><img alt="../_images/image-2-1-41.jpeg" class="align-center" src="../_images/image-2-1-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터의 품질</strong>: 정확하고 다양한 데이터가 머신러닝 모델의 성능을 결정</p></li>
+<li><p><strong>데이터 전처리의 중요성</strong>: 불필요한 정보 제거, 필요한 정보 강조</p></li>
+<li><p><strong>데이터 다양성</strong>: 다양한 시나리오 및 사례를 포함하는 것이 중요</p></li>
+<li><p><strong>데이터 양</strong>: 충분한 양의 데이터를 통해 일반화 및 정확도 향상</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-51.jpeg"><img alt="../_images/image-2-1-51.jpeg" class="align-center" src="../_images/image-2-1-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>의료 분야</strong>:</p>
+<ul>
+<li><p>지도 학습: X-레이 이미지를 통한 질병 진단</p></li>
+<li><p>비지도 학습: 환자 데이터를 클러스터링하여 유사 질병 그룹 생성</p></li>
+</ul>
+</li>
+<li><p><strong>금융 분야</strong>:</p>
+<ul>
+<li><p>지도 학습: 고객 신용 점수 예측</p></li>
+<li><p>강화 학습: 주식 시장에서의 자동 거래 시스템</p></li>
+</ul>
+</li>
+<li><p><strong>통신 분야</strong>:</p>
+<ul>
+<li><p>비지도 학습: 사용자 행동을 기반으로 하는 서비스 추천 시스템</p></li>
+<li><p>강화 학습: 네트워크 트래픽 최적화</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="supervised-learning">
+<h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Permalink to this heading">#</a></h2>
+<section id="id8">
+<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-11.jpeg"><img alt="../_images/image-2-2-11.jpeg" class="align-center" src="../_images/image-2-2-11.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 지도 학습은 입력 데이터와 그에 해당하는 출력(레이블)을 사용하여 모델을 훈련시키는 방법</p></li>
+<li><p><strong>기본 원리</strong>: 입력 데이터와 레이블 쌍을 모델에 제공하여, 새로운 데이터에 대한 예측을 수행</p></li>
+<li><p><strong>학습 과정</strong>: 미리 레이블링된 데이터셋을 사용하여 알고리즘이 패턴을 학습하고, 이를 기반으로 결정 또는 예측</p></li>
+</ul>
+</section>
+<section id="classification-regression">
+<h3>분류(Classification)와 회귀(Regression)의 개념<a class="headerlink" href="#classification-regression" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-21.jpeg"><img alt="../_images/image-2-2-21.jpeg" class="align-center" src="../_images/image-2-2-21.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>분류(Classification)</strong>:</p>
+<ul>
+<li><p>데이터를 미리 정의된 여러 클래스 중 하나로 분류</p></li>
+<li><p>예: 이메일이 스팸인지 아닌지 분류(이항 분류), 손글씨 숫자 인식(다항 분류)</p></li>
+</ul>
+</li>
+<li><p><strong>회귀(Regression)</strong>:</p>
+<ul>
+<li><p>연속적인 값을 예측하는 방법</p></li>
+<li><p>예: 주택 가격 예측, 온도 예측 등</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id9">
+<h3>지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-31.jpeg"><img alt="../_images/image-2-2-31.jpeg" class="align-center" src="../_images/image-2-2-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>Naive Bayes 분류기</strong>:</p>
+<ul>
+<li><p>조건부 확률을 이용하여 분류하는 간단하고 효율적인 방법</p></li>
+<li><p>스팸 메일 분류, 문서 분류 등에 적합</p></li>
+</ul>
+</li>
+<li><p><strong>의사결정 트리(Decision Tree)</strong>:</p>
+<ul>
+<li><p>데이터를 기반으로 결정 노드와 잎 노드로 구성된 트리 구조를 생성</p></li>
+<li><p>결정 규칙을 명확하게 시각화 가능</p></li>
+</ul>
+</li>
+<li><p><strong>SVM(Support Vector Machine)</strong>:</p>
+<ul>
+<li><p>데이터를 가장 잘 구분하는 경계를 찾는 알고리즘</p></li>
+<li><p>마진의 최대화를 통해 데이터를 분류</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id10">
+<h3>지도 학습의 장단점 분석<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-41.jpeg"><img alt="../_images/image-2-2-41.jpeg" class="align-center" src="../_images/image-2-2-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>높은 정확도와 신뢰성</p></li>
+<li><p>다양한 실제 문제에 적용 가능</p></li>
+<li><p>결과의 해석이 비교적 쉬움</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>고품질의 레이블링된 데이터 필요</p></li>
+<li><p>과적합(Overfitting)의 위험</p></li>
+<li><p>레이블이 없는 데이터에는 적용 불가</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id11">
+<h3>실생활에서의 지도 학습 활용 사례<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-51.jpeg"><img alt="../_images/image-2-2-51.jpeg" class="align-center" src="../_images/image-2-2-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>의료 분야</strong>:</p>
+<ul>
+<li><p>병리 이미지를 분석하여 질병 진단</p></li>
+<li><p>환자 데이터를 바탕으로 질병 위험도 예측</p></li>
+</ul>
+</li>
+<li><p><strong>금융 분야</strong>:</p>
+<ul>
+<li><p>신용 점수 산정 및 대출 승인 결정</p></li>
+<li><p>주식 시장 예측 및 투자 조언</p></li>
+</ul>
+</li>
+<li><p><strong>소비자 행동 분석</strong>:</p>
+<ul>
+<li><p>고객 구매 이력 데이터 분석을 통한 개인화된 추천 제공</p></li>
+<li><p>소비자 트렌드 예측 및 마케팅 전략 수립</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="unsupervised-learning">
+<h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>비지도 학습의 정의 및 핵심 개념</p></li>
+<li><p>클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</p></li>
+<li><p>비지도 학습의 대표적인 알고리즘 소개 (K-means, 가우스 혼합 모델 등)</p></li>
+<li><p>비지도 학습의 장단점 및 도전 과제</p></li>
+<li><p>비지도 학습의 다양한 응용 분야</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>기준</p></th>
+<th class="head"><p>지도 학습 (Supervised Learning)</p></th>
+<th class="head"><p>비지도 학습 (Unsupervised Learning)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>입력 데이터</strong></p></td>
+<td><p>입력 (예: 이미지) 및 출력 (예: 레이블)이 명확히 지정된 데이터</p></td>
+<td><p>출력이나 레이블 없이, 오직 입력 데이터만을 사용 (예: 고객 구매 데이터)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>주요 용도</strong></p></td>
+<td><p>분류 (예: 이메일 스팸 여부 판단), 회귀 (예: 집 가격 예측)</p></td>
+<td><p>클러스터링 (예: 고객 세분화), 차원 축소, 연관 규칙 학습 (예: 시장 바구니 분석)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>계산 복잡성</strong></p></td>
+<td><p>데이터 레이블링 필요, 알고리즘 복잡성은 다양</p></td>
+<td><p>레이블 없이 패턴 인식에 중점, 일부 알고리즘은 매우 복잡</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>성능 평가</strong></p></td>
+<td><p>명확한 정답이 있으므로 정확도, 정밀도 등으로 평가</p></td>
+<td><p>명확한 정답이 없으므로 평가가 어렵고, 주로 결과의 해석에 의존</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>적용 예시</strong></p></td>
+<td><p>이미지 인식, 음성 인식, 이메일 필터링</p></td>
+<td><p>고객 세분화, 추천 시스템, 사회 네트워크 분석</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reinforcement-learning">
+<h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>강화 학습의 기본 개념과 메커니즘</p></li>
+<li><p>보상 시스템과 환경의 역할</p></li>
+<li><p>강화 학습의 대표적인 알고리즘 및 응용 예시</p></li>
+<li><p>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</p></li>
+<li><p>강화 학습의 현재 연구 동향 및 미래 가능성</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>특정 문제에 적합한 학습 방법 결정하기</p></li>
+<li><p>데이터의 종류와 양에 따른 학습 방법의 선택</p></li>
+<li><p>실제 사례를 통한 학습 방법의 적용 과정</p></li>
+<li><p>머신러닝 모델의 성능 평가 방법</p></li>
+<li><p>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</p></li>
+</ul>
+</section>
+<section id="id13">
+<h2>머신러닝의 학습 방법<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id14">
+<h1>머신러닝의 학습 방법 3가지<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>학습의 형태에 따라 3가지 학습 방법</p></li>
+<li><p>지도 학습, 비지도 학습, 강화 학습으로 구분</p></li>
+<li><p>지도학습은 분류와 회귀, 비지도 학습은 클러스터링과차원축소로다시나누어짐</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id15">
+<h1>지도학습(supervised learning)<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>입력과 미리 알려진 출력을 연관시키는 관계를 학습</p></li>
+<li><p>주어진 입력과 출력 쌍 사이의 대응 관계를 학습</p></li>
+<li><p>자동차 번호판이 오염된 경우 인식하지 못할 수도 있음</p></li>
+<li><p>그러나 오염된 번호판 사례들을 학습시켜 인식률을 높임</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id16">
+<h1>비지도학습(unsupervised learning)<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>출력값을 알려주지 않고 스스로 모델을 구축하여 학습</p></li>
+<li><p>비지도 학습은 입력만 있고 출력 즉 레이블(label)이 없음</p></li>
+<li><p>규칙성을 스스로 찾아내는 것이 학습의 주요 목표</p></li>
+<li><p>결과는 지도 학습의 입력으로 사용 가능</p></li>
+<li><p>또는 전문가에 의해 해석되어 다른 용도로 활용됨</p></li>
+<li><p>데이터 마이닝(data mining) 기법은 비지도 학습의 예</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id17">
+<h1>강화학습(reinforcement learning)<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>주어진 입력에 대응하는 행동에 대해 보상(reward)</p></li>
+<li><p>이러한 보상을 이용하여 학습하는 방법</p></li>
+<li><p>주어진 입력에 대한 출력, 즉 정답 행동이 주어지지 않음</p></li>
+<li><p>주요 응용 분야로는 로봇, 게임, 내비게이션 등</p></li>
+</ul>
+<section id="id18">
+<h2>지도 학습<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id19">
+<h1>지도 학습<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>주어진 입력과 정해진 출력간의 관계를 학습</p></li>
+<li><p>각 데이터에 레이블(label) 또는 태그(tag) 표시 붙임</p></li>
+<li><p>데이터에 ‘P’(pass) 또는 ‘F’(fail)라는 레이블을 활용</p></li>
+<li><p>예를 들어 ‘이들은 사과’ 라는 레이블로 학습한 후, 새로운사과하나를제시하면그것을 ‘사과＇라고 예측하는 방법</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id20">
+<h1>지도학습의장단점<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h1>
+<p>① 장점</p>
+<ul class="simple">
+<li><p>이전의 경험으로부터 데이터 출력을 생성</p></li>
+<li><p>경험을 사용하여 성능 기준을 최적화</p></li>
+<li><p>다양한 유형의 문제 해결에 도움이 됨</p></li>
+</ul>
+<p>② 단점</p>
+<ul class="simple">
+<li><p>출력에 반드시 레이블이 있는 데이터들을 사용해야 함</p></li>
+<li><p>일반적으로 많은 시간이 걸림</p></li>
+<li><p>빅데이터의 경우 엄청난 시간이 걸릴 수도 있음</p></li>
+</ul>
+<p>③ 분류(classification)</p>
+<ul class="simple">
+<li><p>유사한 특성을 가진 데이터들끼리 묶어서 나누는 것</p></li>
+<li><p>2개로 분류하는 이항 분류, 그 이상의 다항 분류</p></li>
+<li><p>이항 분류는 합격/불합격, 스팸 메일/정상 메일 등 분류 방법</p></li>
+<li><p>0에서 9까지의 아라비아 숫자 인식은 다항 분류</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id21">
+<h1>분류의 다양한 예<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h1>
+<p>(1) 일상생활에서수많은패턴들을분류
+(2) 일반버스/마을 버스/광역 버스 등의 구별
+(3) 많은남자와여자사진을레이블을붙여놓고학습
+(4) 학습후새로운사진에대해남자/여자 분류</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id22">
+<h1>분류의 다양한 응용 예<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h1>
+<p>(1) 사진으로남자와여자의구별
+(2) 개와고양이의구분
+(3) 스팸메일과정상메일구분
+(4) 0에서 9까지의 숫자의 구분
+(5) 알파벳과한글문자등의구분
+(6) 편지봉투의손으로쓴주소판별
+(7) 카드부정사용감지
+(8) 의료영상에서종양의존재여부판단</p>
+<p>분류와 회귀의 차이점</p>
+<p>(1) 분류는일정한기준에따라명백하게구분짓는것</p>
+<p>(2) 회귀는오차제곱의합을최소화하는직선을긋는작업 따라서명확히직선으로구별되는것이아님</p>
+<p>분류와 회귀의 차이 구분</p>
+<p>(1) 분류의출력은남자/여자 등과 같은 선택식 출력</p>
+<p>(2) “내일날씨는더울것이다.”와 같은 이분법적 선택</p>
+<p>(3) 회귀의출력은연속값으로나타냄</p>
+<p>(4) “내일기온?”에 대해 “12. 도로 추정된다.” 등의 형태</p>
+<p>분류의 방법</p>
+<p>(1) 몇가지유형의주요분류방법</p>
+<ul class="simple">
+<li><p>Naive Bayes 분류기</p></li>
+<li><p>의사결정 트리</p></li>
+<li><p>SVM</p></li>
+<li><p>K-Nearest Neighbor(K-NN) 등</p></li>
+</ul>
+<p>① Naive Bayes 분류기</p>
+<ul class="simple">
+<li><p>나이브 베이즈 분류기는 머신러닝의 한 분야</p></li>
+<li><p>자료의 분류를 베이즈 정리를 활용하여 판단</p></li>
+<li><p>나이브 베이즈 분류기는 조건부 확률 모델</p></li>
+<li><p>모든 특성값은 서로 독립이라고 가정</p></li>
+</ul>
+<p>나이브 베이즈 분류의 장점</p>
+<p>(1) 구축하기쉽고, 대규모 데이터 세트에 유용함</p>
+<p>(2) 지도학습환경에서효율적으로훈련될수있음</p>
+<p>(3) 복잡한실제상황에서비교적잘작동</p>
+<p>(4) 주가의상승이나하락이예상되는종목들을분류</p>
+<p>(5) 문서의내용에따라문서분류가능</p>
+<p>(6) 이메일내용에따라스팸/정상 메일로 분류</p>
+<p>② 의사결정트리(Decision Tree)</p>
+<ul class="simple">
+<li><p>관측값과 목표값을 연결하는 예측 모델</p></li>
+<li><p>최대 2가지의 판단을 하는 이진 트리 사용</p></li>
+<li><p>‘스무고개’ 문답처럼 선택 방법으로 진행</p></li>
+<li><p>주택이나 자동차 구입비용 등의 추정에 활용</p></li>
+<li><p>타이타닉호 탑승객의 생존 여부를 나타내는 결정 트리</p></li>
+</ul>
+<p>③ SVM(Support Vector Machine : SVM)</p>
+<ul class="simple">
+<li><p>1990년에 개발, 통계 학습 이론의 결과 기반</p></li>
+<li><p>데이터를 2개의 영역으로 분류하는 이진 분류기</p></li>
+<li><p>새로운 데이터가 어느 영역에 속하는지를 판단</p></li>
+<li><p>가장 큰 폭을 가진 하나의 경계선을 찾는 알고리즘</p></li>
+<li><p>영역의 여백(margin, gap)이 최대가 되는 중심선 찾기</p></li>
+</ul>
+<p>SVM 분류의 활용</p>
+<p>(1) SVM은 패턴인식과 자료 분석을 위한 지도 학습 모델임</p>
+<p>(2) 분류, 회귀 분석, 멀티미디어 정보 검색 등에 사용</p>
+<p>(3) 두영역사이의여백을최대로하는직선으로분류</p>
+<p>(4) SVM으로 개와 고양이의 특성을 분류에 활용하는 예</p>
+<p>④ K-Nearest Neighbor(K-NN)</p>
+<ul class="simple">
+<li><p>1950년대에 개발된 지도 학습 모델의 분류 기법</p></li>
+<li><p>간단한 분류 기법, ‘최근접 이웃 분류’라고도 불림</p></li>
+<li><p>가장 가까운 것들과의 거리 계산으로 클래스를 분류</p></li>
+<li><p>새로운 입력 데이터와 가장 가까운 k개의 이웃 데이터 선택</p></li>
+<li><p>이웃 데이터들의 클래스 중 다수결로 데이터의 클래스 결정</p></li>
+<li><p>다수결에서 결과가 나오기 위해 k는 반드시 홀수여야 함</p></li>
+</ul>
+<p>K-NN의 장단점과 활용 분야</p>
+<p>(1) 장점은매우간단하며빠르고효과적인알고리즘 어떤데이터라도유사성측정가능</p>
+<p>(2) 단점으로는 적절한 k를 선택해야 한다는 점 새로운데이터에대해일일이거리를계산한후분류</p>
+<p>K-NN의 활용 분야</p>
+<p>(1) 영화나음악추천에대한개인별선호예측</p>
+<p>(2) 수표에적힌광학숫자와글자인식</p>
+<p>(3) 얼굴인식과같은컴퓨터비전</p>
+<p>(4) 유방암등질병의진단과유전자데이터인식</p>
+<p>(5) 재정적인위험성의파악과관리, 주식 시장 예측</p>
+<p>K-NN의 꽃잎 분류에의 적용 예</p>
+<p>(1) 꽃잎의크기와밝기에따른 K-NN 분류</p>
+<p>(2) 오른쪽위에새로운꽃잎이입력으로들어왔을때 빨간화살표의 3가지를 비교한 후 분류하는 것을 보여줌</p>
+<p>머신러닝의 비지도 학습</p>
+<ol class="arabic simple">
+<li><p>클러스터(cluster)와 클러스터링(clustering)</p></li>
+</ol>
+<p>(1) 클러스터는유사한여러개의클래스로나누어진데이터</p>
+<p>(2) 클러스터링은유사한특성을가진그룹들로묶는작업</p>
+<p>(3) 같은클러스터의것은다른클러스터의것보다더유사</p>
+<p>(4) 이와같은유사한것들끼리의집합이바로클러스터</p>
+<ol class="arabic simple" start="3">
+<li><p>분류와 클러스터링의 차이점</p></li>
+</ol>
+<p>(1) 분류는지도학습영역, 클러스터링은 비지도 학습 영역</p>
+<p>(2) 분류는데이터를기준에따라직선으로분류하는것</p>
+<p>(3) 클러스터링은유사성에따라몇개의클러스터들로묶는것</p>
+<p>(4) 급여, 나이, 위험도 상관관계의 예에서의 차이점의 예</p>
+<ol class="arabic simple" start="4">
+<li><p>비지도 학습</p></li>
+</ol>
+<p>(1) 주어진입력에대응하는출력정보없이학습</p>
+<p>(2) 데이터분류에대한정보가전혀없이패턴을찾거나 데이터를분류하려고할때사용하는학습방법</p>
+<p>(3) 데이터에 레이블을 전혀 사용하지 않음</p>
+<p>(4) 관계를 스스로 학습한 후, 과일들을 각 그룹으로 알아서 묶기</p>
+<ol class="arabic simple" start="5">
+<li><p>비지도 학습의 주요 응용 분야</p></li>
+</ol>
+<p>(1) 비슷한성향의고객을그룹으로묶기</p>
+<p>(2) 블로그에서주제별로구분하기</p>
+<p>(3) 유사한꽃이나동물들끼리묶기</p>
+<p>(4) 네트워크상에서의비정상적인접근의탐지</p>
+<ol class="arabic simple" start="6">
+<li><p>비지도 학습을 통한 클러스터링과 추천 시스템</p></li>
+</ol>
+<p>(1) 머신러닝에서의주요비지도학습방법</p>
+<ul class="simple">
+<li><p>K-means 클러스터링</p></li>
+<li><p>가우스 혼합 모델</p></li>
+<li><p>계층적 클러스터링</p></li>
+<li><p>추천 시스템 등</p></li>
+</ul>
+<ol class="arabic" start="7">
+<li><p>지도 학습과 비지도 학습의 특징 비교</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>기반</p></th>
+<th class="head"><p>지도 학습</p></th>
+<th class="head"><p>비지도 학습</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>입력 데이터</p></td>
+<td><p>입력과출력(값 또는 레이블)이 지정된데이터를사용하여학습함</p></td>
+<td><p>출력값이나레이블이전혀없는 데이터를사용하여학습함</p></td>
+</tr>
+<tr class="row-odd"><td><p>주요 기능</p></td>
+<td><p>분류, 회귀</p></td>
+<td><p>클러스터링, 추천 시스템</p></td>
+</tr>
+<tr class="row-even"><td><p>계산의 복잡성</p></td>
+<td><p>비교적간단함</p></td>
+<td><p>상당히복잡함</p></td>
+</tr>
+<tr class="row-odd"><td><p>정확성</p></td>
+<td><p>매우정확함</p></td>
+<td><p>다소덜정확함</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>머신러닝의 강화 학습</p>
+<ol class="arabic simple">
+<li><p>강화 학습이란?</p></li>
+</ol>
+<p>(1) 강화학습은시행착오를통해보상하는행동학습</p>
+<p>(2) 최적의값을추구하기위해당근과채찍을사용</p>
+<p>(3) 로봇이미로에서옳은방향으로진입하면 +2점, 막힌길로들어가면 -3점 등</p>
+<p>(4) 입출력이 쌍으로 된 훈련 집합으로 제시되지않는다는점에서일반적인지도학습과는다름</p>
+<ol class="arabic simple" start="2">
+<li><p>강화 학습의 응용 분야</p></li>
+</ol>
+<p>(1) 보상(reward)이 주어지는 문제 해결에 매우 효과적</p>
+<p>(2) 통신망, 로봇 제어, 엘리베이터 제어, 그리고체스와 바둑같은게임에주로응용됨</p>
+<p>(3) 알파고도 강화 학습을 통해 실력 향상</p>
+<p>(4) 최근 게임에서는 거의 필수적으로 강화 학습이 사용됨</p>
+<p>베이지안 네트워크와 은닉 마르코프 모델</p>
+<ol class="arabic simple">
+<li><p>베이즈의 정리(Bayesian theorem)</p></li>
+</ol>
+<p>(1) 과거의데이터들을기반으로미래를예측하는모델</p>
+<p>(2) 머신러닝, 통계학, 경제학에 널리 적용되고 있음</p>
+<p>(3) 검색엔진, 스팸 메일 차단, 금융 이론, 승부 예측, 기상예측, 의료 분야, 인공지능 등에 폭넓게 활용됨</p>
+<p>(4) 베이즈(Thomas Bayes)는 확률에 대한 연구로 유명</p>
+<p>(5) 베이즈의 정리는 확률적 추론에 이용되는 정리</p>
+<ol class="arabic simple" start="2">
+<li><p>‘베이즈의 정리’의 응용 예</p></li>
+</ol>
+<ul class="simple">
+<li><p>P(Y|X)는 ‘X가 주어졌을 때 Y가 발생할 조건부 확률’</p></li>
+<li><p>비교적 구하기 쉬운 확률을 통해 어려운 확률을 추정</p></li>
+<li><p>나이브 베이지안과 은닉 마르코프 모델 등에 적용</p></li>
+</ul>
+<p>증상과의학진단에활용</p>
+<ul class="simple">
+<li><p>X가 ‘열이 많이 난다’, P(X)는 열이 많이 나는 환자가 있을 확률</p></li>
+<li><p>Y가 ‘독감’, P(Y)는 환자 중에 독감에 걸린 환자가 있을 확률</p></li>
+<li><p>P(Y|X)는 열이 많이 나는 환자가 독감 환자일 확률</p></li>
+<li><p>P(X|Y)는 독감 환자가 열이 많이 나는 확률</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>베이지안 네트워크(Bayesian network)</p></li>
+</ol>
+<p>(1) ‘빌리프네트워크(Belief network)’라고도 불림</p>
+<p>(2) 집합을조건부독립으로표현하는확률의그래픽모델</p>
+<p>(3) 추론과학습을수행하기위한효과적인알고리즘이존재</p>
+<p>(4) 예를들어, 질환과 증상 사이의 확률 관계를 나타낼 수 있음</p>
+<p>(5) 증상이주어지면다양한질병의존재확률계산가능</p>
+<ol class="arabic simple" start="4">
+<li><p>은닉 마르코프 모델(Hidden Markov Model, HMM)</p></li>
+</ol>
+<p>(1) HMM은 마르코프(Markov) 모델의 일종</p>
+<p>(2) 은닉된상태와관찰가능한결과로이루어진확률형모델</p>
+<p>(3) 동적베이지안네트워크로간단히나타낼수있음</p>
+<p>(4) 대량의데이터를통계적으로분석하여추론에응용</p>
+<p>(5) 음성인식, 자연어 처리 등에 활용</p>
+<p>Based on the above information, draft a detailed and coherent outline for session 2 of Week 5, 머신러닝의 학습 방법, in Korean for beginners. There should be at least five subsections.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -485,7 +1071,54 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">머신러닝 학습 방법</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">실생활에서의 지도 학습 활용 사례</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝 학습 방법의 선택과 적용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝의 학습 방법</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">머신러닝의 학습 방법 3가지</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">지도학습(supervised learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">비지도학습(unsupervised learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">강화학습(reinforcement learning)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">지도 학습</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">지도 학습</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">지도학습의장단점</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">분류의 다양한 예</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">분류의 다양한 응용 예</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
