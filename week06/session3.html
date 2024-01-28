@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>추천 시스템의 고급 주제 &#8212; AI 세상 속으로</title>
+    <title>추천 시스템의 구현 &#8212; AI 세상 속으로</title>
   
   
   
@@ -87,12 +87,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'week06/session2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week06/session3';</script>
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="추천 시스템의 구현" href="session3.html" />
-    <link rel="prev" title="추천 시스템의 기본 개념" href="session1.html" />
+    <link rel="next" title="Week 10: 자연어처리" href="../week10/index.html" />
+    <link rel="prev" title="추천 시스템의 고급 주제" href="session2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -217,9 +217,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 6: 추천시스템</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">추천 시스템의 기본 개념</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">추천 시스템의 고급 주제</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">추천 시스템의 고급 주제</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="session3.html">추천 시스템의 구현</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">추천 시스템의 구현</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week10/index.html">Week 10: 자연어처리</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -305,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week06/session2.md" target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week06/session3.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,7 +322,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek06/session2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek06/session3.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +352,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/week06/session2.md" target="_blank"
+      <li><a href="../_sources/week06/session3.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -436,7 +436,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>추천 시스템의 고급 주제</h1>
+    <h1>추천 시스템의 구현</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -446,24 +446,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">추천 시스템의 고급 주제</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 콘텐츠 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 협업 필터링 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 행렬 인수분해 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 하이브리드 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템 평가 및 최적화</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">세션 2: 추천 시스템의 고급 주제</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">5. 추천 시스템의 향후 전망</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -475,109 +463,55 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>추천 시스템의 고급 주제<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>추천 시스템의 구현<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 추천 시스템의 평가 지표<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>1. 콘텐츠 기반 추천 시스템 구현<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>평가 지표의 중요성과 목적</p></li>
-<li><p>정확도 지표: 정밀도, 재현율, F-점수</p></li>
-<li><p>예측 정확도: RMSE, MAE</p></li>
-<li><p>순위 관련 지표: NDCG, MAP</p></li>
-<li><p>평가 지표의 선택 및 해석</p></li>
+<li><p>콘텐츠 기반 시스템의 개념 복습</p></li>
+<li><p>데이터 전처리와 특성 추출 방법</p></li>
+<li><p>유사도 계산 방법과 알고리즘</p></li>
+<li><p>추천 생성 과정</p></li>
+<li><p>구현 예시와 코딩 실습</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2>2. 추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2>2. 협업 필터링 기반 추천 시스템 구현<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>콜드 스타트 문제의 정의와 유형</p></li>
-<li><p>새로운 사용자와 새로운 아이템 문제</p></li>
-<li><p>콜드 스타트 해결 전략</p></li>
-<li><p>데이터 수집 및 활용 방법</p></li>
-<li><p>실제 사례와 해결 사례 연구</p></li>
+<li><p>협업 필터링 개념과 알고리즘 이해</p></li>
+<li><p>사용자-아이템 행렬 작업</p></li>
+<li><p>유사도 계산과 예측 모델 구축</p></li>
+<li><p>구현 과정과 주의사항</p></li>
+<li><p>실습과 실제 적용 사례</p></li>
 </ul>
 </section>
 <section id="id4">
-<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h2>3. 행렬 인수분해 기반 추천 시스템 구현<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>다양성과 정확도의 균형의 중요성</p></li>
-<li><p>다양성을 측정하는 방법</p></li>
-<li><p>사용자 만족도와 탐험</p></li>
-<li><p>정확도와 다양성의 트레이드오프</p></li>
-<li><p>개선 전략과 실제 적용 사례</p></li>
+<li><p>행렬 인수분해 개념 재확인</p></li>
+<li><p>알고리즘 선택과 구현 방법</p></li>
+<li><p>최적화 기법과 성능 향상</p></li>
+<li><p>실습: 행렬 인수분해 구현</p></li>
+<li><p>사례 연구 및 응용 분야</p></li>
 </ul>
 </section>
 <section id="id5">
-<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<h2>4. 하이브리드 추천 시스템 구현<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>컨텍스트 인식 추천의 정의</p></li>
-<li><p>컨텍스트의 종류와 활용 방법</p></li>
-<li><p>알고리즘과 기술의 소개</p></li>
-<li><p>컨텍스트 인식 추천의 효과와 한계</p></li>
-<li><p>실생활에서의 응용 예</p></li>
+<li><p>하이브리드 시스템의 장점과 구조</p></li>
+<li><p>다양한 하이브리드 모델 소개</p></li>
+<li><p>통합 전략과 구현 방법</p></li>
+<li><p>실습: 하이브리드 시스템 개발</p></li>
+<li><p>실제 사례와 효과 분석</p></li>
 </ul>
 </section>
 <section id="id6">
-<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<h2>5. 추천 시스템 평가 및 최적화<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>인공지능과 머신러닝의 발전</p></li>
-<li><p>개인화와 사용자 경험</p></li>
-<li><p>윤리적 고려사항과 개인정보 보호</p></li>
-<li><p>새로운 기술과 혁신적 접근</p></li>
-<li><p>산업과 사회에서의 영향</p></li>
-</ul>
-<p>이 강의 개요는 추천 시스템의 고급 주제들을 초심자들이 이해하기 쉽게 구성하여, 기술적 깊이와 실용적 적용 사례를 모두 포함하고 있습니다.etailed outline in Korean for Week 6, Session 2 of the AI Basics course, focusing on various aspects of recommender systems:</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id7">
-<h1>세션 2: 추천 시스템의 고급 주제<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h1>
-<section id="id8">
-<h2>1. 추천 시스템의 평가 지표<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>평가 지표의 중요성과 목적</p></li>
-<li><p>정확도 지표: 정밀도, 재현율, F-점수</p></li>
-<li><p>예측 정확도: RMSE, MAE</p></li>
-<li><p>순위 관련 지표: NDCG, MAP</p></li>
-<li><p>평가 지표의 선택 및 해석</p></li>
-</ul>
-</section>
-<section id="id9">
-<h2>2. 추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>콜드 스타트 문제의 정의와 유형</p></li>
-<li><p>새로운 사용자와 새로운 아이템 문제</p></li>
-<li><p>콜드 스타트 해결 전략</p></li>
-<li><p>데이터 수집 및 활용 방법</p></li>
-<li><p>실제 사례와 해결 사례 연구</p></li>
-</ul>
-</section>
-<section id="id10">
-<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>다양성과 정확도의 균형의 중요성</p></li>
-<li><p>다양성을 측정하는 방법</p></li>
-<li><p>사용자 만족도와 탐험</p></li>
-<li><p>정확도와 다양성의 트레이드오프</p></li>
-<li><p>개선 전략과 실제 적용 사례</p></li>
-</ul>
-</section>
-<section id="id11">
-<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>컨텍스트 인식 추천의 정의</p></li>
-<li><p>컨텍스트의 종류와 활용 방법</p></li>
-<li><p>알고리즘과 기술의 소개</p></li>
-<li><p>컨텍스트 인식 추천의 효과와 한계</p></li>
-<li><p>실생활에서의 응용 예</p></li>
-</ul>
-</section>
-<section id="id12">
-<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>인공지능과 머신러닝의 발전</p></li>
-<li><p>개인화와 사용자 경험</p></li>
-<li><p>윤리적 고려사항과 개인정보 보호</p></li>
-<li><p>새로운 기술과 혁신적 접근</p></li>
-<li><p>산업과 사회에서의 영향</p></li>
+<li><p>평가 지표의 선택과 적용</p></li>
+<li><p>시스템 성능 분석 방법</p></li>
+<li><p>최적화 전략과 기법</p></li>
+<li><p>A/B 테스팅과 사용자 피드백 활용</p></li>
+<li><p>실습: 평가 및 개선 프로세스</p></li>
 </ul>
 </section>
 </section>
@@ -613,20 +547,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="session1.html"
+       href="session2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">추천 시스템의 기본 개념</p>
+        <p class="prev-next-title">추천 시스템의 고급 주제</p>
       </div>
     </a>
     <a class="right-next"
-       href="session3.html"
+       href="../week10/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">추천 시스템의 구현</p>
+        <p class="prev-next-title">Week 10: 자연어처리</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -646,24 +580,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">추천 시스템의 고급 주제</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 콘텐츠 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 협업 필터링 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 행렬 인수분해 기반 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 하이브리드 추천 시스템 구현</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템 평가 및 최적화</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">세션 2: 추천 시스템의 고급 주제</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">5. 추천 시스템의 향후 전망</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

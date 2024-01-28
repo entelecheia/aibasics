@@ -91,7 +91,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Session 1" href="session1.html" />
+    <link rel="next" title="추천 시스템의 기본 개념" href="session1.html" />
     <link rel="prev" title="머신러닝 알고리즘 실습" href="../week05/lab.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -216,9 +216,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Week 6: 추천시스템</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="session1.html">Session 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">추천 시스템의 기본 개념</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">추천 시스템의 고급 주제</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="session3.html">추천 시스템의 구현</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week10/index.html">Week 10: 자연어처리</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -449,36 +450,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="week-6">
 <h1>Week 6: 추천시스템<a class="headerlink" href="#week-6" title="Permalink to this heading">#</a></h1>
-<p>Recommender Systems</p>
-<p>Lecture Session 1:</p>
-<ol class="arabic simple">
-<li><p>추천시스템 개요 (Overview of Recommender Systems)</p></li>
-<li><p>콘텐츠 기반 추천시스템 (Content-based Recommender Systems)</p></li>
-<li><p>협업 필터링 추천시스템 (Collaborative Filtering Recommender Systems)</p></li>
-<li><p>행렬 인수분해 기반 추천시스템 (Matrix Factorization-based Recommender Systems)</p></li>
-<li><p>하이브리드 추천시스템 (Hybrid Recommender Systems)</p></li>
-</ol>
-<p>Lecture Session 2:</p>
-<ol class="arabic simple">
-<li><p>추천시스템의 평가 지표 (Evaluation Metrics for Recommender Systems)</p></li>
-<li><p>추천시스템의 콜드 스타트 문제 (Cold Start Problem in Recommender Systems)</p></li>
-<li><p>추천시스템에서의 다양성과 정확도 (Diversity and Accuracy in Recommender Systems)</p></li>
-<li><p>컨텍스트 인식 추천시스템 (Context-aware Recommender Systems)</p></li>
-<li><p>추천시스템의 향후 전망 (Future Prospects of Recommender Systems)</p></li>
-</ol>
-<p>Lab Session:</p>
-<ol class="arabic simple">
-<li><p>콘텐츠 기반 추천시스템 구현 (Implementation of Content-based Recommender Systems)</p></li>
-<li><p>협업 필터링 기반 추천시스템 구현 (Implementation of Collaborative Filtering Recommender Systems)</p></li>
-<li><p>행렬 인수분해 기반 추천시스템 구현 (Implementation of Matrix Factorization-based Recommender Systems)</p></li>
-<li><p>하이브리드 추천시스템 구현 (Implementation of Hybrid Recommender Systems)</p></li>
-<li><p>추천시스템 평가 및 최적화 (Evaluation and Optimization of Recommender Systems)</p></li>
-</ol>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="session1.html">Session 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="session2.html">Session 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session1.html">추천 시스템의 기본 개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session2.html">추천 시스템의 고급 주제</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session2.html#id7">세션 2: 추천 시스템의 고급 주제</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session3.html">추천 시스템의 구현</a></li>
 </ul>
 </div>
 </section>
@@ -527,7 +504,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Session 1</p>
+        <p class="prev-next-title">추천 시스템의 기본 개념</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

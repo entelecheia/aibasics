@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Session 1 &#8212; AI 세상 속으로</title>
+    <title>추천 시스템의 기본 개념 &#8212; AI 세상 속으로</title>
   
   
   
@@ -91,7 +91,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Session 2" href="session2.html" />
+    <link rel="next" title="추천 시스템의 고급 주제" href="session2.html" />
     <link rel="prev" title="Week 6: 추천시스템" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -216,9 +216,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 6: 추천시스템</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Session 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">추천 시스템의 기본 개념</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">추천 시스템의 고급 주제</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="session3.html">추천 시스템의 구현</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week10/index.html">Week 10: 자연어처리</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -422,7 +423,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -433,11 +436,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Session 1</h1>
+    <h1>추천 시스템의 기본 개념</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템 개요</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 콘텐츠 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 하이브리드 추천 시스템</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -447,8 +462,58 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="session-1">
-<h1>Session 1<a class="headerlink" href="#session-1" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>추천 시스템의 기본 개념<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>1. 추천 시스템 개요<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>추천 시스템의 정의 및 필요성</p></li>
+<li><p>추천 시스템의 역할과 중요성</p></li>
+<li><p>다양한 추천 시스템의 예시</p></li>
+<li><p>사용자 경험 향상을 위한 추천 시스템의 역할</p></li>
+<li><p>추천 시스템의 기본 원리</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>2. 콘텐츠 기반 추천 시스템<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>콘텐츠 기반 시스템의 정의와 작동 원리</p></li>
+<li><p>사용자 프로필과 아이템의 특성 매칭</p></li>
+<li><p>주요 알고리즘과 기술</p></li>
+<li><p>콘텐츠 기반 추천 시스템의 장단점</p></li>
+<li><p>실제 사례 연구</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>3. 협업 필터링 추천 시스템<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>협업 필터링의 기본 개념</p></li>
+<li><p>사용자 기반 협업 필터링과 아이템 기반 협업 필터링</p></li>
+<li><p>유사도 측정 방법</p></li>
+<li><p>협업 필터링의 도전 과제와 한계점</p></li>
+<li><p>실제 적용 사례</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>4. 행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>행렬 인수분해의 개념</p></li>
+<li><p>사용자-아이템 상호작용 행렬</p></li>
+<li><p>행렬 인수분해의 알고리즘과 구현</p></li>
+<li><p>예측 정확도 향상 방법</p></li>
+<li><p>실생활에서의 응용 예</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>5. 하이브리드 추천 시스템<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>하이브리드 추천 시스템의 정의</p></li>
+<li><p>다양한 하이브리드 방식의 소개</p></li>
+<li><p>콘텐츠 기반과 협업 필터링의 조합</p></li>
+<li><p>하이브리드 시스템의 장점 및 적용 분야</p></li>
+<li><p>실제 하이브리드 추천 시스템 사례</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -495,7 +560,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Session 2</p>
+        <p class="prev-next-title">추천 시스템의 고급 주제</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,7 +571,24 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템 개요</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 콘텐츠 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 하이브리드 추천 시스템</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
