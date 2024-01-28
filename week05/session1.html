@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>세션 1: 머신러닝 모델 최적화와 비용함수 &#8212; AI 세상 속으로</title>
+    <title>머신러닝의 개요 &#8212; AI 세상 속으로</title>
   
   
   
@@ -91,7 +91,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Session 2" href="session2.html" />
+    <link rel="next" title="Week 6: 추천시스템" href="../week06/index.html" />
     <link rel="prev" title="Week 5: 기계학습" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -209,9 +209,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">세션 1: 머신러닝 모델 최적화와 비용함수</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">머신러닝의 개요</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week06/index.html">Week 6: 추천시스템</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -434,7 +432,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>세션 1: 머신러닝 모델 최적화와 비용함수</h1>
+    <h1>머신러닝의 개요</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -444,47 +442,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 서론: 머신러닝 모델 최적화의 중요성</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.1 모델 최적화의 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.2 모델 최적화의 필요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.3 다양한 최적화 기법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.4 선형 회귀 모델 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.5 모델 성능에 미치는 영향</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 선형 회귀 모델의 기초</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2.1 선형 함수 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">2.2 선형 회귀란?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">2.3 선형 회귀 모델 요소</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2.4 예시 데이터</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2.5 실생활에서의 선형 회귀</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3. 최소 제곱법과 모델 파라미터 계산</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3.1 최소 제곱법 원리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-b">3.2 기울기(a)와 절편(b) 계산</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">3.3 실제 데이터 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">3.4 결과 해석</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">3.5 고려 사항 및 도전</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">4. 평균 제곱 오차(MSE)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">4.1 MSE 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">4.2 모델 평가에서의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">4.3 MSE 계산 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">4.4 MSE 계산 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.5 MSE 해석</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 비용함수와 손실함수</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">5.1 비용함수와 손실함수 구분</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.2 오차 함수 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">5.3 목적 함수의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">5.4 모델에서의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">5.5 실용적 적용 사례</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">요약</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝의 역사적 배경</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝의 학습 개념</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">머신러닝</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">머신러닝과 인공지능과의 관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 과정에서 고려 사항들</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">머신러닝의 활용 분야</a></li>
 </ul>
             </nav>
         </div>
@@ -497,330 +461,279 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>세션 1: 머신러닝 모델 최적화와 비용함수<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>머신러닝의 개요<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 서론: 머신러닝 모델 최적화의 중요성<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<section id="id3">
-<h3>1.1 모델 최적화의 정의<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h2>머신러닝의 정의<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-11.jpeg"><img alt="../_images/image-1-1-11.jpeg" class="align-center" src="../_images/image-1-1-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>모델 최적화의 개념</strong></p>
-<ul>
-<li><p>머신러닝 모델을 보다 효과적으로 만들기 위한 과정</p></li>
-<li><p>모델의 성능을 개선하는 데 중점을 두는 작업</p></li>
-</ul>
-</li>
-<li><p><strong>핵심 목적의 이해</strong></p>
-<ul>
-<li><p>모델의 정확도와 예측력을 높이는 것</p></li>
-<li><p>연산 과정의 효율성을 개선하여 더 빠른 결과 도출</p></li>
-</ul>
-</li>
-<li><p><strong>예측 오차와 과적합</strong></p>
-<ul>
-<li><p>예측 오차를 줄여 더 정확한 결과를 얻음</p></li>
-<li><p>과적합 방지를 통해 모델의 일반화 능력 강화</p></li>
-</ul>
-</li>
-<li><p><strong>모델 일반화</strong></p>
-<ul>
-<li><p>다양한 데이터에 대해 일관된 성능을 보이도록 만드는 것</p></li>
-<li><p>실제 세계 데이터에 대한 모델의 적용성을 높임</p></li>
-</ul>
-</li>
+<li><p><strong>기본 정의</strong>: 머신러닝은 컴퓨터가 인간과 유사한 학습 능력을 가질 수 있도록 하는 연구 분야이다. 이는 컴퓨터에게 데이터를 기반으로 학습하고, 그 학습을 통해 스스로 예측하거나 결정을 내릴 수 있는 능력을 부여하는 것을 포함한다.</p></li>
+<li><p><strong>역사적 배경</strong>: 1959년 아서 새무얼(Arthur Samuel)에 의해 처음 정의되었으며, 그는 머신러닝을 ‘컴퓨터에 학습할 수 있는 능력을 부여하기 위한 연구 분야’로 설명했다.</p></li>
+<li><p><strong>톰 미첼의 정의 (1998년)</strong>: 톰 미첼은 머신러닝을 더 구체적으로 정의하여, 컴퓨터 프로그램이 경험 E로부터 학습하는 것이라고 설명했다. 여기서 ‘경험 E’란 데이터를 의미하며, 이 데이터를 기반으로 컴퓨터는 특정 작업 T에서 성능 P를 향상시킨다.</p></li>
+<li><p><strong>핵심 개념</strong>: ‘머신(Machine)’은 컴퓨터를, ‘러닝(Learning)’은 학습을 의미한다. 따라서 머신러닝은 ‘컴퓨터를 통한 학습’이라는 개념을 나타낸다.</p></li>
+<li><p><strong>데이터 중심의 접근</strong>: 머신러닝은 데이터에서 유용한 패턴, 규칙, 지식을 추출하는 작업이다. 이는 프로그래밍을 통해 직접 규칙을 정의하는 대신, 데이터로부터 컴퓨터가 스스로 규칙을 학습하게 함으로써 이루어진다.</p></li>
+<li><p><strong>응용 분야</strong>: 머신러닝은 프로그래밍하기 어려운 복잡한 작업의 해결에 주로 활용된다. 예를 들어, 얼굴 인식, 음성 인식, 추천 시스템, 의료 진단 등 다양한 분야에서 응용되고 있다.</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>1.2 모델 최적화의 필요성<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-1-1-21.jpeg"><img alt="../_images/image-1-1-21.jpeg" class="align-center" src="../_images/image-1-1-21.jpeg" style="width: 90%;" /></a>
+<section id="id3">
+<h2>머신러닝의 역사적 배경<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-11.jpeg"><img alt="../_images/image-1-1-11.jpeg" class="align-center" src="../_images/image-1-1-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>모델의 실용성과 중요성</strong></p>
+<li><p><strong>1952년 - 새무얼(Samuel)의 체커(Checker) 프로그램</strong></p>
 <ul>
-<li><p>정확도와 효율성은 모델을 실제 세계에 적용하는 데 중요한 요소</p></li>
-<li><p>최적화된 모델은 보다 신뢰할 수 있는 예측 결과를 제공</p></li>
+<li><p>최초의 머신러닝 프로그램으로 간주됩니다.</p></li>
+<li><p>체커 게임은 당시 가장 복잡한 게임 프로그램 중 하나였으며, 이 프로그램은 경험으로부터 학습하는 방법을 사용했습니다.</p></li>
+<li><p>이 초기의 머신러닝 접근 방식은 나중에 알파고와 같은 AI 바둑 소프트웨어 개발의 기초가 되었습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>문제 해결 능력</strong></p>
+<li><p><strong>연도별 주요 개발 모델과 특징</strong></p>
 <ul>
-<li><p>실제 세계의 복잡한 문제를 해결하는 데 필수적</p></li>
-<li><p>다양한 시나리오와 요구 사항에 적응하는 유연한 모델 구축</p></li>
+<li><p><strong>1952년, Arthur Samuel</strong></p>
+<ul>
+<li><p>모델: Checker Program</p></li>
+<li><p>특징: 최초의 자기학습 프로그램, 강화학습의 초기 형태</p></li>
+</ul>
+</li>
+<li><p><strong>1957년, Frank Rosenblatt</strong></p>
+<ul>
+<li><p>모델: Perceptron</p></li>
+<li><p>특징: 최초의 신경망 모델, 단층 퍼셉트론으로 간단한 패턴 인식 가능</p></li>
+</ul>
+</li>
+<li><p><strong>1986년, Rumelhart, Hinton 등</strong></p>
+<ul>
+<li><p>모델: Multilayer Perceptron</p></li>
+<li><p>특징: 다층 퍼셉트론, 역전파(back-propagation) 알고리즘 도입</p></li>
+</ul>
+</li>
+<li><p><strong>1986년, Ross Quinlan</strong></p>
+<ul>
+<li><p>모델: Decision Tree (ID3)</p></li>
+<li><p>특징: 의사결정 나무, ID3 알고리즘을 사용한 분류 모델</p></li>
+</ul>
+</li>
+<li><p><strong>1995년, Vapnik, Cortes</strong></p>
+<ul>
+<li><p>모델: Support Vector Machine</p></li>
+<li><p>특징: 고차원 공간에서의 이진 분류를 위한 강력한 알고리즘</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>연도</p></th>
+<th class="head"><p>개발자</p></th>
+<th class="head"><p>모델</p></th>
+<th class="head"><p>특징 또는 종류</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1952년</p></td>
+<td><p>Arthur Samuel</p></td>
+<td><p>Checker Program</p></td>
+<td><p>최초의 자기학습 프로그램, 강화학습의 초기 형태</p></td>
+</tr>
+<tr class="row-odd"><td><p>1957년</p></td>
+<td><p>Frank Rosenblatt</p></td>
+<td><p>Perceptron</p></td>
+<td><p>최초의 신경망 모델, 단층 퍼셉트론으로 간단한 패턴 인식</p></td>
+</tr>
+<tr class="row-even"><td><p>1986년</p></td>
+<td><p>Rumelhart, Hinton 등</p></td>
+<td><p>Multilayer Perceptron</p></td>
+<td><p>다층 퍼셉트론, 역전파(back-propagation) 알고리즘 도입</p></td>
+</tr>
+<tr class="row-odd"><td><p>1986년</p></td>
+<td><p>Ross Quinlan</p></td>
+<td><p>Decision Tree (ID3)</p></td>
+<td><p>의사결정 나무, ID3 알고리즘을 사용한 분류 모델</p></td>
+</tr>
+<tr class="row-even"><td><p>1995년</p></td>
+<td><p>Vapnik, Cortes</p></td>
+<td><p>Support Vector Machine</p></td>
+<td><p>고차원 공간에서의 이진 분류를 위한 강력한 알고리즘</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id4">
+<h2>머신러닝의 학습 개념<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-31.jpeg"><img alt="../_images/image-1-1-31.jpeg" class="align-center" src="../_images/image-1-1-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 학습 개념</strong>: 머신러닝에서 학습이란 컴퓨터가 데이터로부터 패턴을 인식하고, 이를 기반으로 예측이나 결정을 내리는 과정입니다.</p></li>
+<li><p><strong>간단한 학습 예시 설명</strong>:</p>
+<ul>
+<li><p><strong>데이터 쌍의 입력</strong>: 학습의 시작점은 데이터 쌍의 입력입니다. 예를 들어, 입력과 출력이 다음과 같은 쌍으로 제공될 수 있습니다: (1, 2), (2, 4), (4, 8), (7, 14), (5, 10), … 이 데이터는 모델에 의해 분석되어 학습됩니다.</p></li>
+<li><p><strong>학습 과정</strong>: 머신러닝 모델은 제공된 데이터 쌍을 분석하여, 입력 값과 출력 값 사이의 관계를 학습합니다. 위 예시에서, 모델은 출력이 입력 값의 2배라는 패턴을 발견하게 됩니다.</p></li>
+<li><p><strong>결과 예측</strong>: 학습이 완료된 후, 모델은 새로운 입력값에 대한 출력값을 예측할 수 있습니다. 예를 들어, 새로운 입력값 (3, ?), (8, ?)에 대해 모델은 각각 6과 16이라고 예측합니다. 이 예측은 학습된 패턴을 기반으로 합니다.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="id5">
-<h3>1.3 다양한 최적화 기법<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-1-1-31.jpeg"><img alt="../_images/image-1-1-31.jpeg" class="align-center" src="../_images/image-1-1-31.jpeg" style="width: 90%;" /></a>
+<h2>머신러닝<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-41.jpeg"><img alt="../_images/image-1-1-41.jpeg" class="align-center" src="../_images/image-1-1-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>기법의 다양성</strong></p>
+<li><p><strong>전통적인 프로그래밍의 특징</strong>:</p>
 <ul>
-<li><p>여러 최적화 기법들: 경사하강법, SGD, 모멘텀 등</p></li>
-<li><p>각기 다른 상황과 데이터 유형에 적합한 기법 존재</p></li>
+<li><p>프로그래머는 모든 가능한 상황에 대한 규칙을 명시적으로 코딩해야 합니다. 이러한 접근 방식은 예측 가능하고 명확한 로직이 필요한 작업에 적합합니다.</p></li>
+<li><p>규칙이 많아지거나 복잡해질수록, 유지 관리와 업데이트가 어려워집니다. 이는 시스템의 확장성과 유연성에 제한을 가져올 수 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>적용 상황과 장단점</strong></p>
+<li><p><strong>머신러닝의 특징</strong>:</p>
 <ul>
-<li><p>특정 데이터 세트나 문제에 더 적합한 기법 이해</p></li>
-<li><p>각 기법의 장단점을 고려하여 적절한 방법 선택</p></li>
+<li><p>머신러닝은 데이터와 결과(출력)를 기반으로 규칙을 자동으로 학습합니다. 이를 통해 시간이 지남에 따라 시스템이 더 효율적으로 되는 경향이 있습니다.</p></li>
+<li><p>머신러닝 모델은 주어진 입력 데이터와 그에 대응하는 출력 데이터를 분석하여, 이 데이터 사이의 패턴을 학습하고 새로운 데이터에 대해 예측을 수행합니다.</p></li>
 </ul>
 </li>
-<li><p><strong>기법 선택의 중요성</strong></p>
+<li><p><strong>기본적인 작동 방식의 차이</strong>:</p>
 <ul>
-<li><p>문제의 특성과 데이터의 특성에 따라 최적의 기법 선택</p></li>
-<li><p>올바른 최적화 기법을 통한 모델의 성능 극대화</p></li>
+<li><p>전통적 프로그래밍에서는 ‘데이터 + 규칙 = 출력’의 방식으로 작동합니다. 여기서 규칙은 프로그래머에 의해 정의됩니다.</p></li>
+<li><p>머신러닝에서는 ‘데이터 + 출력 = 규칙’의 방식으로 작동합니다. 즉, 모델은 입력 데이터와 그에 해당하는 출력을 바탕으로 규칙을 ‘학습’하게 됩니다.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="id6">
-<h3>1.4 선형 회귀 모델 예시<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-1-1-41.jpeg"><img alt="../_images/image-1-1-41.jpeg" class="align-center" src="../_images/image-1-1-41.jpeg" style="width: 90%;" /></a>
-<ul class="simple">
-<li><p><strong>선형 회귀 모델 소개</strong></p>
+<h2>머신러닝과 인공지능과의 관계<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-51.jpeg"><img alt="../_images/image-1-1-51.jpeg" class="align-center" src="../_images/image-1-1-51.jpeg" style="width: 90%;" /></a>
 <ul>
-<li><p>선형 회귀는 머신러닝에서 가장 기본적인 모델 중 하나</p></li>
-<li><p>데이터 간의 선형 관계를 모델링하는 간단한 방법</p></li>
+<li><p><strong>머신러닝과 인공지능의 관계</strong>:</p>
+<ul class="simple">
+<li><p>머신러닝은 인공지능(AI)의 한 부분으로 분류됩니다. 인공지능은 머신러닝을 포함하는 보다 넓은 개념이며, 더 다양한 기술과 접근 방식을 포함합니다.</p></li>
+<li><p>인공지능은 인간과 유사한 지능을 구현하는 것을 목표로 하며, 이는 추론, 학습, 계획 및 문제 해결 능력을 포함합니다. 머신러닝은 이 중 학습 부분에 초점을 맞춥니다.</p></li>
 </ul>
 </li>
-<li><p><strong>모델 예시</strong></p>
-<ul>
-<li><p>예시: y = ax + b 형태의 모델</p></li>
-<li><p>실제 데이터에 적용하여 모델의 기능과 중요성 이해</p></li>
+<li><p><strong>머신러닝과 인공지능의 차이점</strong>:</p>
+<ul class="simple">
+<li><p>머신러닝은 데이터로부터 학습하여 패턴을 인식하고 예측하는 데 중점을 둡니다. 이는 주로 통계적 방법과 알고리즘을 사용하여 데이터에서 지식을 추출하는 과정입니다.</p></li>
+<li><p>인공지능은 획득한 지식을 활용하여 인간과 유사한 방식으로 추론하고, 문제를 해결하며, 의사결정을 내릴 수 있는 시스템을 개발하는 것을 목표로 합니다.</p></li>
 </ul>
+</li>
+<li><p><strong>머신러닝과 인공지능의 비교</strong>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>구분</p></th>
+<th class="head"><p>머신러닝</p></th>
+<th class="head"><p>인공지능</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>정의</p></td>
+<td><p>데이터를 기반으로 패턴을 학습하고 예측하는 시스템</p></td>
+<td><p>인간과 유사한 지능을 가진 컴퓨터 시스템의 구현</p></td>
+</tr>
+<tr class="row-odd"><td><p>주요 활동</p></td>
+<td><p>데이터를 통한 학습과 패턴 인식</p></td>
+<td><p>지식의 획득, 학습, 추론, 문제 해결 및 의사결정</p></td>
+</tr>
+<tr class="row-even"><td><p>구현과 실현</p></td>
+<td><p>데이터 분석과 예측을 통한 효과적인 의사결정 지원</p></td>
+<td><p>자동화된 의사결정, 자연어 처리, 로봇공학 등의 복잡한 문제 해결</p></td>
+</tr>
+<tr class="row-odd"><td><p>개발 목표</p></td>
+<td><p>특정 작업에 대해 스스로 학습하고 개선하는 알고리즘 개발</p></td>
+<td><p>인간처럼 사고하고 학습할 수 있는 지능적 시스템의 개발</p></td>
+</tr>
+<tr class="row-even"><td><p>응용 분야</p></td>
+<td><p>분류, 회귀 분석, 추천 시스템, 패턴 인식 등</p></td>
+<td><p>음성 인식, 이미지 분석, 자율 주행 차량, 로봇공학 등</p></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ul>
 </section>
 <section id="id7">
-<h3>1.5 모델 성능에 미치는 영향<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-1-1-51.jpeg"><img alt="../_images/image-1-1-51.jpeg" class="align-center" src="../_images/image-1-1-51.jpeg" style="width: 90%;" /></a>
+<h2>머신러닝 과정에서 고려 사항들<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-6.jpeg"><img alt="../_images/image-1-1-6.jpeg" class="align-center" src="../_images/image-1-1-6.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>성능 개선의 중요성</strong></p>
+<li><p><strong>데이터의 적합성과 가능성 평가</strong>:</p>
 <ul>
-<li><p>최적화를 통해 모델의 정확도와 처리 속도 향상</p></li>
-<li><p>모델이 실제 세계 데이터에 더 잘 적응하도록 만듦</p></li>
+<li><p>주어진 데이터로부터 원하는 답을 찾을 수 있는지 평가합니다. 이는 문제의 성격과 데이터의 관련성을 고려하여 결정됩니다.</p></li>
+<li><p>문제 해결을 위해 충분하고 적절한 데이터가 있는지 확인합니다. 데이터의 양뿐만 아니라 품질과 다양성도 중요합니다.</p></li>
 </ul>
 </li>
-<li><p><strong>이득과 부작용</strong></p>
+<li><p><strong>적절한 머신러닝 기법의 선택</strong>:</p>
 <ul>
-<li><p>최적화의 장점 강조: 더 나은 성능과 효율</p></li>
-<li><p>잘못된 최적화가 모델에 미치는 부정적인 영향 인식</p></li>
+<li><p>문제의 종류(분류, 회귀, 클러스터링 등)에 따라 적합한 머신러닝 기법을 선정합니다.</p></li>
+<li><p>다양한 알고리즘(결정 트리, 랜덤 포레스트, 신경망 등)의 장단점을 비교하여 가장 적합한 방법을 선택합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>데이터 특성의 추출과 이해</strong>:</p>
+<ul>
+<li><p>추출할 데이터의 특성(특징)을 결정합니다. 이는 문제의 성격과 분석 목적에 따라 달라집니다.</p></li>
+<li><p>특성 공학을 통해 데이터에서 유용한 정보를 추출하고, 필요에 따라 데이터를 전처리합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>모델의 결론 설정과 평가</strong>:</p>
+<ul>
+<li><p>머신러닝 모델이 도출할 결론의 종류를 설정합니다. 예를 들어, 예측 값, 분류 범주, 추천 항목 등이 될 수 있습니다.</p></li>
+<li><p>모델의 성능을 평가하는 기준을 설정하고, 테스트 데이터를 사용하여 모델을 평가합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>모델의 실제 응용과 활용</strong>:</p>
+<ul>
+<li><p>생성된 모델의 출력을 실제 응용에 어떻게 통합할 것인지 계획합니다. 이는 모델의 실질적인 사용 방법과 환경을 고려해야 합니다.</p></li>
+<li><p>모델의 예측 결과를 비즈니스 결정, 제품 개선, 고객 서비스 등에 어떻게 활용할지 고려합니다.</p></li>
 </ul>
 </li>
 </ul>
-</section>
 </section>
 <section id="id8">
-<h2>2. 선형 회귀 모델의 기초<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
-<section id="id9">
-<h3>2.1 선형 함수 이해<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h2>머신러닝의 활용 분야<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-7.jpeg"><img alt="../_images/image-1-1-7.jpeg" class="align-center" src="../_images/image-1-1-7.jpeg" style="width: 90%;" /></a>
+<ul>
+<li><p><strong>머신러닝의 산업별 다양한 활용</strong>:</p>
 <ul class="simple">
-<li><p><strong>선형 함수</strong>: y = ax + b</p></li>
-<li><p><strong>a</strong>: 기울기, <strong>b</strong>: y절편</p></li>
-<li><p>실생활에서의 선형 관계 예시 제공</p></li>
-</ul>
-</section>
-<section id="id10">
-<h3>2.2 선형 회귀란?<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>데이터 포인트에 가장 잘 맞는 선을 찾는 과정</p></li>
-<li><p><strong>최소 제곱법</strong>을 사용한 일반적인 접근 방식</p></li>
-<li><p>예측 및 데이터 분석에 널리 사용</p></li>
-</ul>
-</section>
-<section id="id11">
-<h3>2.3 선형 회귀 모델 요소<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>기울기(a)와 절편(b)의 역할 이해</p></li>
-<li><p>데이터에 적합한 선형 모델 구축 방법</p></li>
-<li><p>실제 데이터를 사용한 선형 회귀 예시</p></li>
-</ul>
-</section>
-<section id="id12">
-<h3>2.4 예시 데이터<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>간단한 데이터셋을 통한 선형 회귀 실습 준비</p></li>
-<li><p>데이터 포인트와 선형 관계 분석</p></li>
-<li><p>실습을 위한 데이터셋 소개</p></li>
-</ul>
-</section>
-<section id="id13">
-<h3>2.5 실생활에서의 선형 회귀<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>실생활 예시를 통한 선형 회귀의 적용</p></li>
-<li><p>예: 주택 가격 예측, 온도 변화에 따른 에너지 소비량</p></li>
-</ul>
-</section>
-</section>
-<section id="id14">
-<h2>3. 최소 제곱법과 모델 파라미터 계산<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
-<section id="id15">
-<h3>3.1 최소 제곱법 원리<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>최소 제곱법</strong>: 데이터와 직선 사이의 거리 최소화</p></li>
-<li><p>오차 제곱의 합을 최소로 하는 직선 찾기</p></li>
-<li><p>간단한 수학적 설명 및 그래픽 설명</p></li>
-</ul>
-</section>
-<section id="a-b">
-<h3>3.2 기울기(a)와 절편(b) 계산<a class="headerlink" href="#a-b" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>식을 통한 a, b 계산 방법</p></li>
-<li><p>계산 예시와 실습 준비</p></li>
-<li><p>계산 결과의 해석 방법</p></li>
-</ul>
-</section>
-<section id="id16">
-<h3>3.3 실제 데이터 예시<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>제공된 데이터셋을 사용한 계산 실습</p></li>
-<li><p>실제 데이터를 사용한 모델 파라미터 계산</p></li>
-<li><p>계산된 모델의 데이터 적합도 평가</p></li>
-</ul>
-</section>
-<section id="id17">
-<h3>3.4 결과 해석<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>계산된 모델 파라미터의 의미와 중요성</p></li>
-<li><p>실제 데이터에서 모델의 적합도 판단</p></li>
-<li><p>결과 해석의 중요성 강조</p></li>
-</ul>
-</section>
-<section id="id18">
-<h3>3.5 고려 사항 및 도전<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>최소 제곱법의 한계와 주의점</p></li>
-<li><p>데이터의 특성에 따른 계산 방법의 변화</p></li>
-<li><p>실제 데이터에서의 적용 시 고려해야 할 사항</p></li>
-</ul>
-</section>
-</section>
-<section id="mse">
-<h2>4. 평균 제곱 오차(MSE)<a class="headerlink" href="#mse" title="Permalink to this heading">#</a></h2>
-<section id="id19">
-<h3>4.1 MSE 정의<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>MSE</strong>: 모델 예측의 평균 제곱 오차</p></li>
-<li><p>오차의 제곱 평균으로 계산</p></li>
-<li><p>모델의 성능 평가에 중요한 지표</p></li>
-</ul>
-</section>
-<section id="id20">
-<h3>4.2 모델 평가에서의 중요성<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>MSE를 사용한 모델의 성능 평가</p></li>
-<li><p>낮은 MSE의 의미와 중요성</p></li>
-<li><p>모델의 정확도와 신뢰성 평가</p></li>
-</ul>
-</section>
-<section id="id21">
-<h3>4.3 MSE 계산 방법<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>MSE 계산 공식과 단</p></li>
-</ul>
-<p>계별 설명</p>
-<ul class="simple">
-<li><p>실제 데이터를 사용한 MSE 계산 실습</p></li>
-<li><p>계산 과정의 시각화 및 해석</p></li>
-</ul>
-</section>
-<section id="id22">
-<h3>4.4 MSE 계산 예시<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>실제 데이터를 사용한 MSE 계산 예</p></li>
-<li><p>계산 결과의 분석 및 해석</p></li>
-<li><p>모델의 성능 평가에 MSE 사용의 예시</p></li>
-</ul>
-</section>
-<section id="id23">
-<h3>4.5 MSE 해석<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>높은 MSE와 낮은 MSE의 의미</p></li>
-<li><p>MSE를 통한 모델의 문제점 파악</p></li>
-<li><p>MSE 결과에 대한 신중한 해석과 접근 방법</p></li>
-</ul>
-</section>
-</section>
-<section id="id24">
-<h2>5. 비용함수와 손실함수<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h2>
-<section id="id25">
-<h3>5.1 비용함수와 손실함수 구분<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>비용함수</strong>와 <strong>손실함수</strong>의 정의와 차이점</p></li>
-<li><p>두 함수의 사용 목적과 적용 상황</p></li>
-<li><p>머신러닝에서 함수의 중요성 강조</p></li>
-</ul>
-</section>
-<section id="id26">
-<h3>5.2 오차 함수 이해<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>오차 함수</strong>의 역할과 중요성</p></li>
-<li><p>오차 함수를 통한 모델의 성능 평가 방법</p></li>
-<li><p>오차 함수의 다양한 형태와 적용</p></li>
-</ul>
-</section>
-<section id="id27">
-<h3>5.3 목적 함수의 역할<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>목적 함수</strong>: 최적화의 목표를 정의</p></li>
-<li><p>최소화 또는 최대화를 목표로 하는 함수</p></li>
-<li><p>목적 함수를 사용한 모델 최적화 전략</p></li>
-</ul>
-</section>
-<section id="id28">
-<h3>5.4 모델에서의 역할<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>각 함수가 모델 학습 및 평가에 미치는 영향</p></li>
-<li><p>함수 선택의 중요성과 영향력</p></li>
-<li><p>실제 모델에서의 함수 적용 예시</p></li>
-</ul>
-</section>
-<section id="id29">
-<h3>5.5 실용적 적용 사례<a class="headerlink" href="#id29" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>다양한 머신러닝 모델에서의 함수 적용 사례</p></li>
-<li><p>비용함수와 손실함수의 선택과 적용의 실제 예</p></li>
-<li><p>함수의 적절한 적용을 통한 모델 성능 향상 방법</p></li>
-</ul>
-</section>
-</section>
-<section id="id30">
-<h2>요약<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>서론: 머신러닝 모델 최적화의 중요성</strong></p>
-<ul class="simple">
-<li><p>머신러닝에서 모델 최적화의 개념 소개</p></li>
-<li><p>선형 회귀 모델을 예로 들어 최적화의 필요성 설명</p></li>
+<li><p>머신러닝은 의료, 금융, 교육, 제조 등 다양한 산업 분야에서 활용될 수 있습니다. 이는 데이터 기반 의사결정, 예측 분석, 패턴 인식 등 다양한 형태로 나타납니다.</p></li>
+<li><p>최근에는 딥러닝 기술의 발전으로 이미지 및 음성 인식, 자연어 처리 등의 분야에서 획기적인 성과를 거두고 있습니다.</p></li>
 </ul>
 </li>
-<li><p><strong>선형 회귀 모델의 기초</strong></p>
+<li><p><strong>데이터 과학자의 역할과 중요성</strong>:</p>
 <ul class="simple">
-<li><p>일차 함수의 개념 복습: y = ax + b</p></li>
-<li><p>선형 회귀 모델이란 무엇인가</p></li>
-<li><p>예시 데이터를 통한 선형 회귀 모델 설명</p></li>
+<li><p>머신러닝 기술을 통해 빅데이터를 분석하고 가치 있는 통찰을 얻는 데이터과학자의 수요가 급증하고 있습니다. 이들은 데이터를 분석하고, 예측 모델을 개발하여 비즈니스 전략과 의사결정에 기여합니다.</p></li>
 </ul>
 </li>
-<li><p><strong>최소 제곱법과 모델 파라미터 계산</strong></p>
+<li><p><strong>복잡한 문제 해결에의 활용</strong>:</p>
 <ul class="simple">
-<li><p>최소 제곱법의 원리 설명</p></li>
-<li><p>기울기(a)와 y절편(b)의 계산 방법</p></li>
-<li><p>실제 데이터를 사용한 계산 예시</p></li>
+<li><p>머신러닝은 자율주행 자동차, 문자 인식, 의료 진단 등 복잡하고 알고리즘 개발이 어려운 문제를 해결하는 데 널리 사용됩니다. 이러한 기술은 사람의 능력을 보완하거나 대체할 수 있는 영역에서 특히 중요합니다.</p></li>
 </ul>
 </li>
-<li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong></p>
-<ul class="simple">
-<li><p>평균 제곱 오차의 정의</p></li>
-<li><p>MSE가 머신러닝 모델의 성능 평가에 왜 중요한지 설명</p></li>
-<li><p>계산 방법과 예시</p></li>
-</ul>
+<li><p><strong>머신러닝의 다양한 응용 분야</strong>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>활용 분야</p></th>
+<th class="head"><p>응용 예시</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>영상 인식</p></td>
+<td><p>문자 인식(OCR), 물체 및 장면 인식, 의료 영상 분석</p></td>
+</tr>
+<tr class="row-odd"><td><p>얼굴 인식</p></td>
+<td><p>소셜 미디어의 얼굴 인식 기능, 보안 시스템 내 생체 인식</p></td>
+</tr>
+<tr class="row-even"><td><p>음성 인식</p></td>
+<td><p>음성 비서(Bixby, Siri, Alexa), 음성 대화 시스템</p></td>
+</tr>
+<tr class="row-odd"><td><p>자연어 처리</p></td>
+<td><p>자동 번역 시스템(Google Translate), 감정 분석</p></td>
+</tr>
+<tr class="row-even"><td><p>정보 검색</p></td>
+<td><p>스팸 이메일 필터링, 피싱 이메일 탐지</p></td>
+</tr>
+<tr class="row-odd"><td><p>검색 엔진</p></td>
+<td><p>사용자 맞춤형 콘텐츠 추천(Netflix, YouTube), 검색 최적화</p></td>
+</tr>
+<tr class="row-even"><td><p>로보틱스</p></td>
+<td><p>자율 주행 자동차, 드론을 이용한 배송, 산업용 로봇 자동화</p></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li><p><strong>비용함수와 손실함수</strong></p>
-<ul class="simple">
-<li><p>비용함수(Cost Function)와 손실함수(Loss Function)의 차이점</p></li>
-<li><p>오차 함수(Error Function)와 목적 함수(Objective Function)의 개념</p></li>
-<li><p>각 함수의 머신러닝 모델에서의 역할 설명</p></li>
 </ul>
-</li>
-</ol>
 </section>
 </section>
 
@@ -864,11 +777,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="session2.html"
+       href="../week06/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Session 2</p>
+        <p class="prev-next-title">Week 6: 추천시스템</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -888,47 +801,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 서론: 머신러닝 모델 최적화의 중요성</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.1 모델 최적화의 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.2 모델 최적화의 필요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.3 다양한 최적화 기법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.4 선형 회귀 모델 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.5 모델 성능에 미치는 영향</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 선형 회귀 모델의 기초</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2.1 선형 함수 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">2.2 선형 회귀란?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">2.3 선형 회귀 모델 요소</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2.4 예시 데이터</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2.5 실생활에서의 선형 회귀</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3. 최소 제곱법과 모델 파라미터 계산</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3.1 최소 제곱법 원리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-b">3.2 기울기(a)와 절편(b) 계산</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">3.3 실제 데이터 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">3.4 결과 해석</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">3.5 고려 사항 및 도전</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">4. 평균 제곱 오차(MSE)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">4.1 MSE 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">4.2 모델 평가에서의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">4.3 MSE 계산 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">4.4 MSE 계산 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.5 MSE 해석</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">5. 비용함수와 손실함수</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">5.1 비용함수와 손실함수 구분</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.2 오차 함수 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">5.3 목적 함수의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">5.4 모델에서의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">5.5 실용적 적용 사례</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">요약</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝의 역사적 배경</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">머신러닝의 학습 개념</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">머신러닝</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">머신러닝과 인공지능과의 관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 과정에서 고려 사항들</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">머신러닝의 활용 분야</a></li>
 </ul>
   </nav></div>
 
