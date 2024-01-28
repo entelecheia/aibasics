@@ -36,7 +36,8 @@ chapters:
     sections:
       - file: week06/session1
       - file: week06/session2
-      - file: week06/lab
+      - file: week06/session3
+      # - file: week06/lab
   # - file: week07/index
   #   sections:
   #     - file: week07/session1
