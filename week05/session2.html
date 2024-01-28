@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>머신러닝 학습 방법 &#8212; AI 세상 속으로</title>
   
@@ -29,15 +28,15 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-examples.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -46,32 +45,31 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js"></script>
-    <script src="../_static/tabs.js"></script>
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script src="../_static/js/hoverxref.js"></script>
     <script src="../_static/js/tooltipster.bundle.min.js"></script>
     <script src="../_static/js/micromodal.min.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BQJE5V9RK2"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -84,11 +82,23 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-BQJE5V9RK2');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week05/session2';</script>
-    <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
+    <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="머신러닝 모델의 학습과 평가" href="session3.html" />
@@ -496,11 +506,11 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>머신러닝 학습 방법<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>머신러닝 학습 방법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="id3">
-<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-11.jpeg"><img alt="../_images/image-2-1-11.jpeg" class="align-center" src="../_images/image-2-1-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>머신러닝의 정의</strong>: 컴퓨터가 데이터를 기반으로 학습하고, 예측하거나 결정을 내리는 과정</p></li>
@@ -509,7 +519,7 @@ document.write(`
 </ul>
 </section>
 <section id="id4">
-<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-21.jpeg"><img alt="../_images/image-2-1-21.jpeg" class="align-center" src="../_images/image-2-1-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>지도 학습(Supervised Learning)</strong>:</p>
@@ -533,7 +543,7 @@ document.write(`
 </ul>
 </section>
 <section id="id5">
-<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-3.jpeg"><img alt="../_images/image-2-1-3.jpeg" class="align-center" src="../_images/image-2-1-3.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>지도 학습 예시</strong>:</p>
@@ -557,7 +567,7 @@ document.write(`
 </ul>
 </section>
 <section id="id6">
-<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-41.jpeg"><img alt="../_images/image-2-1-41.jpeg" class="align-center" src="../_images/image-2-1-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터의 품질</strong>: 정확하고 다양한 데이터가 머신러닝 모델의 성능을 결정</p></li>
@@ -567,7 +577,7 @@ document.write(`
 </ul>
 </section>
 <section id="id7">
-<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-51.jpeg"><img alt="../_images/image-2-1-51.jpeg" class="align-center" src="../_images/image-2-1-51.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>의료 분야</strong>:</p>
@@ -592,9 +602,9 @@ document.write(`
 </section>
 </section>
 <section id="supervised-learning">
-<h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Permalink to this heading">#</a></h2>
+<h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h2>
 <section id="id8">
-<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-11.jpeg"><img alt="../_images/image-2-2-11.jpeg" class="align-center" src="../_images/image-2-2-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 지도 학습은 입력 데이터와 그에 해당하는 출력(레이블)을 사용하여 모델을 훈련시키는 방법</p></li>
@@ -603,7 +613,7 @@ document.write(`
 </ul>
 </section>
 <section id="classification-regression">
-<h3>분류(Classification)와 회귀(Regression)의 개념<a class="headerlink" href="#classification-regression" title="Permalink to this heading">#</a></h3>
+<h3>분류(Classification)와 회귀(Regression)의 개념<a class="headerlink" href="#classification-regression" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-21.jpeg"><img alt="../_images/image-2-2-21.jpeg" class="align-center" src="../_images/image-2-2-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>분류(Classification)</strong>:</p>
@@ -621,7 +631,7 @@ document.write(`
 </ul>
 </section>
 <section id="id9">
-<h3>지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-31.jpeg"><img alt="../_images/image-2-2-31.jpeg" class="align-center" src="../_images/image-2-2-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>Naive Bayes 분류기</strong>:</p>
@@ -645,7 +655,7 @@ document.write(`
 </ul>
 </section>
 <section id="id10">
-<h3>지도 학습의 장단점 분석<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<h3>지도 학습의 장단점 분석<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-41.jpeg"><img alt="../_images/image-2-2-41.jpeg" class="align-center" src="../_images/image-2-2-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -665,7 +675,7 @@ document.write(`
 </ul>
 </section>
 <section id="id11">
-<h3>실생활에서의 지도 학습 활용 사례<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<h3>실생활에서의 지도 학습 활용 사례<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-51.jpeg"><img alt="../_images/image-2-2-51.jpeg" class="align-center" src="../_images/image-2-2-51.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>의료 분야</strong>:</p>
@@ -690,9 +700,9 @@ document.write(`
 </section>
 </section>
 <section id="unsupervised-learning">
-<h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Permalink to this heading">#</a></h2>
+<h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Link to this heading">#</a></h2>
 <section id="id12">
-<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-11.jpeg"><img alt="../_images/image-2-3-11.jpeg" class="align-center" src="../_images/image-2-3-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 레이블이나 분류가 없는 데이터를 분석하여 패턴, 구조, 관계 등을 찾아내는 학습 방법</p></li>
@@ -701,7 +711,7 @@ document.write(`
 </ul>
 </section>
 <section id="clustering-dimensionality-reduction">
-<h3>클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해<a class="headerlink" href="#clustering-dimensionality-reduction" title="Permalink to this heading">#</a></h3>
+<h3>클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해<a class="headerlink" href="#clustering-dimensionality-reduction" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-21.jpeg"><img alt="../_images/image-2-3-21.jpeg" class="align-center" src="../_images/image-2-3-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>클러스터링(Clustering)</strong>:</p>
@@ -719,7 +729,7 @@ document.write(`
 </ul>
 </section>
 <section id="id13">
-<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-31.jpeg"><img alt="../_images/image-2-3-31.jpeg" class="align-center" src="../_images/image-2-3-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>K-means 클러스터링</strong>:</p>
@@ -737,7 +747,7 @@ document.write(`
 </ul>
 </section>
 <section id="id14">
-<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-41.jpeg"><img alt="../_images/image-2-3-41.jpeg" class="align-center" src="../_images/image-2-3-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -761,7 +771,7 @@ document.write(`
 </ul>
 </section>
 <section id="id15">
-<h3>비지도 학습의 다양한 응용 분야<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<h3>비지도 학습의 다양한 응용 분야<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-51.jpeg"><img alt="../_images/image-2-3-51.jpeg" class="align-center" src="../_images/image-2-3-51.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>시장 분석</strong>:</p>
@@ -785,7 +795,7 @@ document.write(`
 </ul>
 </li>
 </ul>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>기준</p></th>
 <th class="head"><p>지도 학습 (Supervised Learning)</p></th>
@@ -818,9 +828,9 @@ document.write(`
 </section>
 </section>
 <section id="reinforcement-learning">
-<h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Permalink to this heading">#</a></h2>
+<h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Link to this heading">#</a></h2>
 <section id="id16">
-<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-11.jpeg"><img alt="../_images/image-2-4-11.jpeg" class="align-center" src="../_images/image-2-4-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>기본 개념</strong>: 에이전트가 환경과 상호작용하며 보상을 최대화하는 방법을 학습하는 과정</p></li>
@@ -829,7 +839,7 @@ document.write(`
 </ul>
 </section>
 <section id="id17">
-<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
+<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-21.jpeg"><img alt="../_images/image-2-4-21.jpeg" class="align-center" src="../_images/image-2-4-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>보상 시스템</strong>: 에이전트의 행동에 따라 긍정적 또는 부정적인 보상을 제공</p></li>
@@ -838,7 +848,7 @@ document.write(`
 </ul>
 </section>
 <section id="id18">
-<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-31.jpeg"><img alt="../_images/image-2-4-31.jpeg" class="align-center" src="../_images/image-2-4-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>알고리즘</strong>:</p>
@@ -856,7 +866,7 @@ document.write(`
 </ul>
 </section>
 <section id="id19">
-<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
+<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-41.jpeg"><img alt="../_images/image-2-4-41.jpeg" class="align-center" src="../_images/image-2-4-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>게임</strong>: 인공지능이 스스로 게임을 플레이하며 전략을 개발</p></li>
@@ -865,7 +875,7 @@ document.write(`
 </ul>
 </section>
 <section id="id20">
-<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
+<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-5.jpeg"><img alt="../_images/image-2-4-5.jpeg" class="align-center" src="../_images/image-2-4-5.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>연구 동향</strong>: 복잡한 환경에서의 학습, 다중 에이전트 시스템, 실시간 학습</p></li>
@@ -875,9 +885,9 @@ document.write(`
 </section>
 </section>
 <section id="id21">
-<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h2>
+<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
 <section id="id22">
-<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-1.jpeg"><img alt="../_images/image-2-5-1.jpeg" class="align-center" src="../_images/image-2-5-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>문제의 성격 파악</strong>: 분류, 회귀, 클러스터링, 강화 학습 중 어떤 문제인가?</p></li>
@@ -887,7 +897,7 @@ document.write(`
 </ul>
 </section>
 <section id="id23">
-<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
+<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-2.jpeg"><img alt="../_images/image-2-5-2.jpeg" class="align-center" src="../_images/image-2-5-2.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터 크기</strong>: 대용량 데이터는 더 강력한 알고리즘 필요</p></li>
@@ -896,7 +906,7 @@ document.write(`
 </ul>
 </section>
 <section id="id24">
-<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-3.jpeg"><img alt="../_images/image-2-5-3.jpeg" class="align-center" src="../_images/image-2-5-3.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>정확도와 오류율</strong>: 모델의 예측 정확도 평가</p></li>
@@ -905,7 +915,7 @@ document.write(`
 </ul>
 </section>
 <section id="id25">
-<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
+<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-4.jpeg"><img alt="../_images/image-2-5-4.jpeg" class="align-center" src="../_images/image-2-5-4.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>적절한 데이터 준비</strong>: 데이터의 질과 양에 주의</p></li>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>머신러닝 모델의 학습과 평가 &#8212; AI 세상 속으로</title>
   
@@ -29,15 +28,15 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-examples.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -46,32 +45,31 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js"></script>
-    <script src="../_static/tabs.js"></script>
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script src="../_static/js/hoverxref.js"></script>
     <script src="../_static/js/tooltipster.bundle.min.js"></script>
     <script src="../_static/js/micromodal.min.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BQJE5V9RK2"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -84,11 +82,23 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-BQJE5V9RK2');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week05/session3';</script>
-    <link rel="shortcut icon" href="../_static/chu-favicon.png"/>
+    <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="머신러닝 알고리즘 실습" href="lab.html" />
@@ -488,11 +498,11 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>머신러닝 모델의 학습과 평가<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>머신러닝 모델의 학습과 평가<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>머신러닝 모델 최적화의 기초<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>머신러닝 모델 최적화의 기초<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="id3">
-<h3>목표와 개요<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>목표와 개요<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-1.jpeg"><img alt="../_images/image-3-1-1.jpeg" class="align-center" src="../_images/image-3-1-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p>머신러닝 모델 최적화는 모델의 예측 성능을 극대화하는 과정입니다.</p></li>
@@ -500,7 +510,7 @@ document.write(`
 </ul>
 </section>
 <section id="id4">
-<h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-21.jpeg"><img alt="../_images/image-3-1-21.jpeg" class="align-center" src="../_images/image-3-1-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p>선형 회귀 모델은 가장 기본적인 머신러닝 모델 중 하나입니다.</p></li>
@@ -513,7 +523,7 @@ document.write(`
 </ul>
 </section>
 <section id="id5">
-<h3>최소 제곱법 소개<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>최소 제곱법 소개<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-31.jpeg"><img alt="../_images/image-3-1-31.jpeg" class="align-center" src="../_images/image-3-1-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p>최소 제곱법은 선형 회귀 모델에서 매개변수 a와 b를 찾는 표준 방법입니다.</p></li>
@@ -522,7 +532,7 @@ document.write(`
 </ul>
 </section>
 <section id="mse">
-<h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Permalink to this heading">#</a></h3>
+<h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-41.jpeg"><img alt="../_images/image-3-1-41.jpeg" class="align-center" src="../_images/image-3-1-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p>평균 제곱 오차(MSE)는 모델의 예측값과 실제값 간의 차이를 수치화하는 방법입니다.</p></li>
@@ -537,9 +547,9 @@ document.write(`
 </section>
 </section>
 <section id="id6">
-<h2>비용함수와 손실함수<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<h2>비용함수와 손실함수<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <section id="id7">
-<h3>비용함수와 손실함수의 정의<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h3>비용함수와 손실함수의 정의<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-11.jpeg"><img alt="../_images/image-3-2-11.jpeg" class="align-center" src="../_images/image-3-2-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>:</p>
@@ -556,7 +566,7 @@ document.write(`
 </ul>
 </section>
 <section id="id8">
-<h3>평균제곱오차의 역할<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<h3>평균제곱오차의 역할<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-21.jpeg"><img alt="../_images/image-3-2-21.jpeg" class="align-center" src="../_images/image-3-2-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong>:</p>
@@ -574,7 +584,7 @@ document.write(`
 </ul>
 </section>
 <section id="id9">
-<h3>오차 함수와 목적 함수의 비교<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>오차 함수와 목적 함수의 비교<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-31.jpeg"><img alt="../_images/image-3-2-31.jpeg" class="align-center" src="../_images/image-3-2-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>오차 함수(Error Function)</strong>:</p>
@@ -598,9 +608,9 @@ document.write(`
 </section>
 </section>
 <section id="gradient-descent">
-<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permalink to this heading">#</a></h2>
+<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Link to this heading">#</a></h2>
 <section id="id10">
-<h3>경사하강법의 기본 원리<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<h3>경사하강법의 기본 원리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-3-11.jpeg"><img alt="../_images/image-3-3-11.jpeg" class="align-center" src="../_images/image-3-3-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>기본 개념</strong>:</p>
@@ -618,7 +628,7 @@ document.write(`
 </ul>
 </section>
 <section id="id11">
-<h3>경사하강법의 다양한 변형<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<h3>경사하강법의 다양한 변형<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-3-21.jpeg"><img alt="../_images/image-3-3-21.jpeg" class="align-center" src="../_images/image-3-3-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>SGD (Stochastic Gradient Descent)</strong>:</p>
@@ -642,7 +652,7 @@ document.write(`
 </ul>
 </section>
 <section id="id12">
-<h3>경사하강법 시각화<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>경사하강법 시각화<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-3-31.jpeg"><img alt="../_images/image-3-3-31.jpeg" class="align-center" src="../_images/image-3-3-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>비용함수의 모양과 경로</strong>:</p>
@@ -660,9 +670,9 @@ document.write(`
 </section>
 </section>
 <section id="id13">
-<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
 <section id="id14">
-<h3>과대적합과 과소적합<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<h3>과대적합과 과소적합<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-4-11.jpeg"><img alt="../_images/image-3-4-11.jpeg" class="align-center" src="../_images/image-3-4-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>과대적합(Overfitting)</strong>:</p>
@@ -680,7 +690,7 @@ document.write(`
 </ul>
 </section>
 <section id="id15">
-<h3>최적화 알고리즘의 중요성<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<h3>최적화 알고리즘의 중요성<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-4-21.jpeg"><img alt="../_images/image-3-4-21.jpeg" class="align-center" src="../_images/image-3-4-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>일반화 능력 향상</strong>:</p>
@@ -697,7 +707,7 @@ document.write(`
 </ul>
 </section>
 <section id="id16">
-<h3>과대적합과 과소적합 방지 전략<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<h3>과대적합과 과소적합 방지 전략<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-4-31.jpeg"><img alt="../_images/image-3-4-31.jpeg" class="align-center" src="../_images/image-3-4-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터 증강(Data Augmentation)</strong>:</p>
@@ -722,9 +732,9 @@ document.write(`
 </section>
 </section>
 <section id="id17">
-<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h2>
+<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
 <section id="id18">
-<h3>데이터의 양과 질의 중요성<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<h3>데이터의 양과 질의 중요성<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-5-11.jpeg"><img alt="../_images/image-3-5-11.jpeg" class="align-center" src="../_images/image-3-5-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터의 중요성</strong>:</p>
@@ -742,7 +752,7 @@ document.write(`
 </ul>
 </section>
 <section id="id19">
-<h3>모델 복잡도 조절<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
+<h3>모델 복잡도 조절<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-5-21.jpeg"><img alt="../_images/image-3-5-21.jpeg" class="align-center" src="../_images/image-3-5-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>모델 복잡도의 중요성</strong>:</p>
@@ -759,7 +769,7 @@ document.write(`
 </ul>
 </section>
 <section id="id20">
-<h3>일반화, 정규화, 가중치 규제<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
+<h3>일반화, 정규화, 가중치 규제<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-5-31.jpeg"><img alt="../_images/image-3-5-31.jpeg" class="align-center" src="../_images/image-3-5-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>일반화(Generalization)</strong>:</p>
