@@ -454,10 +454,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">추천 시스템의 기본 원리</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">협업 필터링 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">콘텐츠 기반 시스템의 정의와 작동 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">사용자 프로필과 아이템의 특성 매칭</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">주요 알고리즘과 기술</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">콘텐츠 기반 추천 시스템의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">실제 사례 연구</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">하이브리드 추천 시스템</a></li>
 </ul>
             </nav>
         </div>
@@ -521,16 +528,52 @@ document.write(`
 </section>
 <section id="id8">
 <h2>콘텐츠 기반 추천 시스템<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<section id="id9">
+<h3>콘텐츠 기반 시스템의 정의와 작동 원리<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-11.jpeg"><img alt="../_images/image-1-2-11.jpeg" class="align-center" src="../_images/image-1-2-11.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>콘텐츠 기반 시스템의 정의와 작동 원리</p></li>
-<li><p>사용자 프로필과 아이템의 특성 매칭</p></li>
-<li><p>주요 알고리즘과 기술</p></li>
-<li><p>콘텐츠 기반 추천 시스템의 장단점</p></li>
-<li><p>실제 사례 연구</p></li>
+<li><p>콘텐츠 기반 추천 시스템은 사용자가 과거에 선호했던 아이템의 콘텐츠(내용)를 분석하여 유사한 아이템을 추천하는 시스템</p></li>
+<li><p>이 시스템은 아이템의 특성(예: 영화의 장르, 감독, 배우)을 분석하여 사용자의 선호도와 매칭</p></li>
 </ul>
 </section>
-<section id="id9">
-<h2>협업 필터링 추천 시스템<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h3>사용자 프로필과 아이템의 특성 매칭<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-21.jpeg"><img alt="../_images/image-1-2-21.jpeg" class="align-center" src="../_images/image-1-2-21.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>사용자 프로필은 사용자의 과거 행동과 선호도를 기반으로 생성</p></li>
+<li><p>아이템 특성은 텍스트, 이미지, 메타데이터 등 다양한 형태로 분석될 수 있음</p></li>
+<li><p>사용자 프로필과 아이템 특성이 매칭되어 사용자에게 적합한 아이템 추천</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>주요 알고리즘과 기술<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-31.jpeg"><img alt="../_images/image-1-2-31.jpeg" class="align-center" src="../_images/image-1-2-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>키워드 매칭: 아이템 설명에서 키워드 추출 및 사용자 선호와 비교</p></li>
+<li><p>콘텐츠 유사도 측정: 코사인 유사도, 자카드 유사도 등 다양한 방법 사용</p></li>
+<li><p>기계학습 기반 접근: 분류 알고리즘을 사용하여 사용자의 선호 예측</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>콘텐츠 기반 추천 시스템의 장단점<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-41.jpeg"><img alt="../_images/image-1-2-41.jpeg" class="align-center" src="../_images/image-1-2-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>장점: 사용자의 명확한 선호를 반영, 새로운 아이템에 대한 추천 가능</p></li>
+<li><p>단점: 과거 선호에 국한된 추천, 다양성 부족, 콘텐츠 분석의 어려움</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>실제 사례 연구<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-51.jpeg"><img alt="../_images/image-1-2-51.jpeg" class="align-center" src="../_images/image-1-2-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>영화 추천: IMDB, 넷플릭스에서 콘텐츠 기반 추천 사례</p></li>
+<li><p>뉴스 추천: 구글 뉴스의 사용자 관심사 기반 뉴스 추천</p></li>
+<li><p>상품 추천: 아마존, 이베이의 상품 설명을 기반으로 한 추천</p></li>
+</ul>
+</section>
+</section>
+<section id="id14">
+<h2>협업 필터링 추천 시스템<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>협업 필터링의 기본 개념</p></li>
 <li><p>사용자 기반 협업 필터링과 아이템 기반 협업 필터링</p></li>
@@ -539,8 +582,8 @@ document.write(`
 <li><p>실제 적용 사례</p></li>
 </ul>
 </section>
-<section id="id10">
-<h2>행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
+<section id="id15">
+<h2>행렬 인수분해 기반 추천 시스템<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>행렬 인수분해의 개념</p></li>
 <li><p>사용자-아이템 상호작용 행렬</p></li>
@@ -549,8 +592,8 @@ document.write(`
 <li><p>실생활에서의 응용 예</p></li>
 </ul>
 </section>
-<section id="id11">
-<h2>하이브리드 추천 시스템<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<section id="id16">
+<h2>하이브리드 추천 시스템<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>하이브리드 추천 시스템의 정의</p></li>
 <li><p>다양한 하이브리드 방식의 소개</p></li>
@@ -633,10 +676,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">추천 시스템의 기본 원리</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">협업 필터링 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">행렬 인수분해 기반 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">하이브리드 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콘텐츠 기반 추천 시스템</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">콘텐츠 기반 시스템의 정의와 작동 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">사용자 프로필과 아이템의 특성 매칭</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">주요 알고리즘과 기술</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">콘텐츠 기반 추천 시스템의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">실제 사례 연구</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">협업 필터링 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">행렬 인수분해 기반 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">하이브리드 추천 시스템</a></li>
 </ul>
   </nav></div>
 
