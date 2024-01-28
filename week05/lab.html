@@ -511,6 +511,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균 제곱 오차(MSE)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">손실 함수와 비용 함수 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loss-function">손실 함수 (Loss Function)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-function">비용 함수 (Cost Function)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">경사하강법 시각화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA와 정규화를 적용한 리지 회귀 모델 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">PCA를 통한 차원 축소</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">정규화를 적용한 리지 회귀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">시각화</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -919,7 +931,196 @@ max            2.500000    2.000000
 </div>
 </div>
 </div>
-<p>위의 그래프와 MSE 값은 선형 회귀 모델이 어떻게 데이터의 패턴을 학습하고, 이를 통해 예측을 수행하는지 보여줍니다. 이를 통해 학생들은 선형 회귀 모델의 기본 원리와 성능 평가 방법을 이해할 수 있습니다.</p>
+<p>위의 그래프와 MSE 값은 선형 회귀 모델이 어떻게 데이터의 패턴을 학습하고, 이를 통해 예측을 수행하는지 보여줍니다.</p>
+</section>
+</section>
+<section id="id9">
+<h2>손실 함수와 비용 함수 시각화<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+
+<span class="c1"># Loss Function vs Cost Function 시각화를 위한 준비</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">X_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span>  <span class="c1"># -2에서 2 사이의 랜덤값</span>
+<span class="n">y_new</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">X_new</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 선형 회귀 모델을 사용하여 데이터에 적합</span>
+<span class="n">model_new</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model_new</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">)</span>
+<span class="n">y_predict_new</span> <span class="o">=</span> <span class="n">model_new</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
+
+<span class="c1"># 개별 데이터 포인트에 대한 손실 (오차 제곱)</span>
+<span class="n">individual_losses</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_new</span> <span class="o">-</span> <span class="n">y_predict_new</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="c1"># 비용 함수 (전체 데이터셋에 대한 MSE)</span>
+<span class="n">total_cost</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">individual_losses</span><span class="p">)</span>
+
+<span class="c1"># 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># 손실 함수 시각화 (개별 데이터 포인트에 대한 손실)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">individual_losses</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Loss Function (Individual Losses)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Feature Value&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Squared Error&quot;</span><span class="p">)</span>
+
+<span class="c1"># 비용 함수 시각화 (전체 데이터셋에 대한 평균 손실)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual Data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_predict_new</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cost Function (MSE)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Feature Value&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Target Value&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/fa0cc99028ae82b1a609f47d3466fe03fd538d47f6891f45805008d11ec3df5d.png" src="../_images/fa0cc99028ae82b1a609f47d3466fe03fd538d47f6891f45805008d11ec3df5d.png" />
+</div>
+</div>
+<section id="loss-function">
+<h3>손실 함수 (Loss Function)<a class="headerlink" href="#loss-function" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>왼쪽 그래프는 개별 데이터 포인트에 대한 손실(오차 제곱)을 나타냅니다.</p></li>
+<li><p>각 데이터 포인트의 오차 제곱을 오렌지색 점으로 표시하여, 모델이 각 데이터에 얼마나 잘 맞는지를 시각적으로 보여줍니다.</p></li>
+</ul>
+</section>
+<section id="cost-function">
+<h3>비용 함수 (Cost Function)<a class="headerlink" href="#cost-function" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>오른쪽 그래프는 전체 데이터셋에 대한 모델의 평균 손실(비용 함수)을 나타냅니다.</p></li>
+<li><p>파란색 점은 실제 데이터, 빨간색 선은 모델의 예측을 나타내며, 이를 통해 모델이 전체 데이터셋에 어떻게 적합되는지 보여줍니다.</p></li>
+</ul>
+</section>
+</section>
+<section id="id10">
+<h2>경사하강법 시각화<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+
+<span class="c1"># Iris 데이터셋 로드 및 준비</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 첫 번째 특성만 사용 (꽃받침 길이)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>  <span class="c1"># 세 번째 특성을 종속 변수로 사용 (꽃잎 길이)</span>
+
+<span class="c1"># 데이터 표준화 (Gradient Descent에 중요)</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">gradient_descent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">n_iterations</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 무작위 초기화</span>
+    <span class="n">gd_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">theta</span><span class="p">]</span>  <span class="c1"># 경사 하강 경로 저장</span>
+
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_iterations</span><span class="p">):</span>
+        <span class="n">gradients</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">m</span> <span class="o">*</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">theta</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">gradients</span>
+        <span class="n">gd_path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">theta</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">gd_path</span><span class="p">)</span>
+
+
+<span class="c1"># 추가적인 데이터 준비</span>
+<span class="n">X_b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">),</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">X_scaled</span><span class="p">]</span>  <span class="c1"># 바이어스 추가</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># y를 열 벡터로 변환</span>
+
+<span class="c1"># 경사 하강법 실행</span>
+<span class="n">theta</span><span class="p">,</span> <span class="n">gd_path</span> <span class="o">=</span> <span class="n">gradient_descent</span><span class="p">(</span><span class="n">X_b</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># 경사 하강법 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># 모든 경로를 그래프로 표시</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">gd_path</span><span class="p">)):</span>
+    <span class="n">y_predict</span> <span class="o">=</span> <span class="n">X_b</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">gd_path</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># 최종 경로를 빨간색으로 강조</span>
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">X_b</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">gd_path</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Final Prediction&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual Data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Sepal Length (Standardized)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Petal Length&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Visualization of Gradient Descent&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/4934b429905d4fe10bbf1569bade835e54d858f60fb6e7d26399188ea18034e1.png" src="../_images/4934b429905d4fe10bbf1569bade835e54d858f60fb6e7d26399188ea18034e1.png" />
+</div>
+</div>
+<p>위의 그래프는 경사하강법의 과정을 시각화한 것입니다. 각 회색 선은 경사하강법이 반복될 때마다 모델의 예측 선을 나타냅니다. 이 과정에서 각 단계의 예측선이 점차 실제 데이터(파란색 점)에 맞추어져 가는 것을 볼 수 있습니다.</p>
+<ul class="simple">
+<li><p>초기에는 예측선이 데이터 포인트에서 멀리 떨어져 있지만, 반복될수록 실제 데이터에 점점 가까워집니다.</p></li>
+<li><p>마지막에 도달한 빨간색 선은 최종 예측선으로, 데이터를 가장 잘 설명하는 선형 회귀선입니다.</p></li>
+</ul>
+</section>
+<section id="pca">
+<h2>PCA와 정규화를 적용한 리지 회귀 모델 시각화<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h2>
+<section id="id11">
+<h3>PCA를 통한 차원 축소<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Iris 데이터셋의 특성을 주성분 분석(PCA)을 사용하여 2차원으로 축소하였습니다.</p></li>
+<li><p>이를 통해 모델의 복잡도를 줄이고, 중요한 정보를 유지합니다.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>정규화를 적용한 리지 회귀<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>리지 회귀(Ridge Regression)는 L2 정규화를 적용한 선형 회귀 모델입니다.</p></li>
+<li><p>모델의 가중치에 제약을 추가하여 과대적합을 방지합니다.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span>
+
+<span class="c1"># PCA를 사용한 차원 축소</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># 주성분을 2개로 설정</span>
+<span class="n">X_reduced</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># 정규화를 적용한 리지 회귀 모델 생성 및 학습</span>
+<span class="n">ridge_model</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">ridge_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_reduced</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+
+<span class="c1"># PCA 축소된 데이터와 리지 회귀 모델의 예측 시각화</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">X_reduced</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_reduced</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;PC1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;PC2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;PCA Reduced Iris Dataset with Ridge Regression&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/7505666cbe35f26af0444f93721f2ef95eab881cfa1cfd1b1dba333a809a2b47.png" src="../_images/7505666cbe35f26af0444f93721f2ef95eab881cfa1cfd1b1dba333a809a2b47.png" />
+</div>
+</div>
+</section>
+<section id="id13">
+<h3>시각화<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>PCA로 축소된 데이터에 리지 회귀 모델을 적용한 결과를 시각화하였습니다.</p></li>
+<li><p>각 색상은 Iris 데이터셋의 다른 종을 나타냅니다.</p></li>
+</ul>
+<p>이 시각화는 PCA를 통한 차원 축소와 정규화를 적용한 리지 회귀 모델이 어떻게 데이터의 중요한 특성을 유지하면서 모델의 복잡도를 줄이고, 과대적합을 방지하는지 보여줍니다.</p>
 </section>
 </section>
 </section>
@@ -1003,6 +1204,18 @@ max            2.500000    2.000000
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">선형 회귀 모델 및 평균 제곱 오차(MSE) 시각화</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">선형 회귀 모델</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">평균 제곱 오차(MSE)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">손실 함수와 비용 함수 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loss-function">손실 함수 (Loss Function)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-function">비용 함수 (Cost Function)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">경사하강법 시각화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA와 정규화를 적용한 리지 회귀 모델 시각화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">PCA를 통한 차원 축소</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">정규화를 적용한 리지 회귀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">시각화</a></li>
 </ul>
 </li>
 </ul>
