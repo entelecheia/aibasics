@@ -554,6 +554,16 @@ document.write(`
 <p>먼저, 데이터셋을 살펴보겠습니다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+
+<span class="c1"># 필요한 패키지 설치 </span>
+<span class="o">%</span><span class="n">pip</span> <span class="n">install</span> <span class="n">aibasics</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 필요한 라이브러리 임포트</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
@@ -1069,7 +1079,7 @@ max            2.500000    2.000000
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4934b429905d4fe10bbf1569bade835e54d858f60fb6e7d26399188ea18034e1.png" src="../_images/4934b429905d4fe10bbf1569bade835e54d858f60fb6e7d26399188ea18034e1.png" />
+<img alt="../_images/0a408c89f0bb627770d208531d765f9ddef66cd02e202d8345aa00f5f4e48b9d.png" src="../_images/0a408c89f0bb627770d208531d765f9ddef66cd02e202d8345aa00f5f4e48b9d.png" />
 </div>
 </div>
 <p>위의 그래프는 경사하강법의 과정을 시각화한 것입니다. 각 회색 선은 경사하강법이 반복될 때마다 모델의 예측 선을 나타냅니다. 이 과정에서 각 단계의 예측선이 점차 실제 데이터(파란색 점)에 맞추어져 가는 것을 볼 수 있습니다.</p>
