@@ -455,11 +455,31 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">추천 시스템의 평가 지표</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">평가 지표의 중요성과 목적</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f">정확도 지표: 정밀도, 재현율, F-점수</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#precision">정밀도 (Precision)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recall">재현율 (Recall)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#f-f-score">F-점수 (F-Score)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rmse-mae">예측 정확도: RMSE, MAE</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rmse-root-mean-square-error">RMSE (Root Mean Square Error)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mae-mean-absolute-error">MAE (Mean Absolute Error)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ndcg-map">순위 관련 지표: NDCG, MAP</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ndcg-normalized-discounted-cumulative-gain">NDCG (Normalized Discounted Cumulative Gain)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-mean-average-precision">MAP (Mean Average Precision)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">평가 지표의 선택 및 해석</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 추천 시스템의 콜드 스타트 문제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. 추천 시스템에서의 다양성과 정확도</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. 추천 시스템의 향후 전망</a></li>
 </ul>
             </nav>
         </div>
@@ -474,17 +494,110 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>추천 시스템의 고급 주제<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 추천 시스템의 평가 지표<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>추천 시스템의 평가 지표<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>평가 지표의 중요성과 목적<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-12.jpeg"><img alt="../_images/image-2-1-12.jpeg" class="align-center" src="../_images/image-2-1-12.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>평가 지표의 중요성과 목적</p></li>
-<li><p>정확도 지표: 정밀도, 재현율, F-점수</p></li>
-<li><p>예측 정확도: RMSE, MAE</p></li>
-<li><p>순위 관련 지표: NDCG, MAP</p></li>
-<li><p>평가 지표의 선택 및 해석</p></li>
+<li><p>추천 시스템의 효율성과 정확성을 측정하기 위해 필요함</p></li>
+<li><p>사용자 경험 향상과 비즈니스 목표 달성을 위한 기준 제공</p></li>
+<li><p>다양한 평가 지표를 통해 시스템의 다면적 성능 평가 가능</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>2. 추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="f">
+<h3>정확도 지표: 정밀도, 재현율, F-점수<a class="headerlink" href="#f" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-22.jpeg"><img alt="../_images/image-2-1-22.jpeg" class="align-center" src="../_images/image-2-1-22.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정밀도(Precision)</strong>: 양성으로 예측된 항목 중 실제 양성인 비율</p></li>
+<li><p><strong>재현율(Recall)</strong>: 실제 양성 중 양성으로 예측된 비율</p></li>
+<li><p><strong>F-점수(F-Score)</strong>: 정밀도와 재현율의 조화 평균, 두 지표의 균형을 나타냄</p></li>
+</ul>
+<section id="precision">
+<h4>정밀도 (Precision)<a class="headerlink" href="#precision" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의: ( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} )</p></li>
+<li><p>계산 방법: 모델이 양성으로 예측한 항목 중 실제로 양성인 항목의 비율 계산</p></li>
+<li><p>예시: 100개의 추천 중 30개가 사용자가 선호하는 항목일 경우, 정밀도는 30/100 = 0.3</p></li>
+</ul>
+</section>
+<section id="recall">
+<h4>재현율 (Recall)<a class="headerlink" href="#recall" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의: ( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} )</p></li>
+<li><p>계산 방법: 실제 양성인 항목 중 모델이 양성으로 정확히 예측한 항목의 비율 계산</p></li>
+<li><p>예시: 사용자가 선호하는 50개의 항목 중 모델이 30개를 맞춘 경우, 재현율은 30/50 = 0.6</p></li>
+</ul>
+</section>
+<section id="f-f-score">
+<h4>F-점수 (F-Score)<a class="headerlink" href="#f-f-score" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의: ( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} )</p></li>
+<li><p>계산 방법: 정밀도와 재현율의 조화 평균 계산</p></li>
+<li><p>예시: 위의 정밀도(0.3)와 재현율(0.6)을 사용하여 F-점수 계산 시, F-점수는 2 × (0.3 × 0.6) / (0.3 + 0.6) = 0.4</p></li>
+<li><p>예시: 위의 예시와 동일하게 [2, 1, 3, 2, 1]의 오차를 가진 경우, MAE는 (2 + 1 + 3 + 2 + 1) / 5 = 1.8</p></li>
+</ul>
+</section>
+</section>
+<section id="rmse-mae">
+<h3>예측 정확도: RMSE, MAE<a class="headerlink" href="#rmse-mae" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-31.jpeg"><img alt="../_images/image-2-1-31.jpeg" class="align-center" src="../_images/image-2-1-31.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>RMSE(Root Mean Square Error)</strong>: 예측값과 실제값의 차이의 제곱에 대한 평균의 제곱근</p></li>
+<li><p><strong>MAE(Mean Absolute Error)</strong>: 예측값과 실제값 차이의 절대값 평균</p></li>
+<li><p>두 지표 모두 낮을수록 예측 정확도가 높음을 의미</p></li>
+</ul>
+<section id="rmse-root-mean-square-error">
+<h4>RMSE (Root Mean Square Error)<a class="headerlink" href="#rmse-root-mean-square-error" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의: ( \text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(\text{예측값}_i - \text{실제값}_i)^2} )</p></li>
+<li><p>계산 방법: 예측값과 실제값의 차이를 제곱한 후 평균을 내고, 그 값의 제곱근을 취함</p></li>
+<li><p>예시: 5개의 평점 예측에서 각각의 오차가 [2, 1, 3, 2, 1]일 경우, RMSE는 √[(2² + 1² + 3² + 2² + 1²)/5] = 1.897</p></li>
+</ul>
+</section>
+<section id="mae-mean-absolute-error">
+<h4>MAE (Mean Absolute Error)<a class="headerlink" href="#mae-mean-absolute-error" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의: ( \text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|\text{예측값}_i - \text{실제값}_i| )</p></li>
+<li><p>계산 방법: 예측값과 실제값의 차이의 절대값을 평균냄</p></li>
+</ul>
+</section>
+</section>
+<section id="ndcg-map">
+<h3>순위 관련 지표: NDCG, MAP<a class="headerlink" href="#ndcg-map" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-42.jpeg"><img alt="../_images/image-2-1-42.jpeg" class="align-center" src="../_images/image-2-1-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>NDCG(Normalized Discounted Cumulative Gain)</strong>: 이상적인 순위와 비교하여 실제 추천 순위의 질을 측정</p></li>
+<li><p><strong>MAP(Mean Average Precision)</strong>: 모든 쿼리에 대한 평균 정밀도의 평균값</p></li>
+<li><p>순위 지표는 추천 항목의 순서가 중요한 경우 사용됨</p></li>
+</ul>
+<section id="ndcg-normalized-discounted-cumulative-gain">
+<h4>NDCG (Normalized Discounted Cumulative Gain)<a class="headerlink" href="#ndcg-normalized-discounted-cumulative-gain" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의 및 계산 방법: 이상적인 순위(DCG)에 대해 실제 추천 순위의 DCG를 정규화한 값</p></li>
+<li><p>예시: 사용자에게 가장 관련이 높은 5개의 항목을 추천해야 하는데, 모델이 추천한 순서가 사용자의 선호도와 다르게 나올 경우, 이에 대한 NDCG 점수 계산</p></li>
+</ul>
+</section>
+<section id="map-mean-average-precision">
+<h4>MAP (Mean Average Precision)<a class="headerlink" href="#map-mean-average-precision" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>수학적 정의 및 계산 방법: 모든 쿼리에 대한 평균 정밀도의 평균을 계산</p></li>
+<li><p>예시: 여러 쿼리에 대한 각각의 정밀도를 계산하고, 이를 평균내어 MAP 점수 도출</p></li>
+</ul>
+<p>각 지표는 추천 시스템의 다양한 측면을 평가하기 위해 사용되며, 특정 상황에 따라 적합한 지표를 선택하여 평가하는 것이 중요합니다. 이러한 계산 방법과 예시를 통해 학생들은 추천 시스템의 성능을 보다 정확하게 이해하고 평가할 수 있습니다.</p>
+</section>
+</section>
+<section id="id4">
+<h3>평가 지표의 선택 및 해석<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-52.jpeg"><img alt="../_images/image-2-1-52.jpeg" class="align-center" src="../_images/image-2-1-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>비즈니스 목표와 사용자 요구에 따라 적절한 평가 지표 선택 필요</p></li>
+<li><p>다양한 지표를 조합하여 종합적인 시스템 성능 평가</p></li>
+<li><p>지표의 해석을 통해 추천 시스템의 개선 방향 도출</p></li>
+</ul>
+</section>
+</section>
+<section id="id5">
+<h2>2. 추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>콜드 스타트 문제의 정의와 유형</p></li>
 <li><p>새로운 사용자와 새로운 아이템 문제</p></li>
@@ -493,8 +606,8 @@ document.write(`
 <li><p>실제 사례와 해결 사례 연구</p></li>
 </ul>
 </section>
-<section id="id4">
-<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>다양성과 정확도의 균형의 중요성</p></li>
 <li><p>다양성을 측정하는 방법</p></li>
@@ -503,8 +616,8 @@ document.write(`
 <li><p>개선 전략과 실제 적용 사례</p></li>
 </ul>
 </section>
-<section id="id5">
-<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>컨텍스트 인식 추천의 정의</p></li>
 <li><p>컨텍스트의 종류와 활용 방법</p></li>
@@ -513,8 +626,8 @@ document.write(`
 <li><p>실생활에서의 응용 예</p></li>
 </ul>
 </section>
-<section id="id6">
-<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>인공지능과 머신러닝의 발전</p></li>
 <li><p>개인화와 사용자 경험</p></li>
@@ -589,11 +702,31 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 추천 시스템의 평가 지표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">추천 시스템의 평가 지표</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">평가 지표의 중요성과 목적</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f">정확도 지표: 정밀도, 재현율, F-점수</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#precision">정밀도 (Precision)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recall">재현율 (Recall)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#f-f-score">F-점수 (F-Score)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rmse-mae">예측 정확도: RMSE, MAE</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rmse-root-mean-square-error">RMSE (Root Mean Square Error)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mae-mean-absolute-error">MAE (Mean Absolute Error)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ndcg-map">순위 관련 지표: NDCG, MAP</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ndcg-normalized-discounted-cumulative-gain">NDCG (Normalized Discounted Cumulative Gain)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-mean-average-precision">MAP (Mean Average Precision)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">평가 지표의 선택 및 해석</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 추천 시스템의 콜드 스타트 문제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. 추천 시스템에서의 다양성과 정확도</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. 추천 시스템의 향후 전망</a></li>
 </ul>
   </nav></div>
 
