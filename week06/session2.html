@@ -476,10 +476,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">평가 지표의 선택 및 해석</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">추천 시스템의 콜드 스타트 문제</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">콜드 스타트 문제의 정의와 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">새로운 사용자와 새로운 아이템 문제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콜드 스타트 해결 전략</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">데이터 수집 및 활용 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">실제 사례와 해결 사례 연구</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3. 추천 시스템에서의 다양성과 정확도</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">5. 추천 시스템의 향후 전망</a></li>
 </ul>
             </nav>
         </div>
@@ -597,17 +604,87 @@ document.write(`
 </section>
 </section>
 <section id="id5">
-<h2>2. 추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2>추천 시스템의 콜드 스타트 문제<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>콜드 스타트 문제의 정의와 유형<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-12.jpeg"><img alt="../_images/image-2-2-12.jpeg" class="align-center" src="../_images/image-2-2-12.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>콜드 스타트 문제의 정의와 유형</p></li>
-<li><p>새로운 사용자와 새로운 아이템 문제</p></li>
-<li><p>콜드 스타트 해결 전략</p></li>
-<li><p>데이터 수집 및 활용 방법</p></li>
-<li><p>실제 사례와 해결 사례 연구</p></li>
+<li><p><strong>정의</strong>: 추천 시스템이 초기 데이터 부족으로 인해 정확한 추천을 제공하기 어려운 상황</p></li>
+<li><p><strong>유형</strong>: 새로운 사용자(사용자 데이터 부족) 및 새로운 아이템(아이템 데이터 부족)</p></li>
 </ul>
 </section>
-<section id="id6">
-<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>새로운 사용자와 새로운 아이템 문제<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-22.jpeg"><img alt="../_images/image-2-2-22.jpeg" class="align-center" src="../_images/image-2-2-22.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>새로운 사용자 문제</strong></p>
+<ul>
+<li><p>초기 설문조사로 기본적인 취향 정보 수집</p></li>
+<li><p>스트리밍 서비스가 새로 가입한 사용자에게 선호하는 장르나 아티스트 선택 요청</p></li>
+</ul>
+</li>
+<li><p><strong>새로운 아이템 문제</strong></p>
+<ul>
+<li><p>아이템 메타데이터 활용하여 유사 아이템 기반 초기 추천</p></li>
+<li><p>새로 출시된 책에 대해 저자나 장르가 유사한 책을 기반으로 추천</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id8">
+<h3>콜드 스타트 해결 전략<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-3-2.jpeg"><img alt="../_images/image-2-2-3-2.jpeg" class="align-center" src="../_images/image-2-2-3-2.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>하이브리드 추천 시스템</strong></p>
+<ul>
+<li><p>내용 기반 필터링과 협업 필터링의 결합</p></li>
+<li><p>넷플릭스가 사용자 선호도와 아이템의 콘텐츠 정보를 함께 고려하여 추천</p></li>
+</ul>
+</li>
+<li><p><strong>소셜 네트워크 활용</strong></p>
+<ul>
+<li><p>사용자의 소셜 미디어 활동이나 친구의 선호도 정보 활용</p></li>
+<li><p>스포티파이에서 친구들이 많이 듣는 음악을 추천</p></li>
+</ul>
+</li>
+<li><p><strong>액티브 러닝</strong></p>
+<ul>
+<li><p>사용자에게 피드백을 요청하고 이를 모델 학습에 활용</p></li>
+<li><p>전자상거래 플랫폼에서 사용자의 상품 평가 요청 후 추천 시스템 개선</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id9">
+<h3>데이터 수집 및 활용 방법<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-42.jpeg"><img alt="../_images/image-2-2-42.jpeg" class="align-center" src="../_images/image-2-2-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터 수집</strong></p>
+<ul>
+<li><p>웹 로깅, 설문조사, 제3자 데이터 소스 활용</p></li>
+<li><p>사용자의 웹사이트 내 행동(클릭, 조회) 추적 및 분석</p></li>
+</ul>
+</li>
+<li><p><strong>데이터 활용</strong></p>
+<ul>
+<li><p>사용자 프로파일 작성 및 개인화 추천 로직 적용</p></li>
+<li><p>아마존에서 사용자의 과거 구매 내역을 분석하여 관련 상품 추천</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id10">
+<h3>실제 사례와 해결 사례 연구<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-2-52.jpeg"><img alt="../_images/image-2-2-52.jpeg" class="align-center" src="../_images/image-2-2-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>넷플릭스</strong>: 새 사용자의 취향에 맞는 컨텐츠 추천을 위해 간단한 설문조사 활용</p></li>
+<li><p><strong>아마존</strong>: 사용자 리뷰와 구매 이력을 기반으로 새로운 상품 추천</p></li>
+<li><p><strong>스포티파이</strong>: 사용자와 친구들의 음악 취향을 분석하여 개인화된 음악 추천 제공</p></li>
+</ul>
+</section>
+</section>
+<section id="id11">
+<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>다양성과 정확도의 균형의 중요성</p></li>
 <li><p>다양성을 측정하는 방법</p></li>
@@ -616,8 +693,8 @@ document.write(`
 <li><p>개선 전략과 실제 적용 사례</p></li>
 </ul>
 </section>
-<section id="id7">
-<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>컨텍스트 인식 추천의 정의</p></li>
 <li><p>컨텍스트의 종류와 활용 방법</p></li>
@@ -626,8 +703,8 @@ document.write(`
 <li><p>실생활에서의 응용 예</p></li>
 </ul>
 </section>
-<section id="id8">
-<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="id13">
+<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>인공지능과 머신러닝의 발전</p></li>
 <li><p>개인화와 사용자 경험</p></li>
@@ -723,10 +800,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">평가 지표의 선택 및 해석</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 추천 시스템의 콜드 스타트 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">추천 시스템의 콜드 스타트 문제</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">콜드 스타트 문제의 정의와 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">새로운 사용자와 새로운 아이템 문제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">콜드 스타트 해결 전략</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">데이터 수집 및 활용 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">실제 사례와 해결 사례 연구</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3. 추천 시스템에서의 다양성과 정확도</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">5. 추천 시스템의 향후 전망</a></li>
 </ul>
   </nav></div>
 
