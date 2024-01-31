@@ -484,9 +484,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">실제 사례와 해결 사례 연구</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">추천 시스템에서의 다양성과 정확도</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">다양성과 정확도의 균형의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">다양성을 측정하는 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">사용자 만족도와 탐험</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">정확도와 다양성의 트레이드오프</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">개선 전략과 실제 적용 사례</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">5. 추천 시스템의 향후 전망</a></li>
 </ul>
             </nav>
         </div>
@@ -684,17 +691,58 @@ document.write(`
 </section>
 </section>
 <section id="id11">
-<h2>3. 추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<h2>추천 시스템에서의 다양성과 정확도<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>다양성과 정확도의 균형의 중요성<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-12.jpeg"><img alt="../_images/image-2-3-12.jpeg" class="align-center" src="../_images/image-2-3-12.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>다양성과 정확도의 균형의 중요성</p></li>
-<li><p>다양성을 측정하는 방법</p></li>
-<li><p>사용자 만족도와 탐험</p></li>
-<li><p>정확도와 다양성의 트레이드오프</p></li>
-<li><p>개선 전략과 실제 적용 사례</p></li>
+<li><p>사용자에게 맞춤형 아이템을 추천하면서 새로운 취향을 발견할 기회를 제공하는 것이 핵심</p></li>
+<li><p>사용자 행동 분석 및 선호도 예측 모델과 다양성 증진 모델을 결합</p></li>
+<li><p>유튜브는 시청 기록을 분석해 비슷한 콘텐츠를 추천하면서 새로운 콘텐츠도 혼합하여 제공</p></li>
 </ul>
 </section>
-<section id="id12">
-<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="id13">
+<h3>다양성을 측정하는 방법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-22.jpeg"><img alt="../_images/image-2-3-22.jpeg" class="align-center" src="../_images/image-2-3-22.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p>아이템 간의 유사도를 코사인 유사도나 자카드 유사도로 계산하여 다양성 평가</p></li>
+<li><p>온라인 쇼핑몰은 다양한 카테고리의 상품을 포함하여 제품을 추천하여 다양성을 제공</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>사용자 만족도와 탐험<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-32.jpeg"><img alt="../_images/image-2-3-32.jpeg" class="align-center" src="../_images/image-2-3-32.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>만족도 조사</strong>: 정기적인 사용자 만족도 조사를 통해 피드백을 수집하고 시스템을 개선</p></li>
+<li><p><strong>탐험 촉진</strong>: 탐험-활용 알고리즘을 통해 새로운 아이템을 추천하여 사용자의 취향 다양성 증진</p></li>
+<li><p><strong>실제 예시</strong>: 뉴스 앱은 사용자가 일반적으로 보지 않는 주제의 기사를 포함하여 추천</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>정확도와 다양성의 트레이드오프<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-42.jpeg"><img alt="../_images/image-2-3-42.jpeg" class="align-center" src="../_images/image-2-3-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>균형 조절</strong>: 사용자 반응 데이터를 기반으로 정확도와 다양성 사이의 비율을 조정</p></li>
+<li><p><strong>실제 예시</strong>: 음악 스트리밍 서비스는 사용자의 기존 취향과 새로운 장르의 음악을 균형있게 제공</p></li>
+</ul>
+</section>
+<section id="id16">
+<h3>개선 전략과 실제 적용 사례<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-52.jpeg"><img alt="../_images/image-2-3-52.jpeg" class="align-center" src="../_images/image-2-3-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>다중 목표 최적화</strong>: 정확도와 다양성을 동시에 고려하는 추천 알고리즘 개발이 중요</p></li>
+<li><p><strong>사용자 피드백 시스템</strong>: 직접적인 사용자 피드백을 활용하여 시스템을 지속적으로 개선</p></li>
+<li><p><strong>실제 사례</strong></p>
+<ul>
+<li><p><strong>트립어드바이저</strong>: 과거 여행 경험과 새로운 목적지를 조합한 여행지 추천</p></li>
+<li><p><strong>Pinterest</strong>: 저장한 핀과 유사하지만 다른 핀들을 추천하여 다양성 증진</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id17">
+<h2>4. 컨텍스트 인식 추천 시스템<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>컨텍스트 인식 추천의 정의</p></li>
 <li><p>컨텍스트의 종류와 활용 방법</p></li>
@@ -703,8 +751,8 @@ document.write(`
 <li><p>실생활에서의 응용 예</p></li>
 </ul>
 </section>
-<section id="id13">
-<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="id18">
+<h2>5. 추천 시스템의 향후 전망<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>인공지능과 머신러닝의 발전</p></li>
 <li><p>개인화와 사용자 경험</p></li>
@@ -808,9 +856,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">실제 사례와 해결 사례 연구</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3. 추천 시스템에서의 다양성과 정확도</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4. 컨텍스트 인식 추천 시스템</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">5. 추천 시스템의 향후 전망</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">추천 시스템에서의 다양성과 정확도</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">다양성과 정확도의 균형의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">다양성을 측정하는 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">사용자 만족도와 탐험</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">정확도와 다양성의 트레이드오프</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">개선 전략과 실제 적용 사례</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">4. 컨텍스트 인식 추천 시스템</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">5. 추천 시스템의 향후 전망</a></li>
 </ul>
   </nav></div>
 
