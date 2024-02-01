@@ -478,6 +478,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">응용 분야</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">대규모 언어 모델(Large Language Models, LLMs)의 이슈와 능력</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">대규모 언어 모델의 이슈</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">대규모 언어 모델의 신흥 능력</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -656,6 +661,103 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id12">
+<h2>대규모 언어 모델(Large Language Models, LLMs)의 이슈와 능력<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="id13">
+<h3>대규모 언어 모델의 이슈<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>자원 요구량</strong></p>
+<ul>
+<li><p>훈련에 막대한 계산 자원 필요</p></li>
+<li><p>비용 및 에너지 집약적</p></li>
+<li><p>AI 연구의 중앙집중화 우려</p></li>
+</ul>
+</li>
+<li><p><strong>데이터 편향</strong></p>
+<ul>
+<li><p>훈련 데이터셋의 편향성 반영 가능성</p></li>
+<li><p>부정적 또는 편향된 출력 결과 초래 가능</p></li>
+</ul>
+</li>
+<li><p><strong>윤리적 고려사항</strong></p>
+<ul>
+<li><p>인간 글과 구분 불가능한 콘텐츠 생성</p></li>
+<li><p>가짜 뉴스, 악의적 콘텐츠 생성에 대한 우려</p></li>
+</ul>
+</li>
+<li><p><strong>모델 해석 가능성</strong></p>
+<ul>
+<li><p>복잡한 아키텍처와 매개변수로 인한 해석 어려움</p></li>
+<li><p>해석성 및 설명 가능성 개선 필요</p></li>
+</ul>
+</li>
+<li><p><strong>배포 과제</strong></p>
+<ul>
+<li><p>실제 환경에서의 배포에 고도의 계산 자원 및 전문 지식 요구</p></li>
+<li><p>접근성 및 배포 과정 단순화 필요</p></li>
+</ul>
+</li>
+<li><p><strong>공정성 및 포괄성</strong></p>
+<ul>
+<li><p>다양한 언어, 방언, 문화적 관점의 공정한 처리</p></li>
+<li><p>소수 언어 및 방언의 대표성 문제</p></li>
+</ul>
+</li>
+<li><p><strong>환경적 영향</strong></p>
+<ul>
+<li><p>훈련 시 에너지 소비로 인한 환경적 우려</p></li>
+<li><p>에너지 효율적인 훈련 방법 및 재생 가능 에너지 사용 촉진 필요</p></li>
+</ul>
+</li>
+<li><p><strong>법적 및 규제적 함의</strong></p>
+<ul>
+<li><p>지적 재산권, 콘텐츠 조정, 생성물에 대한 책임 등 법적 문제</p></li>
+<li><p>책임 있는 혁신을 위한 법적, 규제적 틀 개발 필요</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id14">
+<h3>대규모 언어 모델의 신흥 능력<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>신흥 능력 정의</strong></p>
+<ul>
+<li><p>작은 모델에서는 나타나지 않지만 큰 모델에서 발견되는 능력</p></li>
+</ul>
+</li>
+<li><p><strong>신흥 능력의 분류</strong></p>
+<ul>
+<li><p><strong>신흥 Few-shot Prompted Tasks</strong></p>
+<ul>
+<li><p>작은 모델은 무작위 수준의 성능, 큰 모델은 상당히 높은 성능</p></li>
+<li><p>BIG-Bench, Massive Multitask Benchmark 등에서 소개</p></li>
+</ul>
+</li>
+<li><p><strong>신흥 Prompting 전략</strong></p>
+<ul>
+<li><p>충분히 큰 모델에만 작동하는 일반적인 프롬프팅 전략</p></li>
+<li><p>지시 사항 따르기, 스크래치패드, 사고의 연쇄 프롬프팅 등 포함</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>향후 연구 방향</strong></p>
+<ul>
+<li><p>모델 아키텍처 개선</p></li>
+<li><p>데이터의 질 및 양 향상</p></li>
+<li><p>프롬프팅 최적화</p></li>
+<li><p>신흥 능력의 발생 이유 및 예측 가능성 탐구</p></li>
+</ul>
+</li>
+<li><p><strong>BIG-Bench 및 MMLU 작업 예시</strong></p>
+<ul>
+<li><p>GPT-3, LaMDA, PaLM, Chinchilla 모델의 다양한 작업 성능 소개</p></li>
+<li><p>다양한 언어, 문화적 관점을 포괄하는 과제 포함</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -742,6 +844,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llms">LLMs의 능력</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">방법론</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">응용 분야</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">대규모 언어 모델(Large Language Models, LLMs)의 이슈와 능력</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">대규모 언어 모델의 이슈</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">대규모 언어 모델의 신흥 능력</a></li>
 </ul>
 </li>
 </ul>
