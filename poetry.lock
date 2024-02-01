@@ -2613,6 +2613,21 @@ examples = ["matplotlib (>=3.3.4)", "pandas (>=1.1.5)", "plotly (>=5.14.0)", "po
 tests = ["black (>=23.3.0)", "matplotlib (>=3.3.4)", "mypy (>=1.3)", "numpydoc (>=1.2.0)", "pandas (>=1.1.5)", "polars (>=0.19.12)", "pooch (>=1.6.0)", "pyamg (>=4.0.0)", "pyarrow (>=12.0.0)", "pytest (>=7.1.2)", "pytest-cov (>=2.9.0)", "ruff (>=0.0.272)", "scikit-image (>=0.17.2)"]
 
 [[package]]
+name = "scikit-surprise"
+version = "1.1.3"
+description = "An easy-to-use library for recommender systems."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "scikit-surprise-1.1.3.tar.gz", hash = "sha256:56bfec410b21278807b7538acb7405db99b44937259dd329762cee7e667d4bcc"},
+]
+
+[package.dependencies]
+joblib = ">=1.0.0"
+numpy = ">=1.17.3"
+scipy = ">=1.3.2"
+
+[[package]]
 name = "scipy"
 version = "1.12.0"
 description = "Fundamental algorithms for scientific computing in Python"
@@ -3100,4 +3115,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "c8dab53b8d78209b100e502c4f1a292a90cb0494da30ee1290fae21b19a3a33d"
+content-hash = "eed5d6f22d41f41c758fd125c3ef8f631aabbb5e54bb82cc377f77bad5ea3ca4"
