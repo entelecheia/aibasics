@@ -1,5 +1,17 @@
 <!--next-version-placeholder-->
 
+## v0.5.0 (2024-02-01)
+
+### Feature
+
+* **book:** Add week06 lab notebook ([`2c05ae2`](https://github.com/chu-aie/aibasics/commit/2c05ae2a609dc233ff32dbd51a1d105c3ac7c362))
+* **pyproject.toml:** Add scikit-surprise dependency ([`ea6209c`](https://github.com/chu-aie/aibasics/commit/ea6209c5eacb28af73ce9250b4901fc4fb900c0b))
+* **book:** Add new images to week06 session2 content ([`840a73a`](https://github.com/chu-aie/aibasics/commit/840a73aa09653cefe53286bcc09c27043e0c0e42))
+* **book:** Update session2.md with image references ([`1d3f4c5`](https://github.com/chu-aie/aibasics/commit/1d3f4c5f10f523dbe3669ddd0c703432b49b9e57))
+* **book:** Add images to week06 session2.md ([`c3455b2`](https://github.com/chu-aie/aibasics/commit/c3455b2c393721bc891aefe632bd1afdf4402b7c))
+* **book:** Expand section on cold start problem in recommendation systems ([`5580531`](https://github.com/chu-aie/aibasics/commit/55805315b8d1b7867282aba751167f300017892c))
+* **book:** Expand section on advanced topics in recommender systems ([`eaadfaf`](https://github.com/chu-aie/aibasics/commit/eaadfaff80713f862baebd8b77981be1623e16c9))
+
 ## v0.4.0 (2024-01-29)
 
 ### Feature
