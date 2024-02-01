@@ -3,8 +3,8 @@
 [![pypi-image]][pypi-url]
 [![version-image]][release-url]
 [![release-date-image]][release-url]
-[![license-image]][license-url]
-[![jupyter-book-image]][docs-url]
+<!-- [![jupyter-book-image]][docs-url] -->
+<!-- [![license-image]][license-url] -->
 
 <!-- Links: -->
 
@@ -18,7 +18,7 @@
 [jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
 [repo-url]: https://github.com/chu-aie/aibasics
 [pypi-url]: https://pypi.org/project/aibasics
-[docs-url]: https://aibasics.entelecheia.ai
+[docs-url]: https://aibasics.halla.ai
 [changelog]: https://github.com/chu-aie/aibasics/blob/main/CHANGELOG.md
 [contributing guidelines]: https://github.com/chu-aie/aibasics/blob/main/CONTRIBUTING.md
 

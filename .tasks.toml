@@ -91,6 +91,12 @@ shell = """
 """
 help = "install jupyter-book"
 
+[tool.poe.tasks.install-pyppeteer]
+shell = """
+  pip install pyppeteer
+"""
+help = "install pyppeteer"
+
 [tool.poe.tasks.book-build]
 cmd = "jupyter-book build book"
 help = "build the book"
@@ -98,6 +104,10 @@ help = "build the book"
 [tool.poe.tasks.book-build-all]
 cmd = "jupyter-book build book --all"
 help = "build the book with all outputs"
+
+[tool.poe.tasks.book-build-pdf]
+cmd = "jupyter-book build book --builder pdfhtml"
+help = "build the book as a PDF"
 
 [tool.poe.tasks.book-publish]
 cmd = "ghp-import -n -p -f book/_build/html"
