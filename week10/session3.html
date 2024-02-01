@@ -481,6 +481,26 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">대규모 언어 모델의 이슈와 능력</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">대규모 언어 모델의 이슈</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">대규모 언어 모델의 신흥 능력</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">대규모 언어 모델의 진화</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">언어 모델링의 발전</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">대규모 언어 모델의 우위</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">기반 모델: 확장 또는 하위 집합?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">대규모 언어 모델의 아키텍처 진화</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn">초기 프레임워크: 자기지도 학습 &amp; RNN</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn-lstm-gru">RNN, LSTM, GRU의 제약사항</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">주의 메커니즘의 도입</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">단어 임베딩과 트랜스포머의 등장</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">인코더-디코더 프레임워크</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">대규모 언어 모델 활용 방법</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">미세 조정을 통한 전이 학습 전략</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">프롬프트 엔지니어링 및 맥락 학습</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">명령 튜닝을 통한 제로샷 프롬프트</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -759,6 +779,94 @@ document.write(`
 </li>
 </ul>
 </section>
+<section id="id16">
+<h3>대규모 언어 모델의 진화<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-32.jpeg"><img alt="../_images/image-3-4-32.jpeg" class="align-center" src="../_images/image-3-4-32.jpeg" style="width: 90%;" /></a>
+<section id="id17">
+<h4>언어 모델링의 발전<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>1980년대의 계산력 및 데이터 증가</strong>: 통계 및 기계 학습 기반 NLP 기술의 등장 배경.</p></li>
+<li><p><strong>언어 모델링의 핵심</strong>: 단어 시퀀스의 가능성 추정을 위한 확률 모델 활용.</p></li>
+<li><p><strong>기술 전환</strong>: n-gram에서 신경망 기반 모델로의 전환, 문맥적 언어 표현 제공.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h4>대규모 언어 모델의 우위<a class="headerlink" href="#id18" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>능력과 규모의 도약</strong>: 언어 모델링에서의 중요한 진전.</p></li>
+<li><p><strong>훈련 데이터의 광범위함</strong>: 인간 지식의 방대한 영역 포괄.</p></li>
+<li><p><strong>신흥 능력의 발현</strong>: 작업 특정 훈련 없이도 다양한 언어 작업 수행.</p></li>
+</ul>
+</section>
+<section id="id19">
+<h4>기반 모델: 확장 또는 하위 집합?<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>‘기반 모델’ 용어의 도입</strong>: 다양한 작업에 적응 가능한 모델 설명.</p></li>
+<li><p><strong>다중 모달 데이터의 포함</strong>: 더 넓은 범위의 데이터 다양성.</p></li>
+<li><p><strong>아키텍처 설계</strong>: 작업 특정 적응을 위한 기반층.</p></li>
+</ul>
+</section>
+</section>
+<section id="id20">
+<h3>대규모 언어 모델의 아키텍처 진화<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-41.jpeg"><img alt="../_images/image-3-4-41.jpeg" class="align-center" src="../_images/image-3-4-41.jpeg" style="width: 90%;" /></a>
+<section id="rnn">
+<h4>초기 프레임워크: 자기지도 학습 &amp; RNN<a class="headerlink" href="#rnn" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>자기지도 학습 알고리즘</strong>: 레이블 없는 데이터에서의 특성 표현 학습.</p></li>
+<li><p><strong>RNN, LSTM, GRU 사용</strong>: 초기 대규모 언어 모델 아키텍처.</p></li>
+</ul>
+</section>
+<section id="rnn-lstm-gru">
+<h4>RNN, LSTM, GRU의 제약사항<a class="headerlink" href="#rnn-lstm-gru" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>순차적 데이터 처리의 어려움</strong>: 병렬화의 한계.</p></li>
+<li><p><strong>기울기 소실 문제</strong>: LSTM의 효과적 훈련 방해.</p></li>
+<li><p><strong>GRU의 성능 한계</strong>: 방대한 데이터셋에서의 성능 저하.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h4>주의 메커니즘의 도입<a class="headerlink" href="#id21" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>RNN의 제한 완화</strong>: 주의 메커니즘을 통한 정보 전파 및 보존 범위 확장.</p></li>
+</ul>
+</section>
+<section id="id22">
+<h4>단어 임베딩과 트랜스포머의 등장<a class="headerlink" href="#id22" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>단어 임베딩의 역할</strong>: 언어 맥락과 의미 연관성 포착.</p></li>
+<li><p><strong>트랜스포머 아키텍처</strong>: 자기 주의 메커니즘을 사용한 데이터 처리의 혁신.</p></li>
+</ul>
+</section>
+<section id="id23">
+<h4>인코더-디코더 프레임워크<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>트랜스포머 모델의 구조</strong>: 인코더와 디코더의 결합, 복잡한 정보 합성 및 검색 가능.</p></li>
+</ul>
+</section>
+</section>
+<section id="id24">
+<h3>대규모 언어 모델 활용 방법<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-5.jpeg"><img alt="../_images/image-3-4-5.jpeg" class="align-center" src="../_images/image-3-4-5.jpeg" style="width: 90%;" /></a>
+<section id="id25">
+<h4>미세 조정을 통한 전이 학습 전략<a class="headerlink" href="#id25" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>미세 조정의 개념</strong>: 사전 훈련된 모델의 작업 특정 데이터셋에서의 추가 전문화.</p></li>
+</ul>
+</section>
+<section id="id26">
+<h4>프롬프트 엔지니어링 및 맥락 학습<a class="headerlink" href="#id26" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>프롬프트 엔지니어링의 중요성</strong>: 특정 작업에 대한 LLM의 적용을 용이하게 함.</p></li>
+</ul>
+</section>
+<section id="id27">
+<h4>명령 튜닝을 통한 제로샷 프롬프트<a class="headerlink" href="#id27" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>명령 튜닝의 방법론</strong>: 더 정확하고 자연스러운 제로샷 프롬프트를 위한 미세 조정 방법.</p></li>
+</ul>
+</section>
+</section>
 </section>
 </section>
 
@@ -851,6 +959,26 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">대규모 언어 모델의 이슈와 능력</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">대규모 언어 모델의 이슈</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">대규모 언어 모델의 신흥 능력</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">대규모 언어 모델의 진화</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">언어 모델링의 발전</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">대규모 언어 모델의 우위</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">기반 모델: 확장 또는 하위 집합?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">대규모 언어 모델의 아키텍처 진화</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn">초기 프레임워크: 자기지도 학습 &amp; RNN</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rnn-lstm-gru">RNN, LSTM, GRU의 제약사항</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">주의 메커니즘의 도입</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">단어 임베딩과 트랜스포머의 등장</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">인코더-디코더 프레임워크</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">대규모 언어 모델 활용 방법</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">미세 조정을 통한 전이 학습 전략</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">프롬프트 엔지니어링 및 맥락 학습</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">명령 튜닝을 통한 제로샷 프롬프트</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
