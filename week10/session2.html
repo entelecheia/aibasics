@@ -488,6 +488,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dtm">동적 토픽 모델 (DTM)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">감정 분석</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">감정 분석 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">감정 분석 기법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">감정 분석의 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">감정 분석의 응용</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -797,6 +805,55 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id22">
+<h2>감정 분석<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h3>서론<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>감정 분석 정의</strong>: 텍스트에 내포된 감정이나 의견의 성향을 파악하는 과정.</p></li>
+<li><p><strong>적용 분야</strong>: 소셜 미디어, 제품 리뷰, 고객 피드백, 뉴스 기사 등 다양한 텍스트 소스에서 활용됨.</p></li>
+<li><p><strong>목적</strong>: 기업이나 조직이 고객, 사용자, 대중의 감정을 이해하는 데 도움을 줌.</p></li>
+<li><p><strong>분석 유형</strong>: 극성 기반, 감정 기반, 측면 기반 분석 등 다양한 접근 방식 존재.</p></li>
+<li><p><strong>기술적 접근</strong>: 규칙 기반, 기계 학습, 심층 학습 등 다양한 기술을 통해 수행됨.</p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>감정 분석 유형<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>극성 기반 분석</strong>: 긍정, 부정, 중립으로 텍스트의 감정을 분류. 단어나 구절에 감정 점수를 할당하고 이를 집계.</p></li>
+<li><p><strong>감정 기반 분석</strong>: 행복, 슬픔, 분노 등 구체적인 감정을 식별. 감정 어휘 사전이나 레이블링된 데이터에 기반한 기계 학습 모델 사용.</p></li>
+<li><p><strong>측면 기반 분석</strong>: 텍스트 내 다양한 측면이나 속성에 대한 감정을 파악. 예를 들어 제품 리뷰에서 가격, 품질, 사용성에 대한 감정을 분류.</p></li>
+</ol>
+</section>
+<section id="id25">
+<h3>감정 분석 기법<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>규칙 기반 방법</strong>: 정의된 규칙과 감정 어휘 사전을 활용하여 텍스트의 감정을 판단.</p></li>
+<li><p><strong>기계 학습</strong>: 로지스틱 회귀, 서포트 벡터 머신, 나이브 베이즈 분류기 등을 사용하여 감정 분석 모델을 구축.</p></li>
+<li><p><strong>심층 학습</strong>: RNN, LSTM, 변형자 모델 등을 활용하여 고성능의 감정 분석 모델을 개발.</p></li>
+</ol>
+</section>
+<section id="id26">
+<h3>감정 분석의 도전 과제<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>비꼬기와 아이러니</strong>: 문자 그대로의 의미와 반대되는 감정을 표현하기 때문에 분류가 어려움.</p></li>
+<li><p><strong>부정과 이중 부정</strong>: 부정이 감정의 방향을 바꾸거나 모호하게 만듦.</p></li>
+<li><p><strong>분야 특정 언어</strong>: 다양한 분야에서 감정 표현이 다르기 때문에 한 분야에서 학습된 모델이 다른 분야에서 잘 작동하지 않을 수 있음.</p></li>
+<li><p><strong>문맥과 세계 지식</strong>: 문화적 참조, 역사적 사건, 분야 특정 지식 등이 감정 분석에 필요함.</p></li>
+<li><p><strong>모호성과 다중 감정</strong>: 하나의 텍스트에 여러 감정이나 다양한 대상이 포함되어 있을 수 있음.</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3>감정 분석의 응용<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>소셜 미디어 모니터링</strong>: 제품, 서비스, 브랜드에 대한 대중의 의견 추적.</p></li>
+<li><p><strong>고객 피드백 분석</strong>: 고객 만족도 향상과 개선 영역 식별을 위한 자동 분석.</p></li>
+<li><p><strong>시장 연구 및 분석</strong>: 시장 동향, 기회, 위협 식별을 위한 뉴스 기사, 블로그 포스트, 온라인 포럼 분석.</p></li>
+<li><p><strong>정치 분석</strong>: 정치인, 정당, 정책에 대한 대중의 의견 분석.</p></li>
+<li><p><strong>직원의 목소리 분석</strong>: 직원 피드백 분석을 통한 직원 감정 이해 및 개선 영역 발굴.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -893,6 +950,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lda">잠재 디리클레 할당 (LDA)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmf">비음수 행렬 분해 (NMF)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dtm">동적 토픽 모델 (DTM)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">감정 분석</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">감정 분석 유형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">감정 분석 기법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">감정 분석의 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">감정 분석의 응용</a></li>
 </ul>
 </li>
 </ul>
