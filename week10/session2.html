@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>토크나이제이션 &#8212; AI 세상 속으로</title>
+    <title>자연어처리 기법 &#8212; AI 세상 속으로</title>
   
   
   
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 10: 자연어처리</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">자연어처리(NLP)의 이해</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">토크나이제이션</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">자연어처리 기법</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
 </ul>
 </li>
@@ -446,7 +446,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>토크나이제이션</h1>
+    <h1>자연어처리 기법</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -456,13 +456,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">토크나이제이션 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">토크나이제이션</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">토크나이제이션이란?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">토크나이제이션의 복잡성</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">영어에서의 다양한 단어 형태</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">영어 단어의 다양성</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">단어 형성 과정</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">형태소와 형태</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">한국어 토크나이제이션</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">한국어 문장 토크나이제이션</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">한국어 품사 태깅</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">한국어 형태소 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">언어적(문법적) 분류</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">한국어 형태소 분석 (품사 태깅)</a></li>
 </ul>
 </li>
 </ul>
@@ -477,9 +485,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>토크나이제이션<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>자연어처리 기법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>토크나이제이션 개요<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>토크나이제이션<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="id3">
 <h3>토크나이제이션이란?<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-13.jpeg"><img alt="../_images/image-2-1-13.jpeg" class="align-center" src="../_images/image-2-1-13.jpeg" style="width: 90%;" /></a>
@@ -551,6 +559,112 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id9">
+<h2>한국어 토크나이제이션<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<section id="id10">
+<h3>한국어 문장 토크나이제이션<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>문장 분리의 정의</strong>: 텍스트를 개별 문장으로 나누는 과정.</p></li>
+<li><p><strong>영어와의 차이점</strong>: 영어에서는 문장 부호를 사용하여 문장을 구분하지만, 한국어에서는 다양한 문장 구조와 문장 부호 사용으로 더 복잡함.</p></li>
+<li><p><strong>예시 1</strong>: IP 주소와 이메일 주소가 포함된 문장에서 마침표가 문장의 끝을 나타내지 않음.</p></li>
+<li><p><strong>예시 2</strong>: “Ph.D. students”처럼 약어에서 마침표가 문장의 끝을 나타내지 않음.</p></li>
+<li><p><strong>한국어 특성</strong>: 마침표는 문장의 끝을 나타낼 수도, 다른 의미를 가질 수도 있음.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>한국어 품사 태깅<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><strong>품사 태깅의 정의</strong>: 문장 속 각 단어에 품사를 할당하는 과정.</p></li>
+<li><p><strong>한국어의 품사 체계</strong>: 체언, 수식언, 관계언, 독립언, 용언 등 5언 9품사 체계를 사용.</p></li>
+<li><p><strong>용언의 중요성</strong>: 동사와 형용사는 어간과 어미를 결합하여 단어 형성.</p></li>
+<li><p><strong>품사 분류 기준</strong>: 기능, 의미, 형태를 기준으로 분류.</p></li>
+<li><p><strong>언어적 다양성</strong>: 품사 태깅은 한국어의 복잡한 형태론적, 구문론적 구조를 이해하는 데 필수적임.</p>
+<p><strong>한국어의 5언 9품사</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>언</p></th>
+<th class="head"><p>품사</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>체언</p></td>
+<td><p>명사, 대명사, 수사</p></td>
+</tr>
+<tr class="row-odd"><td><p>수식언</p></td>
+<td><p>관형사, 부사</p></td>
+</tr>
+<tr class="row-even"><td><p>관계언</p></td>
+<td><p>조사</p></td>
+</tr>
+<tr class="row-odd"><td><p>독립언</p></td>
+<td><p>감탄사</p></td>
+</tr>
+<tr class="row-even"><td><p>용언</p></td>
+<td><p>동사, 형용사</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</section>
+<section id="id12">
+<h3>한국어 형태소 분석<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><strong>형태소 분석의 정의</strong>: 단어를 가장 작은 의미 단위(형태소)로 분해하고 적절한 품사 태깅을 하는 과정.</p></li>
+<li><p><strong>예시 문장 분석</strong>: “나는 그 과자를 먹었다”는 나(대명사) + 는(조사) + 그(대명사) + 과자(명사) + 먹(동사) + -었(선어말어미) + -다(어말어미) + .(문장부호)로 분석.</p></li>
+<li><p><strong>분석 수준</strong>: 형태소, 구문, 의미, 담화 등 다양한 수준에서 분석 가능.</p></li>
+<li><p><strong>언어의 이해</strong>: 형태소 분석은 한국어의 복잡한 구조를 이해하는 데 중요한 역할을 함.</p></li>
+<li><p><strong>품사 할당</strong>: 각 형태소에 적절한 품사를 할당하는 것이 중요함.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>원문</p></th>
+<th class="head"><p>나는 그 과자를 먹었다.</p></th>
+<th class="head"><p>너는 그를 사랑하니?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>형태소 분석</p></td>
+<td><p>나(대명사) + 는(조사) + 그(대명사) + 과자(명 사) + 먹-(동사)+-었(선어말어미)+- 다(어말 어 미)+ .(문장 부호)</p></td>
+<td><p>너(대명사) + 는(조사) + 그(대명사) + 사랑(명사) +-하(동사)+니(어말 어미) + ? (문장부호)</p></td>
+</tr>
+<tr class="row-odd"><td><p>구문 분석</p></td>
+<td><p>(S (NP 나/Noun) 는/Josa (NP 그/Noun 사 과/Noun) 를/Josa (VP 먹었다/Verb)./ Punctuation)</p></td>
+<td><p>(S (NP 너/Noun) 는/Josa (NP 그/Noun) 를/ Josa (NP 사랑/Noun) (VP 하니/Verb) ?/ Punctuation)</p></td>
+</tr>
+<tr class="row-even"><td><p>의미 분석</p></td>
+<td><p>술부: 먹다 행위자: 나 대상: 그 과자</p></td>
+<td><p>술부: 사랑하다 행위자: 너 대상: 그</p></td>
+</tr>
+<tr class="row-odd"><td><p>담화 분석</p></td>
+<td><p>단순 서술</p></td>
+<td><p>의문형</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</section>
+<section id="id13">
+<h3>언어적(문법적) 분류<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>고립어, 굴절어, 교착어</strong>: 언어의 분류에 따라 단어의 형성 방식이 다름.</p></li>
+<li><p><strong>교착어의 특징</strong>: 한국어는 교착어로, 어간에 접사를 붙여 단어의 최종 의미를 결정함.</p></li>
+<li><p><strong>고립어의 특징</strong>: 중국어와 티베트어와 같은 고립어는 단어 순서에 따라 의미가 결정됨.</p></li>
+<li><p><strong>굴절어의 특징</strong>: 라틴어와 같은 굴절어는 단어 형태의 변화로 그 문법적 기능을 나타냄.</p></li>
+<li><p><strong>언어의 다양성</strong>: 각 언어 유형은 그 언어의 특성과 구조를 반영함.</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>한국어 형태소 분석 (품사 태깅)<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>형태소 분석의 목적</strong>: 문장을 형태소 단위로 나누고, 품사 태깅을 하여 동사의 다양한 사용 현상을 복원하는 과정.</p></li>
+<li><p><strong>분석 방법의 다양성</strong>: 분석기에 따라 형태소 분리 방법이 다를 수 있음.</p></li>
+<li><p><strong>언어 처리의 기본</strong>: 모든 자연어 처리 과정에서 가장 기본적이고 중요한 역할을 함.</p></li>
+<li><p><strong>활용의 정의</strong>: 어간이 어미를 취함으로써 변화하는 과정.</p></li>
+<li><p><strong>규칙 활용과 불규칙 활용</strong>: 규칙 활용은 어간이 일정하게 유지되는 반면, 불규칙 활용은 어간이나 어미가 변화함.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -617,13 +731,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">토크나이제이션 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">토크나이제이션</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">토크나이제이션이란?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">토크나이제이션의 복잡성</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">영어에서의 다양한 단어 형태</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">영어 단어의 다양성</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">단어 형성 과정</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">형태소와 형태</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">한국어 토크나이제이션</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">한국어 문장 토크나이제이션</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">한국어 품사 태깅</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">한국어 형태소 분석</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">언어적(문법적) 분류</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">한국어 형태소 분석 (품사 태깅)</a></li>
 </ul>
 </li>
 </ul>
