@@ -58,10 +58,26 @@
 - **확률 추정**: 맥락 h가 주어졌을 때 단어 w의 확률 P(w|h)을 추정할 수 있습니다.
 - **확률 추정 방법**: 큰 말뭉치에서 맥락 뒤에 타겟 단어가 나타나는 빈도를 세고 맥락의 총 빈도로 나누어 확률을 추정합니다.
 
+  $$
+  P(\text{pizza}|\text{I like to eat}) = \frac{C(\text{I like to eat pizza})}{C(\text{I like to eat})}
+  $$
+
+  $$
+  P(\text{먹습니다}|\text{저는 김치를}) = \frac{C(\text{저는 김치를 먹습니다})}{C(\text{저는 김치를})}
+  $$
+
 #### Bigram 모델
 
 - 전체 맥락을 고려하는 대신 이전 단어만을 고려하여 확률을 추정합니다.
 - 이러한 단순화는 확률을 더 신뢰할 수 있게 추정할 수 있게 하지만, 더 긴 맥락 의존성을 포착하지 못할 수 있습니다.
+
+  $$
+  P(\text{pizza}|\text{I like to eat}) \approx P(\text{pizza}|\text{eat})
+  $$
+
+  $$
+  P(\text{먹습니다}|\text{저는 김치를}) \approx P(\text{먹습니다}|\text{김치를})
+  $$
 
 ### 언어 모델로부터 문장 샘플링
 
