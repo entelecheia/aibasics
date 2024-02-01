@@ -1,5 +1,36 @@
 <!--next-version-placeholder-->
 
+## v0.6.0 (2024-02-01)
+
+### Feature
+
+* **book:** Add images week10/session3 ([`a12de24`](https://github.com/chu-aie/aibasics/commit/a12de245c6eac021ff475b052aec06f948df2fc3))
+* **book:** Add pre-trained language model overview ([`fd1ac1b`](https://github.com/chu-aie/aibasics/commit/fd1ac1b2d3385ba2ddbfc6ce910faf46ec4998b0))
+* **book:** Add sections on Large Language Model evolution, architecture, and utilization ([`618da16`](https://github.com/chu-aie/aibasics/commit/618da16eaf1b62f70ce4102e1885978abb2afce1))
+* **book:** Add detailed content for week06 in recommendation system ([`28882f9`](https://github.com/chu-aie/aibasics/commit/28882f9bbb3b909fe15643c7e0a63b960b32f8a2))
+* **book:** Add images to week10 session3.md ([`62cafeb`](https://github.com/chu-aie/aibasics/commit/62cafeb25502c93b046f29e4dc67239d387714fe))
+* **book:** Expand week10 session3 content ([`c201c7f`](https://github.com/chu-aie/aibasics/commit/c201c7f33153d0d9355b1bfd7f892418be0fddbb))
+* **book:** Added a section on Large Language Models in week10/session3.md ([`ccb1850`](https://github.com/chu-aie/aibasics/commit/ccb1850af52fe7087fa2b13fcfcbe46d73db402f))
+* **book:** Add images to week10/session3.md ([`ee09a29`](https://github.com/chu-aie/aibasics/commit/ee09a290d7cfc2674952eb3e8849dd7780b08833))
+* **book:** Add mathematical examples for probability estimation in week10, session3 ([`3d1ea8a`](https://github.com/chu-aie/aibasics/commit/3d1ea8a347289b27635bd70ef6f72fff1a75275a))
+* **book:** Add N-gram language model section to week10/session3.md ([`8d71537`](https://github.com/chu-aie/aibasics/commit/8d71537e53cfefd58808593a27597b3510a172df))
+* **book:** Add language model overview in week10/session3 ([`242db45`](https://github.com/chu-aie/aibasics/commit/242db45e1826ad1053386abb77be36fabcb566a7))
+* **book:** Add images to week10 session2 content ([`e31955c`](https://github.com/chu-aie/aibasics/commit/e31955ceb7a368d485645efb9ff4f76129f209f1))
+* **book:** Add sentiment analysis section in week10/session2.md ([`0371d37`](https://github.com/chu-aie/aibasics/commit/0371d37c81f23cba305a0b8feb72f115f2afe4d4))
+* **book:** Add a section on topic modeling methods in week10/session2.md ([`ca5eb01`](https://github.com/chu-aie/aibasics/commit/ca5eb0119a92f650a7979a3d4af7260f5776130a))
+* **book:** Add images to week10 session2 content ([`66735d6`](https://github.com/chu-aie/aibasics/commit/66735d69174db4235bf2ebef3b64167b0326ec47))
+* **book:** Add topic modeling to week10 session2.md ([`c4eeb50`](https://github.com/chu-aie/aibasics/commit/c4eeb50bff33911bcf4cf0c452e5f9ccce71ba89))
+* **book:** Add new images to week10/session2 ([`cc8390a`](https://github.com/chu-aie/aibasics/commit/cc8390a557e767c9c92240b9e0076076a45acefe))
+* **book:** Update Korean tokenization content in week10/session2.md ([`683138e`](https://github.com/chu-aie/aibasics/commit/683138ee6e565f43bd86ae896c84df56a8f52599))
+* **book:** Add images to week10 session2 content ([`9016d2a`](https://github.com/chu-aie/aibasics/commit/9016d2a3d81998c54ef444e1159f05bf55dfcfe3))
+* **book:** Add content to week10/session2.md ([`5d58f2b`](https://github.com/chu-aie/aibasics/commit/5d58f2bee2abe02b1deb44b9946f9fa6ab90a7d1))
+* **book:** Add new CSS for print media ([`4ff81c8`](https://github.com/chu-aie/aibasics/commit/4ff81c841b899e04f268803d8a504bdc737122a6))
+* **book:** Add images to week10 session1 content ([`af6d425`](https://github.com/chu-aie/aibasics/commit/af6d4256dc86d0f78cd766f8483e41a5cd862876))
+* **book:** Add applications of NLP to week10 session1 ([`d3a8d20`](https://github.com/chu-aie/aibasics/commit/d3a8d20a4aa7f80e07b6f3d19ce65ae15ebe92c9))
+* **book:** Add sections on NLP fundamentals and challenges in week10/session1.md ([`b1c980b`](https://github.com/chu-aie/aibasics/commit/b1c980bcc3aa9744d9741cd52a479a34f567d469))
+* **book:** Add images to week10/session1.md ([`a42934b`](https://github.com/chu-aie/aibasics/commit/a42934bc8c085e52259e29827d6b4f390da8b5ef))
+* **book:** Add detailed content on NLP in week10 session1.md ([`8811aac`](https://github.com/chu-aie/aibasics/commit/8811aac784313e893b8efc69f6f48ce370144150))
+
 ## v0.5.0 (2024-02-01)
 
 ### Feature
