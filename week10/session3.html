@@ -102,6 +102,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 11: 생성 AI" href="../week11/index.html" />
+    <link rel="prev" title="자연어처리 기법" href="session2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,8 +165,6 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -212,7 +212,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week01/index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session1.html">인공지능의 역사</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session2.html">인공지능의 유형들</a></li>
@@ -232,10 +232,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../week06/lab.html">추천 시스템 실습</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 10: 자연어처리</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 10: 자연어처리</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">자연어처리의 이해</a></li>
 <li class="toctree-l2"><a class="reference internal" href="session2.html">자연어처리 기법</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">언어 모델</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week11/index.html">Week 11: 생성 AI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -463,16 +463,12 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-gram">N-gram 언어 모델</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">일반 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">N-gram 모델의 장점 및 한계</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">장점</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">한계</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">N-gram과 확률 추정</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">N-gram 모델의 장점 및 한계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">N-gram과 확률 추정</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bigram">Bigram 모델</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">언어 모델로부터 문장 샘플링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">언어 모델로부터 문장 샘플링</a></li>
 </ul>
 </li>
 </ul>
@@ -517,6 +513,7 @@ document.write(`
 <h2>N-gram 언어 모델<a class="headerlink" href="#n-gram" title="Link to this heading">#</a></h2>
 <section id="id5">
 <h3>일반 개념<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-12.jpeg"><img alt="../_images/image-3-2-12.jpeg" class="align-center" src="../_images/image-3-2-12.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>N-gram 언어 모델 정의</strong>: N-gram 언어 모델은 시퀀스에서 다음 단어를 (n-1)개의 이전 단어에 기반하여 예측하는 접근법입니다.</p></li>
 <li><p><strong>N-gram 유형</strong>:</p>
@@ -533,37 +530,57 @@ document.write(`
 </section>
 <section id="id6">
 <h3>N-gram 모델의 장점 및 한계<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<section id="id7">
-<h4>장점<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
 <ul class="simple">
+<li><p>장점</p>
+<ul>
 <li><p>구현이 간단하고 효율적입니다.</p></li>
 <li><p>계산 및 메모리 사용 측면에서 효율적입니다.</p></li>
 </ul>
-</section>
-<section id="id8">
-<h4>한계<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
-<ul class="simple">
+</li>
+<li><p>한계</p>
+<ul>
 <li><p>단어 간 장기 의존성을 포착하지 못합니다.</p></li>
 <li><p>훈련 말뭉치에 나타나지 않은 n-gram에 대해 데이터 희소성 문제에 민감합니다.</p></li>
 </ul>
+</li>
+</ul>
 </section>
-</section>
-<section id="id9">
-<h3>N-gram과 확률 추정<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<ul class="simple">
+<section id="id7">
+<h3>N-gram과 확률 추정<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-32.jpeg"><img alt="../_images/image-3-2-32.jpeg" class="align-center" src="../_images/image-3-2-32.jpeg" style="width: 90%;" /></a>
+<ul>
 <li><p><strong>확률 추정</strong>: 맥락 h가 주어졌을 때 단어 w의 확률 P(w|h)을 추정할 수 있습니다.</p></li>
-<li><p><strong>확률 추정 방법</strong>: 큰 말뭉치에서 맥락 뒤에 타겟 단어가 나타나는 빈도를 세고 맥락의 총 빈도로 나누어 확률을 추정합니다.</p></li>
+<li><p><strong>확률 추정 방법</strong>: 큰 말뭉치에서 맥락 뒤에 타겟 단어가 나타나는 빈도를 세고 맥락의 총 빈도로 나누어 확률을 추정합니다.</p>
+<div class="math notranslate nohighlight">
+\[
+  P(\text{pizza}|\text{I like to eat}) = \frac{C(\text{I like to eat pizza})}{C(\text{I like to eat})}
+  \]</div>
+<div class="math notranslate nohighlight">
+\[
+  P(\text{먹습니다}|\text{저는 김치를}) = \frac{C(\text{저는 김치를 먹습니다})}{C(\text{저는 김치를})}
+  \]</div>
+</li>
 </ul>
 <section id="bigram">
 <h4>Bigram 모델<a class="headerlink" href="#bigram" title="Link to this heading">#</a></h4>
-<ul class="simple">
+<ul>
 <li><p>전체 맥락을 고려하는 대신 이전 단어만을 고려하여 확률을 추정합니다.</p></li>
-<li><p>이러한 단순화는 확률을 더 신뢰할 수 있게 추정할 수 있게 하지만, 더 긴 맥락 의존성을 포착하지 못할 수 있습니다.</p></li>
+<li><p>이러한 단순화는 확률을 더 신뢰할 수 있게 추정할 수 있게 하지만, 더 긴 맥락 의존성을 포착하지 못할 수 있습니다.</p>
+<div class="math notranslate nohighlight">
+\[
+  P(\text{pizza}|\text{I like to eat}) \approx P(\text{pizza}|\text{eat})
+  \]</div>
+<div class="math notranslate nohighlight">
+\[
+  P(\text{먹습니다}|\text{저는 김치를}) \approx P(\text{먹습니다}|\text{김치를})
+  \]</div>
+</li>
 </ul>
 </section>
 </section>
-<section id="id10">
-<h3>언어 모델로부터 문장 샘플링<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h3>언어 모델로부터 문장 샘플링<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-51.jpeg"><img alt="../_images/image-3-2-51.jpeg" class="align-center" src="../_images/image-3-2-51.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>문장 샘플링</strong>: 언어 모델로부터 정의된 확률에 따라 문장을 생성하는 방법입니다.</p></li>
 <li><p><strong>과정</strong>: 더 높은 확률을 가진 문장은 낮은 확률을 가진 문장보다 생성될 가능성이 더 높습니다.</p></li>
@@ -603,6 +620,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="session2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">자연어처리 기법</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../week11/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 11: 생성 AI</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -626,16 +661,12 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-gram">N-gram 언어 모델</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">일반 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">N-gram 모델의 장점 및 한계</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">장점</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">한계</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">N-gram과 확률 추정</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">N-gram 모델의 장점 및 한계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">N-gram과 확률 추정</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bigram">Bigram 모델</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">언어 모델로부터 문장 샘플링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">언어 모델로부터 문장 샘플링</a></li>
 </ul>
 </li>
 </ul>
