@@ -4,6 +4,11 @@
 
 ## 토크나이제이션이란?
 
+```{image} figs/image-2-1-1.jpeg
+:width: 90%
+:align: center
+```
+
 - **정의**: 문자열을 토큰의 리스트로 분할하는 과정.
 - **첫 단계**: NLP 파이프라인에서의 첫 번째 단계로, 기계가 이해할 수 있는 언어로 번역하는 시작점.
 - **단순화**: "I like to eat apples"와 같은 간단한 문장도 토크나이제이션을 통해 ["I", "like", "to", "eat", "apples"]로 분해됨.
@@ -11,6 +16,11 @@
 - **중요성**: 토크나이제이션은 임베딩과 신경망을 포함한 복잡한 NLP 시스템의 기초를 형성함.
 
 ## 토크나이제이션의 복잡성
+
+```{image} figs/image-2-1-2.jpeg
+:width: 90%
+:align: center
+```
 
 - **문제 1: 단어의 결합과 분리**
   - "ice cream", "website" 등과 같이 다양한 방식으로 단어가 결합되거나 분리될 수 있음.
@@ -21,6 +31,11 @@
 
 ## 영어에서의 다양한 단어 형태
 
+```{image} figs/image-2-1-3.jpeg
+:width: 90%
+:align: center
+```
+
 - **대소문자 변화**: "cat", "Cat", "CAT" 등 다양한 형태로 표현됨.
 - **약어 및 하이픈 사용**: "US-based", "US based", "U.S.-based" 등 다양한 스타일 존재.
 - **지역적 철자 변이**: "labor"와 "labour", "materialize"와 "materialise"와 같은 영어의 지역별 철자 차이.
@@ -28,17 +43,32 @@
 
 ## 영어 단어의 다양성
 
+```{image} figs/image-2-1-4.jpeg
+:width: 90%
+:align: center
+```
+
 - **단어의 개수**: Google N-gram 코퍼스에는 1조 개의 토큰과 4천만 번 이상 나타나는 1천3백만 개의 단어 유형이 포함됨.
 - **단어 지식**: 일반적으로 성인은 약 3만 개의 단어를 알고 있으며, 유창함을 위해서는 적어도 5천 개의 단어를 알아야 함.
 - **단어 빈도**: 함수어는 매우 빈번하게 사용되며, 대부분의 내용어는 매우 드물게 사용됨.
 
 ## 단어 형성 과정
 
+```{image} figs/image-2-1-5.jpeg
+:width: 90%
+:align: center
+```
+
 - **활용**: 단어의 형태가 변화하는 과정. 예: 동사 "to be"의 다양한 형태 ("I am", "you are", "he is" 등).
 - **파생**: 같은 기본 또는 뿌리에서 새로운 단어를 만드는 과정. 예: "grace"에서 "disgrace", "disgraceful", "disgracefully"로 변화.
 - **복합어 형성**: 두 개 이상의 단어를 결합하여 새로운 단어를 형성하는 과정. 예: "Ice cream", "ice cream cone".
 
 ## 형태소와 형태
+
+```{image} figs/image-2-1-6.jpeg
+:width: 90%
+:align: center
+```
 
 - **어간(Stem)**: 대부분의 단어는 어간과 하나 이상의 접사로 구성됨. 예: "disgracefully"에서 "grace"는 어간.
 - **접사(Affixes)**: 접두사 또는 접미사의 형태로 나타남. 예: "disgracefully"에서 "dis-", "-ful", "-ly"가 접사.
