@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Session 1 &#8212; AI 세상 속으로</title>
+    <title>생성형 AI 입문 &#8212; AI 세상 속으로</title>
   
   
   
@@ -102,7 +102,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Session 2" href="session2.html" />
+    <link rel="next" title="프롬프트 엔지니어링 기본 전략" href="session2.html" />
     <link rel="prev" title="Week 11: 생성 AI" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -239,8 +239,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 11: 생성 AI</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Session 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">생성형 AI 입문</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">프롬프트 엔지니어링 기본 전략</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
 </ul>
 </li>
@@ -433,7 +433,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -444,11 +446,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Session 1</h1>
+    <h1>생성형 AI 입문</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 생성형 AI의 기본 개념</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 딥 러닝과 생성형 AI의 관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. 생성형 AI 모델의 다양성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 생성형 AI의 실제적 응용 사례</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 생성형 AI의 미래 전망</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -458,8 +472,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="session-1">
-<h1>Session 1<a class="headerlink" href="#session-1" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ai">
+<h1>생성형 AI 입문<a class="headerlink" href="#ai" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>1. 생성형 AI의 기본 개념<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>생성형 AI 정의 및 개요</p></li>
+<li><p>생성형 AI와 기존 AI 기술과의 차이점</p></li>
+<li><p>생성형 AI의 핵심 알고리즘과 기술적 특성</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>2. 딥 러닝과 생성형 AI의 관계<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>딥 러닝이란 무엇인가</p></li>
+<li><p>딥 러닝의 중요성과 생성형 AI에 대한 기여</p></li>
+<li><p>생성형 AI에서 딥 러닝 알고리즘의 역할</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>3. 생성형 AI 모델의 다양성<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>생성형 모델 vs 판별형 모델</p></li>
+<li><p>다양한 생성형 AI 모델의 예시 (텍스트-텍스트, 텍스트-이미지 등)</p></li>
+<li><p>이러한 모델들이 다양한 분야에서 어떻게 활용될 수 있는지에 대한 설명</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>4. 생성형 AI의 실제적 응용 사례<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>코드 생성을 포함한 소프트웨어 개발 분야에서의 응용</p></li>
+<li><p>교육, 의료, 환경 등 다른 분야에서의 응용 사례</p></li>
+<li><p>실제 사례를 통해 본 생성형 AI의 현재와 미래 가능성</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>5. 생성형 AI의 미래 전망<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>생성형 AI 기술의 발전 방향과 잠재적 영향</p></li>
+<li><p>다양한 산업과 사회에 미칠 변화와 기대되는 혁신</p></li>
+<li><p>생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -506,7 +560,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Session 2</p>
+        <p class="prev-next-title">프롬프트 엔지니어링 기본 전략</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -517,7 +571,24 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 생성형 AI의 기본 개념</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 딥 러닝과 생성형 AI의 관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. 생성형 AI 모델의 다양성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 생성형 AI의 실제적 응용 사례</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. 생성형 AI의 미래 전망</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

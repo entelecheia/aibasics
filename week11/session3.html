@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Week 4: 회귀분석 &#8212; AI 세상 속으로</title>
+    <title>ChatGPT를 활용한 데이터사이언스 프로젝트 &#8212; AI 세상 속으로</title>
   
   
   
@@ -98,7 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'week04/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week11/session3';</script>
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -238,10 +238,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../week10/session3.html">언어 모델</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../week11/index.html">Week 11: 생성 AI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../week11/session1.html">생성형 AI 입문</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../week11/session2.html">프롬프트 엔지니어링 기본 전략</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../week11/lab.html">Lab</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 11: 생성 AI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">생성형 AI 입문</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">프롬프트 엔지니어링 기본 전략</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
 </ul>
 </li>
 </ul>
@@ -315,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week04/index.md" target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week11/session3.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek04/index.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek11/session3.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -362,7 +362,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/week04/index.md" target="_blank"
+      <li><a href="../_sources/week11/session3.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -433,7 +433,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -444,11 +446,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Week 4: 회귀분석</h1>
+    <h1>ChatGPT를 활용한 데이터사이언스 프로젝트</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">데이터셋 소개 및 접근 방법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda">데이터 전처리 및 탐색적 데이터 분석 (EDA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">소비 패턴 분석</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">데이터 시각화 및 인사이트 도출</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">마무리 및 추가 자료</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -458,33 +472,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="week-4">
-<h1>Week 4: 회귀분석<a class="headerlink" href="#week-4" title="Link to this heading">#</a></h1>
-<p>Regression Analysis</p>
-<p>Lecture Session 1:</p>
-<ol class="arabic simple">
-<li><p>회귀분석 개요 (Overview of Regression Analysis)</p></li>
-<li><p>선형 회귀 (Linear Regression)</p></li>
-<li><p>다중 선형 회귀 (Multiple Linear Regression)</p></li>
-<li><p>다항 회귀 (Polynomial Regression)</p></li>
-<li><p>릿지 회귀와 라쏘 회귀 (Ridge and Lasso Regression)</p></li>
-</ol>
-<p>Lecture Session 2:</p>
-<ol class="arabic simple">
-<li><p>로지스틱 회귀 (Logistic Regression)</p></li>
-<li><p>회귀 트리 (Regression Trees)</p></li>
-<li><p>서포트 벡터 회귀 (Support Vector Regression)</p></li>
-<li><p>회귀 모델의 가정 검토 (Assumption Checking for Regression Models)</p></li>
-<li><p>회귀 모델 평가 및 선택 (Evaluation and Selection of Regression Models)</p></li>
-</ol>
-<p>Lab Session:</p>
-<ol class="arabic simple">
-<li><p>선형 회귀 실습 (Hands-on Linear Regression)</p></li>
-<li><p>다중 선형 회귀 실습 (Hands-on Multiple Linear Regression)</p></li>
-<li><p>다항 회귀 및 규제화 회귀 실습 (Hands-on Polynomial and Regularized Regression)</p></li>
-<li><p>로지스틱 회귀 실습 (Hands-on Logistic Regression)</p></li>
-<li><p>고급 회귀 기법 실습 (Hands-on Advanced Regression Techniques)</p></li>
-</ol>
+  <section class="tex2jax_ignore mathjax_ignore" id="chatgpt">
+<h1>ChatGPT를 활용한 데이터사이언스 프로젝트<a class="headerlink" href="#chatgpt" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>데이터셋 소개 및 접근 방법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>데이터셋의 구성 및 제공 정보 이해</p></li>
+<li><p>데이터셋 API 가이드 문서 활용 방법</p></li>
+<li><p>제주데이터허브 로그인 및 프로젝트키 활용 방법</p></li>
+</ul>
+</section>
+<section id="eda">
+<h2>데이터 전처리 및 탐색적 데이터 분석 (EDA)<a class="headerlink" href="#eda" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>데이터 전처리: 결측치 처리, 데이터 타입 변환, 필터링</p></li>
+<li><p>탐색적 데이터 분석: 기본 통계량 확인, 업종별/성별/연령대별 분포 시각화</p></li>
+<li><p>API를 통한 데이터 호출 및 분석 준비</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>소비 패턴 분석<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>지역별 소비 트렌드: 제주시와 서귀포시의 소비 차이 분석</p></li>
+<li><p>업종별 소비 분석: 관광객이 선호하는 업종과 소비 규모 파악</p></li>
+<li><p>성별 및 연령대별 소비 분석: 소비 패턴에서 나타나는 성별 및 연령대별 차이 탐색</p></li>
+<li><p>시간대별 변화 분석: 분석 기간 동안의 소비 변화 추이 분석</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>데이터 시각화 및 인사이트 도출<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>효과적인 데이터 시각화 기법 소개</p></li>
+<li><p>소비 패턴 분석 결과의 시각화</p></li>
+<li><p>분석 결과를 바탕으로 한 인사이트 공유 및 마케팅 전략 제안</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>마무리 및 추가 자료<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>요약 및 핵심 포인트</p></li>
+<li><p>데이터 분석 및 시각화를 위한 추가 도구 및 리소스 소개</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,7 +529,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./week04"
+            path: "./week11"
         },
         predefinedOutput: true
     }
@@ -524,7 +553,24 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">데이터셋 소개 및 접근 방법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda">데이터 전처리 및 탐색적 데이터 분석 (EDA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">소비 패턴 분석</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">데이터 시각화 및 인사이트 도출</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">마무리 및 추가 자료</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
