@@ -471,6 +471,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">언어 모델로부터 문장 샘플링</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#large-language-models-llms">대규모 언어 모델(Large Language Models, LLMs) 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">정의 및 특징</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llms">LLMs의 능력</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">방법론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">응용 분야</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -588,6 +595,67 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="large-language-models-llms">
+<h2>대규모 언어 모델(Large Language Models, LLMs) 개요<a class="headerlink" href="#large-language-models-llms" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h3>정의 및 특징<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-12.jpeg"><img alt="../_images/image-3-3-12.jpeg" class="align-center" src="../_images/image-3-3-12.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>대규모 언어 모델(LLMs) 정의</strong></p>
+<ul>
+<li><p>자연어 처리(NLP) 작업을 위한 심층 학습 모델</p></li>
+<li><p>방대한 텍스트 데이터 학습을 통한 언어 패턴, 구조, 의미 관계 이해 및 생성 능력</p></li>
+</ul>
+</li>
+<li><p><strong>주요 특징</strong></p>
+<ul>
+<li><p><strong>아키텍처</strong>: Transformer 기반, 자기 주의 메커니즘 사용</p></li>
+<li><p><strong>사전 훈련(Pre-training)</strong>: 대규모 데이터셋 비지도 학습</p></li>
+<li><p><strong>세분화 훈련(Fine-tuning)</strong>: 특정 작업/도메인 레이블 데이터셋에서의 특화</p></li>
+<li><p><strong>전이 학습(Transfer Learning)</strong>: 다양한 NLP 작업에 대한 지식 활용</p></li>
+</ul>
+</li>
+<li><p><strong>예시 모델</strong></p>
+<ul>
+<li><p>GPT-3, BERT, RoBERTa, T5 등</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="llms">
+<h3>LLMs의 능력<a class="headerlink" href="#llms" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-22.jpeg"><img alt="../_images/image-3-3-22.jpeg" class="align-center" src="../_images/image-3-3-22.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>언어 이해</strong>: 다양한 맥락에서의 텍스트 처리 및 해석</p></li>
+<li><p><strong>텍스트 생성</strong>: 입력 기반 맥락상 관련성 높은 텍스트 생성</p></li>
+<li><p><strong>질문 응답</strong>: 정보 이해 및 추출을 통한 구체적 질문 답변</p></li>
+<li><p><strong>번역</strong>: 다양한 언어 간 텍스트 번역</p></li>
+<li><p><strong>제로샷 및 퓨샷 학습</strong>: 레이블 없이 또는 소수 예시로 작업 수행</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>방법론<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-32.jpeg"><img alt="../_images/image-3-3-32.jpeg" class="align-center" src="../_images/image-3-3-32.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>아키텍처 디자인</strong>: 고급 신경망 아키텍처 사용</p></li>
+<li><p><strong>사전 훈련</strong>: 대규모 데이터셋에서 비지도 학습</p></li>
+<li><p><strong>세분화 훈련</strong>: 작업 특화를 위한 레이블 데이터셋 훈련</p></li>
+<li><p><strong>전이 학습</strong>: 사전 훈련된 지식을 다양한 작업에 적용</p></li>
+<li><p><strong>프롬프트 엔지니어링</strong>: 입력 설계 및 수정을 통한 출력 개선</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>응용 분야<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-41.jpeg"><img alt="../_images/image-3-3-41.jpeg" class="align-center" src="../_images/image-3-3-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>기계 번역</strong>: 언어 장벽 해소</p></li>
+<li><p><strong>감성 분석</strong>: 텍스트의 긍정적, 부정적, 중립적 분류</p></li>
+<li><p><strong>텍스트 요약</strong>: 긴 문서나 기사의 핵심 정보 요약</p></li>
+<li><p><strong>질문 응답 시스템</strong>: 가상 비서, 고객 지원 챗봇 활용</p></li>
+<li><p><strong>텍스트 생성 및 콘텐츠 생성</strong>: 저널리즘, 마케팅, 창의적 글쓰기 등에 활용</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -667,6 +735,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">언어 모델로부터 문장 샘플링</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#large-language-models-llms">대규모 언어 모델(Large Language Models, LLMs) 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">정의 및 특징</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llms">LLMs의 능력</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">방법론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">응용 분야</a></li>
 </ul>
 </li>
 </ul>
