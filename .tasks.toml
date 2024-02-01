@@ -99,6 +99,10 @@ help = "build the book"
 cmd = "jupyter-book build book --all"
 help = "build the book with all outputs"
 
+[tool.poe.tasks.book-build-pdf]
+cmd = "jupyter-book build book --builder pdfhtml"
+help = "build the book as a PDF"
+
 [tool.poe.tasks.book-publish]
 cmd = "ghp-import -n -p -f book/_build/html"
 help = "publish the book"
