@@ -1,30 +1,25 @@
 # Week 10: 자연어처리
 
-Natural Language Processing
+```{image} figs/cover.jpeg
+:width: 100%
+:align: center
+```
 
-Lecture Session 1:
+제10주차 강의에서는 자연어처리(Natural Language Processing, NLP)에 대해 깊이 있게 탐구합니다. 자연어처리는 인간의 언어를 컴퓨터가 이해하고 처리할 수 있도록 하는 기술의 집합입니다. 이 기술은 텍스트와 음성 데이터 모두에 적용되며, 정보 검색, 감성 분석, 기계 번역, 음성 인식 등 다양한 분야에서 중요한 역할을 합니다. 본 강의에서는 자연어처리의 기본 개념부터 최신 기술 동향에 이르기까지, 이 분야의 광범위한 지식을 탐색할 예정입니다.
 
-1. 자연어처리 개요 (Overview of Natural Language Processing)
-2. 텍스트 전처리 (Text Preprocessing)
-3. 텍스트 표현 방법 (Text Representation Methods)
-4. 감성 분석 (Sentiment Analysis)
-5. 토픽 모델링 (Topic Modeling)
+**자연어처리의 이해**
 
-Lecture Session 2:
+자연어처리는 컴퓨터 과학, 인공 지능, 언어학의 교차점에 위치한 학문으로, 인간의 언어가 가진 복잡성과 모호성을 컴퓨터가 처리할 수 있도록 하는 데 중점을 둡니다. 이를 통해 컴퓨터는 텍스트 데이터에서 유의미한 정보를 추출하고, 인간의 언어를 이해하며, 심지어 자연스러운 언어로 의사소통을 할 수 있게 됩니다.
 
-1. 딥러닝 기반 자연어처리 (Deep Learning-based Natural Language Processing)
-2. 언어 모형 (Language Models)
-3. 트랜스포머 (Transformers)
-4. 인코더 기반 모델: BERT (Encoder-based Model: BERT)
-5. 디코더 기반 모델: GPT (Decoder-based Model: GPT)
+**자연어처리 기법**
 
-Lab Session:
+자연어처리 기법은 크게 규칙 기반 시스템과 기계 학습 기반 시스템으로 나뉩니다. 규칙 기반 시스템은 언어학적 지식을 기반으로 한 명시적인 규칙에 의존하는 반면, 기계 학습 기반 시스템은 대량의 데이터로부터 언어 패턴을 학습하여 이를 적용합니다. 최근에는 딥러닝 기법이 자연어처리 분야에 혁신을 가져왔으며, 이는 복잡한 언어 모델과 과제 수행에 획기적인 성능 개선을 이끌었습니다.
 
-1. 텍스트 전처리 및 표현 실습 (Hands-on Text Preprocessing and Representation)
-2. 감성 분석 및 텍스트 분류 실습 (Hands-on Sentiment Analysis and Text Classification)
-3. 토픽 모델링 실습 (Hands-on Topic Modeling)
-4. BERT와 GPT를 활용한 자연어처리 실습 (Hands-on NLP with BERT and GPT)
-5. 트랜스포머 기반 챗봇 실습 (Hands-on Chatbot using Transformers)
+**언어 모델**
+
+언어 모델은 주어진 단어 시퀀스에 대해 다음 단어의 확률을 예측하는 모델로, 자연어 생성 및 이해 작업의 핵심 요소입니다. 최근의 언어 모델은 맥락을 고려한 문맥화 단어 임베딩과 사전 훈련된 언어 모델(예: BERT, GPT)을 사용하여 높은 수준의 언어 이해 능력을 보여줍니다.
+
+이번 주차에서는 이러한 자연어처리의 기초적인 개념부터 고급 기법에 이르기까지 다양한 주제를 다룰 예정이며, 자연어처리 기술의 현재와 미래에 대한 통찰력을 제공할 것입니다.
 
 ```{tableofcontents}
 
