@@ -103,7 +103,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Lab" href="lab.html" />
-    <link rel="prev" title="자연어처리(NLP)의 이해" href="session1.html" />
+    <link rel="prev" title="자연어처리의 이해" href="session1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -233,7 +233,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 10: 자연어처리</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="session1.html">자연어처리(NLP)의 이해</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">자연어처리의 이해</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">자연어처리 기법</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
 </ul>
@@ -473,6 +473,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">한국어 형태소 분석 (품사 태깅)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">토픽모델링</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">문서 군집화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">토픽 모델링의 과정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">토픽 모델링의 도전 과제</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -670,6 +677,60 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id15">
+<h2>토픽모델링<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<section id="id16">
+<h3>서론<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-13.jpeg"><img alt="../_images/image-2-3-13.jpeg" class="align-center" src="../_images/image-2-3-13.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터의 성장</strong>: 디지털 시대의 확장과 함께 비정형 텍스트 데이터의 양이 기하급수적으로 증가하고 있음.</p></li>
+<li><p><strong>토픽 모델링의 역할</strong>: 대규모 비정형 텍스트 데이터에서 정보를 요약하고 분석하는 데 있어 강력한 도구임.</p></li>
+<li><p><strong>기본 원리</strong>: 문서 내 단어의 공존 패턴과 빈도를 분석하여 문서 집합의 기저 주제를 밝힘.</p></li>
+<li><p><strong>차원 축소의 중요성</strong>: 문서-단어 행렬의 차원을 축소하여 문서를 주제의 혼합으로, 주제를 단어 분포로 표현함.</p></li>
+<li><p><strong>PCA 대비 장점</strong>: PCA보다 더 해석하기 쉽고 문맥적으로 의미 있는 출력을 제공함.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3>문서 군집화<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-23.jpeg"><img alt="../_images/image-2-3-23.jpeg" class="align-center" src="../_images/image-2-3-23.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>군집화 기법</strong>: 텍스트 마이닝과 자연어 처리에서 문서를 내용이나 기능에 따라 그룹화하는 기술.</p></li>
+<li><p><strong>코사인 유사도</strong>: 두 비제로 벡터 간의 각도 코사인을 측정하는 인기 있는 유사도 측정 방법.</p></li>
+<li><p><strong>차원 축소</strong>: 차원의 저주로 인한 군집화 성능 저하를 방지하기 위해 차원 축소 기법을 사용함.</p></li>
+<li><p><strong>군집화 알고리즘</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>K-평균</strong>: 데이터 포인트와 각 클러스터 중심 사이의 제곱 거리 합을 최소화하는 파티션 클러스터링 알고리즘.</p></li>
+<li><p><strong>DBSCAN</strong>: 데이터 포인트의 밀도를 기반으로 클러스터를 식별하는 밀도 기반 클러스터링 알고리즘.</p></li>
+<li><p><strong>계층적 군집화</strong>: 각 데이터 포인트를 자체 클러스터로 시작하여 점차 가장 가까운 쌍의 클러스터를 병합하는 방식.</p></li>
+<li><p><strong>잠재 디리클레 할당(LDA)</strong>: 텍스트 말뭉치에서 문서 집합의 기저 주제를 발견하는 데 유용한 확률적 생성 모델.</p></li>
+</ol>
+</li>
+<li><p><strong>군집화 과정</strong>: 텍스트 데이터 전처리, 적절한 벡터 표현으로 문서 변환, 원하는 군집화 알고리즘 적용.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>토픽 모델링의 과정<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-33.jpeg"><img alt="../_images/image-2-3-33.jpeg" class="align-center" src="../_images/image-2-3-33.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>텍스트 전처리</strong>: 토크나이제이션, 어간 추출, 불용어 제거 등의 전처리 단계 수행.</p></li>
+<li><p><strong>벡터 표현</strong>: 문서를 TF-IDF 또는 단어 임베딩과 같은 적절한 벡터 표현으로 변환.</p></li>
+<li><p><strong>모델 학습</strong>: LDA와 같은 토픽 모델을 사용하여 문서 집합의 주제를 학습.</p></li>
+<li><p><strong>주제 해석</strong>: 학습된 토픽 모델로부터 얻은 주제를 해석하고 문서에 레이블링.</p></li>
+<li><p><strong>응용</strong>: 문서 분류, 정보 검색, 문서 요약 등 다양한 응용 분야에 활용.</p></li>
+</ul>
+</section>
+<section id="id19">
+<h3>토픽 모델링의 도전 과제<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-3-43.jpeg"><img alt="../_images/image-2-3-43.jpeg" class="align-center" src="../_images/image-2-3-43.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터의 다양성</strong>: 다양한 주제, 스타일, 언어를 포함하는 대규모 데이터셋 처리.</p></li>
+<li><p><strong>모델 선택과 조정</strong>: 최적의 모델 구조와 파라미터를 결정하는 과정.</p></li>
+<li><p><strong>주제의 해석성</strong>: 생성된 주제가 인간에게 이해하기 쉽고 의미 있는지 평가.</p></li>
+<li><p><strong>변화하는 데이터</strong>: 시간에 따라 변화하는 데이터셋에 모델을 적용하고 적응시키는 능력.</p></li>
+<li><p><strong>효율적인 계산</strong>: 대규모 데이터셋에 대한 모델 학습과 추론의 계산 효율성 향상.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -708,7 +769,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">자연어처리(NLP)의 이해</p>
+        <p class="prev-next-title">자연어처리의 이해</p>
       </div>
     </a>
     <a class="right-next"
@@ -751,6 +812,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">한국어 형태소 분석</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">언어적(문법적) 분류</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">한국어 형태소 분석 (품사 태깅)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">토픽모델링</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">문서 군집화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">토픽 모델링의 과정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">토픽 모델링의 도전 과제</a></li>
 </ul>
 </li>
 </ul>
