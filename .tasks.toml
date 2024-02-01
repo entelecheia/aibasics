@@ -91,6 +91,12 @@ shell = """
 """
 help = "install jupyter-book"
 
+[tool.poe.tasks.install-pyppeteer]
+shell = """
+  pip install pyppeteer
+"""
+help = "install pyppeteer"
+
 [tool.poe.tasks.book-build]
 cmd = "jupyter-book build book"
 help = "build the book"
