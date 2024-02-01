@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>자연어처리(NLP) 개요 &#8212; AI 세상 속으로</title>
+    <title>자연어처리(NLP)의 이해 &#8212; AI 세상 속으로</title>
   
   
   
@@ -232,7 +232,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 10: 자연어처리</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">자연어처리(NLP) 개요</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">자연어처리(NLP)의 이해</a></li>
+
+
 <li class="toctree-l2"><a class="reference internal" href="session2.html">Session 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">Lab</a></li>
 </ul>
@@ -445,7 +447,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>자연어처리(NLP) 개요</h1>
+    <h1>자연어처리(NLP)의 이해</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,21 +457,36 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">자연어 처리(NLP)란 무엇인가?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">자연어처리(NLP)의 이해</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">자연어처리(NLP) 개요</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">자연어 처리(NLP)란 무엇인가?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm">IBM의 왓슨: ‘제퍼디’에서의 승리와 그 이후</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">자연어 처리(NLP)의 관련 분야</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">자연어 처리(NLP)의 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">NLP의 윤리적 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">NLP를 연구하거나 공부하는 이유</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">NLP로 할 수 있는 것들</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">번역</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">기타 작업</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">자연어 처리(NLP)의 관련 분야</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">자연어 처리(NLP)의 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">NLP의 윤리적 문제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">NLP를 연구하거나 공부하는 이유</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">NLP로 할 수 있는 것들</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">번역</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">기타 작업</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">텍스트와 이미지: NLP를 위한 학제 간 기술</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">텍스트와 이미지: NLP를 위한 학제 간 기술</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">자연어처리(NLP)의 이해와 도전</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">텍스트 이해의 기본</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">NLP가 어려운 이유</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">모호성과 그 처리 방법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corpora">말뭉치(Corpora)와 데이터의 중요성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">전통적 NLP 파이프라인</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">한국어 NLP의 도전 과제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">저자원 언어에서의 NLP</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -480,10 +497,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="nlp">
-<h1>자연어처리(NLP) 개요<a class="headerlink" href="#nlp" title="Link to this heading">#</a></h1>
+  <section id="nlp">
+<h1>자연어처리(NLP)의 이해<a class="headerlink" href="#nlp" title="Link to this heading">#</a></h1>
+</section>
 <section id="id1">
-<h2>자연어 처리(NLP)란 무엇인가?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h1>자연어처리(NLP) 개요<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>자연어 처리(NLP)란 무엇인가?<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-13.jpeg"><img alt="../_images/image-1-1-13.jpeg" class="align-center" src="../_images/image-1-1-13.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>자연어 처리의 정의</strong>: 인간의 언어와 상호작용하는 컴퓨터 과학 분야.</p>
@@ -526,8 +546,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>자연어 처리(NLP)의 관련 분야<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h2>자연어 처리(NLP)의 관련 분야<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-33.jpeg"><img alt="../_images/image-1-1-33.jpeg" class="align-center" src="../_images/image-1-1-33.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>계산 언어학</strong>: 자연어 처리 및 분석을 위한 컴퓨터 활용 연구.</p></li>
@@ -538,8 +558,8 @@ document.write(`
 <li><p><strong>의미론</strong>: 언어의 의미 연구 및 자연어 의미 추론 시스템 구축.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>자연어 처리(NLP)의 목표<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h2>자연어 처리(NLP)의 목표<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-43.jpeg"><img alt="../_images/image-1-1-43.jpeg" class="align-center" src="../_images/image-1-1-43.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>정확성</strong>: 자연어 이해 및 생성에서의 정확성.</p></li>
@@ -552,8 +572,8 @@ document.write(`
 <li><p><strong>윤리적 및 사회적 책임</strong>: NLP의 윤리적, 사회적 책임 있는 개발 및 사용.</p></li>
 </ul>
 </section>
-<section id="id4">
-<h2>NLP의 윤리적 문제<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h2>NLP의 윤리적 문제<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-53.jpeg"><img alt="../_images/image-1-1-53.jpeg" class="align-center" src="../_images/image-1-1-53.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>개인 정보</strong>: 개인 데이터 분석 및 처리의 위험.</p></li>
@@ -562,8 +582,8 @@ document.write(`
 <li><p>이러한 윤리적 문제에 대처하기 위해 다양한 전략이 필요.</p></li>
 </ul>
 </section>
-<section id="id5">
-<h2>NLP를 연구하거나 공부하는 이유<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h2>NLP를 연구하거나 공부하는 이유<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-61.jpeg"><img alt="../_images/image-1-1-61.jpeg" class="align-center" src="../_images/image-1-1-61.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>실용적 응용</strong>: 다양한 실용적 응용 분야.</p></li>
@@ -573,11 +593,11 @@ document.write(`
 <li><p><strong>커뮤니케이션 및 사회적 상호작용 개선</strong>: 효율적인 커뮤니케이션을 위한 시스템 구축.</p></li>
 </ul>
 </section>
-<section id="id6">
-<h2>NLP로 할 수 있는 것들<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-71.jpeg"><img alt="../_images/image-1-1-71.jpeg" class="align-center" src="../_images/image-1-1-71.jpeg" style="width: 90%;" /></a>
 <section id="id7">
-<h3>이해<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<h2>NLP로 할 수 있는 것들<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-1-71.jpeg"><img alt="../_images/image-1-1-71.jpeg" class="align-center" src="../_images/image-1-1-71.jpeg" style="width: 90%;" /></a>
+<section id="id8">
+<h3>이해<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>텍스트 분류</strong>: 자동으로 텍스트를 다양한 카테고리로 분류.</p></li>
 <li><p><strong>정보 추출</strong>: 구조화되지 않은 텍스트에서 구조화된 정보 추출.</p></li>
@@ -585,22 +605,22 @@ document.write(`
 <li><p><strong>감정 분석</strong>: 텍스트의 감정 또는 정서적 톤 자동 판단.</p></li>
 </ul>
 </section>
-<section id="id8">
-<h3>생성<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>생성<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>텍스트 생성</strong>: 챗봇이나 자동 요약과 같은 자연어 텍스트 생성.</p></li>
 <li><p><strong>음성 합성</strong>: 서면 텍스트를 음성으로 변환.</p></li>
 </ul>
 </section>
-<section id="id9">
-<h3>번역<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h3>번역<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>기계 번역</strong>: 한 언어에서 다른 언어로의 텍스트 자동 번역.</p></li>
 <li><p><strong>음성 인식</strong>: 구어를 텍스트로 변환, 이후 추가 처리 및 분석 가능.</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>기타 작업<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h3>기타 작업<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>텍스트 전처리</strong>: 불용어 제거, 스테밍, 토크나이징 등을 통한 원시 텍스트 데이터 전처리.</p></li>
 <li><p><strong>명명된 개체 인식</strong>: 사람, 조직, 위치와 같은 명명된 개체 식별 및 분류.</p></li>
@@ -609,13 +629,94 @@ document.write(`
 </ul>
 </section>
 </section>
-<section id="id11">
-<h2>텍스트와 이미지: NLP를 위한 학제 간 기술<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h2>텍스트와 이미지: NLP를 위한 학제 간 기술<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../_images/image-1-1-8.jpeg"><img alt="../_images/image-1-1-8.jpeg" class="align-center" src="../_images/image-1-1-8.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
 <li><p><strong>이미지 캡셔닝</strong>: 이미지의 시각적 내용을 설명하는 텍스트 생성 과정.</p></li>
 <li><p><strong>시각적 질문 응답 (VQA)</strong>: 이미지에 대한 질문에 답변하는 작업.</p></li>
 <li><p><strong>시각적 대화</strong>: 이미지에 대해 인간과 기계 에이전트 간의 대화 생성.</p></li>
+</ul>
+</section>
+</section>
+<section id="id13">
+<h1>자연어처리(NLP)의 이해와 도전<a class="headerlink" href="#id13" title="Link to this heading">#</a></h1>
+<section id="id14">
+<h2>텍스트 이해의 기본<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-12.jpeg"><img alt="../_images/image-1-2-12.jpeg" class="align-center" src="../_images/image-1-2-12.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>텍스트 이해의 중요성</strong>: 자연어 처리(NLP)에서 텍스트를 이해하는 것은 필수적인 기능.</p></li>
+<li><p><strong>문맥 이해</strong>: 문장이나 문단의 전체적인 맥락을 파악하는 능력.</p></li>
+<li><p><strong>추론 능력</strong>: 텍스트에 명시적으로 표현되지 않은 정보를 추론하는 능력.</p></li>
+<li><p><strong>배경 지식의 중요성</strong>: 텍스트를 이해하는 데 필요한 선행 지식이나 경험을 활용하는 것.</p></li>
+<li><p><strong>비판적 사고</strong>: 텍스트의 신뢰성을 평가하고 다양한 관점을 고려하는 능력.</p></li>
+</ul>
+</section>
+<section id="id15">
+<h2>NLP가 어려운 이유<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-22.jpeg"><img alt="../_images/image-1-2-22.jpeg" class="align-center" src="../_images/image-1-2-22.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>언어의 모호성</strong>: 단어나 구절의 다양한 의미를 정확하게 해석하는 것이 어려움.</p></li>
+<li><p><strong>언어의 변화성</strong>: 새로운 단어와 표현이 지속적으로 생겨나며, 이를 NLP 시스템이 적응해야 함.</p></li>
+<li><p><strong>언어의 복잡성</strong>: 언어는 음운부터 담화에 이르기까지 다양한 수준의 구조를 가짐.</p></li>
+<li><p><strong>문화 및 역사적 맥락의 중요성</strong>: 텍스트의 의도된 메시지를 이해하기 위해서는 문화적 및 역사적 맥락을 이해해야 함.</p></li>
+<li><p><strong>데이터의 질과 양의 영향</strong>: NLP 모델의 정확성은 훈련 데이터의 질과 양에 크게 의존.</p></li>
+</ul>
+</section>
+<section id="id16">
+<h2>모호성과 그 처리 방법<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-32.jpeg"><img alt="../_images/image-1-2-32.jpeg" class="align-center" src="../_images/image-1-2-32.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>단어의 의미 모호성</strong>: 같은 단어가 다른 의미를 가질 수 있음.</p></li>
+<li><p><strong>품사의 모호성</strong>: 동일한 단어가 서로 다른 품사로 사용될 수 있음.</p></li>
+<li><p><strong>구문 구조의 모호성</strong>: 같은 단어들이 다르게 구성될 때 다른 의미를 가질 수 있음.</p></li>
+<li><p><strong>비확률적 방법</strong>: 모든 가능한 해석을 반환하고, 사용자가 선택하도록 함.</p></li>
+<li><p><strong>확률적 모델</strong>: 가장 가능성 높은 해석을 반환.</p></li>
+<li><p><strong>정확한 확률의 중요성</strong>: 모델의 정확성은 확률의 정확성에 의존.</p></li>
+</ul>
+</section>
+<section id="corpora">
+<h2>말뭉치(Corpora)와 데이터의 중요성<a class="headerlink" href="#corpora" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-42.jpeg"><img alt="../_images/image-1-2-42.jpeg" class="align-center" src="../_images/image-1-2-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>말뭉치의 정의</strong>: 텍스트의 모음.</p></li>
+<li><p><strong>말뭉치의 종류</strong>: 일반 말뭉치, 도메인 특화 말뭉치, 트리뱅크, 병렬 말뭉치 등.</p></li>
+<li><p><strong>확률 모델의 근거</strong>: 통계적 분석을 통해 언어 패턴 학습.</p></li>
+<li><p><strong>데이터의 질과 양</strong>: 정확도 향상을 위해 고품질의 대량 데이터 필요.</p></li>
+<li><p><strong>언어의 다양성 대응</strong>: 다양한 언어와 문화에 대한 이해 필요.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h2>전통적 NLP 파이프라인<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-52.jpeg"><img alt="../_images/image-1-2-52.jpeg" class="align-center" src="../_images/image-1-2-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>토크나이저/세분화기</strong>: 단어와 문장의 경계 식별.</p></li>
+<li><p><strong>형태소 분석기/품사 태거</strong>: 각 단어의 품사 및 구조 식별.</p></li>
+<li><p><strong>단어 의미 분별</strong>: 모호한 단어의 정확한 의미 식별.</p></li>
+<li><p><strong>구문/의미 분석기</strong>: 문장의 구조와 의미 분석.</p></li>
+<li><p><strong>공통 참조 해결/담화 모델</strong>: 텍스트 내의 엔터티와 사건 추적.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h2>한국어 NLP의 도전 과제<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-6.jpeg"><img alt="../_images/image-1-2-6.jpeg" class="align-center" src="../_images/image-1-2-6.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>복잡한 문법 체계</strong>: 존댓말과 격식에 따른 동사 변화 등.</p></li>
+<li><p><strong>어휘의 모호성</strong>: 동일한 단어가 다른 의미를 가질 수 있는 상황.</p></li>
+<li><p><strong>공백의 임의성</strong>: 공식적인 문법 규칙에 따르지 않는 공백 사용.</p></li>
+<li><p><strong>한정된 훈련 데이터</strong>: 고품질의 대량 한국어 데이터 부족.</p></li>
+<li><p><strong>자원의 제한성</strong>: 한국어를 위한 NLP 도구와 자원의 부족.</p></li>
+</ul>
+</section>
+<section id="id19">
+<h2>저자원 언어에서의 NLP<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-1-2-7.jpeg"><img alt="../_images/image-1-2-7.jpeg" class="align-center" src="../_images/image-1-2-7.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>저자원 언어의 정의</strong>: 충분한 언어 자원이 부족한 언어.</p></li>
+<li><p><strong>도전 과제</strong>: 언어 자원의 부족으로 인한 NLP 모델 성능 저하.</p></li>
+<li><p><strong>새로운 접근 방법</strong>: 전이 학습, 비지도 학습, 데이터 증강 등의 기술 활용.</p></li>
+<li><p><strong>윤리적 고려 사항</strong>: 편향과 차별을 줄이기 위한 고민 필요.</p></li>
+<li><p><strong>다양성 증진 노력</strong>: 저자원 언어를 지원하기 위한 지속적인 연구 필요.</p></li>
 </ul>
 </section>
 </section>
@@ -684,21 +785,36 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">자연어 처리(NLP)란 무엇인가?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">자연어처리(NLP)의 이해</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">자연어처리(NLP) 개요</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">자연어 처리(NLP)란 무엇인가?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm">IBM의 왓슨: ‘제퍼디’에서의 승리와 그 이후</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">자연어 처리(NLP)의 관련 분야</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">자연어 처리(NLP)의 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">NLP의 윤리적 문제</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">NLP를 연구하거나 공부하는 이유</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">NLP로 할 수 있는 것들</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">번역</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">기타 작업</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">자연어 처리(NLP)의 관련 분야</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">자연어 처리(NLP)의 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">NLP의 윤리적 문제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">NLP를 연구하거나 공부하는 이유</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">NLP로 할 수 있는 것들</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">번역</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">기타 작업</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">텍스트와 이미지: NLP를 위한 학제 간 기술</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">텍스트와 이미지: NLP를 위한 학제 간 기술</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">자연어처리(NLP)의 이해와 도전</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">텍스트 이해의 기본</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">NLP가 어려운 이유</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">모호성과 그 처리 방법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corpora">말뭉치(Corpora)와 데이터의 중요성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">전통적 NLP 파이프라인</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">한국어 NLP의 도전 과제</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">저자원 언어에서의 NLP</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
