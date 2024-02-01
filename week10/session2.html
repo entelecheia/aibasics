@@ -480,6 +480,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">토픽 모델링의 도전 과제</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">토픽 모델링 방법론</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plsa">확률적 잠재 의미 분석 (pLSA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lda">잠재 디리클레 할당 (LDA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmf">비음수 행렬 분해 (NMF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dtm">동적 토픽 모델 (DTM)</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -731,6 +739,64 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id20">
+<h2>토픽 모델링 방법론<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<section id="id21">
+<h3>서론<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-13.jpeg"><img alt="../_images/image-2-4-13.jpeg" class="align-center" src="../_images/image-2-4-13.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>토픽 모델링의 정의</strong>: 문서 집합에서 숨겨진 주제를 발견하는 비지도 학습 기법.</p></li>
+<li><p><strong>기본 가정</strong>: 각 문서는 여러 주제의 혼합으로 구성되며, 각 주제는 단어 분포를 통해 표현됨.</p></li>
+<li><p><strong>목표</strong>: 문서와 주제 사이의 관계를 파악하여 대규모 텍스트 데이터에서 의미 있는 인사이트를 추출.</p></li>
+<li><p><strong>적용 분야</strong>: 문서 분류, 정보 검색, 문서 요약 등 다양한 텍스트 마이닝 및 자연어 처리 작업.</p></li>
+<li><p><strong>주요 방법론</strong>: 확률적 잠재 의미 분석(pLSA), 잠재 디리클레 할당(LDA), 비음수 행렬 분해(NMF), 상관 토픽 모델(CTM), 동적 토픽 모델(DTM) 등이 있음.</p></li>
+</ul>
+</section>
+<section id="plsa">
+<h3>확률적 잠재 의미 분석 (pLSA)<a class="headerlink" href="#plsa" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-23.jpeg"><img alt="../_images/image-2-4-23.jpeg" class="align-center" src="../_images/image-2-4-23.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>: 문서와 단어 사이의 공존 패턴을 모델링하여 숨겨진 주제를 발견하는 기법.</p></li>
+<li><p><strong>모델 구조</strong>: 각 문서를 주제의 혼합으로, 주제를 단어 분포로 모델링.</p></li>
+<li><p><strong>학습 방법</strong>: 기대치 최대화(EM) 알고리즘을 사용하여 주제 분포와 문서-주제 관계 추정.</p></li>
+<li><p><strong>장점</strong>: 숨겨진 주제를 효과적으로 밝힐 수 있음.</p></li>
+<li><p><strong>단점</strong>: 오버피팅 경향, 새로운 문서에 대한 모델 적용 어려움, 매개변수 수의 선형 증가로 대규모 문서 집합에 대한 계산 비용 증가.</p></li>
+</ul>
+</section>
+<section id="lda">
+<h3>잠재 디리클레 할당 (LDA)<a class="headerlink" href="#lda" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-3.png"><img alt="../_images/image-2-4-3.png" class="align-center" src="../_images/image-2-4-3.png" style="width: 70%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>: 문서가 주제의 혼합으로 구성되고 각 주제가 단어의 분포를 가진다고 가정하는 확률적 생성 모델.</p></li>
+<li><p><strong>모델 구조</strong>: Dirichlet 사전 분포를 사용하여 주제 분포와 단어 분포를 모델링.</p></li>
+<li><p><strong>장점</strong>: 오버피팅 문제 해결, 새로운 문서에 대한 일반화 가능, 주제의 해석 가능성 향상.</p></li>
+<li><p><strong>응용 분야</strong>: 문서 군집화, 텍스트 요약, 정보 검색 등에서 널리 사용됨.</p></li>
+<li><p><strong>학습 방법</strong>: 변분 추론 또는 MCMC 샘플링을 사용한 모델 파라미터 추정.</p></li>
+</ul>
+</section>
+<section id="nmf">
+<h3>비음수 행렬 분해 (NMF)<a class="headerlink" href="#nmf" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-4.png"><img alt="../_images/image-2-4-4.png" class="align-center" src="../_images/image-2-4-4.png" style="width: 70%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>: 문서-단어 행렬을 두 개의 비음수 하위 차원 행렬로 분해하여 주제를 모델링하는 선형 대수 기법.</p></li>
+<li><p><strong>모델 구조</strong>: 문서-주제 행렬과 주제-단어 행렬로 분해하여 문서와 주제 사이의 관계 표현.</p></li>
+<li><p><strong>장점</strong>: 해석 가능한 주제 생성, 확률적 기반 모델이 아닌 경우에도 적용 가능, 주제 간의 구조적 관계 표현 용이.</p></li>
+<li><p><strong>단점</strong>: 확률적 해석의 부재, 비유일 해의 가능성.</p></li>
+<li><p><strong>응용 분야</strong>: 텍스트 데이터의 차원 축소, 주제 기반 문서 군집화 등에 활용됨.</p></li>
+</ul>
+</section>
+<section id="dtm">
+<h3>동적 토픽 모델 (DTM)<a class="headerlink" href="#dtm" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-4-52.jpeg"><img alt="../_images/image-2-4-52.jpeg" class="align-center" src="../_images/image-2-4-52.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>: 시간에 따른 주제의 진화를 모델링하여 문서 집합의 시간적 구조 분석.</p></li>
+<li><p><strong>모델 구조</strong>: 시간 슬라이스별로 문서를 나누고, 각 시간 슬라이스에 대한 LDA 모델 생성.</p></li>
+<li><p><strong>장점</strong>: 시간에 따른 주제 변화 포착, 시간적 구조를 가진 텍스트 데이터 분석 가능.</p></li>
+<li><p><strong>응용 분야</strong>: 뉴스 기사, 과학 논문, 소셜 미디어 데이터의 시간적 트렌드 분석.</p></li>
+<li><p><strong>학습 방법</strong>: 변분 추론과 특수화된 알고리즘을 사용한 시간적 의존성 모델링.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -819,6 +885,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">문서 군집화</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">토픽 모델링의 과정</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">토픽 모델링의 도전 과제</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">토픽 모델링 방법론</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">서론</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plsa">확률적 잠재 의미 분석 (pLSA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lda">잠재 디리클레 할당 (LDA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmf">비음수 행렬 분해 (NMF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dtm">동적 토픽 모델 (DTM)</a></li>
 </ul>
 </li>
 </ul>
