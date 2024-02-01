@@ -1,4 +1,5 @@
 """Command line interface for aibasics"""
+
 from hyfi import hyfi_main
 
 
