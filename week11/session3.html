@@ -456,12 +456,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. AI 에이전트의 정의</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. AI 에이전트의 특성</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. AI 에이전트의 분류</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">4. LLM 에이전트로의 진화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogen">5. AutoGen을 통한 다중 에이전트 상호작용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6. AI 에이전트의 실세계 예시</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">AI 에이전트의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트의 분류</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">LLM 에이전트로의 진화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">AI 에이전트의 예시</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">결론</a></li>
 </ul>
             </nav>
@@ -481,11 +480,11 @@ document.write(`
 <p>AI 에이전트는 자율적 또는 반자율적으로 환경과 상호작용하여 특정 목표를 달성하는 인공지능(AI)의 핵심 요소입니다. 이 강의에서는 AI 에이전트의 기본 속성, 분류 및 복잡한 시스템에서의 역할에 대해 깊이 있게 탐구하며, 대규모 언어 모델(Large Language Model, LLM) 에이전트에 특별한 초점을 맞춥니다. 실세계 예시와 AutoGen과 같은 현대적 프레임워크를 통해, 독립적인 LLM에서부터 다중 에이전트 설정에서 복잡한 문제 해결을 가능하게 하는 상호작용적이고 협력적인 엔티티로의 AI 에이전트의 진화를 탐색합니다.</p>
 </section>
 <section id="id2">
-<h2>1. AI 에이전트의 정의<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>AI 에이전트의 정의<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>AI 에이전트는 센서를 통해 환경을 인식하고, 효과기를 통해 환경에 작용하여 특정 목표를 달성하기 위해 설계된 컴퓨터 기반 엔티티입니다. 의사결정, 문제해결 또는 다른 에이전트나 인간과의 상호작용을 요구할 수 있는 작업을 수행하기 위해 지식, 능력, 전략의 조합을 캡슐화합니다.</p>
 </section>
 <section id="id3">
-<h2>2. AI 에이전트의 특성<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>AI 에이전트의 특성<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>자율성</strong>: 특정 정도까지 인간의 개입 없이 작동할 수 있는 능력.</p></li>
 <li><p><strong>반응성</strong>: 환경을 인식하고 변화에 반응할 수 있는 능력.</p></li>
@@ -494,7 +493,7 @@ document.write(`
 </ul>
 </section>
 <section id="id4">
-<h2>3. AI 에이전트의 분류<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>AI 에이전트의 분류<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>단순 반사 에이전트</strong>: 사전 정의된 규칙에 기반하여 환경에 반응합니다.</p></li>
 <li><p><strong>모델 기반 반사 에이전트</strong>: 보다 정보에 입각한 결정을 내리기 위해 세계의 모델을 유지합니다.</p></li>
@@ -504,16 +503,11 @@ document.write(`
 </ul>
 </section>
 <section id="llm">
-<h2>4. LLM 에이전트로의 진화<a class="headerlink" href="#llm" title="Link to this heading">#</a></h2>
+<h2>LLM 에이전트로의 진화<a class="headerlink" href="#llm" title="Link to this heading">#</a></h2>
 <p>GPT-4와 같은 대규모 언어 모델(LLM)의 등장은 고급 자연어 처리 기능을 갖춘 LLM 에이전트의 탄생을 가져왔습니다. 그러나 독립적인 LLM은 행동을 실행하는 데에 한계가 있습니다. LLM 에이전트는 외부 시스템과 상호작용하기 위한 <strong>계획</strong> 및 <strong>도구</strong>를 통합하여 이 격차를 메웁니다.</p>
 </section>
-<section id="autogen">
-<h2>5. AutoGen을 통한 다중 에이전트 상호작용<a class="headerlink" href="#autogen" title="Link to this heading">#</a></h2>
-<p>AutoGen과 같은 프레임워크는 협력적 환경에서 여러 AI 에이전트의 조화를 용이하게 합니다. AutoGen은 다</p>
-<p>양한 대화 패턴, 인간의 참여, 다중 에이전트 대화, 유연한 자율성을 지원하여 더 복잡하고 상호작용적이며 실행 가능한 AI 응용 프로그램을 가능하게 합니다.</p>
-</section>
 <section id="id5">
-<h2>6. AI 에이전트의 실세계 예시<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2>AI 에이전트의 예시<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p>AutoGPT, GPTEngineer, MetaGPT와 같은 프로젝트는 코드 생성, 자동화된 작업 해결, 다중 에이전트 협업에서 AI 에이전트의 실용적인 응용을 보여줍니다.</p>
 </section>
 <section id="id6">
@@ -578,12 +572,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. AI 에이전트의 정의</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. AI 에이전트의 특성</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. AI 에이전트의 분류</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">4. LLM 에이전트로의 진화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogen">5. AutoGen을 통한 다중 에이전트 상호작용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6. AI 에이전트의 실세계 예시</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">AI 에이전트의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트의 분류</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">LLM 에이전트로의 진화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">AI 에이전트의 예시</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">결론</a></li>
 </ul>
   </nav></div>
