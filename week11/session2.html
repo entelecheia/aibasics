@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>프롬프트 엔지니어링 기본 전략 &#8212; AI 세상 속으로</title>
+    <title>다중 모달 생성 인공지능 &#8212; AI 세상 속으로</title>
   
   
   
@@ -102,7 +102,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="ChatGPT를 활용한 데이터사이언스 프로젝트" href="session3.html" />
+    <link rel="next" title="AI 에이전트의 핵심적인 이해" href="session3.html" />
     <link rel="prev" title="생성형 AI 입문" href="session1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -240,8 +240,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 11: 생성 AI</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">생성형 AI 입문</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">프롬프트 엔지니어링 기본 전략</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session3.html">ChatGPT를 활용한 데이터사이언스 프로젝트</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">다중 모달 생성 인공지능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session3.html">AI 에이전트의 핵심적인 이해</a></li>
 </ul>
 </li>
 </ul>
@@ -446,7 +446,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>프롬프트 엔지니어링 기본 전략</h1>
+    <h1>다중 모달 생성 인공지능</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -456,12 +456,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 프롬프트 엔지니어링의 기초</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 데이터 분석과 정보 요약</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 마케팅 및 창의적 콘텐츠 생성</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 교육과 학습 지원</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 최신 트렌드와 자동화 응답</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6. 사용자 경험 향상</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">서론</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">다중 모달 생성 AI의 핵심 구성 요소</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">다중 모달 생성 AI의 주요 이점</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">다중 모달 생성 AI의 응용 분야</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">결론</a></li>
 </ul>
             </nav>
         </div>
@@ -474,47 +473,41 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>프롬프트 엔지니어링 기본 전략<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>다중 모달 생성 인공지능<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>1. 프롬프트 엔지니어링의 기초<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>프롬프트 엔지니어링 소개</strong>: 정의와 ChatGPT와의 관계 이해</p></li>
-<li><p><strong>기본 원칙과 전략</strong>: 효과적인 프롬프트 작성을 위한 기본 원칙과 전략</p></li>
-</ul>
+<h2>서론<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>현대 기술의 전면에 나서고 있는 다중 모달 생성 인공지능(Multimodal Generative AI)은 단일 데이터 유형에 국한되지 않고 텍스트, 이미지, 오디오 등 다양한 데이터를 통합하여 처리할 수 있는 능력을 가진 혁신적인 기술입니다. 이 강의에서는 다중 모달 생성 AI의 기본 구조, 주요 기능, 그리고 이 기술이 어떻게 다양한 산업 분야에서 혁신을 주도하고 있는지를 살펴보겠습니다.</p>
+</section>
+<section id="ai">
+<h2>다중 모달 생성 AI의 핵심 구성 요소<a class="headerlink" href="#ai" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>입력 모듈</strong>: 다양한 데이터 유형을 처리할 수 있는 복수의 단일 모달 신경망으로 구성되어 있습니다. 이를 통해 시스템은 텍스트, 이미지, 비디오, 오디오 등 다양한 형태의 데이터를 동시에 처리할 수 있습니다.</p></li>
+<li><p><strong>융합 모듈</strong>: 입력 모듈로부터의 데이터를 결합하고 연결하여 종합적인 데이터 세트를 생성합니다. 이 과정은 각 데이터 유형의 장점을 활용하여 더 깊이 있는 분석을 가능하게 합니다.</p></li>
+<li><p><strong>출력 모듈</strong>: 융합된 데이터를 기반으로 예측, 결정, 또는 추천 등의 다양한 형태로 결과를 생성합니다.</p></li>
+</ol>
 </section>
 <section id="id3">
-<h2>2. 데이터 분석과 정보 요약<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>다중 모달 생성 AI의 주요 이점<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>데이터 분석을 위한 프롬프트 활용</strong>: 데이터 분석 기법과 프롬프트 설정 방법</p></li>
-<li><p><strong>요약 콘텐츠 생성</strong>: 데이터 분석 결과를 요약하는 프롬프트 작성법</p></li>
+<li><p><strong>유연성</strong>: 단일 모달 AI 시스템과 비교할 때, 다중 모달 AI는 다양한 유형의 데이터를 처리할 수 있으므로 훨씬 더 유연합니다.</p></li>
+<li><p><strong>컨텍스트 인식</strong>: 다중 모달 AI는 다양한 데이터 스트림을 통합하여 컨텍스트를 더 잘 이해할 수 있습니다.</p></li>
+<li><p><strong>계산 효율성</strong>: 다중 모달 AI는 여러 도메인 특정 모델을 사용하는 것보다 계산 자원을 절약하고 데이터 처리를 가속화할 수 있습니다.</p></li>
+<li><p><strong>복잡한 문제 해결</strong>: 다양한 입력을 필요로 하는 복잡한 문제에 대해 더 효과적으로 대응할 수 있습니다.</p></li>
 </ul>
 </section>
 <section id="id4">
-<h2>3. 마케팅 및 창의적 콘텐츠 생성<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>다중 모달 생성 AI의 응용 분야<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>콘텐츠 마케팅 전략</strong>: 타겟 청중 분석 및 적용 사례</p></li>
-<li><p><strong>창의적 아이디어 생성</strong>: 창의성을 촉진하는 프롬프트 설정 방법과 예시</p></li>
+<li><p><strong>의료 분야</strong>: 환자의 의료 기록과 의료 영상을 결합하여 정밀 진단을 가능하게 합니다.</p></li>
+<li><p><strong>소매 및 전자 상거래</strong>: 사용자 행동, 텍스트 리뷰, 제품 이미지를 분석하여 맞춤형 추천을 제공합니다.</p></li>
+<li><p><strong>사기 탐지 및 방지</strong>: 사용자의 행동, 거래 기록, 소셜 미디어 포스트 등 다양한 데이터를 분석하여 사기를 탐지합니다.</p></li>
+<li><p><strong>자동차 산업</strong>: 센서 데이터, 교통 규칙, 실제 도로 상황 등을 분석하여 자율 주행 차량의 안전을 향상시킵니다.</p></li>
+<li><p><strong>교육 분야</strong>: 다양한 교육 자료를 분석하여 학습자에게 맞춤형 교육 콘텐츠를 제공합니다.</p></li>
 </ul>
 </section>
 <section id="id5">
-<h2>4. 교육과 학습 지원<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>언어 학습 지원</strong>: 영어 학습을 위한 프롬프트와 언어 습득 촉진 방법</p></li>
-<li><p><strong>프로그래밍 교육</strong>: 코딩 입문자를 위한 프롬프트 설계와 실습 문제 제시</p></li>
-</ul>
-</section>
-<section id="id6">
-<h2>5. 최신 트렌드와 자동화 응답<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>최신 정보 반영</strong>: 시장 트렌드를 반영한 프롬프트 작성법</p></li>
-<li><p><strong>자동화된 이메일 응답</strong>: 이메일 관리 전략과 자동 응답 생성 사례</p></li>
-</ul>
-</section>
-<section id="id7">
-<h2>6. 사용자 경험 향상<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>상호작용 이력 관리</strong>: 질문 관리 전략과 사용자 경험 개선을 위한 프롬프트 설계</p></li>
-</ul>
+<h2>결론<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>다중 모달 생성 AI는 인공지능 기술의 미래를 재정의하고 있습니다. 이 기술은 단일 데이터 유형에 국한되지 않고 복잡한 문제를 해결하기 위해 다양한 유형의 데이터를 통합하여 처리할 수 있는 능력을 가지고 있습니다. 따라서, 다중 모달 생성 AI는 의료, 소매, 자동차 등 다양한 산업 분야에서 혁신을 주도하며 새로운 가능성을 열고 있습니다.</p>
 </section>
 </section>
 
@@ -562,7 +555,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ChatGPT를 활용한 데이터사이언스 프로젝트</p>
+        <p class="prev-next-title">AI 에이전트의 핵심적인 이해</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -582,12 +575,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 프롬프트 엔지니어링의 기초</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 데이터 분석과 정보 요약</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 마케팅 및 창의적 콘텐츠 생성</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 교육과 학습 지원</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 최신 트렌드와 자동화 응답</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6. 사용자 경험 향상</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">서론</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai">다중 모달 생성 AI의 핵심 구성 요소</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">다중 모달 생성 AI의 주요 이점</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">다중 모달 생성 AI의 응용 분야</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">결론</a></li>
 </ul>
   </nav></div>
 

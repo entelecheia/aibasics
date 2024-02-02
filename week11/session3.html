@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ChatGPT를 활용한 데이터사이언스 프로젝트 &#8212; AI 세상 속으로</title>
+    <title>AI 에이전트의 핵심적인 이해 &#8212; AI 세상 속으로</title>
   
   
   
@@ -102,7 +102,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="프롬프트 엔지니어링 기본 전략" href="session2.html" />
+    <link rel="prev" title="다중 모달 생성 인공지능" href="session2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -239,8 +239,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 11: 생성 AI</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">생성형 AI 입문</a></li>
-<li class="toctree-l2"><a class="reference internal" href="session2.html">프롬프트 엔지니어링 기본 전략</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">ChatGPT를 활용한 데이터사이언스 프로젝트</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">다중 모달 생성 인공지능</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">AI 에이전트의 핵심적인 이해</a></li>
 </ul>
 </li>
 </ul>
@@ -445,7 +445,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>ChatGPT를 활용한 데이터사이언스 프로젝트</h1>
+    <h1>AI 에이전트의 핵심적인 이해</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,11 +455,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">데이터셋 소개 및 접근 방법</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda">데이터 전처리 및 탐색적 데이터 분석 (EDA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">소비 패턴 분석</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">데이터 시각화 및 인사이트 도출</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">마무리 및 추가 자료</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. AI 에이전트의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. AI 에이전트의 분류</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">4. LLM 에이전트로의 진화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogen">5. AutoGen을 통한 다중 에이전트 상호작용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6. AI 에이전트의 실세계 예시</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">결론</a></li>
 </ul>
             </nav>
         </div>
@@ -471,47 +474,51 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chatgpt">
-<h1>ChatGPT를 활용한 데이터사이언스 프로젝트<a class="headerlink" href="#chatgpt" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ai">
+<h1>AI 에이전트의 핵심적인 이해<a class="headerlink" href="#ai" title="Link to this heading">#</a></h1>
 <section id="id1">
-<h2>데이터셋 소개 및 접근 방법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>데이터셋의 구성 및 제공 정보 이해</p></li>
-<li><p>데이터셋 API 가이드 문서 활용 방법</p></li>
-<li><p>제주데이터허브 로그인 및 프로젝트키 활용 방법</p></li>
-</ul>
-</section>
-<section id="eda">
-<h2>데이터 전처리 및 탐색적 데이터 분석 (EDA)<a class="headerlink" href="#eda" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>데이터 전처리: 결측치 처리, 데이터 타입 변환, 필터링</p></li>
-<li><p>탐색적 데이터 분석: 기본 통계량 확인, 업종별/성별/연령대별 분포 시각화</p></li>
-<li><p>API를 통한 데이터 호출 및 분석 준비</p></li>
-</ul>
+<h2>서론<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>AI 에이전트는 자율적 또는 반자율적으로 환경과 상호작용하여 특정 목표를 달성하는 인공지능(AI)의 핵심 요소입니다. 이 강의에서는 AI 에이전트의 기본 속성, 분류 및 복잡한 시스템에서의 역할에 대해 깊이 있게 탐구하며, 대규모 언어 모델(Large Language Model, LLM) 에이전트에 특별한 초점을 맞춥니다. 실세계 예시와 AutoGen과 같은 현대적 프레임워크를 통해, 독립적인 LLM에서부터 다중 에이전트 설정에서 복잡한 문제 해결을 가능하게 하는 상호작용적이고 협력적인 엔티티로의 AI 에이전트의 진화를 탐색합니다.</p>
 </section>
 <section id="id2">
-<h2>소비 패턴 분석<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>지역별 소비 트렌드: 제주시와 서귀포시의 소비 차이 분석</p></li>
-<li><p>업종별 소비 분석: 관광객이 선호하는 업종과 소비 규모 파악</p></li>
-<li><p>성별 및 연령대별 소비 분석: 소비 패턴에서 나타나는 성별 및 연령대별 차이 탐색</p></li>
-<li><p>시간대별 변화 분석: 분석 기간 동안의 소비 변화 추이 분석</p></li>
-</ul>
+<h2>1. AI 에이전트의 정의<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>AI 에이전트는 센서를 통해 환경을 인식하고, 효과기를 통해 환경에 작용하여 특정 목표를 달성하기 위해 설계된 컴퓨터 기반 엔티티입니다. 의사결정, 문제해결 또는 다른 에이전트나 인간과의 상호작용을 요구할 수 있는 작업을 수행하기 위해 지식, 능력, 전략의 조합을 캡슐화합니다.</p>
 </section>
 <section id="id3">
-<h2>데이터 시각화 및 인사이트 도출<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>2. AI 에이전트의 특성<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>효과적인 데이터 시각화 기법 소개</p></li>
-<li><p>소비 패턴 분석 결과의 시각화</p></li>
-<li><p>분석 결과를 바탕으로 한 인사이트 공유 및 마케팅 전략 제안</p></li>
+<li><p><strong>자율성</strong>: 특정 정도까지 인간의 개입 없이 작동할 수 있는 능력.</p></li>
+<li><p><strong>반응성</strong>: 환경을 인식하고 변화에 반응할 수 있는 능력.</p></li>
+<li><p><strong>능동성</strong>: 주도적으로 행동하고 목표 지향적 행동을 보일 수 있는 능력.</p></li>
+<li><p><strong>사회성</strong>: 목표 달성을 위해 다른 에이전트 및 인간과 상호작용할 수 있는 능력.</p></li>
 </ul>
 </section>
 <section id="id4">
-<h2>마무리 및 추가 자료<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>3. AI 에이전트의 분류<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>요약 및 핵심 포인트</p></li>
-<li><p>데이터 분석 및 시각화를 위한 추가 도구 및 리소스 소개</p></li>
+<li><p><strong>단순 반사 에이전트</strong>: 사전 정의된 규칙에 기반하여 환경에 반응합니다.</p></li>
+<li><p><strong>모델 기반 반사 에이전트</strong>: 보다 정보에 입각한 결정을 내리기 위해 세계의 모델을 유지합니다.</p></li>
+<li><p><strong>목표 기반 에이전트</strong>: 특정 목표를 달성하기 위해 작업합니다.</p></li>
+<li><p><strong>유틸리티 기반 에이전트</strong>: 결과의 바람직함을 반영하는 유틸리티 함수를 최대화하려고 합니다.</p></li>
+<li><p><strong>학습 에이전트</strong>: 경험을 바탕으로 성능을 학습하고 개선합니다.</p></li>
 </ul>
+</section>
+<section id="llm">
+<h2>4. LLM 에이전트로의 진화<a class="headerlink" href="#llm" title="Link to this heading">#</a></h2>
+<p>GPT-4와 같은 대규모 언어 모델(LLM)의 등장은 고급 자연어 처리 기능을 갖춘 LLM 에이전트의 탄생을 가져왔습니다. 그러나 독립적인 LLM은 행동을 실행하는 데에 한계가 있습니다. LLM 에이전트는 외부 시스템과 상호작용하기 위한 <strong>계획</strong> 및 <strong>도구</strong>를 통합하여 이 격차를 메웁니다.</p>
+</section>
+<section id="autogen">
+<h2>5. AutoGen을 통한 다중 에이전트 상호작용<a class="headerlink" href="#autogen" title="Link to this heading">#</a></h2>
+<p>AutoGen과 같은 프레임워크는 협력적 환경에서 여러 AI 에이전트의 조화를 용이하게 합니다. AutoGen은 다</p>
+<p>양한 대화 패턴, 인간의 참여, 다중 에이전트 대화, 유연한 자율성을 지원하여 더 복잡하고 상호작용적이며 실행 가능한 AI 응용 프로그램을 가능하게 합니다.</p>
+</section>
+<section id="id5">
+<h2>6. AI 에이전트의 실세계 예시<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>AutoGPT, GPTEngineer, MetaGPT와 같은 프로젝트는 코드 생성, 자동화된 작업 해결, 다중 에이전트 협업에서 AI 에이전트의 실용적인 응용을 보여줍니다.</p>
+</section>
+<section id="id6">
+<h2>결론<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>AI 에이전트는 더 상호작용적이고 실행 가능한 AI를 향한 중요한 진전을 대표합니다. 계획, 학습, 상호작용 및 협력의 능력은 AI 에이전트를 현대 AI 응용 프로그램에서 불가결한 자산으로 만들며, 더 정교하고 실제 세계의 AI 솔루션으로의 길을 열어줍니다.</p>
 </section>
 </section>
 
@@ -551,7 +558,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">프롬프트 엔지니어링 기본 전략</p>
+        <p class="prev-next-title">다중 모달 생성 인공지능</p>
       </div>
     </a>
 </div>
@@ -570,11 +577,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">데이터셋 소개 및 접근 방법</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda">데이터 전처리 및 탐색적 데이터 분석 (EDA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">소비 패턴 분석</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">데이터 시각화 및 인사이트 도출</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">마무리 및 추가 자료</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">서론</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. AI 에이전트의 정의</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. AI 에이전트의 분류</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#llm">4. LLM 에이전트로의 진화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogen">5. AutoGen을 통한 다중 에이전트 상호작용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6. AI 에이전트의 실세계 예시</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">결론</a></li>
 </ul>
   </nav></div>
 
