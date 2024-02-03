@@ -459,18 +459,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">생성형 AI의 기본 개념</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">생성형 AI 정의 및 개요</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ai">생성형 AI와 기존 AI 기술과의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">생성형 모델 vs 판별형 모델</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성형 AI의 핵심 알고리즘과 기술적 특성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">딥러닝과 생성형 AI의 관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">딥러닝이란 무엇인가</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">딥러닝의 중요성과 생성형 AI에 대한 기여</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">생성형 AI에서 딥러닝 알고리즘의 역할</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">생성형 모델 vs 판별형 모델</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성형 모델</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">판별형 모델</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">데이터 수집</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">잠재 공간 표현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">반복적 개선</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
@@ -550,6 +548,27 @@ document.write(`
 <li><p><strong>기술적 복잡성</strong>: 새로운 데이터 생성을 위한 복잡한 모델링 요구.</p></li>
 </ul>
 </section>
+<section id="vs">
+<h3>생성형 모델 vs 판별형 모델<a class="headerlink" href="#vs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>생성형 모델</p>
+<ul>
+<li><p><strong>목적</strong>: 새로운 데이터 생성에 초점.</p></li>
+<li><p><strong>학습 과정</strong>: 관찰된 데이터 분포 학습 및 새로운 데이터 포인트 생성.</p></li>
+<li><p><strong>데이터 이해</strong>: 기본 구조와 패턴 이해를 바탕으로 실제와 유사한 데이터 생성.</p></li>
+<li><p><strong>응용 예시</strong>: 이미지 생성, 텍스트 이어 쓰기, 음악 조합.</p></li>
+</ul>
+</li>
+<li><p>판별형 모델</p>
+<ul>
+<li><p><strong>목적</strong>: 데이터 분석 및 범주 판별.</p></li>
+<li><p><strong>분석 과정</strong>: 입력 데이터 특성 분석 및 분류 또는 회귀 예측 수행.</p></li>
+<li><p><strong>데이터 처리</strong>: 분석을 통한 특정 범주나 클래스 소속 판별.</p></li>
+<li><p><strong>응용 예시</strong>: 객체 인식, 감정 분석, 스팸 메일 필터링.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 <section id="id3">
 <h3>생성형 AI의 핵심 알고리즘과 기술적 특성<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-1-1-34.jpeg"><img alt="../_images/image-1-1-34.jpeg" class="align-center" src="../_images/image-1-1-34.jpeg" style="width: 90%;" /></a>
@@ -586,51 +605,58 @@ document.write(`
 </section>
 </section>
 <section id="id4">
-<h2>딥러닝과 생성형 AI의 관계<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>생성형 AI 작동 원리<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <section id="id5">
-<h3>딥러닝이란 무엇인가<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<h3>데이터 수집<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-13.jpeg"><img alt="../_images/image-1-2-13.jpeg" class="align-center" src="../_images/image-1-2-13.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>딥러닝</strong>은 다층적인 인공 신경망을 활용하여 데이터로부터 복잡한 패턴을 학습하는 기계 학습의 한 분야입니다.</p></li>
-<li><p>고차원의 데이터 처리에 탁월하며, 인간의 뇌가 정보를 처리하는 방식을 모방하여 이미지 인식, 음성 인식, 자연어 처리 등에서 뛰어난 성능을 보입니다.</p></li>
-<li><p>대표적인 딥러닝 모델로는 CNN, RNN, Transformer가 있으며, 이들은 각각 이미지 처리, 순차 데이터 처리, 자연어 처리에 강점을 보입니다.</p></li>
-<li><p>대량의 데이터와 강력한 컴퓨팅 파워를 필요로 하며, 이를 통해 인간의 지능을 모방하는 다양한 작업을 수행할 수 있습니다.</p></li>
+<li><p><strong>목적</strong>: 콘텐츠 생성을 위한 예시 데이터 수집</p></li>
+<li><p><strong>예시</strong>: 다양한 고양이 이미지 데이터셋 수집</p></li>
+<li><p><strong>중요성</strong>: 모델 성능에 직접적인 영향을 미치는 데이터의 질과 다양성</p></li>
+<li><p><strong>데이터 품질</strong>: 생성된 콘텐츠의 질에 영향</p></li>
+<li><p><strong>처리 과정</strong>: 학습에 적합한 형태로 데이터 전처리</p></li>
 </ul>
 </section>
 <section id="id6">
-<h3>딥러닝의 중요성과 생성형 AI에 대한 기여<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3>훈련<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-23.jpeg"><img alt="../_images/image-1-2-23.jpeg" class="align-center" src="../_images/image-1-2-23.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>딥러닝은 생성형 AI 모델의 핵심적인 기술적 기반을 제공하며, 복잡한 데이터의 내재된 특징을 학습하는 데 중요한 역할을 합니다.</p></li>
-<li><p>GAN, VAE 등의 생성형 AI 모델은 딥러닝의 발전 없이는 존재할 수 없으며, 이를 통해 실제와 구분하기 어려운 수준의 데이터를 생성할 수 있습니다.</p></li>
-<li><p>딥러닝은 생성형 AI를 통한 창의적인 분야의 발전에 기여하며, 예술, 디자인, 게임 개발 등에서 혁신적인 사용 사례를 가능하게 합니다.</p></li>
-<li><p>개인화된 사용자 경험 제공에 있어서도 딥러닝은 중요한 기술적 기반을 제공합니다.</p></li>
+<li><p><strong>기술 활용</strong>: 딥러닝 기반의 생성형 모델(GANs, VAEs 등) 훈련</p></li>
+<li><p><strong>패턴 분석</strong>: 데이터셋의 패턴, 구조, 특성 분석</p></li>
+<li><p><strong>학습 과정</strong>: 데이터의 기본적 특성 및 내재된 특징 학습</p></li>
+<li><p><strong>알고리즘 접근</strong>: 콘텐츠 생성을 위한 다양한 알고리즘 활용</p></li>
+<li><p><strong>학습 목표</strong>: 실제와 유사한 콘텐츠 생성 능력 향상</p></li>
 </ul>
 </section>
 <section id="id7">
-<h3>생성형 AI에서 딥러닝 알고리즘의 역할<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<h3>잠재 공간 표현<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-33.jpeg"><img alt="../_images/image-1-2-33.jpeg" class="align-center" src="../_images/image-1-2-33.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>딥러닝 알고리즘은 생성형 AI가 복잡한 데이터 패턴을 학습하고, 이를 바탕으로 새로운 데이터를 생성하는 핵심적인 역할을 합니다.</p></li>
-<li><p>GAN의 경우, 딥러닝은 생성자와 판별자 신경망의 학습에 사용되며, VAE에서는 입력 데이터의 중요 특성을 추출하고 새로운 데이터를 생성하는 데 활용됩니다.</p></li>
-<li><p>딥러닝은 생성형 AI가 다양한 형태의 데이터를 처리하고, 새로운 형태의 데이터를 생성하는 데 있어서 중요한 역할을 합니다.</p></li>
-<li><p>이를 통해 생성형 AI는 더 정교하고 사실적인 결과물을 만들어내며, 창의적이고 혁신적인 결과물을 요구하는 다양한 분야에서 활용될 수 있습니다.</p></li>
+<li><p><strong>정의 및 역할</strong>: 데이터의 패턴과 특성을 수학적으로 압축, 추상화</p></li>
+<li><p><strong>생성 과정</strong>: 잠재 공간에서 샘플링하여 새로운 콘텐츠 생성</p></li>
+<li><p><strong>중요성</strong>: 생성된 콘텐츠의 질과 다양성에 핵심적 영향</p></li>
+<li><p><strong>활용</strong>: 새로운 콘텐츠 생성에 필요한 정보 저장</p></li>
 </ul>
 </section>
-</section>
-<section id="vs">
-<h2>생성형 모델 vs 판별형 모델<a class="headerlink" href="#vs" title="Link to this heading">#</a></h2>
 <section id="id8">
-<h3>생성형 모델<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<h3>생성<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-43.jpeg"><img alt="../_images/image-1-2-43.jpeg" class="align-center" src="../_images/image-1-2-43.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>새로운 데이터를 생성하는 데 초점을 맞춘 모델로, 관찰된 데이터의 분포를 학습하여 새로운 데이터 포인트를 생성합니다.</p></li>
-<li><p>생성 과정에서는 데이터의 기본 구조와 패턴을 이해하고, 이를 바탕으로 실제와 유사한 데이터를 만들어냅니다.</p></li>
-<li><p>예시: 새로운 이미지 생성, 텍스트 이어 쓰기, 음악 조합 등</p></li>
+<li><p><strong>과정 설명</strong>: 잠재 공간에서 새로운 콘텐츠 생성</p></li>
+<li><p><strong>방법</strong>: 점 샘플링 및 원본 형식으로 디코딩</p></li>
+<li><p><strong>예시</strong>: 잠재 공간에서 샘플링한 점을 이용한 새 고양이 이미지 생성</p></li>
+<li><p><strong>변형과 결과</strong>: 다양한 변형을 통한 새로운 콘텐츠 생성</p></li>
+<li><p><strong>결과물</strong>: 기존에 없던 이미지, 텍스트, 음악 등 생성</p></li>
 </ul>
 </section>
 <section id="id9">
-<h3>판별형 모델<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<h3>반복적 개선<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-1-2-53.jpeg"><img alt="../_images/image-1-2-53.jpeg" class="align-center" src="../_images/image-1-2-53.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>주어진 데이터를 분석하여 특정 범주나 클래스에 속하는지를 판별하는 데 사용됩니다.</p></li>
-<li><p>입력된 데이터의 특성을 분석하고, 이를 기반으로 분류 또는 회귀와 같은 예측을 수행합니다.</p></li>
-<li><p>예시: 이미지 내 객체 인식, 텍스트 감정 분석, 스팸 메일 필터링 등</p></li>
+<li><p><strong>개선 과정</strong>: 생성된 콘텐츠 평가 및 매개변수 조정을 통한 개선</p></li>
+<li><p><strong>평가와 조정</strong>: 생성 품질 평가 및 성능 향상을 위한 조정</p></li>
+<li><p><strong>개선 목표</strong>: 만족스러운 결과물 생성까지 반복 개선</p></li>
+<li><p><strong>중요성</strong>: 더 정교하고 사실적인 콘텐츠 생성을 위한 핵심 과정</p></li>
 </ul>
 </section>
 </section>
@@ -894,18 +920,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">생성형 AI의 기본 개념</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">생성형 AI 정의 및 개요</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ai">생성형 AI와 기존 AI 기술과의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">생성형 모델 vs 판별형 모델</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성형 AI의 핵심 알고리즘과 기술적 특성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">딥러닝과 생성형 AI의 관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">딥러닝이란 무엇인가</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">딥러닝의 중요성과 생성형 AI에 대한 기여</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">생성형 AI에서 딥러닝 알고리즘의 역할</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">생성형 모델 vs 판별형 모델</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성형 모델</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">판별형 모델</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">데이터 수집</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">잠재 공간 표현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">반복적 개선</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
