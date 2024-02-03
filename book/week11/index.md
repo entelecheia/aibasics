@@ -1,4 +1,4 @@
-# Week 11: 생성 AI
+# Week 11: 생성형 AI
 
 ```{tableofcontents}
 
