@@ -105,9 +105,15 @@ help = "build the book"
 cmd = "jupyter-book build book --all"
 help = "build the book with all outputs"
 
-[tool.poe.tasks.book-build-pdf]
+[tool.poe.tasks.book-build-pdfhtml]
 cmd = "jupyter-book build book --builder pdfhtml"
-help = "build the book as a PDF"
+help = """build the book as a PDF.
+  If you encounter a timeout error, modify pdf.py to include the timeout parameter in the call to page.goto:
+  > await page.goto(f"file:///{html_file}", {"timeout": 0, "waitUntil": ["networkidle2"]})"""
+
+[tool.poe.tasks.book-build-pdflatex]
+cmd = "jupyter-book build book --builder pdflatex"
+help = "build the book as a PDF using LaTeX"
 
 [tool.poe.tasks.book-publish]
 cmd = "ghp-import -n -p -f book/_build/html"
