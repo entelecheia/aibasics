@@ -463,7 +463,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성형 AI의 핵심 알고리즘과 기술적 특성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 생성 과정</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">데이터 수집</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">훈련</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">잠재 공간 표현</a></li>
@@ -471,44 +471,52 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">반복적 개선</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">텍스트-텍스트</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">텍스트-이미지</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">이미지-이미지</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">음성-음성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">음악 생성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">생성 모델의 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">확률 모델링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">잠재 공간 표현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">적대적 훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">자기회귀 모델링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">재구성 및 오류 최소화</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">모델 활용 분야</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">예술 및 디자인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">엔터테인먼트</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">교육</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">과학 연구</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">비즈니스</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">텍스트-텍스트</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">텍스트-이미지</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">이미지-이미지</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">음성-음성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">음악 생성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">기술 발전</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">고도화된 데이터 생성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">산업 혁신</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">일자리 변화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">데이터 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">연구 개발</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">모델 활용 분야</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">예술 및 디자인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">엔터테인먼트</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">교육</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">과학 연구</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">비즈니스</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">다양한 산업과 사회에 미칠 변화와 기대되는 혁신</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">경제적 영향</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">사회적 변화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">창의력 강화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">인간과 AI의 협업</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">지속 가능성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">기술 발전</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">고도화된 데이터 생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">산업 혁신</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">일자리 변화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">데이터 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">연구 개발</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">프라이버시 보호</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">윤리적 사용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">사회적 영향</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">접근성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">교육 및 훈련</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">다양한 산업과 사회에 미칠 변화와 기대되는 혁신</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">경제적 영향</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">사회적 변화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">창의력 강화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">인간과 AI의 협업</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">지속 가능성</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">프라이버시 보호</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">윤리적 사용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">사회적 영향</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">접근성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">교육 및 훈련</a></li>
 </ul>
 </li>
 </ul>
@@ -605,7 +613,7 @@ document.write(`
 </section>
 </section>
 <section id="id4">
-<h2>생성형 AI 작동 원리<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>생성형 AI 생성 과정<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <section id="id5">
 <h3>데이터 수집<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-1-2-13.jpeg"><img alt="../_images/image-1-2-13.jpeg" class="align-center" src="../_images/image-1-2-13.jpeg" style="width: 90%;" /></a>
@@ -661,190 +669,243 @@ document.write(`
 </section>
 </section>
 <section id="id10">
-<h2>다양한 생성형 AI 모델의 예시<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<h2>생성 모델의 작동 원리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
 <section id="id11">
-<h3>텍스트-텍스트<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<h3>확률 모델링<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>활용 기술</strong>: 훈련 데이터의 분포를 포착하기 위해 확률 모델링 사용.</p></li>
+<li><p><strong>목적</strong>: 데이터의 확률 분포 모델링 및 학습된 분포로부터 샘플링을 통한 새 샘플 생성.</p></li>
+<li><p><strong>데이터 유형</strong>: 연속 데이터의 경우 가우시안 분포, 이산 데이터의 경우 범주형 분포 선택.</p></li>
+<li><p><strong>확률 분포 선택</strong>: 생성하고자 하는 데이터 유형에 따라 확률 분포 선택이 달라짐.</p></li>
+<li><p><strong>활용 예시</strong>: 텍스트, 이미지, 음악 등 다양한 데이터 유형 생성에 활용.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>잠재 공간 표현<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>기술적 접근</strong>: 자동인코더나 변이형 자동인코더 같은 기술을 사용하여 잠재 공간 표현 학습.</p></li>
+<li><p><strong>역할</strong>: 데이터의 변화를 설명하는 기본 요소나 특징을 포착.</p></li>
+<li><p><strong>샘플링 및 디코딩</strong>: 잠재 공간에서 점을 샘플링하고 이를 디코딩하여 새 샘플 생성.</p></li>
+<li><p><strong>중요성</strong>: 데이터의 다양성과 질을 결정짓는 핵심 요소.</p></li>
+<li><p><strong>응용</strong>: 새로운 이미지, 텍스트 등의 생성에 활용.</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>적대적 훈련<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>구조</strong>: 생성자와 판별자라는 두 경쟁 신경망으로 구성된 GANs 사용.</p></li>
+<li><p><strong>원리</strong>: 생성자는 합성 샘플을 생성하고, 판별자는 진짜와 생성된 샘플을 구별하려 함.</p></li>
+<li><p><strong>반복 학습</strong>: 생성자는 판별자를 속이는 샘플을, 판별자는 구별 능력을 향상.</p></li>
+<li><p><strong>결과</strong>: 점점 더 현실적인 샘플 생성.</p></li>
+<li><p><strong>적용</strong>: 사실적인 이미지, 비디오, 음성 생성 등에 활용.</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>자기회귀 모델링<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>기술</strong>: 순차적 데이터 생성을 위한 RNNs 같은 자기회귀 모델 사용.</p></li>
+<li><p><strong>원리</strong>: 시퀀스 내 각 요소를 이전 요소들에 기반하여 조건부 확률 모델링.</p></li>
+<li><p><strong>생성 과정</strong>: 시퀀스를 예측하며 새 데이터 생성.</p></li>
+<li><p><strong>응용</strong>: 텍스트 작성, 음악 작곡 등 순차적 데이터 생성.</p></li>
+<li><p><strong>특징</strong>: 이전 정보를 기반으로 다음 요소를 예측.</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>재구성 및 오류 최소화<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>기술</strong>: VAEs와 같은 모델은 잠재 공간에서 입력 데이터를 재구성.</p></li>
+<li><p><strong>목적</strong>: 입력과 재구성된 출력 간의 재구성 오류 최소화.</p></li>
+<li><p><strong>과정</strong>: 데이터를 잠재 공간으로 인코딩 후 원본 공간으로 디코딩.</p></li>
+<li><p><strong>결과</strong>: 새 샘플 생성.</p></li>
+<li><p><strong>응용</strong>: 데이터의 변형, 개선, 새로운 샘플 생성에 활용.</p></li>
+</ul>
+</section>
+</section>
+<section id="id16">
+<h2>다양한 생성형 AI 모델의 예시<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h3>텍스트-텍스트<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>GPT</strong>: 주어진 텍스트에 이어질 내용을 생성하며, 자연어 이해와 생성 능력을 갖춘 대표적인 모델입니다.</p></li>
 <li><p>활용 예: 자동 기사 작성, 스토리텔링, 대화형 AI 등</p></li>
 </ul>
 </section>
-<section id="id12">
-<h3>텍스트-이미지<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id18">
+<h3>텍스트-이미지<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>DALL-E</strong>: 텍스트 설명을 바탕으로 해당 내용을 시각화하는 이미지를 생성하는 모델입니다.</p></li>
 <li><p>활용 예: 창의적인 이미지 생성, 컨셉 아트 제작, 광고 디자인 등</p></li>
 </ul>
 </section>
-<section id="id13">
-<h3>이미지-이미지<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id19">
+<h3>이미지-이미지<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>StyleGAN</strong>: 다양한 이미지 스타일을 학습하여 새로운 이미지를 생성하며, 고도의 사실성과 다양성을 제공합니다.</p></li>
 <li><p>활용 예: 사실적인 얼굴 생성, 예술 작품 스타일 변환, 가상 패션 디자인 등</p></li>
 </ul>
 </section>
-<section id="id14">
-<h3>음성-음성<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id20">
+<h3>음성-음성<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>WaveNet</strong>: 인간의 목소리를 모방하여 자연스러운 음성 데이터를 생성할 수 있는 모델입니다.</p></li>
 <li><p>활용 예: 음성 합성, 가상 보이스오버, 개인화된 음성 어시스턴트 등</p></li>
 </ul>
 </section>
-<section id="id15">
-<h3>음악 생성<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<section id="id21">
+<h3>음악 생성<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>MuseNet</strong>: 다양한 악기와 스타일로 음악을 생성할 수 있으며, 창의적인 작곡을 가능하게 합니다.</p></li>
 <li><p>활용 예: 배경 음악 제작, 음악 교육, 창작 음악 생성 등</p></li>
 </ul>
 </section>
 </section>
-<section id="id16">
-<h2>모델 활용 분야<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
-<section id="id17">
-<h3>예술 및 디자인<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<section id="id22">
+<h2>모델 활용 분야<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h3>예술 및 디자인<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>창의적인 예술 작품과 디자인을 생성하며, 새로운 형태의 표현을 가능하게 합니다.</p></li>
 <li><p>예: 디지털 아트, 패션 디자인, 인테리어 디자인 생성 등</p></li>
 </ul>
 </section>
-<section id="id18">
-<h3>엔터테인먼트<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<section id="id24">
+<h3>엔터테인먼트<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>게임 개발, 영화 제작, VR 콘텐츠에서 캐릭터, 배경, 스토리라인 생성 등에 활용됩니다.</p></li>
 <li><p>예: 가상 캐릭터 생성, 동적 스토리라인 개발, 인터랙티브 콘텐츠 제작 등</p></li>
 </ul>
 </section>
-<section id="id19">
-<h3>교육<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<section id="id25">
+<h3>교육<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>학습 자료의 개발, 언어 학습을 위한 대화형콘텐츠 생성 등에 사용됩니다.</p></li>
 <li><p>예: 맞춤형 교육 콘텐츠, 시뮬레이션 기반 학습, 언어 교육 애플리케이션 등</p></li>
 </ul>
 </section>
-<section id="id20">
-<h3>과학 연구<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<section id="id26">
+<h3>과학 연구<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>데이터 시뮬레이션, 가설 검증, 복잡한 문제 해결을 위한 시나리오 생성 등에 기여합니다.</p></li>
 <li><p>예: 기후 변화 시뮬레이션, 유전자 변이 연구, 우주 탐사 시나리오 개발 등</p></li>
 </ul>
 </section>
-<section id="id21">
-<h3>비즈니스<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<section id="id27">
+<h3>비즈니스<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>마케팅 자료 생성, 고객 서비스 자동화, 제품 시각화 등 비즈니스 프로세스 개선에 활용됩니다.</p></li>
 <li><p>예: 자동 광고 생성, 가상 고객 서비스 대행, 제품 3D 시각화 등</p></li>
 </ul>
 </section>
 </section>
-<section id="id22">
-<h2>기술 발전<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
-<section id="id23">
-<h3>고도화된 데이터 생성<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<section id="id28">
+<h2>기술 발전<a class="headerlink" href="#id28" title="Link to this heading">#</a></h2>
+<section id="id29">
+<h3>고도화된 데이터 생성<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>생성형 AI는 앞으로도 계속 발전하여 실제와 구분이 어려운 수준의 고품질 데이터를 생성할 수 있게 될 것입니다.</p></li>
 <li><p>예를 들어, 이미지, 텍스트, 음성 등의 데이터가 더욱 사실적이고 정교하게 생성될 수 있습니다.</p></li>
 </ul>
 </section>
-<section id="id24">
-<h3>산업 혁신<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<section id="id30">
+<h3>산업 혁신<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>다양한 산업 분야에서 자동화와 개인화 서비스를 통한 혁신이 기대됩니다.</p></li>
 <li><p>예를 들어, 디지털 콘텐츠 제작, 소프트웨어 개발, 사용자 경험 개선 등에서 큰 변화가 예상됩니다.</p></li>
 </ul>
 </section>
-<section id="id25">
-<h3>일자리 변화<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<section id="id31">
+<h3>일자리 변화<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>생성형 AI의 발전은 일부 전통적 직업을 대체하는 동시에 새로운 직업 기회를 창출할 것입니다.</p></li>
 <li><p>AI 관련 기술 전문가, 데이터 분석가, AI 윤리 전문가 등 새로운 역할이 중요해질 것입니다.</p></li>
 </ul>
 </section>
-<section id="id26">
-<h3>데이터 활용<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<section id="id32">
+<h3>데이터 활용<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>대량의 데이터를 보다 효율적으로 활용하여 새로운 가치와 인사이트를 창출하는 방식이 등장할 것입니다.</p></li>
 <li><p>예를 들어, 빅데이터 분석, 개인화된 콘텐츠 추천, 맞춤형 광고 등이 더욱 정교해질 것입니다.</p></li>
 </ul>
 </section>
-<section id="id27">
-<h3>연구 개발<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<section id="id33">
+<h3>연구 개발<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>AI 연구는 더욱 심도 있고 복잡한 문제 해결로 나아가며, 과학적 발견과 혁신을 가속화할 것입니다.</p></li>
 <li><p>예를 들어, 신약 개발, 우주 탐사, 환경 모델링 등에서 AI의 역할이 커질 것입니다.</p></li>
 </ul>
 </section>
 </section>
-<section id="id28">
-<h2>다양한 산업과 사회에 미칠 변화와 기대되는 혁신<a class="headerlink" href="#id28" title="Link to this heading">#</a></h2>
-<section id="id29">
-<h3>경제적 영향<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
+<section id="id34">
+<h2>다양한 산업과 사회에 미칠 변화와 기대되는 혁신<a class="headerlink" href="#id34" title="Link to this heading">#</a></h2>
+<section id="id35">
+<h3>경제적 영향<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>생산성 향상과 비용 절감을 통해 전반적인 경제 성장에 긍정적인 영향을 미칠 것입니다.</p></li>
 <li><p>예를 들어, 제조업, 물류, 서비스 산업 등에서의 효율성 증대가 기대됩니다.</p></li>
 </ul>
 </section>
-<section id="id30">
-<h3>사회적 변화<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<section id="id36">
+<h3>사회적 변화<a class="headerlink" href="#id36" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>교육, 의료, 엔터테인먼트 등 사회의 다양한 분야에서 맞춤형 솔루션을 제공할 것입니다.</p></li>
 <li><p>예를 들어, 개인별 맞춤 교육 프로그램, 정밀 의료 서비스, 다양한 엔터테인먼트 콘텐츠 등이 확대될 것입니다.</p></li>
 </ul>
 </section>
-<section id="id31">
-<h3>창의력 강화<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
+<section id="id37">
+<h3>창의력 강화<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>AI가 인간의 창의력을 보조하고 확장하여, 예술, 디자인, 문학 등에서 새로운 형태의 작품이 탄생할 것입니다.</p></li>
 <li><p>예를 들어, AI를 활용한 예술 작품, 디자인 프로젝트, 창작 문학 등이 더욱 다양해질 것입니다.</p></li>
 </ul>
 </section>
-<section id="id32">
-<h3>인간과 AI의 협업<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<section id="id38">
+<h3>인간과 AI의 협업<a class="headerlink" href="#id38" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>새로운 작업 환경에서 인간과 AI가 협력하여 업무를 수행하게 될 것입니다.</p></li>
 <li><p>이는 업무 방식의 근본적인 변화를 가져오며,</p></li>
 </ul>
 <p>생산성과 창의성을 동시에 높일 수 있습니다.</p>
 </section>
-<section id="id33">
-<h3>지속 가능성<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<section id="id39">
+<h3>지속 가능성<a class="headerlink" href="#id39" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>환경 보호와 지속 가능한 발전을 위한 정책 결정에 생성형 AI가 중요한 역할을 할 것입니다.</p></li>
 <li><p>예를 들어, 기후 변화 대응, 자원 관리 최적화, 생태계 보호 등에서 AI의 활용이 확대될 것입니다.</p></li>
 </ul>
 </section>
 </section>
-<section id="id34">
-<h2>생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면<a class="headerlink" href="#id34" title="Link to this heading">#</a></h2>
-<section id="id35">
-<h3>프라이버시 보호<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
+<section id="id40">
+<h2>생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면<a class="headerlink" href="#id40" title="Link to this heading">#</a></h2>
+<section id="id41">
+<h3>프라이버시 보호<a class="headerlink" href="#id41" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>개인 데이터 보호와 프라이버시 침해의 위험에 대한 철저한 대책이 필요합니다.</p></li>
 <li><p>사용자의 동의 없는 데이터 수집 및 활용에 대한 엄격한 규제가 요구됩니다.</p></li>
 </ul>
 </section>
-<section id="id36">
-<h3>윤리적 사용<a class="headerlink" href="#id36" title="Link to this heading">#</a></h3>
+<section id="id42">
+<h3>윤리적 사용<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>생성형 AI의 윤리적 사용을 위한 명확한 가이드라인과 규제가 마련되어야 합니다.</p></li>
 <li><p>예를 들어, 허위 정보 생성, 저작권 침해 등의 문제에 대한 대응 방안이 필요합니다.</p></li>
 </ul>
 </section>
-<section id="id37">
-<h3>사회적 영향<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
+<section id="id43">
+<h3>사회적 영향<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>AI가 가져올 사회적 변화에 대비하고, 부정적인 영향을 최소화하기 위한 전략이 수립되어야 합니다.</p></li>
 <li><p>일자리 변화, 사회 격차 문제 등에 대한 세심한 고려가 필요합니다.</p></li>
 </ul>
 </section>
-<section id="id38">
-<h3>접근성<a class="headerlink" href="#id38" title="Link to this heading">#</a></h3>
+<section id="id44">
+<h3>접근성<a class="headerlink" href="#id44" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>AI 기술의 혜택이 사회 전반에 고르게 분포될 수 있도록 하는 접근성 향상이 중요합니다.</p></li>
 <li><p>기술 격차 해소를 위한 교육 프로그램과 인프라 구축이 필요합니다.</p></li>
 </ul>
 </section>
-<section id="id39">
-<h3>교육 및 훈련<a class="headerlink" href="#id39" title="Link to this heading">#</a></h3>
+<section id="id45">
+<h3>교육 및 훈련<a class="headerlink" href="#id45" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>AI 시대에 필요한 기술과 지식을 갖춘 인재 양성을 위한 교육 체계의 개선이 요구됩니다.</p></li>
 <li><p>AI 윤리, 데이터 과학, 소프트웨어 개발 등 다양한 분야의 교육 프로그램이 강화되어야 합니다.</p></li>
@@ -924,7 +985,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성형 AI의 핵심 알고리즘과 기술적 특성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">생성형 AI 생성 과정</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">데이터 수집</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">훈련</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">잠재 공간 표현</a></li>
@@ -932,44 +993,52 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">반복적 개선</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">텍스트-텍스트</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">텍스트-이미지</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">이미지-이미지</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">음성-음성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">음악 생성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">생성 모델의 작동 원리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">확률 모델링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">잠재 공간 표현</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">적대적 훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">자기회귀 모델링</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">재구성 및 오류 최소화</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">모델 활용 분야</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">예술 및 디자인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">엔터테인먼트</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">교육</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">과학 연구</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">비즈니스</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">다양한 생성형 AI 모델의 예시</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">텍스트-텍스트</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">텍스트-이미지</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">이미지-이미지</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">음성-음성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">음악 생성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">기술 발전</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">고도화된 데이터 생성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">산업 혁신</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">일자리 변화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">데이터 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">연구 개발</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">모델 활용 분야</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">예술 및 디자인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">엔터테인먼트</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">교육</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">과학 연구</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">비즈니스</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">다양한 산업과 사회에 미칠 변화와 기대되는 혁신</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">경제적 영향</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">사회적 변화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">창의력 강화</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">인간과 AI의 협업</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">지속 가능성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">기술 발전</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">고도화된 데이터 생성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">산업 혁신</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">일자리 변화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">데이터 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">연구 개발</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">프라이버시 보호</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">윤리적 사용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">사회적 영향</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">접근성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">교육 및 훈련</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">다양한 산업과 사회에 미칠 변화와 기대되는 혁신</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">경제적 영향</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">사회적 변화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">창의력 강화</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">인간과 AI의 협업</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">지속 가능성</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">생성형 AI 연구와 개발에 있어 고려해야 할 윤리적, 사회적 측면</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">프라이버시 보호</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">윤리적 사용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">사회적 영향</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">접근성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">교육 및 훈련</a></li>
 </ul>
 </li>
 </ul>
