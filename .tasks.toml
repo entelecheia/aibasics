@@ -110,7 +110,7 @@ cmd = "jupyter-book build book --builder pdfhtml"
 help = "build the book as a PDF"
 
 [tool.poe.tasks.book-build-pdflatex]
-cmd = "jupyter-book build mybookname/ --builder pdflatex"
+cmd = "jupyter-book build book --builder pdflatex"
 help = "build the book as a PDF using LaTeX"
 
 [tool.poe.tasks.book-publish]
