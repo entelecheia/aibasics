@@ -480,6 +480,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actuators">액추에이터 (Actuators)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-mechanism">의사결정 메커니즘 (Decision-making Mechanism)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-system">학습 시스템 (Learning System)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">인공지능 에이전트의 유형</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-reflex-agent">단순 반사 에이전트(Simple Reflex Agent)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-based-reflex-agent">모델 기반 반사 에이전트(Model-based Reflex Agent)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-based-agents">목표 기반 에이전트(Goal-based Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utility-based-agents">유틸리티 기반 에이전트(Utility-based Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-agents">학습 에이전트(Learning Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-agents">계층적 에이전트(Hierarchical Agents)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -730,6 +739,166 @@ document.write(`
 <li><p><strong>응용</strong>: 개인화된 서비스, 효율적인 문제 해결 전략 개발 등.</p></li>
 </ul>
 </section>
+<section id="id6">
+<h2>인공지능 에이전트의 유형<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="simple-reflex-agent">
+<h3>단순 반사 에이전트(Simple Reflex Agent)<a class="headerlink" href="#simple-reflex-agent" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-13.jpeg"><img alt="../_images/image-3-5-13.jpeg" class="align-center" src="../_images/image-3-5-13.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 사전에 정의된 규칙을 따라 현재 상황에만 반응하는 AI 시스템.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>조건-행동 규칙에 따라 행동 결정.</p></li>
+<li><p>현재 인식만을 기반으로 결정.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: 비밀번호 재설정 요청에 대한 자동 응답 생성 시스템.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>간단한 설계 및 구현.</p></li>
+<li><p>실시간 반응 가능.</p></li>
+<li><p>신뢰성 높음(정확한 입력 센서와 규칙이 있는 경우).</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>입력 오류에 취약.</p></li>
+<li><p>기억력 또는 상태 유지 불가.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="model-based-reflex-agent">
+<h3>모델 기반 반사 에이전트(Model-based Reflex Agent)<a class="headerlink" href="#model-based-reflex-agent" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-23.jpeg"><img alt="../_images/image-3-5-23.jpeg" class="align-center" src="../_images/image-3-5-23.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 현재 인식과 내부 상태를 모두 고려하여 행동을 결정하는 AI 시스템.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>내부 상태를 사용해 조건을 평가.</p></li>
+<li><p>세계에 대한 모델을 기반으로 결정.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: Amazon Bedrock와 같은 시뮬레이션 서비스.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>환경 변화에 적응 가능.</p></li>
+<li><p>복잡한 의사 결정 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>계산 비용 높음.</p></li>
+<li><p>모델의 정확도 문제.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="goal-based-agents">
+<h3>목표 기반 에이전트(Goal-based Agents)<a class="headerlink" href="#goal-based-agents" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-33.jpeg"><img alt="../_images/image-3-5-33.jpeg" class="align-center" src="../_images/image-3-5-33.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 특정 목표를 달성하기 위해 환경에서 정보를 사용하는 AI 에이전트.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>목표 달성을 위해 최적의 경로 탐색.</p></li>
+<li><p>검색 알고리즘과 휴리스틱 사용.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: Google Bard의 응답 제공 목표.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>특정 목표 달성에 효율적.</p></li>
+<li><p>다양한 응용 가능.</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>한정된 목표에만 초점.</p></li>
+<li><p>환경 변화에 유연하지 않음.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="utility-based-agents">
+<h3>유틸리티 기반 에이전트(Utility-based Agents)<a class="headerlink" href="#utility-based-agents" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-41.jpeg"><img alt="../_images/image-3-5-41.jpeg" class="align-center" src="../_images/image-3-5-41.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 최대 유틸리티를 극대화하는 결정을 내리는 AI 에이전트.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>기대 유틸리티를 평가하여 최적의 행동 선택.</p></li>
+<li><p>복잡하고 불확실한 상황에서 유연한 대처.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: Anthropic Claude와 같은 보상 최대화 서비스.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>다양한 의사 결정 문제 해결 가능.</p></li>
+<li><p>경험 학습 및 전략 조정.</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>환경 모델의 정확성 필요.</p></li>
+<li><p>계산 비용 높음.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="learning-agents">
+<h3>학습 에이전트(Learning Agents)<a class="headerlink" href="#learning-agents" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-51.jpeg"><img alt="../_images/image-3-5-51.jpeg" class="align-center" src="../_images/image-3-5-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 경험에서 학습하여 성능을 개선하는 소프트웨어 에이전트.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>환경과의 상호작용을 통한 학습.</p></li>
+<li><p>성능 평가 및 행동 수정.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: AutoGPT의 시장 조사 수행.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>시간이 지남에 따라 진화 및 적응.</p></li>
+<li><p>유틸리티 측정을 통한 현실적 결정 지원.</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>편향된 결정 가능성.</p></li>
+<li><p>높은 개발 및 유지 비용.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="hierarchical-agents">
+<h3>계층적 에이전트(Hierarchical Agents)<a class="headerlink" href="#hierarchical-agents" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-6.jpeg"><img alt="../_images/image-3-5-6.jpeg" class="align-center" src="../_images/image-3-5-6.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 계층 구조에서 상위 에이전트가 하위 에이전트를 감독하는 구조의 AI 에이전트.</p></li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>작업을 계층적으로 조직 및 할당.</p></li>
+<li><p>복잡한 시스템의 효율적 관리.</p></li>
+</ul>
+</li>
+<li><p><strong>예시</strong>: UniPi와 같은 다양한 작업 학습 시스템.</p></li>
+<li><p><strong>장점</strong>:</p>
+<ul>
+<li><p>자원의 효율적 사용.</p></li>
+<li><p>명확한 커뮤니케이션 및 작업 분배.</p></li>
+</ul>
+</li>
+<li><p><strong>단점</strong>:</p>
+<ul>
+<li><p>계층 구조의 복잡성.</p></li>
+<li><p>고정된 계층으로 인한 적응성 제한.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -811,6 +980,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actuators">액추에이터 (Actuators)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-mechanism">의사결정 메커니즘 (Decision-making Mechanism)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-system">학습 시스템 (Learning System)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">인공지능 에이전트의 유형</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-reflex-agent">단순 반사 에이전트(Simple Reflex Agent)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-based-reflex-agent">모델 기반 반사 에이전트(Model-based Reflex Agent)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-based-agents">목표 기반 에이전트(Goal-based Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utility-based-agents">유틸리티 기반 에이전트(Utility-based Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-agents">학습 에이전트(Learning Agents)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-agents">계층적 에이전트(Hierarchical Agents)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
