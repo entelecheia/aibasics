@@ -1,5 +1,34 @@
 <!--next-version-placeholder-->
 
+## v0.7.0 (2024-02-04)
+
+### Feature
+
+* **book:** Add images to week11/session3 sections ([`dec1884`](https://github.com/chu-aie/aibasics/commit/dec188404639255748e302e9c861f604c747e50e))
+* **book:** Add week 11 lecture content on generative AI ([`c569432`](https://github.com/chu-aie/aibasics/commit/c569432eb10ebeafad6003810caa0b9399cf2422))
+* **book:** Add section on challenges faced by AI agents ([`469d7dd`](https://github.com/chu-aie/aibasics/commit/469d7dd5896974479689f4c7467d9e3924c48aa2))
+* **book:** Add AI agent advantages in week 11/session 3 content ([`abee8ea`](https://github.com/chu-aie/aibasics/commit/abee8ea386af3c865451d19886ba00fa6753b88f))
+* **book:** Add new content to week11 session3.md ([`48afb87`](https://github.com/chu-aie/aibasics/commit/48afb87f67b12fe1229e4a18a27f9e079bbf47c8))
+* **book:** Enrich AI characteristics in week 11, session 3 content ([`de9fd12`](https://github.com/chu-aie/aibasics/commit/de9fd12e5b5038910342a84d6c5ce69a473d54b1))
+* **book:** Add AI agent architecture section in week 11 session 3 ([`682837e`](https://github.com/chu-aie/aibasics/commit/682837e08874f43ddd93cf75ff59e125e38ce71d))
+* **book:** Add images to week11 session2 document ([`8876a7c`](https://github.com/chu-aie/aibasics/commit/8876a7c3550f534b342db4726baa7dc8f320f257))
+* **book:** Add advanced prompt techniques section to week11/session2.md ([`6cd898a`](https://github.com/chu-aie/aibasics/commit/6cd898a5cc8a65f5070a76f113b2f7060485c21b))
+* **book:** Add new sections on prompt performance evaluation ([`78e2ab7`](https://github.com/chu-aie/aibasics/commit/78e2ab75dfd73d5e3ae581d157729e79bc27a312))
+* **book:** Add new images for week 11 ([`1390b83`](https://github.com/chu-aie/aibasics/commit/1390b839daae3df243bb198691f592520d832df4))
+* **book:** Add AI prompt generation methods in week 11 session 2 ([`004cd6b`](https://github.com/chu-aie/aibasics/commit/004cd6bf0fb26e6685f849bb786359d38db435ba))
+* **book:** Add new images to week11/figs ([`a6a3ff9`](https://github.com/chu-aie/aibasics/commit/a6a3ff9f1b01c951b4da0790a69aa29c20bde2b0))
+* **book:** Add AI prompt benefits to week11/session2.md ([`f4ad280`](https://github.com/chu-aie/aibasics/commit/f4ad280c2930435d3e034138895043ead08c5e6c))
+* **book:** Add new sections and images to week11/session2.md ([`e56bfff`](https://github.com/chu-aie/aibasics/commit/e56bfffcf3ea3504a6de0994a956fa0da4af43a0))
+* **book:** Add new content to week11 session2 ([`7bb1afb`](https://github.com/chu-aie/aibasics/commit/7bb1afb9af05a7a44d599e1f79c8be1eeba81bda))
+* **book:** Add sphinx_jupyterbook_latex to sphinx configuration ([`35298fc`](https://github.com/chu-aie/aibasics/commit/35298fc2917f42711429af389baab6ae8ec92d39))
+* **book:** Add images to week 11 session 1 content ([`87a4943`](https://github.com/chu-aie/aibasics/commit/87a4943f1943c6ff9392fc3a365e95a9453b4b16))
+* **book content:** Add images to week 11 session 1 content ([`9073d38`](https://github.com/chu-aie/aibasics/commit/9073d38e71958436f1f3107a1ce01d2b06b20149))
+* **book:** Add images to week11 session1.md ([`69dc20c`](https://github.com/chu-aie/aibasics/commit/69dc20c65c76be51bf279172b76d0c897f22e366))
+* **book:** Revise section titles and expand content in 'week11/session1.md' ([`f6f7042`](https://github.com/chu-aie/aibasics/commit/f6f7042ea66a18e6ff09b997db3e10e07105bc1d))
+* **book:** Add images to week11 session1.md ([`6acdb8f`](https://github.com/chu-aie/aibasics/commit/6acdb8f60e00cb93a05c94dbd826fe4414d851d2))
+* **book:** Add detailed content on generative AI ([`8f05a6a`](https://github.com/chu-aie/aibasics/commit/8f05a6a6ca4d6f2d69f494474ee7e3f2dd97d956))
+* **book:** Add week11 session3 ([`7b5d919`](https://github.com/chu-aie/aibasics/commit/7b5d9193a4e615655ae1636258a90c5bd6bb447b))
+
 ## v0.6.0 (2024-02-01)
 
 ### Feature
