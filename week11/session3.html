@@ -466,7 +466,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">계획 및 반응</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autonomy">자율성 (Autonomy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perception">인식 (Perception)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivity">반응성 (Reactivity)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reasoning-and-decision-making">추론 및 의사결정 (Reasoning and Decision-making)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning">학습 (Learning)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">커뮤니케이션 (Communication)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-oriented">목표 지향성 (Goal-oriented)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">AI 에이전트의 분류</a></li>
 </ul>
             </nav>
@@ -594,12 +603,82 @@ document.write(`
 </section>
 <section id="id8">
 <h2>AI 에이전트의 특성<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="autonomy">
+<h3>자율성 (Autonomy)<a class="headerlink" href="#autonomy" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-13.jpeg"><img alt="../_images/image-3-3-13.jpeg" class="align-center" src="../_images/image-3-3-13.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>자율성</strong>: 특정 정도까지 인간의 개입 없이 작동할 수 있는 능력.</p></li>
-<li><p><strong>반응성</strong>: 환경을 인식하고 변화에 반응할 수 있는 능력.</p></li>
-<li><p><strong>능동성</strong>: 주도적으로 행동하고 목표 지향적 행동을 보일 수 있는 능력.</p></li>
-<li><p><strong>사회성</strong>: 목표 달성을 위해 다른 에이전트 및 인간과 상호작용할 수 있는 능력.</p></li>
+<li><p><strong>정의</strong>: AI 에이전트는 인간의 지속적인 개입 없이 독립적으로 작업을 수행할 수 있는 능력.</p></li>
+<li><p><strong>예시</strong>: 자율 주행 차량이 도로 상황을 인식하고, 장애물을 피해 목적지까지 스스로 운전.</p></li>
+<li><p><strong>중요성</strong>: 에이전트가 복잡한 환경에서 독립적으로 문제를 해결할 수 있게 함.</p></li>
+<li><p><strong>기술적 기반</strong>: 센서와 알고리즘을 통한 환경 인식 및 의사결정.</p></li>
+<li><p><strong>응용 분야</strong>: 자동화된 고객 서비스, 스마트 홈 관리 시스템 등.</p></li>
 </ul>
+</section>
+<section id="perception">
+<h3>인식 (Perception)<a class="headerlink" href="#perception" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-23.jpeg"><img alt="../_images/image-3-3-23.jpeg" class="align-center" src="../_images/image-3-3-23.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 다양한 센서를 통해 환경을 감지하고 해석하는 에이전트의 능력.</p></li>
+<li><p><strong>예시</strong>: 스마트 홈 시스템이 음성 명령을 인식하여 조명과 온도 조절.</p></li>
+<li><p><strong>중요성</strong>: 에이전트가 환경의 변화를 정확하게 인지하고 적절히 반응하는 데 필수적.</p></li>
+<li><p><strong>기술적 기반</strong>: 카메라, 마이크 등의 센서와 데이터 처리 알고리즘.</p></li>
+<li><p><strong>응용 분야</strong>: 음성 인식, 이미지 분석, 환경 모니터링 등.</p></li>
+</ul>
+</section>
+<section id="reactivity">
+<h3>반응성 (Reactivity)<a class="headerlink" href="#reactivity" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-33.jpeg"><img alt="../_images/image-3-3-33.jpeg" class="align-center" src="../_images/image-3-3-33.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 환경의 변화에 대해 신속하게 반응하고 조치를 취하는 에이전트의 능력.</p></li>
+<li><p><strong>예시</strong>: 챗봇이 사용자 질문에 즉각적으로 답변 제공.</p></li>
+<li><p><strong>중요성</strong>: 실시간으로 환경 변화에 대응하며 목표 달성을 위한 조치를 취함.</p></li>
+<li><p><strong>기술적 기반</strong>: 이벤트 기반 프로그래밍 및 조건-반응 규칙.</p></li>
+<li><p><strong>응용 분야</strong>: 실시간 모니터링 시스템, 긴급 대응 시스템 등.</p></li>
+</ul>
+</section>
+<section id="reasoning-and-decision-making">
+<h3>추론 및 의사결정 (Reasoning and Decision-making)<a class="headerlink" href="#reasoning-and-decision-making" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-42.jpeg"><img alt="../_images/image-3-3-42.jpeg" class="align-center" src="../_images/image-3-3-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 데이터 분석과 목표 달성을 위한 결정 내리기.</p></li>
+<li><p><strong>예시</strong>: 의료 AI가 환자 데이터를 분석하여 진단 및 치료 계획 수립.</p></li>
+<li><p><strong>중요성</strong>: 복잡한 데이터를 기반으로 최적의 조치를 선택함.</p></li>
+<li><p><strong>기술적 기반</strong>: 데이터 마이닝, 패턴 인식, 기계 학습 알고리즘.</p></li>
+<li><p><strong>응용 분야</strong>: 질병 진단, 금융 분석, 리스크 관리 등.</p></li>
+</ul>
+</section>
+<section id="learning">
+<h3>학습 (Learning)<a class="headerlink" href="#learning" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-51.jpeg"><img alt="../_images/image-3-3-51.jpeg" class="align-center" src="../_images/image-3-3-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 경험을 통해 성능을 향상시키고 새로운 상황에 적응하는 에이전트의 능력.</p></li>
+<li><p><strong>예시</strong>: 추천 시스템이 사용자의 선호도를 학습하여 맞춤형 추천 제공.</p></li>
+<li><p><strong>중요성</strong>: 환경의 변화에 적응하고 효율성을 지속적으로 개선함.</p></li>
+<li><p><strong>기술적 기반</strong>: 심층 학습, 강화 학습, 전이 학습 등의 기법.</p></li>
+<li><p><strong>응용 분야</strong>: 개인화된 서비스, 자동화된 의사결정 시스템 등.</p></li>
+</ul>
+</section>
+<section id="communication">
+<h3>커뮤니케이션 (Communication)<a class="headerlink" href="#communication" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-6.jpeg"><img alt="../_images/image-3-3-6.jpeg" class="align-center" src="../_images/image-3-3-6.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 다른 에이전트나 인간과의 정보 교환 및 상호작용 능력.</p></li>
+<li><p><strong>예시</strong>: 음성 인식 비서가 사용자의 명령을 받아 실행.</p></li>
+<li><p><strong>중요성</strong>: 협업, 정보 공유, 사용자와의 상호작용을 가능하게 함.</p></li>
+<li><p><strong>기술적 기반</strong>: 자연어 처리, 음성 인식 기술.</p></li>
+<li><p><strong>응용 분야</strong>: 인터랙티브 인공지능, 팀워크 지원 시스템 등.</p></li>
+</ul>
+</section>
+<section id="goal-oriented">
+<h3>목표 지향성 (Goal-oriented)<a class="headerlink" href="#goal-oriented" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-7.jpeg"><img alt="../_images/image-3-3-7.jpeg" class="align-center" src="../_images/image-3-3-7.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 명확한 목표를 가지고 그 목표를 달성하기 위해 설계된 에이전트.</p></li>
+<li><p><strong>예시</strong>: 온라인 고객 지원 에이전트가 문제 해결을 목표로 활동.</p></li>
+<li><p><strong>중요성</strong>: 에이전트의 작업과 활동에 방향성과 목적을 제공함.</p></li>
+<li><p><strong>기술적 기반</strong>: 목표 설정 및 달성을 위한 알고리즘과 전략.</p></li>
+</ul>
+</section>
 </section>
 <section id="id9">
 <h2>AI 에이전트의 분류<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
@@ -679,7 +758,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">계획 및 반응</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autonomy">자율성 (Autonomy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perception">인식 (Perception)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivity">반응성 (Reactivity)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reasoning-and-decision-making">추론 및 의사결정 (Reasoning and Decision-making)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning">학습 (Learning)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">커뮤니케이션 (Communication)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-oriented">목표 지향성 (Goal-oriented)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">AI 에이전트의 분류</a></li>
 </ul>
   </nav></div>
