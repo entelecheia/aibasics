@@ -26,19 +26,19 @@
 
 #### 정밀도 (Precision)
 
-- 수학적 정의: \( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} \)
+- 수학적 정의: $( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} )$
 - 계산 방법: 모델이 양성으로 예측한 항목 중 실제로 양성인 항목의 비율 계산
 - 예시: 100개의 추천 중 30개가 사용자가 선호하는 항목일 경우, 정밀도는 30/100 = 0.3
 
 #### 재현율 (Recall)
 
-- 수학적 정의: \( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} \)
+- 수학적 정의: $( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} )$
 - 계산 방법: 실제 양성인 항목 중 모델이 양성으로 정확히 예측한 항목의 비율 계산
 - 예시: 사용자가 선호하는 50개의 항목 중 모델이 30개를 맞춘 경우, 재현율은 30/50 = 0.6
 
 #### F-점수 (F-Score)
 
-- 수학적 정의: \( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \)
+- 수학적 정의: $( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} )$
 - 계산 방법: 정밀도와 재현율의 조화 평균 계산
 - 예시: 위의 정밀도(0.3)와 재현율(0.6)을 사용하여 F-점수 계산 시, F-점수는 2 × (0.3 × 0.6) / (0.3 + 0.6) = 0.4
 
@@ -57,13 +57,13 @@
 
 #### RMSE (Root Mean Square Error)
 
-- 수학적 정의: \( \text{RMSE} = \sqrt{\frac{1}{n}\sum\_{i=1}^{n}(\text{예측값}\_i - \text{실제값}\_i)^2} \)
+- 수학적 정의: $( \text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(\text{예측값}_i - \text{실제값}_i)^2} )$
 - 계산 방법: 예측값과 실제값의 차이를 제곱한 후 평균을 내고, 그 값의 제곱근을 취함
 - 예시: 5개의 평점 예측에서 각각의 오차가 [2, 1, 3, 2, 1]일 경우, RMSE는 √[(2² + 1² + 3² + 2² + 1²)/5] = 1.897
 
 #### MAE (Mean Absolute Error)
 
-- 수학적 정의: \( \text{MAE} = \frac{1}{n}\sum\_{i=1}^{n}|\text{예측값}\_i - \text{실제값}\_i| \)
+- 수학적 정의: $( \text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|\text{예측값}_i - \text{실제값}_i| )$
 - 계산 방법: 예측값과 실제값의 차이의 절대값을 평균냄
 
 ### 순위 관련 지표: NDCG, MAP

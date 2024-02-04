@@ -544,7 +544,7 @@ document.write(`
 <section id="precision">
 <h4>정밀도 (Precision)<a class="headerlink" href="#precision" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>수학적 정의: ( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} )</p></li>
+<li><p>수학적 정의: <span class="math notranslate nohighlight">\(( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} )\)</span></p></li>
 <li><p>계산 방법: 모델이 양성으로 예측한 항목 중 실제로 양성인 항목의 비율 계산</p></li>
 <li><p>예시: 100개의 추천 중 30개가 사용자가 선호하는 항목일 경우, 정밀도는 30/100 = 0.3</p></li>
 </ul>
@@ -552,7 +552,7 @@ document.write(`
 <section id="recall">
 <h4>재현율 (Recall)<a class="headerlink" href="#recall" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>수학적 정의: ( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} )</p></li>
+<li><p>수학적 정의: <span class="math notranslate nohighlight">\(( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} )\)</span></p></li>
 <li><p>계산 방법: 실제 양성인 항목 중 모델이 양성으로 정확히 예측한 항목의 비율 계산</p></li>
 <li><p>예시: 사용자가 선호하는 50개의 항목 중 모델이 30개를 맞춘 경우, 재현율은 30/50 = 0.6</p></li>
 </ul>
@@ -560,7 +560,7 @@ document.write(`
 <section id="f-f-score">
 <h4>F-점수 (F-Score)<a class="headerlink" href="#f-f-score" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>수학적 정의: ( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} )</p></li>
+<li><p>수학적 정의: <span class="math notranslate nohighlight">\(( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} )\)</span></p></li>
 <li><p>계산 방법: 정밀도와 재현율의 조화 평균 계산</p></li>
 <li><p>예시: 위의 정밀도(0.3)와 재현율(0.6)을 사용하여 F-점수 계산 시, F-점수는 2 × (0.3 × 0.6) / (0.3 + 0.6) = 0.4</p></li>
 <li><p>예시: 위의 예시와 동일하게 [2, 1, 3, 2, 1]의 오차를 가진 경우, MAE는 (2 + 1 + 3 + 2 + 1) / 5 = 1.8</p></li>
@@ -578,7 +578,7 @@ document.write(`
 <section id="rmse-root-mean-square-error">
 <h4>RMSE (Root Mean Square Error)<a class="headerlink" href="#rmse-root-mean-square-error" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>수학적 정의: ( \text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(\text{예측값}_i - \text{실제값}_i)^2} )</p></li>
+<li><p>수학적 정의: <span class="math notranslate nohighlight">\(( \text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(\text{예측값}_i - \text{실제값}_i)^2} )\)</span></p></li>
 <li><p>계산 방법: 예측값과 실제값의 차이를 제곱한 후 평균을 내고, 그 값의 제곱근을 취함</p></li>
 <li><p>예시: 5개의 평점 예측에서 각각의 오차가 [2, 1, 3, 2, 1]일 경우, RMSE는 √[(2² + 1² + 3² + 2² + 1²)/5] = 1.897</p></li>
 </ul>
@@ -586,7 +586,7 @@ document.write(`
 <section id="mae-mean-absolute-error">
 <h4>MAE (Mean Absolute Error)<a class="headerlink" href="#mae-mean-absolute-error" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>수학적 정의: ( \text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|\text{예측값}_i - \text{실제값}_i| )</p></li>
+<li><p>수학적 정의: <span class="math notranslate nohighlight">\(( \text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|\text{예측값}_i - \text{실제값}_i| )\)</span></p></li>
 <li><p>계산 방법: 예측값과 실제값의 차이의 절대값을 평균냄</p></li>
 </ul>
 </section>
