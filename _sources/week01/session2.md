@@ -5,7 +5,7 @@
 ### **AI 기본 개념 재고찰**
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -18,7 +18,7 @@
 ### **AI 유형 이해의 중요성**
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -30,7 +30,7 @@
 ### **핵심 특징과 차이점**
 
 ```{image} figs/image-2-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -40,7 +40,7 @@
 ### **AI 발전 전망**
 
 ```{image} figs/image-2-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -52,7 +52,7 @@
 ### **인공 좁은 지능 (Artificial Narrow AI)**
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -65,7 +65,7 @@
 ### **인공 일반 지능 (Artificial General Intelligence, AGI)**
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -77,7 +77,7 @@
 ### **인공 초지능 (Artificial Superintelligence)**
 
 ```{image} figs/image-2-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -88,7 +88,7 @@
 ### **현재 연구와 한계**
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -99,7 +99,7 @@
 ### **윤리적 고려사항**
 
 ```{image} figs/image-2-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -112,7 +112,7 @@
 ### **반응형 기계 (Reactive Machines)**
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -125,7 +125,7 @@
 ### **제한된 기억력을 가진 AI (Limited Memory AI)**
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -137,7 +137,7 @@
 ### **마음이론 AI (Theory of Mind AI)**
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -149,7 +149,7 @@
 ### **자아인식 AI (Self-Aware AI)**
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -161,7 +161,7 @@
 ### **미래의 연구 및 전망**
 
 ```{image} figs/image-2-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -176,7 +176,7 @@
 ### **컴퓨터 비전**
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -189,7 +189,7 @@
 ### **로봇공학**
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -202,7 +202,7 @@
 ### **전문가 시스템**
 
 ```{image} figs/image-2-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -215,7 +215,7 @@
 ### **산업에 미치는 영향**
 
 ```{image} figs/image-2-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -230,7 +230,7 @@
 ### 인간과 인공지능의 문제 해결 비교
 
 ```{image} figs/image-3-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -261,7 +261,7 @@
 ### AI 시대의 문제 해결 중요성
 
 ```{image} figs/image-3-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -282,7 +282,7 @@
 ### AI 문제 해결을 위한 특정 사고방식의 필요성
 
 ```{image} figs/image-3-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -308,7 +308,7 @@
 ### AI 문제 해결 기법
 
 ```{image} figs/image-3-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -335,7 +335,7 @@
 ### 문제 해결에서의 AI의 미래
 
 ```{image} figs/image-3-1-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -361,7 +361,7 @@
 ## 요약
 
 ```{image} figs/image-2-wrapup.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

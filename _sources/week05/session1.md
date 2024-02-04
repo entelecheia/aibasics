@@ -3,7 +3,7 @@
 ## 머신러닝의 정의
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -40,7 +40,7 @@
 ## 머신러닝의 역사적 배경
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -84,7 +84,7 @@
 ## 머신러닝의 학습 개념
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -111,7 +111,7 @@
 ## 머신러닝
 
 ```{image} figs/image-1-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -151,7 +151,7 @@
 ## 머신러닝과 인공지능과의 관계
 
 ```{image} figs/image-1-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -195,7 +195,7 @@
 ## 머신러닝 과정에서 고려 사항들
 
 ```{image} figs/image-1-1-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -242,7 +242,7 @@
 ## 머신러닝의 활용 분야
 
 ```{image} figs/image-1-1-7.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

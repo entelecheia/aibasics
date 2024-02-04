@@ -5,7 +5,7 @@
 ### 서론
 
 ```{image} figs/image-1-1-1.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -45,7 +45,7 @@
 ### 규칙 기반 시스템 - 1960년대 ~ 1970년대
 
 ```{image} figs/image-1-1-4.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -59,7 +59,7 @@
 ### 기계 학습 패러다임 - 1980년대 이후
 
 ```{image} figs/image-1-1-5.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -73,7 +73,7 @@
 ### 딥 러닝과 그 이후 - 2010년대 이후
 
 ```{image} figs/image-1-1-6.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -99,7 +99,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ```{image} figs/image-1-2-1.png
 :alt: A visual comparing a human brain and a computer/AI system.
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -114,7 +114,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ```{image} figs/image-1-2-2.png
 :alt: A chart comparing the biological basis of human intelligence to the silicon-based systems of AI.
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -129,7 +129,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ```{image} figs/image-1-2-3.png
 :alt: Two side-by-side infographics showing the learning process in humans and AI.
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -144,7 +144,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ```{image} figs/image-1-2-4.png
 :alt: A Venn diagram highlighting the cognitive abilities unique to humans, unique to AI, and those that overlap.
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -159,7 +159,7 @@ AI는 초기 규칙 기반 시스템의 초기 시기부터 현재 기계 학습
 
 ```{image} figs/image-1-2-5.png
 :alt: A flowchart depicting human decision-making vs. AI decision-making processes.
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -201,7 +201,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 인공지능의 핵심 기술 소개
 
 ```{image} figs/image-1-3-1.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -213,7 +213,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 머신 러닝 (ML)
 
 ```{image} figs/image-1-3-2.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -224,7 +224,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 신경망 및 딥러닝
 
 ```{image} figs/image-1-3-3.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -235,7 +235,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 자연어 처리 (NLP)
 
 ```{image} figs/image-1-3-4.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -246,7 +246,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 로보틱스
 
 ```{image} figs/image-1-3-5.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -257,7 +257,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 컴퓨터 비전
 
 ```{image} figs/image-1-3-6.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -268,7 +268,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 결론
 
 ```{image} figs/image-1-3-7.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -281,7 +281,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 인공지능 알고리즘 소개
 
 ```{image} figs/image-1-4-1.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -291,7 +291,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 규칙 기반 시스템
 
 ```{image} figs/image-1-4-2.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -302,7 +302,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 머신러닝 알고리즘
 
 ```{image} figs/image-1-4-3.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -312,7 +312,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 진화 알고리즘
 
 ```{image} figs/image-1-4-4.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -323,7 +323,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 퍼지 논리 시스템
 
 ```{image} figs/image-1-4-5.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -334,7 +334,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 하이브리드 시스템
 
 ```{image} figs/image-1-4-6.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -345,7 +345,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 결론
 
 ```{image} figs/image-1-4-7.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -358,7 +358,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 인공지능 산업 소개
 
 ```{image} figs/image-1-5-1.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -368,7 +368,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 인공지능의 현재 상태
 
 ```{image} figs/image-1-5-2.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -378,7 +378,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 돌파구와 혁신
 
 ```{image} figs/image-1-5-3.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -388,7 +388,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 도전과제 및 우려사항
 
 ```{image} figs/image-1-5-4.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -400,7 +400,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 인공지능의 미래
 
 ```{image} figs/image-1-5-5.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -410,7 +410,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 미래를 위한 준비
 
 ```{image} figs/image-1-4-1.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -421,7 +421,7 @@ AI와 인간 지능 사이에는 구조적, 기능적, 윤리적 차이점이 �
 ### 결론
 
 ```{image} figs/image-1-5-7.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 

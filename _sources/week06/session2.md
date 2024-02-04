@@ -5,7 +5,7 @@
 ### 평가 지표의 중요성과 목적
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -16,7 +16,7 @@
 ### 정확도 지표: 정밀도, 재현율, F-점수
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -47,7 +47,7 @@
 ### 예측 정확도: RMSE, MAE
 
 ```{image} figs/image-2-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -69,7 +69,7 @@
 ### 순위 관련 지표: NDCG, MAP
 
 ```{image} figs/image-2-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -92,7 +92,7 @@
 ### 평가 지표의 선택 및 해석
 
 ```{image} figs/image-2-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -105,7 +105,7 @@
 ### 콜드 스타트 문제의 정의와 유형
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -115,7 +115,7 @@
 ### 새로운 사용자와 새로운 아이템 문제
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -129,7 +129,7 @@
 ### 콜드 스타트 해결 전략
 
 ```{image} figs/image-2-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -146,7 +146,7 @@
 ### 데이터 수집 및 활용 방법
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -160,7 +160,7 @@
 ### 실제 사례와 해결 사례 연구
 
 ```{image} figs/image-2-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -173,7 +173,7 @@
 ### 다양성과 정확도의 균형의 중요성
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -184,7 +184,7 @@
 ### 다양성을 측정하는 방법
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -194,7 +194,7 @@
 ### 사용자 만족도와 탐험
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -205,7 +205,7 @@
 ### 정확도와 다양성의 트레이드오프
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -215,7 +215,7 @@
 ### 개선 전략과 실제 적용 사례
 
 ```{image} figs/image-2-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -230,7 +230,7 @@
 ### 컨텍스트 인식 추천의 정의
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -243,7 +243,7 @@
 ### 컨텍스트의 종류와 활용 방법
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -256,7 +256,7 @@
 ### 알고리즘과 기술의 소개
 
 ```{image} figs/image-2-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -269,7 +269,7 @@
 ### 컨텍스트 인식 추천의 효과와 한계
 
 ```{image} figs/image-2-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -282,7 +282,7 @@
 ### 실생활에서의 응용 예
 
 ```{image} figs/image-2-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -297,7 +297,7 @@
 ### 인공지능과 머신러닝의 발전
 
 ```{image} figs/image-2-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -310,7 +310,7 @@
 ### 개인화와 사용자 경험
 
 ```{image} figs/image-2-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -323,7 +323,7 @@
 ### 윤리적 고려사항과 개인정보 보호
 
 ```{image} figs/image-2-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -336,7 +336,7 @@
 ### 새로운 기술과 혁신적 접근
 
 ```{image} figs/image-2-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -349,7 +349,7 @@
 ### 산업과 사회에서의 영향
 
 ```{image} figs/image-2-5-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

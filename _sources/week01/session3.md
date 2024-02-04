@@ -5,7 +5,7 @@
 ### 기본 개념과 원리의 적용
 
 ```{image} figs/image-3-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -40,7 +40,7 @@
 ### 유사한 유형의 문제에 동일한 방법 적용
 
 ```{image} figs/image-3-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -75,7 +75,7 @@
 ### 복잡한 문제의 단순화와 분해
 
 ```{image} figs/image-3-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -111,7 +111,7 @@
 ### 다양한 관점에서 문제 접근
 
 ```{image} figs/image-3-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -146,7 +146,7 @@
 ### AI에서의 창의적 사고의 중요성
 
 ```{image} figs/image-3-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -179,7 +179,7 @@
 ### 문제 해결에서 컴퓨터의 활용
 
 ```{image} figs/image-3-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -214,7 +214,7 @@
 ### 블록 다이어그램을 이용한 단계별 분석
 
 ```{image} figs/image-3-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -246,7 +246,7 @@
 ### 규칙기반 인공지능의 응용
 
 ```{image} figs/image-3-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -277,7 +277,7 @@
 ### 신경망 및 딥러닝 활용
 
 ```{image} figs/image-3-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -309,7 +309,7 @@
 ### 데이터 과학과 빅 데이터 응용
 
 ```{image} figs/image-3-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -342,7 +342,7 @@
 ### 규칙기반 AI에서의 논리적 추론
 
 ```{image} figs/image-3-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -374,7 +374,7 @@
 ### 논리 연산의 유형과 응용
 
 ```{image} figs/image-3-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -405,7 +405,7 @@
 ### AI에서의 추론 의미와 유형
 
 ```{image} figs/image-3-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -436,7 +436,7 @@
 ### 추론에 대한 다양한 접근 방식
 
 ```{image} figs/image-3-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -469,7 +469,7 @@
 ### 탐색 전략 평가
 
 ```{image} figs/image-3-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -499,7 +499,7 @@
 ### 무정보 탐색 전략의 유형
 
 ```{image} figs/image-3-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -529,7 +529,7 @@
 ### 너비 우선 탐색과 균일 비용 탐색
 
 ```{image} figs/image-3-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -559,7 +559,7 @@
 ### 깊이 우선 탐색과 깊이 제한 탐색
 
 ```{image} figs/image-3-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -589,7 +589,7 @@
 ### 반복적 심화와 휴리스틱 탐색
 
 ```{image} figs/image-3-5-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -622,7 +622,7 @@
 ### 알고리즘의 정의와 중요성
 
 ```{image} figs/image-3-6-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -652,7 +652,7 @@
 ### 일상 생활 속의 알고리즘
 
 ```{image} figs/image-3-6-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -683,7 +683,7 @@
 ### 인공지능에서의 휴리스틱 알고리즘
 
 ```{image} figs/image-3-6-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -714,7 +714,7 @@
 ### A\* 알고리즘과 그 응용
 
 ```{image} figs/image-3-6-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -740,7 +740,7 @@
 ### 인공지능 알고리즘: 8-Queens 문제
 
 ```{image} figs/image-3-6-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

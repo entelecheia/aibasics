@@ -5,7 +5,7 @@
 ### 일반 개념
 
 ```{image} figs/image-3-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -18,7 +18,7 @@
 ### 언어 모델이 필요한 이유
 
 ```{image} figs/image-3-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -33,7 +33,7 @@
 ### 일반 개념
 
 ```{image} figs/image-3-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -58,7 +58,7 @@
 ### N-gram과 확률 추정
 
 ```{image} figs/image-3-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -89,7 +89,7 @@
 ### 언어 모델로부터 문장 샘플링
 
 ```{image} figs/image-3-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -102,7 +102,7 @@
 ### 문맥화 단어 임베딩
 
 ```{image} figs/image-3-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -119,7 +119,7 @@
 ### 분류
 
 ```{image} figs/image-3-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -146,7 +146,7 @@
 ### Transformer 아키텍처의 적용
 
 ```{image} figs/image-3-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -160,7 +160,7 @@
 ### 정의 및 특징
 
 ```{image} figs/image-3-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -182,7 +182,7 @@
 ### LLMs의 능력
 
 ```{image} figs/image-3-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -195,7 +195,7 @@
 ### 방법론
 
 ```{image} figs/image-3-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -208,7 +208,7 @@
 ### 응용 분야
 
 ```{image} figs/image-3-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -221,7 +221,7 @@
 ### 대규모 언어 모델의 이슈
 
 ```{image} figs/image-3-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -270,7 +270,7 @@
 ### 대규모 언어 모델의 진화
 
 ```{image} figs/image-3-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -295,7 +295,7 @@
 ### 대규모 언어 모델의 아키텍처 진화
 
 ```{image} figs/image-3-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -326,7 +326,7 @@
 ### 대규모 언어 모델 활용 방법
 
 ```{image} figs/image-3-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -345,7 +345,7 @@
 ### 대규모 언어 모델의 신흥 능력
 
 ```{image} figs/image-3-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

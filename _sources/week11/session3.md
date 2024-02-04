@@ -5,7 +5,7 @@
 ### AI 에이전트의 정의
 
 ```{image} figs/image-3-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -23,7 +23,7 @@
 ### 생성적 에이전트
 
 ```{image} figs/image-3-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -45,7 +45,7 @@
 ### 메모리 및 검색
 
 ```{image} figs/image-3-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -60,7 +60,7 @@
 ### 반영
 
 ```{image} figs/image-3-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -75,7 +75,7 @@
 ### 계획 및 반응
 
 ```{image} figs/image-3-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -91,7 +91,7 @@
 ### 자율성 (Autonomy)
 
 ```{image} figs/image-3-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -104,7 +104,7 @@
 ### 인식 (Perception)
 
 ```{image} figs/image-3-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -117,7 +117,7 @@
 ### 반응성 (Reactivity)
 
 ```{image} figs/image-3-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -130,7 +130,7 @@
 ### 추론 및 의사결정 (Reasoning and Decision-making)
 
 ```{image} figs/image-3-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -143,7 +143,7 @@
 ### 학습 (Learning)
 
 ```{image} figs/image-3-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -156,7 +156,7 @@
 ### 커뮤니케이션 (Communication)
 
 ```{image} figs/image-3-3-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -169,7 +169,7 @@
 ### 목표 지향성 (Goal-oriented)
 
 ```{image} figs/image-3-3-7.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -183,7 +183,7 @@
 ### 환경 (Environment)
 
 ```{image} figs/image-3-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -196,7 +196,7 @@
 ### 센서 (Sensors)
 
 ```{image} figs/image-3-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -209,7 +209,7 @@
 ### 액추에이터 (Actuators)
 
 ```{image} figs/image-3-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -222,7 +222,7 @@
 ### 의사결정 메커니즘 (Decision-making Mechanism)
 
 ```{image} figs/image-3-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -235,7 +235,7 @@
 ### 학습 시스템 (Learning System)
 
 ```{image} figs/image-3-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -250,7 +250,7 @@
 ### 단순 반사 에이전트(Simple Reflex Agent)
 
 ```{image} figs/image-3-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -270,7 +270,7 @@
 ### 모델 기반 반사 에이전트(Model-based Reflex Agent)
 
 ```{image} figs/image-3-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -289,7 +289,7 @@
 ### 목표 기반 에이전트(Goal-based Agents)
 
 ```{image} figs/image-3-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -308,7 +308,7 @@
 ### 유틸리티 기반 에이전트(Utility-based Agents)
 
 ```{image} figs/image-3-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -327,7 +327,7 @@
 ### 학습 에이전트(Learning Agents)
 
 ```{image} figs/image-3-5-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -346,7 +346,7 @@
 ### 계층적 에이전트(Hierarchical Agents)
 
 ```{image} figs/image-3-5-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -367,7 +367,7 @@
 ### 효율성 증가
 
 ```{image} figs/image-3-6-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -380,7 +380,7 @@
 ### 의사결정 개선
 
 ```{image} figs/image-3-6-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -393,7 +393,7 @@
 ### 고객 경험 개선
 
 ```{image} figs/image-3-6-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -406,7 +406,7 @@
 ### 비용 절감
 
 ```{image} figs/image-3-6-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -421,7 +421,7 @@
 ### 데이터 편향
 
 ```{image} figs/image-3-7-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -434,7 +434,7 @@
 ### 책임의 부재
 
 ```{image} figs/image-3-7-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -447,7 +447,7 @@
 ### 투명성 부족
 
 ```{image} figs/image-3-7-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -459,7 +459,7 @@
 ### 윤리적 고려사항
 
 ```{image} figs/image-3-7-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -472,7 +472,7 @@
 ### 보안 위험
 
 ```{image} figs/image-3-7-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -484,7 +484,7 @@
 ### 적응성 부족
 
 ```{image} figs/image-3-7-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
