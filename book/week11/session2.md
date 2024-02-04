@@ -330,6 +330,11 @@
 
 ### Zero-shot과 Few-shot Prompting
 
+```{image} figs/image-2-8-1.jpeg
+:width: 90%
+:align: center
+```
+
 - **Zero-shot Prompting**
 
   - **개념**: 모델이 사전에 본 적 없는 작업을 수행하는 기법.
@@ -347,6 +352,11 @@
 
 ### Chain of Thought (CoT) Prompting
 
+```{image} figs/image-2-8-2.jpeg
+:width: 90%
+:align: center
+```
+
 - **개념**: 모델이 복잡한 문제를 단계별로 해결하도록 유도하는 기법.
 - **적용 방법**: 문제의 각 단계를 명시적으로 모델에게 요청.
 - **장점**: 모델의 추론 과정이 명확해지고, 결과의 이해도가 향상됨.
@@ -355,6 +365,11 @@
 
 ### Least to Most Prompting
 
+```{image} figs/image-2-8-3.jpeg
+:width: 90%
+:align: center
+```
+
 - **개념**: 문제를 간단한 부분에서 시작하여 점차 복잡한 부분으로 이동하는 기법.
 - **적용 방법**: 문제를 소규모 단위로 분해하고 점진적으로 해결.
 - **장점**: 점진적 학습을 통한 이해도 향상.
@@ -362,6 +377,11 @@
 - **사용 예**: 과학 문제 해석, 프로그래밍 작업 분석 등.
 
 ### Generated Knowledge Prompting
+
+```{image} figs/image-2-8-4.jpeg
+:width: 90%
+:align: center
+```
 
 - **개념**: 모델이 생성한 정보를 추가적인 학습이나 문제 해결에 활용하는 기법.
 - **적용 방법**: 초기 생성물을 다른 질문에 답변하거나 새로운 문제 해결에 사용.
