@@ -555,17 +555,17 @@ document.write(`
 <h3>일반 개념<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-12.jpeg"><img alt="../_images/image-3-2-12.jpeg" class="align-center" src="../_images/image-3-2-12.jpeg" style="width: 70%;" /></a>
 <ul class="simple">
-<li><p><strong>N-gram 언어 모델 정의</strong>: N-gram 언어 모델은 시퀀스에서 다음 단어를 (n-1)개의 이전 단어에 기반하여 예측하는 접근법입니다.</p></li>
+<li><p><strong>N-gram 언어 모델 정의</strong>: N-gram 언어 모델은 시퀀스에서 다음 단어를 (n-1)개의 이전 단어에 기반하여 예측하는 접근법.</p></li>
 <li><p><strong>N-gram 유형</strong>:</p>
 <ul>
-<li><p><strong>Unigram (단일어)</strong>: 단어 하나만 고려하며, 맥락을 무시합니다 (n=1).</p></li>
-<li><p><strong>Bigram (이중어)</strong>: 두 단어 시퀀스를 고려합니다 (n=2).</p></li>
-<li><p><strong>Trigram (삼중어)</strong>: 세 단어 시퀀스를 고려합니다 (n=3).</p></li>
-<li><p><strong>고차 N-gram</strong>: 더 긴 단어 시퀀스를 고려합니다 (n&gt;3).</p></li>
+<li><p><strong>Unigram (단일어)</strong>: 단어 하나만 고려하며, 맥락을 무시 (n=1).</p></li>
+<li><p><strong>Bigram (이중어)</strong>: 두 단어 시퀀스를 고려 (n=2).</p></li>
+<li><p><strong>Trigram (삼중어)</strong>: 세 단어 시퀀스를 고려 (n=3).</p></li>
+<li><p><strong>고차 N-gram</strong>: 더 긴 단어 시퀀스를 고려 (n&gt;3).</p></li>
 </ul>
 </li>
-<li><p><strong>마르코프 가정</strong>: 단어의 확률은 오직 이전의 (n-1)개 단어에만 의존합니다.</p></li>
-<li><p><strong>확률 추정</strong>: 큰 말뭉치에서 n-gram의 출현 횟수를 세고 정규화하여 확률을 추정합니다.</p></li>
+<li><p><strong>마르코프 가정</strong>: 단어의 확률은 오직 이전의 (n-1)개 단어에만 의존.</p></li>
+<li><p><strong>확률 추정</strong>: 큰 말뭉치에서 n-gram의 출현 횟수를 세고 정규화하여 확률을 추정.</p></li>
 </ul>
 </section>
 <section id="id6">
@@ -573,14 +573,14 @@ document.write(`
 <ul class="simple">
 <li><p>장점</p>
 <ul>
-<li><p>구현이 간단하고 효율적입니다.</p></li>
-<li><p>계산 및 메모리 사용 측면에서 효율적입니다.</p></li>
+<li><p>구현이 간단하고 효율적.</p></li>
+<li><p>계산 및 메모리 사용 측면에서 효율적.</p></li>
 </ul>
 </li>
 <li><p>한계</p>
 <ul>
-<li><p>단어 간 장기 의존성을 포착하지 못합니다.</p></li>
-<li><p>훈련 말뭉치에 나타나지 않은 n-gram에 대해 데이터 희소성 문제에 민감합니다.</p></li>
+<li><p>단어 간 장기 의존성을 포착하지 못함.</p></li>
+<li><p>훈련 말뭉치에 나타나지 않은 n-gram에 대해 데이터 희소성 문제에 민감함.</p></li>
 </ul>
 </li>
 </ul>
@@ -589,8 +589,8 @@ document.write(`
 <h3>N-gram과 확률 추정<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-32.jpeg"><img alt="../_images/image-3-2-32.jpeg" class="align-center" src="../_images/image-3-2-32.jpeg" style="width: 70%;" /></a>
 <ul>
-<li><p><strong>확률 추정</strong>: 맥락 h가 주어졌을 때 단어 w의 확률 P(w|h)을 추정할 수 있습니다.</p></li>
-<li><p><strong>확률 추정 방법</strong>: 큰 말뭉치에서 맥락 뒤에 타겟 단어가 나타나는 빈도를 세고 맥락의 총 빈도로 나누어 확률을 추정합니다.</p>
+<li><p><strong>확률 추정</strong>: 맥락 h가 주어졌을 때 단어 w의 확률 P(w|h)을 추정할 수 있음.</p></li>
+<li><p><strong>확률 추정 방법</strong>: 큰 말뭉치에서 맥락 뒤에 타겟 단어가 나타나는 빈도를 세고 맥락의 총 빈도로 나누어 확률을 추정.</p>
 <div class="math notranslate nohighlight">
 \[
   P(\text{pizza}|\text{I like to eat}) = \frac{C(\text{I like to eat pizza})}{C(\text{I like to eat})}
@@ -604,8 +604,8 @@ document.write(`
 <section id="bigram">
 <h4>Bigram 모델<a class="headerlink" href="#bigram" title="Link to this heading">#</a></h4>
 <ul>
-<li><p>전체 맥락을 고려하는 대신 이전 단어만을 고려하여 확률을 추정합니다.</p></li>
-<li><p>이러한 단순화는 확률을 더 신뢰할 수 있게 추정할 수 있게 하지만, 더 긴 맥락 의존성을 포착하지 못할 수 있습니다.</p>
+<li><p>전체 맥락을 고려하는 대신 이전 단어만을 고려하여 확률을 추정.</p></li>
+<li><p>이러한 단순화는 확률을 더 신뢰할 수 있게 추정할 수 있게 하지만, 더 긴 맥락 의존성을 포착하지 못할 수 있음.</p>
 <div class="math notranslate nohighlight">
 \[
   P(\text{pizza}|\text{I like to eat}) \approx P(\text{pizza}|\text{eat})
@@ -622,9 +622,9 @@ document.write(`
 <h3>언어 모델로부터 문장 샘플링<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-2-51.jpeg"><img alt="../_images/image-3-2-51.jpeg" class="align-center" src="../_images/image-3-2-51.jpeg" style="width: 70%;" /></a>
 <ul class="simple">
-<li><p><strong>문장 샘플링</strong>: 언어 모델로부터 정의된 확률에 따라 문장을 생성하는 방법입니다.</p></li>
-<li><p><strong>과정</strong>: 더 높은 확률을 가진 문장은 낮은 확률을 가진 문장보다 생성될 가능성이 더 높습니다.</p></li>
-<li><p><strong>예시</strong>: Unigram 언어 모델에서는 모델의 어휘에 있는 모든 단어의 확률 분포를 시각화할 수 있으며, Bigram 모델에서는 첫 단어가 <code class="docutils literal notranslate"><span class="pre">&lt;s&gt;</span></code>로 시작하는 랜덤 bigram을 생성합니다.</p></li>
+<li><p><strong>문장 샘플링</strong>: 언어 모델로부터 정의된 확률에 따라 문장을 생성하는 방법.</p></li>
+<li><p><strong>과정</strong>: 더 높은 확률을 가진 문장은 낮은 확률을 가진 문장보다 생성될 가능성이 더 높음.</p></li>
+<li><p><strong>예시</strong>: Unigram 언어 모델에서는 모델의 어휘에 있는 모든 단어의 확률 분포를 시각화할 수 있으며, Bigram 모델에서는 첫 단어가 <code class="docutils literal notranslate"><span class="pre">&lt;s&gt;</span></code>로 시작하는 랜덤 bigram을 생성.</p></li>
 </ul>
 </section>
 </section>
