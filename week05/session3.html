@@ -506,44 +506,41 @@ document.write(`
 <h3>목표와 개요<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-1.jpeg"><img alt="../_images/image-3-1-1.jpeg" class="align-center" src="../_images/image-3-1-1.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>머신러닝 모델 최적화는 모델의 예측 성능을 극대화하는 과정입니다.</p></li>
-<li><p>이 과정을 통해 데이터의 패턴을 더 잘 이해하고, 실제 세계의 복잡한 문제를 해결할 수 있습니다.</p></li>
+<li><p><strong>목표</strong>: 모델의 예측 성능 극대화</p></li>
+<li><p><strong>중요성</strong>: 데이터 패턴 이해 증진 및 실제 복잡한 문제 해결</p></li>
 </ul>
 </section>
 <section id="id4">
 <h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-21.jpeg"><img alt="../_images/image-3-1-21.jpeg" class="align-center" src="../_images/image-3-1-21.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>선형 회귀 모델은 가장 기본적인 머신러닝 모델 중 하나입니다.</p></li>
-<li><p>이 모델은 데이터의 관계를 y = ax + b 형태의 직선으로 나타냅니다.</p>
+<li><p><strong>정의</strong>: 데이터 관계를 직선(y = ax + b)으로 모델링</p>
 <ul>
-<li><p>여기서 y는 종속 변수, x는 독립 변수, a는 기울기, b는 y절편입니다.</p></li>
+<li><p><strong>y</strong>: 종속 변수</p></li>
+<li><p><strong>x</strong>: 독립 변수</p></li>
+<li><p><strong>a</strong>: 기울기</p></li>
+<li><p><strong>b</strong>: y절편</p></li>
 </ul>
 </li>
-<li><p>선형 회귀는 데이터 포인트들과 가장 잘 맞는 직선을 찾는 과정입니다.</p></li>
+<li><p><strong>목적</strong>: 데이터 포인트에 가장 잘 맞는 직선 찾기</p></li>
 </ul>
 </section>
 <section id="id5">
 <h3>최소 제곱법 소개<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-31.jpeg"><img alt="../_images/image-3-1-31.jpeg" class="align-center" src="../_images/image-3-1-31.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>최소 제곱법은 선형 회귀 모델에서 매개변수 a와 b를 찾는 표준 방법입니다.</p></li>
-<li><p>이 방법은 데이터 포인트와 선형 모델 간의 거리(오차)의 제곱을 최소화합니다.</p></li>
-<li><p>수학적으로는 오차의 제곱 합을 최소화하는 a와 b를 찾는 것을 의미합니다.</p></li>
+<li><p><strong>개념</strong>: 선형 회귀의 매개변수 a, b 찾는 방법</p></li>
+<li><p><strong>원리</strong>: 데이터 포인트와 선형 모델 간 거리(오차)의 제곱 최소화</p></li>
+<li><p><strong>수학적 접근</strong>: 오차 제곱 합 최소화를 통한 최적 매개변수 도출</p></li>
 </ul>
 </section>
 <section id="mse">
 <h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-1-41.jpeg"><img alt="../_images/image-3-1-41.jpeg" class="align-center" src="../_images/image-3-1-41.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>평균 제곱 오차(MSE)는 모델의 예측값과 실제값 간의 차이를 수치화하는 방법입니다.</p></li>
-<li><p>MSE = (1/n) Σ(actual - prediction)²</p>
-<ul>
-<li><p>여기서 n은 샘플의 수, actual은 실제값, prediction은 예측값입니다.</p></li>
-</ul>
-</li>
-<li><p>MSE가 작을수록 모델의 예측 성능이 좋다고 할 수 있습니다.</p></li>
-<li><p>MSE는 모델의 성능을 평가하고 비교하는 데 중요한 지표로 사용됩니다.</p></li>
+<li><p><strong>정의</strong>: 예측값과 실제값 간 차이의 수치화</p></li>
+<li><p><strong>계산식</strong>: MSE = (1/n) Σ(actual - prediction)²</p></li>
+<li><p><strong>중요성</strong>: 모델 성능 평가 및 비교의 핵심 지표</p></li>
 </ul>
 </section>
 </section>
@@ -573,13 +570,13 @@ document.write(`
 <li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong>:</p>
 <ul>
 <li><p>MSE = (1/n) Σ(actual - prediction)²</p></li>
-<li><p>여기서 Σ는 합계, n은 샘플 수, actual은 실제 값, prediction은 예측 값입니다.</p></li>
+<li><p>여기서 Σ는 합계, n은 샘플 수, actual은 실제 값, prediction은 예측값.</p></li>
 </ul>
 </li>
 <li><p><strong>역할</strong>:</p>
 <ul>
-<li><p>MSE는 회귀 문제에서 자주 사용되는 손실 함수입니다.</p></li>
-<li><p>모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 내, 오차의 크기를 나타냅니다.</p></li>
+<li><p>MSE는 회귀 문제에서 자주 사용되는 손실 함수.</p></li>
+<li><p>모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 낸 오차의 크기.</p></li>
 </ul>
 </li>
 </ul>
@@ -590,19 +587,19 @@ document.write(`
 <ul class="simple">
 <li><p><strong>오차 함수(Error Function)</strong>:</p>
 <ul>
-<li><p>개별 예측값과 실제값의 차이를 측정합니다.</p></li>
-<li><p>주로 손실 함수로 사용되며, 모델이 개별 데이터 포인트에서 얼마나 잘못 예측하는지를 나타냅니다.</p></li>
+<li><p>개별 예측값과 실제값의 차이를 측정.</p></li>
+<li><p>주로 손실 함수로 사용되며, 모델이 개별 데이터 포인트에서 얼마나 잘못 예측하는지를 나타냄.</p></li>
 </ul>
 </li>
 <li><p><strong>목적 함수(Objective Function)</strong>:</p>
 <ul>
-<li><p>전체 데이터셋을 기반으로 한 모델의 전반적인 성능을 측정합니다.</p></li>
-<li><p>비용 함수와 같은 의미로 사용되며, 모델의 성능 최적화를 위한 목표를 설정합니다.</p></li>
+<li><p>전체 데이터셋을 기반으로 한 모델의 전반적인 성능을 측정.</p></li>
+<li><p>비용 함수와 같은 의미로 사용되며, 모델의 성능 최적화를 위한 목표를 설정.</p></li>
 </ul>
 </li>
 <li><p><strong>차이점</strong>:</p>
 <ul>
-<li><p>오차 함수는 개별 데이터 포인트에 초점을 맞추고, 목적 함수는 전체 데이터셋에 대한 성능을 고려합니다.</p></li>
+<li><p>오차 함수는 개별 데이터 포인트에 초점을 맞추고, 목적 함수는 전체 데이터셋에 대한 성능을 고려.</p></li>
 </ul>
 </li>
 </ul>
@@ -616,14 +613,14 @@ document.write(`
 <ul class="simple">
 <li><p><strong>기본 개념</strong>:</p>
 <ul>
-<li><p>경사하강법은 비용 함수의 최소점을 찾기 위한 반복적인 최적화 기법입니다.</p></li>
-<li><p>기울기(gradient)를 사용하여 각 단계에서 비용 함수를 줄여나가는 방식입니다.</p></li>
+<li><p>경사하강법은 비용 함수의 최소점을 찾기 위한 반복적인 최적화 기법.</p></li>
+<li><p>기울기(gradient)를 사용하여 각 단계에서 비용 함수를 줄여나가는 방식.</p></li>
 </ul>
 </li>
 <li><p><strong>작동 원리</strong>:</p>
 <ul>
-<li><p>현재 위치에서 비용 함수의 기울기를 계산하고, 이를 통해 비용이 감소하는 방향으로 이동합니다.</p></li>
-<li><p>학습률(learning rate)은 이동 거리를 조절하는 파라미터로, 적절한 크기 설정이 중요합니다.</p></li>
+<li><p>현재 위치에서 비용 함수의 기울기를 계산하고, 이를 통해 비용이 감소하는 방향으로 이동.</p></li>
+<li><p>학습률(learning rate)은 이동 거리를 조절하는 파라미터로, 적절한 크기 설정이 중요.</p></li>
 </ul>
 </li>
 </ul>
@@ -634,20 +631,20 @@ document.write(`
 <ul class="simple">
 <li><p><strong>SGD (Stochastic Gradient Descent)</strong>:</p>
 <ul>
-<li><p>매 반복에서 하나의 훈련 샘플을 사용하여 기울기를 계산합니다.</p></li>
-<li><p>빠른 계산이 가능하지만, 비용 함수의 변동이 클 수 있습니다.</p></li>
+<li><p>매 반복에서 하나의 훈련 샘플을 사용하여 기울기를 계산.</p></li>
+<li><p>빠른 계산이 가능하지만, 비용 함수의 변동이 클 수 있고, 최적의 해를 찾기 어려움.</p></li>
 </ul>
 </li>
 <li><p><strong>Momentum</strong>:</p>
 <ul>
-<li><p>이전 단계의 기울기를 고려하여 관성의 개념을 도입합니다.</p></li>
-<li><p>이를 통해 더 안정적이고 빠르게 최소점에 도달할 수 있습니다.</p></li>
+<li><p>이전 단계의 기울기를 고려하여 관성의 개념을 도입.</p></li>
+<li><p>이를 통해 더 안정적이고 빠르게 최소점에 도달할 수 있음.</p></li>
 </ul>
 </li>
 <li><p><strong>AdaGrad, RMSprop, Adam</strong>:</p>
 <ul>
-<li><p>이 방법들은 학습률을 동적으로 조절하여 더 효율적인 최적화를 달성합니다.</p></li>
-<li><p>각각의 방법은 다른 방식으로 학습률을 조정합니다.</p></li>
+<li><p>이 방법들은 학습률을 동적으로 조절하여 더 효율적인 최적화를 달성.</p></li>
+<li><p>각각의 방법은 다른 방식으로 학습률을 조정.</p></li>
 </ul>
 </li>
 </ul>
@@ -658,13 +655,13 @@ document.write(`
 <ul class="simple">
 <li><p><strong>비용함수의 모양과 경로</strong>:</p>
 <ul>
-<li><p>비용함수의 모양은 고차원이지만, 일반적으로 2D 또는 3D로 시각화하여 경사하강법의 경로를 이해합니다.</p></li>
-<li><p>시각화는 비용함수의 기울기와 학습률이 경로에 어떤 영향을 미치는지 보여줍니다.</p></li>
+<li><p>비용함수의 모양은 고차원이지만, 일반적으로 2D 또는 3D로 시각화하여 경사하강법의 경로를 이해.</p></li>
+<li><p>시각화는 비용함수의 기울기와 학습률이 경로에 어떤 영향을 미치는지 보여줌.</p></li>
 </ul>
 </li>
 <li><p><strong>시각적 이해</strong>:</p>
 <ul>
-<li><p>경사하강법의 진행 과정을 그래픽으로 나타내어 비용 함수의 최소점에 도달하는 과정을 시각적으로 이해합니다.</p></li>
+<li><p>경사하강법의 진행 과정을 그래픽으로 나타내어 비용 함수의 최소점에 도달하는 과정을 시각적으로 이해.</p></li>
 </ul>
 </li>
 </ul>
@@ -696,13 +693,13 @@ document.write(`
 <ul class="simple">
 <li><p><strong>일반화 능력 향상</strong>:</p>
 <ul>
-<li><p>최적화 알고리즘은 모델이 학습 데이터뿐만 아니라 새로운 데이터에도 잘 작동하도록 도와줍니다.</p></li>
-<li><p>모델의 일반화 능력을 향상시켜 실제 세계의 다양한 데이터에 적용 가능하게 합니다.</p></li>
+<li><p>최적화 알고리즘은 모델이 학습 데이터뿐만 아니라 새로운 데이터에도 잘 작동하도록 도와줌.</p></li>
+<li><p>모델의 일반화 능력을 향상시켜 실제 세계의 다양한 데이터에 적용 가능하게 함.</p></li>
 </ul>
 </li>
 <li><p><strong>적절한 모델 복잡도</strong>:</p>
 <ul>
-<li><p>최적화를 통해 모델의 복잡도를 조절하고, 과대적합과 과소적합 사이의 균형을 맞춥니다.</p></li>
+<li><p>최적화를 통해 모델의 복잡도를 조절하고, 과대적합과 과소적합 사이의 균형을 맞춤.</p></li>
 </ul>
 </li>
 </ul>
@@ -714,19 +711,19 @@ document.write(`
 <li><p><strong>데이터 증강(Data Augmentation)</strong>:</p>
 <ul>
 <li><p>기존 데이터에 변형을 가해 데이터셋의 다양성을 증가시키는 방법.</p></li>
-<li><p>과대적합을 방지하고 모델의 일반화 능력을 향상시킵니다.</p></li>
+<li><p>과대적합을 방지하고 모델의 일반화 능력을 향상시킴.</p></li>
 </ul>
 </li>
 <li><p><strong>교차 검증(Cross-Validation)</strong>:</p>
 <ul>
 <li><p>학습 데이터를 여러 부분으로 나누고, 이들을 교차하여 검증하는 방법.</p></li>
-<li><p>모델의 성능을 보다 객관적으로 평가할 수 있습니다.</p></li>
+<li><p>모델의 성능을 보다 객관적으로 평가할 수 있음.</p></li>
 </ul>
 </li>
 <li><p><strong>정규화(Regularization)</strong>:</p>
 <ul>
 <li><p>모델의 가중치에 제약을 두어 복잡도를 감소시키는 기술.</p></li>
-<li><p>L1, L2 정규화 등이 있으며, 과대적합을 방지하는 데 효과적입니다.</p></li>
+<li><p>L1, L2 정규화 등이 있으며, 과대적합을 방지하는 데 효과적임.</p></li>
 </ul>
 </li>
 </ul>
@@ -740,8 +737,8 @@ document.write(`
 <ul class="simple">
 <li><p><strong>데이터의 중요성</strong>:</p>
 <ul>
-<li><p>머신러닝 모델의 성능은 사용하는 데이터의 양과 질에 크게 의존합니다.</p></li>
-<li><p>충분하고 다양한 데이터는 모델이 더 많은 패턴과 상황을 학습하게 합니다.</p></li>
+<li><p>머신러닝 모델의 성능은 사용하는 데이터의 양과 질에 크게 의존.</p></li>
+<li><p>충분하고 다양한 데이터는 모델이 더 많은 패턴과 상황을 학습하게 함.</p></li>
 </ul>
 </li>
 <li><p><strong>고품질 데이터의 특성</strong>:</p>
@@ -758,13 +755,13 @@ document.write(`
 <ul class="simple">
 <li><p><strong>모델 복잡도의 중요성</strong>:</p>
 <ul>
-<li><p>모델이 너무 복잡하면 과대적합의 위험이 있고, 너무 단순하면 과소적합이 발생할 수 있습니다.</p></li>
+<li><p>모델이 너무 복잡하면 과대적합의 위험이 있고, 너무 단순하면 과소적합이 발생할 수 있음.</p></li>
 </ul>
 </li>
 <li><p><strong>PCA (주성분 분석)</strong>:</p>
 <ul>
 <li><p>고차원 데이터의 차원을 축소하여 모델의 복잡도를 줄이는 기법.</p></li>
-<li><p>중요한 정보를 유지하면서 데이터의 특성 수를 감소시킵니다.</p></li>
+<li><p>중요한 정보를 유지하면서 데이터의 특성 수를 감소시킴.</p></li>
 </ul>
 </li>
 </ul>
@@ -776,18 +773,18 @@ document.write(`
 <li><p><strong>일반화(Generalization)</strong>:</p>
 <ul>
 <li><p>모델이 새로운 데이터에 대해 잘 예측하는 능력.</p></li>
-<li><p>학습 데이터뿐만 아니라 테스트 데이터에서도 좋은 성능을 나타냄을 의미합니다.</p></li>
+<li><p>학습 데이터뿐만 아니라 테스트 데이터에서도 좋은 성능을 나타냄을 의미.</p></li>
 </ul>
 </li>
 <li><p><strong>정규화(Regularization)</strong>:</p>
 <ul>
-<li><p>L1, L2 정규화와 같은 기법을 사용하여 모델의 과대적합을 방지합니다.</p></li>
-<li><p>모델의 가중치에 제약을 추가하여 복잡도를 줄입니다.</p></li>
+<li><p>L1, L2 정규화와 같은 기법을 사용하여 모델의 과대적합을 방지.</p></li>
+<li><p>모델의 가중치에 제약을 추가하여 복잡도를 줄임.</p></li>
 </ul>
 </li>
 <li><p><strong>가중치 규제(Weight Regularization)</strong>:</p>
 <ul>
-<li><p>모델의 가중치가 너무 커지지 않도록 제한하여 과대적합을 방지합니다.</p></li>
+<li><p>모델의 가중치가 너무 커지지 않도록 제한하여 과대적합을 방지.</p></li>
 </ul>
 </li>
 </ul>
