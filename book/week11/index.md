@@ -1,30 +1,25 @@
-# Week 11: 생성 AI
+# Week 11: 생성형 AI
 
-Generative AI
+```{image} figs/cover.jpeg
+:width: 100%
+:align: center
+```
 
-Lecture Session 1:
+제11주차 강의에서는 생성형 AI, 그 가운데서도 프롬프트 엔지니어링과 AI 에이전트에 초점을 맞춥니다.
 
-1. 생성 AI 개요 (Overview of Generative AI)
-2. 생성적 적대 신경망 (Generative Adversarial Networks, GANs)
-3. 변분 오토인코더 (Variational Autoencoders, VAEs)
-4. 조건부 생성적 적대 신경망 (Conditional Generative Adversarial Networks, CGANs)
-5. 생성 AI의 응용 분야 (Applications of Generative AI)
+**생성형 AI 입문**
 
-Lecture Session 2:
+생성형 AI는 기계 학습의 한 분야로, 데이터로부터 새로운 콘텐츠를 생성하는 기술을 말합니다. 이러한 AI는 이미지, 텍스트, 음악 등 다양한 형태의 콘텐츠를 만들어 내며, 창의적인 작업에 혁신을 가져오고 있습니다. 이번 주차에서는 생성형 AI의 기본 원리와 구현 방법, 그리고 이를 가능하게 하는 다양한 알고리즘에 대해 탐구합니다.
 
-1. 이미지 생성 (Image Generation)
-2. 이미지 변환 (Image Translation)
-3. 텍스트 생성 (Text Generation)
-4. 음성 및 오디오 생성 (Voice and Audio Generation)
-5. 생성 AI의 도전 과제 및 전망 (Challenges and Future Prospects of Generative AI)
+**프롬프트 엔지니어링**
 
-Lab Session:
+프롬프트 엔지니어링은 생성형 AI 시스템에 입력되는 프롬프트를 설계하고 최적화하는 과정입니다. 이는 AI가 원하는 출력을 생성하도록 유도하는 중요한 역할을 합니다. 프롬프트 엔지니어링을 통해, 더 정교하고 목적에 부합하는 콘텐츠를 생성하는 방법을 배웁니다. 또한, 다양한 프롬프트 기법을 적용하여 AI의 반응을 조정하고, 생성 결과의 품질을 향상시키는 방법에 대해 학습합니다.
 
-1. 기본 GAN 모델 실습 (Hands-on Basic GAN Models)
-2. VAE 모델 실습 (Hands-on VAE Models)
-3. CGAN 및 고급 생성 AI 기법 실습 (Hands-on CGAN and Advanced Generative AI Techniques)
-4. 이미지 및 텍스트 생성 실습 (Hands-on Image and Text Generation)
-5. 생성 AI 모델 최적화 및 평가 (Generative AI Model Optimization and Evaluation)
+**AI 에이전트**
+
+AI 에이전트는 자율적으로 환경을 인식하고, 그 환경에 영향을 미치며, 특정 목표를 달성하기 위해 설계된 시스템입니다. 생성형 AI와 결합될 때, AI 에이전트는 더욱 복잡하고 다양한 작업을 수행할 수 있게 됩니다. 이번 주차에서는 AI 에이전트의 기본 구조와 유형, 그리고 생성형 AI 시스템 내에서의 역할에 대해 심도 깊게 다룹니다.
+
+생성형 AI의 세계로의 여정을 시작하며, 창의력과 기술의 결합이 어떻게 새로운 가능성을 열어가고 있는지 탐색합니다. AI의 미래와 인간의 창의성이 어떻게 상호작용할지에 대한 흥미로운 통찰을 제공할 것입니다.
 
 ```{tableofcontents}
 
