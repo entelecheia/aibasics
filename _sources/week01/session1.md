@@ -5,7 +5,7 @@
 ### **인공지능의 정의**
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -18,7 +18,7 @@
 ### **역사적 관점**
 
 ```{image} figs/image-1-1-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -31,7 +31,7 @@
 ### **현대에서의 AI**
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -44,7 +44,7 @@
 ### **AI의 광범위한 범위**
 
 ```{image} figs/image-1-1-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -57,7 +57,7 @@
 ### **AI의 중요성**
 
 ```{image} figs/image-1-1-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -72,7 +72,7 @@
 ### **1950년대 - 초기 시대**
 
 ```{image} figs/image-1-2-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -85,7 +85,7 @@
 ### **튜링 테스트**
 
 ```{image} figs/image-1-2-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -98,7 +98,7 @@
 ### **최초의 AI 프로그램들**
 
 ```{image} figs/image-1-2-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -111,7 +111,7 @@
 ### **초기 도전 과제들**
 
 ```{image} figs/image-1-2-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -124,7 +124,7 @@
 ### **최초 회의 및 컨퍼런스**
 
 ```{image} figs/image-1-2-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -139,7 +139,7 @@
 ### **1960-1970년대 - 성장기**
 
 ```{image} figs/image-1-3-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -152,7 +152,7 @@
 ### **전문가 시스템**
 
 ```{image} figs/image-1-3-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -165,7 +165,7 @@
 ### **AI 윈터**
 
 ```{image} figs/image-1-3-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -178,7 +178,7 @@
 ### **도전 과제들**
 
 ```{image} figs/image-1-3-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -191,7 +191,7 @@
 ### **재조명된 관심**
 
 ```{image} figs/image-1-3-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -206,7 +206,7 @@
 ### **기계 학습의 부상**
 
 ```{image} figs/image-1-4-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -219,7 +219,7 @@
 ### **딥러닝 혁신**
 
 ```{image} figs/image-1-4-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -232,7 +232,7 @@
 ### **빅데이터의 역할**
 
 ```{image} figs/image-1-4-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -245,7 +245,7 @@
 ### **현대 AI 응용 분야**
 
 ```{image} figs/image-1-4-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -258,7 +258,7 @@
 ### **클라우드 컴퓨팅의 부상**
 
 ```{image} figs/image-1-4-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -273,7 +273,7 @@
 ### **미래 방향**
 
 ```{image} figs/image-1-5-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -286,7 +286,7 @@
 ### **윤리적 고려사항**
 
 ```{image} figs/image-1-5-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -299,7 +299,7 @@
 ### **사회적 영향**
 
 ```{image} figs/image-1-5-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -312,7 +312,7 @@
 ### **학습자 참여**
 
 ```{image} figs/image-1-5-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -325,7 +325,7 @@
 ### **마무리 생각**
 
 ```{image} figs/image-1-5-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -338,7 +338,7 @@
 ## 요약
 
 ```{image} figs/image-1-wrapup.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 

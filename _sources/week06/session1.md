@@ -5,7 +5,7 @@
 ### 추천 시스템의 정의 및 필요성
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -15,7 +15,7 @@
 ### 추천 시스템의 역할과 중요성
 
 ```{image} figs/image-1-1-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -26,7 +26,7 @@
 ### 다양한 추천 시스템의 예시
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -37,7 +37,7 @@
 ### 사용자 경험 향상을 위한 추천 시스템의 역할
 
 ```{image} figs/image-1-1-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -48,7 +48,7 @@
 ### 추천 시스템의 기본 원리
 
 ```{image} figs/image-1-1-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -62,7 +62,7 @@
 ### 콘텐츠 기반 시스템의 정의와 작동 원리
 
 ```{image} figs/image-1-2-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -72,7 +72,7 @@
 ### 사용자 프로필과 아이템의 특성 매칭
 
 ```{image} figs/image-1-2-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -83,7 +83,7 @@
 ### 주요 알고리즘과 기술
 
 ```{image} figs/image-1-2-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -94,7 +94,7 @@
 ### 콘텐츠 기반 추천 시스템의 장단점
 
 ```{image} figs/image-1-2-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -104,7 +104,7 @@
 ### 실제 사례 연구
 
 ```{image} figs/image-1-2-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -117,7 +117,7 @@
 ### 협업 필터링의 기본 개념
 
 ```{image} figs/image-1-3-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -128,7 +128,7 @@
 ### 사용자 기반 협업 필터링과 아이템 기반 협업 필터링
 
 ```{image} figs/image-1-3-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -138,7 +138,7 @@
 ### 유사도 측정 방법
 
 ```{image} figs/image-1-3-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -150,7 +150,7 @@
 ### 협업 필터링의 도전 과제와 한계점
 
 ```{image} figs/image-1-3-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -162,7 +162,7 @@
 ### 실제 적용 사례
 
 ```{image} figs/image-1-3-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -175,7 +175,7 @@
 ### 행렬 인수분해의 개념
 
 ```{image} figs/image-1-4-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -186,7 +186,7 @@
 ### 사용자-아이템 상호작용 행렬
 
 ```{image} figs/image-1-4-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -197,7 +197,7 @@
 ### 행렬 인수분해의 알고리즘과 구현
 
 ```{image} figs/image-1-4-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -208,7 +208,7 @@
 ### 예측 정확도 향상 방법
 
 ```{image} figs/image-1-4-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -221,7 +221,7 @@
 ### 하이브리드 추천 시스템의 정의
 
 ```{image} figs/image-1-5-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -232,7 +232,7 @@
 ### 다양한 하이브리드 방식의 소개
 
 ```{image} figs/image-1-5-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -244,7 +244,7 @@
 ### 콘텐츠 기반과 협업 필터링의 조합
 
 ```{image} figs/image-1-5-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -255,7 +255,7 @@
 ### 하이브리드 시스템의 장점 및 적용 분야
 
 ```{image} figs/image-1-5-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -266,7 +266,7 @@
 ### 실제 하이브리드 추천 시스템 사례
 
 ```{image} figs/image-1-5-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 

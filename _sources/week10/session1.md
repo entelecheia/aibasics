@@ -5,7 +5,7 @@
 ### 자연어처리(NLP)란 무엇인가?
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -25,7 +25,7 @@
 ### IBM의 왓슨: '제퍼디'에서의 승리와 그 이후
 
 ```{image} figs/image-1-1-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -38,7 +38,7 @@
 ### 자연어처리(NLP)의 관련 분야
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -52,7 +52,7 @@
 ### 자연어처리(NLP)의 목표
 
 ```{image} figs/image-1-1-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -68,7 +68,7 @@
 ### NLP의 윤리적 문제
 
 ```{image} figs/image-1-1-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -80,7 +80,7 @@
 ### NLP를 연구하거나 공부하는 이유
 
 ```{image} figs/image-1-1-6.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -93,7 +93,7 @@
 ### NLP로 할 수 있는 것들
 
 ```{image} figs/image-1-1-7.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -124,7 +124,7 @@
 ### 텍스트와 이미지: NLP를 위한 학제 간 기술
 
 ```{image} figs/image-1-1-8.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -137,7 +137,7 @@
 ### 텍스트 이해의 기본
 
 ```{image} figs/image-1-2-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -150,7 +150,7 @@
 ### NLP가 어려운 이유
 
 ```{image} figs/image-1-2-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -163,7 +163,7 @@
 ### 모호성과 그 처리 방법
 
 ```{image} figs/image-1-2-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -177,7 +177,7 @@
 ### 말뭉치(Corpora)와 데이터의 중요성
 
 ```{image} figs/image-1-2-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -190,7 +190,7 @@
 ### 전통적 NLP 파이프라인
 
 ```{image} figs/image-1-2-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -203,7 +203,7 @@
 ### 한국어 NLP의 도전 과제
 
 ```{image} figs/image-1-2-6.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -216,7 +216,7 @@
 ### 저자원 언어에서의 NLP
 
 ```{image} figs/image-1-2-7.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -231,7 +231,7 @@
 ### 검색 엔진
 
 ```{image} figs/image-1-3-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -244,7 +244,7 @@
 ### 가상 비서
 
 ```{image} figs/image-1-3-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -257,7 +257,7 @@
 ### 소셜 미디어 분석
 
 ```{image} figs/image-1-3-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -270,7 +270,7 @@
 ### 고객 서비스
 
 ```{image} figs/image-1-3-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -283,7 +283,7 @@
 ### 컨텐츠 모더레이션
 
 ```{image} figs/image-1-3-5.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -296,7 +296,7 @@
 ### 의료 분야
 
 ```{image} figs/image-1-3-6.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -309,7 +309,7 @@
 ### 금융 분야
 
 ```{image} figs/image-1-3-7.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -322,7 +322,7 @@
 ### 법률 분야
 
 ```{image} figs/image-1-3-8.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 

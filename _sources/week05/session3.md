@@ -5,7 +5,7 @@
 ### 목표와 개요
 
 ```{image} figs/image-3-1-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -15,7 +15,7 @@
 ### 선형 회귀 모델의 기본 개념
 
 ```{image} figs/image-3-1-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -29,7 +29,7 @@
 ### 최소 제곱법 소개
 
 ```{image} figs/image-3-1-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -40,7 +40,7 @@
 ### 평균 제곱 오차(MSE) 이해
 
 ```{image} figs/image-3-1-4.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -53,7 +53,7 @@
 ### 비용함수와 손실함수의 정의
 
 ```{image} figs/image-3-2-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -66,7 +66,7 @@
 ### 평균제곱오차의 역할
 
 ```{image} figs/image-3-2-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -80,7 +80,7 @@
 ### 오차 함수와 목적 함수의 비교
 
 ```{image} figs/image-3-2-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -98,7 +98,7 @@
 ### 경사하강법의 기본 원리
 
 ```{image} figs/image-3-3-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -112,7 +112,7 @@
 ### 경사하강법의 다양한 변형
 
 ```{image} figs/image-3-3-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -129,7 +129,7 @@
 ### 경사하강법 시각화
 
 ```{image} figs/image-3-3-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -144,7 +144,7 @@
 ### 과대적합과 과소적합
 
 ```{image} figs/image-3-4-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -158,7 +158,7 @@
 ### 최적화 알고리즘의 중요성
 
 ```{image} figs/image-3-4-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -171,7 +171,7 @@
 ### 과대적합과 과소적합 방지 전략
 
 ```{image} figs/image-3-4-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -190,7 +190,7 @@
 ### 데이터의 양과 질의 중요성
 
 ```{image} figs/image-3-5-1.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -204,7 +204,7 @@
 ### 모델 복잡도 조절
 
 ```{image} figs/image-3-5-2.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
@@ -217,7 +217,7 @@
 ### 일반화, 정규화, 가중치 규제
 
 ```{image} figs/image-3-5-3.jpeg
-:width: 90%
+:width: 70%
 :align: center
 ```
 
