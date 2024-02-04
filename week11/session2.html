@@ -509,6 +509,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">AI 도구 활용</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">프롬프트 성능 평가</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">프롬프트 성능 평가 방법 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">객관적 지표</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">주관적 지표</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">평가 기법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">파라미터 조정을 통한 결과 개선</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -815,6 +823,64 @@ document.write(`
 </ul>
 </section>
 </section>
+<section id="id40">
+<h2>프롬프트 성능 평가<a class="headerlink" href="#id40" title="Link to this heading">#</a></h2>
+<section id="id41">
+<h3>프롬프트 성능 평가 방법 개요<a class="headerlink" href="#id41" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-7-1.jpeg"><img alt="../_images/image-2-7-1.jpeg" class="align-center" src="../_images/image-2-7-1.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>목적</strong>: AI 모델 출력의 기대치 충족 여부 판단.</p></li>
+<li><p><strong>중요성</strong>: 출력의 질과 직접적인 관련성.</p></li>
+<li><p><strong>평가 필요성</strong>: 프롬프트의 효과와 효율성 확인.</p></li>
+<li><p><strong>평가 접근법</strong>: 객관적 지표와 주관적 지표의 활용.</p></li>
+<li><p><strong>성능 개선 목표</strong>: 최적의 AI 모델 출력 도출.</p></li>
+</ul>
+</section>
+<section id="id42">
+<h3>객관적 지표<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-7-2.jpeg"><img alt="../_images/image-2-7-2.jpeg" class="align-center" src="../_images/image-2-7-2.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의와 역할</strong>: 측정 가능한 수치로 표현되는 평가 지표.</p></li>
+<li><p><strong>예시</strong>: BLEU 점수, 정확도, 일치도 측정.</p></li>
+<li><p><strong>평가 방법</strong>: 기대 출력과 AI 모델 출력의 비교 분석.</p></li>
+<li><p><strong>적용 분야</strong>: 기계 번역, 요약, 텍스트 생성 등.</p></li>
+<li><p><strong>평가의 한계</strong>: 모든 측면을 포괄하지 않을 수 있음.</p></li>
+</ul>
+</section>
+<section id="id43">
+<h3>주관적 지표<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-7-3.jpeg"><img alt="../_images/image-2-7-3.jpeg" class="align-center" src="../_images/image-2-7-3.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의와 중요성</strong>: 개인의 판단에 기반한 평가 지표.</p></li>
+<li><p><strong>평가 방법</strong>: 사용자의 직접적인 응답과 피드백 수집.</p></li>
+<li><p><strong>적용 예시</strong>: 자연스러움, 유용성, 적합성 평가.</p></li>
+<li><p><strong>평가 다양성</strong>: 개인별 의견 차이 인정.</p></li>
+<li><p><strong>평가의 가치</strong>: 사용자 경험과 만족도 측정.</p></li>
+</ul>
+</section>
+<section id="id44">
+<h3>평가 기법<a class="headerlink" href="#id44" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-7-4.jpeg"><img alt="../_images/image-2-7-4.jpeg" class="align-center" src="../_images/image-2-7-4.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>실험 설계</strong>: 명확한 비교를 위한 실험 구성.</p></li>
+<li><p><strong>데이터 수집</strong>: 사용자 반응, 선호도 조사.</p></li>
+<li><p><strong>A/B 테스트</strong>: 두 가지 버전의 출력 비교.</p></li>
+<li><p><strong>결과 분석</strong>: 성능 지표에 따른 분석과 해석.</p></li>
+<li><p><strong>피드백 반영</strong>: 사용자 의견을 통한 지속적 개선.</p></li>
+</ul>
+</section>
+<section id="id45">
+<h3>파라미터 조정을 통한 결과 개선<a class="headerlink" href="#id45" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-7-5.jpeg"><img alt="../_images/image-2-7-5.jpeg" class="align-center" src="../_images/image-2-7-5.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>개선 방안 모색</strong>: 입력 파라미터의 최적화.</p></li>
+<li><p><strong>조정 변수</strong>: 길이, 복잡성, 명확성 등.</p></li>
+<li><p><strong>테스트와 반복</strong>: 다양한 설정으로 실험.</p></li>
+<li><p><strong>성능 향상 전략</strong>: 목표에 맞는 파라미터 조정.</p></li>
+<li><p><strong>지속적 개선 필요성</strong>: 최적화를 통한 출력 질 개선.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -932,6 +998,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">상충되는 용어 피하기</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">개방형 질문 사용</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">AI 도구 활용</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">프롬프트 성능 평가</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">프롬프트 성능 평가 방법 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">객관적 지표</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">주관적 지표</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">평가 기법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">파라미터 조정을 통한 결과 개선</a></li>
 </ul>
 </li>
 </ul>
