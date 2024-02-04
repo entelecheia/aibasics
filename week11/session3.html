@@ -241,6 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="session1.html">생성형 AI 입문</a></li>
 <li class="toctree-l2"><a class="reference internal" href="session2.html">프롬프트 엔지니어링</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">AI 에이전트</a></li>
+
 </ul>
 </li>
 </ul>
@@ -455,18 +456,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AI 에이전트</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">AI 에이전트의 정의와 생성적 에이전트</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">AI 에이전트의 정의</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성적 에이전트</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트 아키텍처</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">메모리 및 검색</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">반영</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">계획 및 반응</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autonomy">자율성 (Autonomy)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perception">인식 (Perception)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivity">반응성 (Reactivity)</a></li>
@@ -476,8 +472,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-oriented">목표 지향성 (Goal-oriented)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">AI 에이전트의 분류</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">AI 에이전트의 구조</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment">환경 (Environment)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensors">센서 (Sensors)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actuators">액추에이터 (Actuators)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-mechanism">의사결정 메커니즘 (Decision-making Mechanism)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-system">학습 시스템 (Learning System)</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -540,69 +546,55 @@ document.write(`
 </ul>
 </li>
 </ul>
+<!-- ## AI 에이전트 아키텍처
+
+### 메모리 및 검색
+
+```{image} figs/image-3-2-1.jpeg
+:width: 90%
+:align: center
+```
+
+- **정의**: 에이전트가 환경에 대한 정보와 경험을 저장하고 필요에 따라 접근하는 구성 요소.
+- **작동 원리**:
+  - 환경과의 상호작용으로부터 얻은 정보가 메모리에 지속적으로 추가됩니다.
+  - 현재 상황에 가장 적합한 정보를 메모리에서 검색하는 과정을 포함합니다.
+- **중요성**:
+  - 최신 정보와 중요한 기억을 검색하는 능력이 에이전트의 효과적인 작동에 필수적입니다.
+  - 상황이나 질문에 가장 관련된 정보를 선택하는 능력을 강화합니다.
+
+### 반영
+
+```{image} figs/image-3-2-2.jpeg
+:width: 90%
+:align: center
+```
+
+- **정의**: 에이전트가 자신의 관찰과 경험을 바탕으로 추상적 사고를 생성하는 과정.
+- **기능**:
+  - 관찰을 통한 일반화 및 추론 생성을 가능하게 합니다.
+  - 복잡한 자극에 대한 적절한 반응을 생성하는 데 도움을 줍니다.
+- **방법**:
+  - 중요도 점수가 높은 사건을 기반으로 반영 과정을 주기적으로 실행합니다.
+  - 복잡한 상황에 대응하는 에이전트의 능력을 향상시킵니다.
+
+### 계획 및 반응
+
+```{image} figs/image-3-2-3.jpeg
+:width: 90%
+:align: center
+```
+
+- **계획**:
+  - 미래의 행동 시퀀스를 생성하여 에이전트의 행동을 일관되게 유지합니다.
+  - 상위 수준에서 시작하여 점차 세부적인 내용을 추가하는 방식으로 계획을 수립합니다.
+- **반응**:
+  - 주변 세계를 인식하고 기존 계획을 계속할지, 새로운 관찰에 반응할지를 결정합니다.
+  - 필요한 경우 새로운 계획을 생성하고 다른 에이전트와의 대화를 시작할 수 있습니다. -->
 </section>
 </section>
 <section id="id4">
-<h2>AI 에이전트 아키텍처<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<section id="id5">
-<h3>메모리 및 검색<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-13.jpeg"><img alt="../_images/image-3-2-13.jpeg" class="align-center" src="../_images/image-3-2-13.jpeg" style="width: 90%;" /></a>
-<ul class="simple">
-<li><p><strong>정의</strong>: 에이전트가 환경에 대한 정보와 경험을 저장하고 필요에 따라 접근하는 구성 요소.</p></li>
-<li><p><strong>작동 원리</strong>:</p>
-<ul>
-<li><p>환경과의 상호작용으로부터 얻은 정보가 메모리에 지속적으로 추가됩니다.</p></li>
-<li><p>현재 상황에 가장 적합한 정보를 메모리에서 검색하는 과정을 포함합니다.</p></li>
-</ul>
-</li>
-<li><p><strong>중요성</strong>:</p>
-<ul>
-<li><p>최신 정보와 중요한 기억을 검색하는 능력이 에이전트의 효과적인 작동에 필수적입니다.</p></li>
-<li><p>상황이나 질문에 가장 관련된 정보를 선택하는 능력을 강화합니다.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id6">
-<h3>반영<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-22.jpeg"><img alt="../_images/image-3-2-22.jpeg" class="align-center" src="../_images/image-3-2-22.jpeg" style="width: 90%;" /></a>
-<ul class="simple">
-<li><p><strong>정의</strong>: 에이전트가 자신의 관찰과 경험을 바탕으로 추상적 사고를 생성하는 과정.</p></li>
-<li><p><strong>기능</strong>:</p>
-<ul>
-<li><p>관찰을 통한 일반화 및 추론 생성을 가능하게 합니다.</p></li>
-<li><p>복잡한 자극에 대한 적절한 반응을 생성하는 데 도움을 줍니다.</p></li>
-</ul>
-</li>
-<li><p><strong>방법</strong>:</p>
-<ul>
-<li><p>중요도 점수가 높은 사건을 기반으로 반영 과정을 주기적으로 실행합니다.</p></li>
-<li><p>복잡한 상황에 대응하는 에이전트의 능력을 향상시킵니다.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id7">
-<h3>계획 및 반응<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-33.jpeg"><img alt="../_images/image-3-2-33.jpeg" class="align-center" src="../_images/image-3-2-33.jpeg" style="width: 90%;" /></a>
-<ul class="simple">
-<li><p><strong>계획</strong>:</p>
-<ul>
-<li><p>미래의 행동 시퀀스를 생성하여 에이전트의 행동을 일관되게 유지합니다.</p></li>
-<li><p>상위 수준에서 시작하여 점차 세부적인 내용을 추가하는 방식으로 계획을 수립합니다.</p></li>
-</ul>
-</li>
-<li><p><strong>반응</strong>:</p>
-<ul>
-<li><p>주변 세계를 인식하고 기존 계획을 계속할지, 새로운 관찰에 반응할지를 결정합니다.</p></li>
-<li><p>필요한 경우 새로운 계획을 생성하고 다른 에이전트와의 대화를 시작할 수 있습니다.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="id8">
-<h2>AI 에이전트의 특성<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<h2>AI 에이전트의 특성<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <section id="autonomy">
 <h3>자율성 (Autonomy)<a class="headerlink" href="#autonomy" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-3-3-13.jpeg"><img alt="../_images/image-3-3-13.jpeg" class="align-center" src="../_images/image-3-3-13.jpeg" style="width: 90%;" /></a>
@@ -680,14 +672,62 @@ document.write(`
 </ul>
 </section>
 </section>
-<section id="id9">
-<h2>AI 에이전트의 분류<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1>AI 에이전트의 구조<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<section id="environment">
+<h2>환경 (Environment)<a class="headerlink" href="#environment" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-3-4-13.jpeg"><img alt="../_images/image-3-4-13.jpeg" class="align-center" src="../_images/image-3-4-13.jpeg" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p><strong>단순 반사 에이전트</strong>: 사전 정의된 규칙에 기반하여 환경에 반응합니다.</p></li>
-<li><p><strong>모델 기반 반사 에이전트</strong>: 보다 정보에 입각한 결정을 내리기 위해 세계의 모델을 유지합니다.</p></li>
-<li><p><strong>목표 기반 에이전트</strong>: 특정 목표를 달성하기 위해 작업합니다.</p></li>
-<li><p><strong>유틸리티 기반 에이전트</strong>: 결과의 바람직함을 반영하는 유틸리티 함수를 최대화하려고 합니다.</p></li>
-<li><p><strong>학습 에이전트</strong>: 경험을 바탕으로 성능을 학습하고 개선합니다.</p></li>
+<li><p><strong>정의</strong>: AI 에이전트가 작동하는 영역 또는 도메인.</p></li>
+<li><p><strong>중요성</strong>: 에이전트가 수행할 작업의 조건과 범위를 결정함.</p></li>
+<li><p><strong>예시</strong>: 물리적 공간(공장 바닥), 디지털 공간(웹사이트).</p></li>
+<li><p><strong>에이전트와의 상호작용</strong>: 환경은 에이전트의 센서와 액추에이터를 통해 영향을 받고 영향을 미침.</p></li>
+<li><p><strong>다양성</strong>: 다양한 환경에서의 작동 능력이 에이전트의 유연성을 증가시킴.</p></li>
+</ul>
+</section>
+<section id="sensors">
+<h2>센서 (Sensors)<a class="headerlink" href="#sensors" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-3-4-23.jpeg"><img alt="../_images/image-3-4-23.jpeg" class="align-center" src="../_images/image-3-4-23.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 환경에서 정보를 수집하는 도구.</p></li>
+<li><p><strong>기능</strong>: 환경 감지와 정보 수집.</p></li>
+<li><p><strong>예시</strong>: 카메라(시각), 마이크(청각).</p></li>
+<li><p><strong>정보 처리</strong>: 수집된 정보는 의사결정 메커니즘으로 전송됨.</p></li>
+<li><p><strong>응용</strong>: 환경 변화에 대응하기 위한 데이터 제공.</p></li>
+</ul>
+</section>
+<section id="actuators">
+<h2>액추에이터 (Actuators)<a class="headerlink" href="#actuators" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-3-4-33.jpeg"><img alt="../_images/image-3-4-33.jpeg" class="align-center" src="../_images/image-3-4-33.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 환경에 영향을 미치는 도구.</p></li>
+<li><p><strong>역할</strong>: 특정 작업 수행 및 환경 조작.</p></li>
+<li><p><strong>예시</strong>: 로봇 팔(물리적 조작), 스피커(음성 출력).</p></li>
+<li><p><strong>작업 실행</strong>: 의사결정 메커니즘의 지시에 따라 작동.</p></li>
+<li><p><strong>효과</strong>: 환경에 대한 구체적인 변경 사항을 생성.</p></li>
+</ul>
+</section>
+<section id="decision-making-mechanism">
+<h2>의사결정 메커니즘 (Decision-making Mechanism)<a class="headerlink" href="#decision-making-mechanism" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-3-4-42.jpeg"><img alt="../_images/image-3-4-42.jpeg" class="align-center" src="../_images/image-3-4-42.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: AI 에이전트의 ‘두뇌’로, 수집된 정보를 처리하고 조치를 결정.</p></li>
+<li><p><strong>기술</strong>: 다양한 의사결정 알고리즘(규칙 기반, 전문가 시스템, 신경망).</p></li>
+<li><p><strong>과정</strong>: 정보 처리 → 문제 해결 → 조치 결정.</p></li>
+<li><p><strong>응용</strong>: 효율적인 작업 수행 및 목표 달성.</p></li>
+<li><p><strong>중요성</strong>: AI 에이전트의 핵심 기능 및 효율성 결정.</p></li>
+</ul>
+</section>
+<section id="learning-system">
+<h2>학습 시스템 (Learning System)<a class="headerlink" href="#learning-system" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/image-3-4-51.jpeg"><img alt="../_images/image-3-4-51.jpeg" class="align-center" src="../_images/image-3-4-51.jpeg" style="width: 90%;" /></a>
+<ul class="simple">
+<li><p><strong>개요</strong>: 경험을 통한 성능 향상 시스템.</p></li>
+<li><p><strong>기술</strong>: 강화 학습, 지도 학습, 비지도 학습 등.</p></li>
+<li><p><strong>향상 방법</strong>: 시간에 따른 에이전트의 성능 개선.</p></li>
+<li><p><strong>적응 능력</strong>: 환경 변화에 따른 에이전트의 유연한 대응.</p></li>
+<li><p><strong>응용</strong>: 개인화된 서비스, 효율적인 문제 해결 전략 개발 등.</p></li>
 </ul>
 </section>
 </section>
@@ -747,18 +787,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AI 에이전트</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">AI 에이전트의 정의와 생성적 에이전트</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">AI 에이전트의 정의</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">생성적 에이전트</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트 아키텍처</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">메모리 및 검색</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">반영</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">계획 및 반응</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AI 에이전트의 특성</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autonomy">자율성 (Autonomy)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perception">인식 (Perception)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivity">반응성 (Reactivity)</a></li>
@@ -768,8 +803,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-oriented">목표 지향성 (Goal-oriented)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">AI 에이전트의 분류</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">AI 에이전트의 구조</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment">환경 (Environment)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensors">센서 (Sensors)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actuators">액추에이터 (Actuators)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-making-mechanism">의사결정 메커니즘 (Decision-making Mechanism)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-system">학습 시스템 (Learning System)</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
