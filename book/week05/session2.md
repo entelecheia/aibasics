@@ -5,7 +5,7 @@
 ### 머신러닝 학습 방법의 기본 이해
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -16,7 +16,7 @@
 ### 지도 학습, 비지도 학습, 강화 학습의 차이점
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -33,7 +33,7 @@
 ### 각 학습 방법의 적용 예시와 중요성
 
 ```{image} figs/image-2-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -50,7 +50,7 @@
 ### 학습 데이터의 역할과 중요성
 
 ```{image} figs/image-2-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -62,7 +62,7 @@
 ### 실제 사례를 통한 학습 방법의 이해
 
 ```{image} figs/image-2-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -81,7 +81,7 @@
 ### 지도 학습의 정의 및 기본 원리
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -92,7 +92,7 @@
 ### 분류(Classification)와 회귀(Regression)의 개념
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -106,7 +106,7 @@
 ### 지도 학습의 대표적인 알고리즘 소개
 
 ```{image} figs/image-2-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -123,7 +123,7 @@
 ### 지도 학습의 장단점 분석
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -139,7 +139,7 @@
 ### 실생활에서의 지도 학습 활용 사례
 
 ```{image} figs/image-2-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -158,7 +158,7 @@
 ### 비지도 학습의 정의 및 핵심 개념
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -169,7 +169,7 @@
 ### 클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -183,7 +183,7 @@
 ### 비지도 학습의 대표적인 알고리즘 소개
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -197,7 +197,7 @@
 ### 비지도 학습의 장단점 및 도전 과제
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -214,7 +214,7 @@
 ### 비지도 학습의 다양한 응용 분야
 
 ```{image} figs/image-2-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -240,7 +240,7 @@
 ### 강화 학습의 기본 개념과 메커니즘
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -251,7 +251,7 @@
 ### 보상 시스템과 환경의 역할
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -262,7 +262,7 @@
 ### 강화 학습의 대표적인 알고리즘 및 응용 예시
 
 ```{image} figs/image-2-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -276,7 +276,7 @@
 ### 게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용
 
 ```{image} figs/image-2-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -287,7 +287,7 @@
 ### 강화 학습의 현재 연구 동향 및 미래 가능성
 
 ```{image} figs/image-2-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -300,7 +300,7 @@
 #### 특정 문제에 적합한 학습 방법 결정하기
 
 ```{image} figs/image-2-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -312,7 +312,7 @@
 #### 데이터의 종류와 양에 따른 학습 방법의 선택
 
 ```{image} figs/image-2-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -323,7 +323,7 @@
 #### 머신러닝 모델의 성능 평가 방법
 
 ```{image} figs/image-2-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -334,7 +334,7 @@
 #### 머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁
 
 ```{image} figs/image-2-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

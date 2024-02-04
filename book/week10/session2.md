@@ -5,7 +5,7 @@
 ### 토크나이제이션이란?
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -18,7 +18,7 @@
 ### 토크나이제이션의 복잡성
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -32,7 +32,7 @@
 ### 영어에서의 다양한 단어 형태
 
 ```{image} figs/image-2-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -44,7 +44,7 @@
 ### 영어 단어의 다양성
 
 ```{image} figs/image-2-1-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -55,7 +55,7 @@
 ### 단어 형성 과정
 
 ```{image} figs/image-2-1-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -66,7 +66,7 @@
 ### 형태소와 형태
 
 ```{image} figs/image-2-1-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -80,7 +80,7 @@
 ### 한국어 문장 토크나이제이션
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -93,7 +93,7 @@
 ### 한국어 품사 태깅
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -116,7 +116,7 @@
 ### 한국어 형태소 분석
 
 ```{image} figs/image-2-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -136,7 +136,7 @@
 ### 언어적(문법적) 분류
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -149,7 +149,7 @@
 ### 한국어 형태소 분석 (품사 태깅)
 
 ```{image} figs/image-2-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -164,7 +164,7 @@
 ### 서론
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -177,7 +177,7 @@
 ### 문서 군집화
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -194,7 +194,7 @@
 ### 토픽 모델링의 과정
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -207,7 +207,7 @@
 ### 토픽 모델링의 도전 과제
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -222,7 +222,7 @@
 ### 서론
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -235,7 +235,7 @@
 ### 확률적 잠재 의미 분석 (pLSA)
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -248,7 +248,7 @@
 ### 잠재 디리클레 할당 (LDA)
 
 ```{image} figs/image-2-4-3.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -261,7 +261,7 @@
 ### 비음수 행렬 분해 (NMF)
 
 ```{image} figs/image-2-4-4.png
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -274,7 +274,7 @@
 ### 동적 토픽 모델 (DTM)
 
 ```{image} figs/image-2-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -289,7 +289,7 @@
 ### 서론
 
 ```{image} figs/image-2-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -302,7 +302,7 @@
 ### 감정 분석 유형
 
 ```{image} figs/image-2-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -313,7 +313,7 @@
 ### 감정 분석 기법
 
 ```{image} figs/image-2-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -324,7 +324,7 @@
 ### 감정 분석의 도전 과제
 
 ```{image} figs/image-2-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -337,7 +337,7 @@
 ### 감정 분석의 응용
 
 ```{image} figs/image-2-5-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

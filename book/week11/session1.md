@@ -5,7 +5,7 @@
 ### 생성형 AI 정의 및 개요
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -18,7 +18,7 @@
 ### 생성형 AI와 기존 AI 기술과의 차이점
 
 ```{image} figs/image-1-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -44,7 +44,7 @@
 ### 생성형 AI의 핵심 알고리즘과 기술적 특성
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -70,7 +70,7 @@
 ### 데이터 수집
 
 ```{image} figs/image-1-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -83,7 +83,7 @@
 ### 훈련
 
 ```{image} figs/image-1-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -96,7 +96,7 @@
 ### 잠재 공간 표현
 
 ```{image} figs/image-1-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -108,7 +108,7 @@
 ### 생성
 
 ```{image} figs/image-1-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -121,7 +121,7 @@
 ### 반복적 개선
 
 ```{image} figs/image-1-2-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -135,7 +135,7 @@
 ### 확률 모델링
 
 ```{image} figs/image-1-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -148,7 +148,7 @@
 ### 잠재 공간 표현
 
 ```{image} figs/image-1-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -161,7 +161,7 @@
 ### 적대적 훈련
 
 ```{image} figs/image-1-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -174,7 +174,7 @@
 ### 자기회귀 모델링
 
 ```{image} figs/image-1-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -187,7 +187,7 @@
 ### 재구성 및 오류 최소화
 
 ```{image} figs/image-1-3-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -202,7 +202,7 @@
 ### 이미지 합성 및 편집
 
 ```{image} figs/image-1-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -215,7 +215,7 @@
 ### 텍스트 생성 및 자연어 처리
 
 ```{image} figs/image-1-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -228,7 +228,7 @@
 ### 음악 작곡
 
 ```{image} figs/image-1-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -241,7 +241,7 @@
 ### 비디오 게임 디자인
 
 ```{image} figs/image-1-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -254,7 +254,7 @@
 ### 데이터 증강
 
 ```{image} figs/image-1-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -267,7 +267,7 @@
 ### 제품 디자인 및 프로토타이핑
 
 ```{image} figs/image-1-4-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -280,7 +280,7 @@
 ### 의료 영상 및 약물 발견
 
 ```{image} figs/image-1-4-7.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -295,7 +295,7 @@
 ### 창의성과 새로움
 
 ```{image} figs/image-1-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -305,7 +305,7 @@
 ### 자동화 및 효율성
 
 ```{image} figs/image-1-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -315,7 +315,7 @@
 ### 개인화 및 맞춤화
 
 ```{image} figs/image-1-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -325,7 +325,7 @@
 ### 탐색 및 영감
 
 ```{image} figs/image-1-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -337,7 +337,7 @@
 ### 윤리적 우려
 
 ```{image} figs/image-1-6-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -347,7 +347,7 @@
 ### 제어의 어려움
 
 ```{image} figs/image-1-6-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -357,7 +357,7 @@
 ### 데이터셋 편향 및 일반화
 
 ```{image} figs/image-1-6-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -367,7 +367,7 @@
 ### 계산 자원 및 복잡성
 
 ```{image} figs/image-1-6-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -377,7 +377,7 @@
 ### 품질 및 일관성
 
 ```{image} figs/image-1-6-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 

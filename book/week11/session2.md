@@ -5,7 +5,7 @@
 ### AI 프롬프트란?
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -23,7 +23,7 @@
 ### 프롬프트 엔지니어링이란?
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -48,7 +48,7 @@
 ### 응답의 정확성
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -60,7 +60,7 @@
 ### 성능 향상
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -72,7 +72,7 @@
 ### 사용자 경험 개선
 
 ```{image} figs/image-2-2-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -84,7 +84,7 @@
 ### 의사 결정 강화
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -96,7 +96,7 @@
 ### 생산성 향상
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -107,7 +107,7 @@
 ### 고객 서비스 개선
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -117,7 +117,7 @@
 ### 맞춤화
 
 ```{image} figs/image-2-4-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -127,7 +127,7 @@
 ### 학습 지원
 
 ```{image} figs/image-2-4-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -137,7 +137,7 @@
 ### 시간 절약
 
 ```{image} figs/image-2-4-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -149,7 +149,7 @@
 ### AI 프롬프트의 기능
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -160,7 +160,7 @@
 ### AI 모델의 응답 생성 과정
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -170,7 +170,7 @@
 ### 프롬프트의 특정성
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -180,7 +180,7 @@
 ### 프롬프트 엔지니어링의 중요성
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -192,7 +192,7 @@
 ### 대규모 언어 모델에 대한 이해
 
 ```{image} figs/image-2-5-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -205,7 +205,7 @@
 ### 강한 커뮤니케이션 능력
 
 ```{image} figs/image-2-5-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -218,7 +218,7 @@
 ### 프로그래밍 전문 지식
 
 ```{image} figs/image-2-5-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -231,7 +231,7 @@
 ### 창의성과 기술적 평가
 
 ```{image} figs/image-2-5-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -246,7 +246,7 @@
 ### 목표 식별
 
 ```{image} figs/image-2-6-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -256,7 +256,7 @@
 ### 구체성 및 맥락 제공
 
 ```{image} figs/image-2-6-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -267,7 +267,7 @@
 ### 키워드 및 구문 포함
 
 ```{image} figs/image-2-6-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -277,7 +277,7 @@
 ### 프롬프트의 길이
 
 ```{image} figs/image-2-6-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -287,7 +287,7 @@
 ### 상충되는 용어 피하기
 
 ```{image} figs/image-2-6-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -296,7 +296,7 @@
 ### 개방형 질문 사용
 
 ```{image} figs/image-2-6-6.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -306,7 +306,7 @@
 ### AI 도구 활용
 
 ```{image} figs/image-2-6-7.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -317,7 +317,7 @@
 ### Zero-shot과 Few-shot Prompting
 
 ```{image} figs/image-2-8-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -339,7 +339,7 @@
 ### Chain of Thought (CoT) Prompting
 
 ```{image} figs/image-2-8-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -352,7 +352,7 @@
 ### Least to Most Prompting
 
 ```{image} figs/image-2-8-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -365,7 +365,7 @@
 ### Generated Knowledge Prompting
 
 ```{image} figs/image-2-8-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -380,7 +380,7 @@
 ### 프롬프트 성능 평가 방법 개요
 
 ```{image} figs/image-2-7-1.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -393,7 +393,7 @@
 ### 객관적 지표
 
 ```{image} figs/image-2-7-2.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -406,7 +406,7 @@
 ### 주관적 지표
 
 ```{image} figs/image-2-7-3.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -419,7 +419,7 @@
 ### 평가 기법
 
 ```{image} figs/image-2-7-4.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
@@ -432,7 +432,7 @@
 ### 파라미터 조정을 통한 결과 개선
 
 ```{image} figs/image-2-7-5.jpeg
-:width: 70%
+:width: 60%
 :align: center
 ```
 
