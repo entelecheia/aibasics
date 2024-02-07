@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>머신러닝의 개요 &#8212; AI 세상 속으로</title>
+    <title>머신러닝 학습 방법 &#8212; AI 세상 속으로</title>
   
   
   
@@ -98,12 +98,10 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'week05/session1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week05/session2-old';</script>
     <link rel="icon" href="../_static/chu-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="머신러닝 모델의 학습과 평가" href="session2.html" />
-    <link rel="prev" title="Week 5: 기계학습" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -165,6 +163,8 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -212,15 +212,15 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../week01/index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session1.html">인공지능의 역사</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session2.html">인공지능의 유형들</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../week01/session3.html">인공지능 문제 해결 및 탐색전략</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">머신러닝의 개요</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">머신러닝의 개요</a></li>
 <li class="toctree-l2"><a class="reference internal" href="session2.html">머신러닝 모델의 학습과 평가</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">머신러닝 알고리즘 실습</a></li>
 </ul>
@@ -314,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week05/session1.md" target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week05/session2-old.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +331,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek05/session1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek05/session2-old.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/week05/session1.md" target="_blank"
+      <li><a href="../_sources/week05/session2-old.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -445,7 +445,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>머신러닝의 개요</h1>
+    <h1>머신러닝 학습 방법</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,81 +455,42 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 정의</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">기본 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">역사적 배경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">톰 미첼의 정의 (1998년)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">핵심 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">데이터 중심의 접근</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">머신러닝의 역사적 배경</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">역사적 배경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1952년 - 새무얼의 체커 프로그램</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">연도별 주요 개발 모델과 특징</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝의 학습 개념</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">학습의 기본 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">학습의 예시</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">전통적 프로그래밍과 머신러닝의 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">전통적 프로그래밍</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">머신러닝</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">기본적인 작동 방식의 차이</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">머신러닝과 인공지능과의 관계</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">머신러닝과 인공지능의 관계 및 차이점</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">머신러닝과 인공지능의 관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">머신러닝과 인공지능의 차이점</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">머신러닝의 활용 분야</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">산업별 활용의 다양성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">기술의 발전과 성과</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">데이터 과학자의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">복잡한 문제 해결</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">사람의 능력 보완 및 대체</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">머신러닝 학습 방법의 기본 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">각 학습 방법의 적용 예시와 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">학습 데이터의 역할과 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">실제 사례를 통한 학습 방법의 이해</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">지도 학습의 대표적인 알고리즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">지도 학습의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비지도 학습의 정의 및 핵심 개념</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">비지도 학습의 대표적인 알고리즘 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 장단점 및 도전 과제</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">비지도 학습 vs 지도 학습</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">강화 학습의 기본 개념과 메커니즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">보상 시스템과 환경의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">강화 학습의 기본 개념과 메커니즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">보상 시스템과 환경의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">특정 문제에 적합한 학습 방법 결정하기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">머신러닝 모델의 성능 평가 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">특정 문제에 적합한 학습 방법 결정하기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">머신러닝 모델의 성능 평가 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
 </ul>
 </li>
 </ul>
@@ -544,446 +505,11 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>머신러닝의 개요<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>머신러닝 학습 방법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>머신러닝의 정의<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-11.jpeg"><img alt="../_images/image-1-1-11.jpeg" class="align-center" src="../_images/image-1-1-11.jpeg" style="width: 60%;" /></a>
+<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="id3">
-<h3>기본 정의<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>컴퓨터가 데이터를 기반으로 학습하는 연구 분야</p></li>
-<li><p>학습을 통해 스스로 예측하거나 결정을 내리는 능력 부여</p></li>
-</ul>
-</section>
-<section id="id4">
-<h3>역사적 배경<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>1959년, 아서 새무얼에 의해 최초 정의</p></li>
-<li><p>“컴퓨터에 학습할 수 있는 능력을 부여하기 위한 연구 분야”로 설명</p></li>
-</ul>
-</section>
-<section id="id5">
-<h3>톰 미첼의 정의 (1998년)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>컴퓨터 프로그램이 경험 E(데이터)로부터 학습</p></li>
-<li><p>특정 작업 T에서 성능 P를 향상시키는 과정</p></li>
-</ul>
-</section>
-<section id="id6">
-<h3>핵심 개념<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>‘머신(Machine)’: 컴퓨터, ‘러닝(Learning)’: 학습</p></li>
-<li><p>컴퓨터를 통한 학습의 개념</p></li>
-</ul>
-</section>
-<section id="id7">
-<h3>데이터 중심의 접근<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>데이터에서 패턴, 규칙, 지식 추출</p></li>
-<li><p>데이터로부터 컴퓨터가 스스로 규칙을 학습</p></li>
-</ul>
-</section>
-</section>
-<section id="id8">
-<h2>머신러닝의 역사적 배경<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-11.jpeg"><img alt="../_images/image-1-1-11.jpeg" class="align-center" src="../_images/image-1-1-11.jpeg" style="width: 60%;" /></a>
-<section id="id9">
-<h3>역사적 배경<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>아서 새무얼 (1959년)</strong>: 머신러닝을 ‘컴퓨터에 학습할 수 있는 능력을 부여하기 위한 연구 분야’로 최초 정의</p></li>
-<li><p><strong>톰 미첼 (1998년)</strong>: 머신러닝을 ‘컴퓨터 프로그램이 경험 E로부터 T 작업에서 P 성능을 향상시키는 과정’으로 구체화</p></li>
-</ul>
-</section>
-<section id="id10">
-<h3>1952년 - 새무얼의 체커 프로그램<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>최초의 머신러닝 프로그램</strong>: 체커 게임 학습 프로그램</p></li>
-<li><p><strong>경험 학습</strong>: 게임을 통해 스스로 학습하고 전략을 개선하는 방법론 적용</p></li>
-<li><p><strong>AI 개발의 기초</strong>: 이 방법론은 나중에 알파고 같은 고급 AI 프로그램 개발에 영향을 미침</p></li>
-</ul>
-</section>
-<section id="id11">
-<h3>연도별 주요 개발 모델과 특징<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>1952년, Arthur Samuel</strong></p>
-<ul>
-<li><p>모델: Checker Program</p></li>
-<li><p>특징: 최초의 자기학습 프로그램, 강화학습의 초기 형태</p></li>
-</ul>
-</li>
-<li><p><strong>1957년, Frank Rosenblatt</strong></p>
-<ul>
-<li><p>모델: Perceptron</p></li>
-<li><p>특징: 최초의 신경망 모델, 단층 퍼셉트론으로 간단한 패턴 인식 가능</p></li>
-</ul>
-</li>
-<li><p><strong>1986년, Rumelhart, Hinton 등</strong></p>
-<ul>
-<li><p>모델: Multilayer Perceptron</p></li>
-<li><p>특징: 다층 퍼셉트론, 역전파(back-propagation) 알고리즘 도입</p></li>
-</ul>
-</li>
-<li><p><strong>1986년, Ross Quinlan</strong></p>
-<ul>
-<li><p>모델: Decision Tree (ID3)</p></li>
-<li><p>특징: 의사결정 나무, ID3 알고리즘을 사용한 분류 모델</p></li>
-</ul>
-</li>
-<li><p><strong>1995년, Vapnik, Cortes</strong></p>
-<ul>
-<li><p>모델: Support Vector Machine</p></li>
-<li><p>특징: 고차원 공간에서의 이진 분류를 위한 강력한 알고리즘</p></li>
-</ul>
-</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>연도</p></th>
-<th class="head"><p>개발자</p></th>
-<th class="head"><p>모델</p></th>
-<th class="head"><p>특징 또는 종류</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1952년</p></td>
-<td><p>Arthur Samuel</p></td>
-<td><p>Checker Program</p></td>
-<td><p>최초의 자기학습 프로그램, 강화학습의 초기 형태</p></td>
-</tr>
-<tr class="row-odd"><td><p>1957년</p></td>
-<td><p>Frank Rosenblatt</p></td>
-<td><p>Perceptron</p></td>
-<td><p>최초의 신경망 모델, 단층 퍼셉트론으로 간단한 패턴 인식</p></td>
-</tr>
-<tr class="row-even"><td><p>1986년</p></td>
-<td><p>Rumelhart, Hinton 등</p></td>
-<td><p>Multilayer Perceptron</p></td>
-<td><p>다층 퍼셉트론, 역전파(back-propagation) 알고리즘 도입</p></td>
-</tr>
-<tr class="row-odd"><td><p>1986년</p></td>
-<td><p>Ross Quinlan</p></td>
-<td><p>Decision Tree (ID3)</p></td>
-<td><p>의사결정 나무, ID3 알고리즘을 사용한 분류 모델</p></td>
-</tr>
-<tr class="row-even"><td><p>1995년</p></td>
-<td><p>Vapnik, Cortes</p></td>
-<td><p>Support Vector Machine</p></td>
-<td><p>고차원 공간에서의 이진 분류를 위한 강력한 알고리즘</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="id12">
-<h2>머신러닝의 학습 개념<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-31.jpeg"><img alt="../_images/image-1-1-31.jpeg" class="align-center" src="../_images/image-1-1-31.jpeg" style="width: 60%;" /></a>
-<section id="id13">
-<h3>학습의 기본 정의<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>개념 설명</strong>: 데이터로부터 패턴을 인식하고, 이를 기반으로 예측 또는 결정을 내리는 컴퓨터의 과정</p></li>
-<li><p><strong>핵심 목표</strong>: 데이터 분석을 통한 지식 추출 및 패턴 인식</p></li>
-<li><p><strong>학습 유형</strong>: 지도학습, 비지도학습, 강화학습 등 다양한 형태 존재</p></li>
-</ul>
-</section>
-<section id="id14">
-<h3>학습의 예시<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>데이터 쌍의 입력</strong></p>
-<ul>
-<li><p><strong>예시 데이터</strong>: (1, 2), (2, 4), (4, 8), (7, 14), (5, 10), ..</p></li>
-<li><p><strong>목적</strong>: 모델이 학습할 수 있는 입력과 출력 쌍 제공</p></li>
-</ul>
-</li>
-<li><p><strong>학습 과정</strong></p>
-<ul>
-<li><p><strong>패턴 분석</strong>: 입력 값과 출력 값 사이의 관계를 학습</p></li>
-<li><p><strong>관계 발견</strong>: 예시에서, 모델은 출력이 입력의 2배라는 패턴을 학습</p></li>
-</ul>
-</li>
-<li><p><strong>결과 예측</strong></p>
-<ul>
-<li><p><strong>새로운 입력에 대한 예측</strong>: 새로운 입력값 (3, ?), (8, ?)에 대해 모델은 6과 16을 예측</p></li>
-<li><p><strong>예측 기반</strong>: 학습된 패턴과 관계에 기반함</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="id15">
-<h2>전통적 프로그래밍과 머신러닝의 비교<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-41.jpeg"><img alt="../_images/image-1-1-41.jpeg" class="align-center" src="../_images/image-1-1-41.jpeg" style="width: 60%;" /></a>
-<section id="id16">
-<h3>전통적 프로그래밍<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>규칙 기반 접근</strong></p>
-<ul>
-<li><p>프로그래머가 가능한 모든 상황에 대한 규칙을 코딩</p></li>
-<li><p>예측 가능하고 명확한 로직 필요</p></li>
-</ul>
-</li>
-<li><p><strong>유지 관리와 확장성</strong></p>
-<ul>
-<li><p>규칙의 복잡성 증가 시 유지 관리 어려움</p></li>
-<li><p>시스템 확장성과 유연성에 한계</p></li>
-</ul>
-</li>
-<li><p><strong>작동 방식</strong></p>
-<ul>
-<li><p>데이터 + 규칙 = 출력</p></li>
-<li><p>규칙은 프로그래머에 의해 사전 정의됨</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id17">
-<h3>머신러닝<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>데이터 기반 학습</strong></p>
-<ul>
-<li><p>데이터와 결과(출력)로부터 규칙 자동 학습</p></li>
-<li><p>시간에 따라 시스템 효율성 증가 경향</p></li>
-</ul>
-</li>
-<li><p><strong>패턴 인식과 예측</strong></p>
-<ul>
-<li><p>입력 데이터와 출력 데이터 사이 패턴 학습</p></li>
-<li><p>새로운 데이터에 대한 예측 수행</p></li>
-</ul>
-</li>
-<li><p><strong>작동 방식</strong></p>
-<ul>
-<li><p>데이터 + 출력 = 규칙</p></li>
-<li><p>모델은 주어진 데이터를 통해 규칙을 “학습”</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id18">
-<h3>기본적인 작동 방식의 차이<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>전통적 프로그래밍</strong></p>
-<ul>
-<li><p>명시적 규칙에 의한 결정 로직 구현</p></li>
-</ul>
-</li>
-<li><p><strong>머신러닝</strong></p>
-<ul>
-<li><p>데이터를 통한 규칙 학습 및 패턴 추론</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="id19">
-<h2>머신러닝과 인공지능과의 관계<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-51.jpeg"><img alt="../_images/image-1-1-51.jpeg" class="align-center" src="../_images/image-1-1-51.jpeg" style="width: 60%;" /></a>
-</section>
-<section id="id20">
-<h2>머신러닝과 인공지능의 관계 및 차이점<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
-<section id="id21">
-<h3>머신러닝과 인공지능의 관계<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>분류</strong></p>
-<ul>
-<li><p>머신러닝은 인공지능의 하위 집합</p></li>
-<li><p>인공지능은 머신러닝을 포함한 넓은 기술 범위를 가짐</p></li>
-</ul>
-</li>
-<li><p><strong>목표</strong></p>
-<ul>
-<li><p>인공지능: 인간과 유사한 지능 구현</p></li>
-<li><p>머신러닝: 학습 능력에 초점</p></li>
-</ul>
-</li>
-<li><p><strong>능력 포함</strong></p>
-<ul>
-<li><p>인공지능: 추론, 학습, 계획, 문제 해결</p></li>
-<li><p>머신러닝: 데이터로부터 패턴 인식 및 예측</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id22">
-<h3>머신러닝과 인공지능의 차이점<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong>핵심 작업</strong></p>
-<ul class="simple">
-<li><p>머신러닝: 데이터 학습 및 패턴 인식</p></li>
-<li><p>인공지능: 인간과 유사한 추론 및 문제 해결</p></li>
-</ul>
-</li>
-<li><p><strong>접근 방식</strong></p>
-<ul class="simple">
-<li><p>머신러닝: 통계적 방법 및 알고리즘을 통한 지식 추출</p></li>
-<li><p>인공지능: 지식 활용 및 인간과 유사한 의사결정 시스템 개발</p></li>
-</ul>
-</li>
-<li><p><strong>기술 활용</strong></p>
-<ul class="simple">
-<li><p>머신러닝: 데이터 중심 학습 및 예측 모델 개발</p></li>
-<li><p>인공지능: 추론, 계획 및 문제 해결을 위한 시스템 구현</p></li>
-</ul>
-</li>
-<li><p><strong>머신러닝과 인공지능의 비교</strong>:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>구분</p></th>
-<th class="head"><p>머신러닝</p></th>
-<th class="head"><p>인공지능</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>정의</p></td>
-<td><p>데이터를 기반으로 패턴을 학습하고 예측하는 시스템</p></td>
-<td><p>인간과 유사한 지능을 가진 컴퓨터 시스템의 구현</p></td>
-</tr>
-<tr class="row-odd"><td><p>주요 활동</p></td>
-<td><p>데이터를 통한 학습과 패턴 인식</p></td>
-<td><p>지식의 획득, 학습, 추론, 문제 해결 및 의사결정</p></td>
-</tr>
-<tr class="row-even"><td><p>구현과 실현</p></td>
-<td><p>데이터 분석과 예측을 통한 효과적인 의사결정 지원</p></td>
-<td><p>자동화된 의사결정, 자연어 처리, 로봇공학 등의 복잡한 문제 해결</p></td>
-</tr>
-<tr class="row-odd"><td><p>개발 목표</p></td>
-<td><p>특정 작업에 대해 스스로 학습하고 개선하는 알고리즘 개발</p></td>
-<td><p>인간처럼 사고하고 학습할 수 있는 지능적 시스템의 개발</p></td>
-</tr>
-<tr class="row-even"><td><p>응용 분야</p></td>
-<td><p>분류, 회귀 분석, 추천 시스템, 패턴 인식 등</p></td>
-<td><p>음성 인식, 이미지 분석, 자율 주행 차량, 로봇공학 등</p></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<!-- ## 머신러닝 과정에서 고려 사항들
-
-```{image} figs/image-1-1-6.jpeg
-:width: 60%
-:align: center
-```
-
-### 데이터의 적합성과 가능성 평가
-
-- **원하는 답의 가능성 평가**
-  - 문제 해결 가능성 확인
-  - 데이터와 문제의 관련성 분석
-- **데이터의 충분성 및 적합성 확인**
-  - 데이터 양과 품질 검토
-  - 데이터의 다양성 고려
-
-### 적절한 머신러닝 기법의 선택
-
-- **문제 유형에 따른 기법 선정**
-  - 분류, 회귀, 클러스터링 등 문제 종류 파악
-- **알고리즘 선택**
-  - 다양한 알고리즘 비교 및 선택
-  - 결정 트리, 랜덤 포레스트, 신경망 등 고려
-
-### 데이터 특성의 추출과 이해
-
-- **특성 결정**
-  - 분석 목적에 맞는 데이터 특성(특징) 결정
-- **특성 공학과 데이터 전처리**
-  - 유용한 정보 추출을 위한 특성 공학
-  - 데이터 전처리 작업 수행
-
-### 모델의 결론 설정과 평가
-
-- **결론 유형 설정**
-  - 모델이 도출할 결론의 종류 결정
-- **성능 평가 기준 설정**
-  - 모델 성능 평가를 위한 기준 마련
-  - 테스트 데이터를 통한 모델 평가
-
-### 모델의 실제 응용과 활용
-
-- **모델 통합 계획**
-  - 모델 출력의 실제 응용 방법 계획
-- **모델 활용 방안 고려**
-  - 비즈니스 결정, 제품 개선, 고객 서비스 등에 모델 활용 -->
-</section>
-</section>
-<section id="id23">
-<h2>머신러닝의 활용 분야<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/image-1-1-7.jpeg"><img alt="../_images/image-1-1-7.jpeg" class="align-center" src="../_images/image-1-1-7.jpeg" style="width: 60%;" /></a>
-<section id="id24">
-<h3>산업별 활용의 다양성<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>의료 분야</strong>: 질병 진단, 환자 데이터 분석, 치료 방안 예측</p></li>
-<li><p><strong>금융 분야</strong>: 위험 관리, 사기 탐지, 고객 행동 분석</p></li>
-<li><p><strong>교육 분야</strong>: 학습 패턴 분석, 맞춤형 학습 콘텐츠 제공, 성적 예측</p></li>
-<li><p><strong>제조 분야</strong>: 공정 최적화, 품질 관리, 설비 예지보전</p></li>
-</ul>
-</section>
-<section id="id25">
-<h3>기술의 발전과 성과<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>딥러닝의 진보</strong>: 이미지 및 음성 인식, 자연어 처리에서의 혁신적 성과</p></li>
-<li><p><strong>기술 적용 확대</strong>: 데이터 기반 의사결정 지원, 예측 분석 및 패턴 인식 활용 증가</p></li>
-</ul>
-</section>
-<section id="id26">
-<h3>데이터 과학자의 역할<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>데이터 분석</strong>: 빅데이터에서 유의미한 정보 추출 및 분석</p></li>
-<li><p><strong>예측 모델 개발</strong>: 비즈니스 전략 및 의사결정 지원을 위한 모델 구축</p></li>
-<li><p><strong>수요 증가</strong>: 머신러닝 기술 활용의 필요성으로 인한 전문가 수요 급증</p></li>
-</ul>
-</section>
-<section id="id27">
-<h3>복잡한 문제 해결<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>자율주행 자동차</strong>: 주행 환경 인식, 의사결정 알고리즘 개발</p></li>
-<li><p><strong>문자 인식</strong>: 손글씨 인식, 문서 자동 분류 및 번역</p></li>
-<li><p><strong>의료 진단</strong>: 의료 영상 분석을 통한 질병 조기 발견 및 진단 지원</p></li>
-</ul>
-</section>
-<section id="id28">
-<h3>사람의 능력 보완 및 대체<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong>능력 보완</strong>: 인간의 판단을 보조하는 정보 제공 및 분석</p></li>
-<li><p><strong>능력 대체</strong>: 인간이 수행하기 어려운 작업에서의 자동화 및 효율화</p></li>
-<li><p><strong>머신러닝의 다양한 응용 분야</strong>:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>활용 분야</p></th>
-<th class="head"><p>응용 예시</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>영상 인식</p></td>
-<td><p>문자 인식(OCR), 물체 및 장면 인식, 의료 영상 분석</p></td>
-</tr>
-<tr class="row-odd"><td><p>얼굴 인식</p></td>
-<td><p>소셜 미디어의 얼굴 인식 기능, 보안 시스템 내 생체 인식</p></td>
-</tr>
-<tr class="row-even"><td><p>음성 인식</p></td>
-<td><p>음성 비서(Bixby, Siri, Alexa), 음성 대화 시스템</p></td>
-</tr>
-<tr class="row-odd"><td><p>자연어 처리</p></td>
-<td><p>자동 번역 시스템(Google Translate), 감정 분석</p></td>
-</tr>
-<tr class="row-even"><td><p>정보 검색</p></td>
-<td><p>스팸 이메일 필터링, 피싱 이메일 탐지</p></td>
-</tr>
-<tr class="row-odd"><td><p>검색 엔진</p></td>
-<td><p>사용자 맞춤형 콘텐츠 추천(Netflix, YouTube), 검색 최적화</p></td>
-</tr>
-<tr class="row-even"><td><p>로보틱스</p></td>
-<td><p>자율 주행 자동차, 드론을 이용한 배송, 산업용 로봇 자동화</p></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-</section>
-</section>
-<section id="id29">
-<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
-<section id="id30">
-<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-11.jpeg"><img alt="../_images/image-2-1-11.jpeg" class="align-center" src="../_images/image-2-1-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>머신러닝의 정의</strong>: 컴퓨터가 데이터를 기반으로 학습하고, 예측하거나 결정을 내리는 과정</p></li>
@@ -991,8 +517,8 @@ document.write(`
 <li><p><strong>데이터와 알고리즘의 상호작용</strong>: 데이터를 통해 학습되며, 알고리즘에 따라 다른 결과 도출</p></li>
 </ul>
 </section>
-<section id="id31">
-<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-21.jpeg"><img alt="../_images/image-2-1-21.jpeg" class="align-center" src="../_images/image-2-1-21.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>지도 학습(Supervised Learning)</strong>:</p>
@@ -1015,8 +541,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id32">
-<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<section id="id5">
+<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-3.jpeg"><img alt="../_images/image-2-1-3.jpeg" class="align-center" src="../_images/image-2-1-3.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>지도 학습 예시</strong>:</p>
@@ -1039,8 +565,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id33">
-<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-41.jpeg"><img alt="../_images/image-2-1-41.jpeg" class="align-center" src="../_images/image-2-1-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터의 품질</strong>: 정확하고 다양한 데이터가 머신러닝 모델의 성능을 결정</p></li>
@@ -1049,8 +575,8 @@ document.write(`
 <li><p><strong>데이터 양</strong>: 충분한 양의 데이터를 통해 일반화 및 정확도 향상</p></li>
 </ul>
 </section>
-<section id="id34">
-<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
+<section id="id7">
+<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-1-51.jpeg"><img alt="../_images/image-2-1-51.jpeg" class="align-center" src="../_images/image-2-1-51.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>의료 분야</strong>:</p>
@@ -1076,8 +602,8 @@ document.write(`
 </section>
 <section id="supervised-learning">
 <h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h2>
-<section id="id35">
-<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-11.jpeg"><img alt="../_images/image-2-2-11.jpeg" class="align-center" src="../_images/image-2-2-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 지도 학습은 입력 데이터와 그에 해당하는 출력(레이블)을 사용하여 모델을 훈련시키는 방법</p></li>
@@ -1103,8 +629,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id36">
-<h3>지도 학습의 대표적인 알고리즘<a class="headerlink" href="#id36" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>지도 학습의 대표적인 알고리즘<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-31.jpeg"><img alt="../_images/image-2-2-31.jpeg" class="align-center" src="../_images/image-2-2-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>Naive Bayes 분류기</strong>:</p>
@@ -1127,8 +653,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id37">
-<h3>지도 학습의 장단점<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h3>지도 학습의 장단점<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-41.jpeg"><img alt="../_images/image-2-2-41.jpeg" class="align-center" src="../_images/image-2-2-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -1150,8 +676,8 @@ document.write(`
 </section>
 <section id="unsupervised-learning">
 <h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Link to this heading">#</a></h2>
-<section id="id38">
-<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id38" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-11.jpeg"><img alt="../_images/image-2-3-11.jpeg" class="align-center" src="../_images/image-2-3-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 레이블이나 분류가 없는 데이터를 분석하여 패턴, 구조, 관계 등을 찾아내는 학습 방법</p></li>
@@ -1177,8 +703,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id39">
-<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id39" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-31.jpeg"><img alt="../_images/image-2-3-31.jpeg" class="align-center" src="../_images/image-2-3-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>K-means 클러스터링</strong>:</p>
@@ -1195,8 +721,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id40">
-<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id40" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-41.jpeg"><img alt="../_images/image-2-3-41.jpeg" class="align-center" src="../_images/image-2-3-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -1256,8 +782,8 @@ document.write(`
 </section>
 <section id="reinforcement-learning">
 <h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Link to this heading">#</a></h2>
-<section id="id41">
-<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id41" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-11.jpeg"><img alt="../_images/image-2-4-11.jpeg" class="align-center" src="../_images/image-2-4-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>기본 개념</strong>: 에이전트가 환경과 상호작용하며 보상을 최대화하는 방법을 학습하는 과정</p></li>
@@ -1265,8 +791,8 @@ document.write(`
 <li><p><strong>학습 목표</strong>: 장기적인 관점에서 최대의 보상을 얻을 수 있는 전략(정책)을 학습</p></li>
 </ul>
 </section>
-<section id="id42">
-<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
+<section id="id15">
+<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-21.jpeg"><img alt="../_images/image-2-4-21.jpeg" class="align-center" src="../_images/image-2-4-21.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>보상 시스템</strong>: 에이전트의 행동에 따라 긍정적 또는 부정적인 보상을 제공</p></li>
@@ -1274,8 +800,8 @@ document.write(`
 <li><p><strong>학습 과정</strong>: 에이전트는 보상을 기반으로 행동을 조정하여 성능을 개선</p></li>
 </ul>
 </section>
-<section id="id43">
-<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
+<section id="id16">
+<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-31.jpeg"><img alt="../_images/image-2-4-31.jpeg" class="align-center" src="../_images/image-2-4-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>알고리즘</strong>:</p>
@@ -1292,8 +818,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id44">
-<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id44" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-41.jpeg"><img alt="../_images/image-2-4-41.jpeg" class="align-center" src="../_images/image-2-4-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>게임</strong>: 인공지능이 스스로 게임을 플레이하며 전략을 개발</p></li>
@@ -1301,8 +827,8 @@ document.write(`
 <li><p><strong>자율주행 차량</strong>: 실시간으로 변화하는 도로 상황에 대응하는 전략 학습</p></li>
 </ul>
 </section>
-<section id="id45">
-<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id45" title="Link to this heading">#</a></h3>
+<section id="id18">
+<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-5.jpeg"><img alt="../_images/image-2-4-5.jpeg" class="align-center" src="../_images/image-2-4-5.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>연구 동향</strong>: 복잡한 환경에서의 학습, 다중 에이전트 시스템, 실시간 학습</p></li>
@@ -1311,10 +837,10 @@ document.write(`
 </ul>
 </section>
 </section>
-<section id="id46">
-<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id46" title="Link to this heading">#</a></h2>
-<section id="id47">
-<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id47" title="Link to this heading">#</a></h3>
+<section id="id19">
+<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<section id="id20">
+<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-1.jpeg"><img alt="../_images/image-2-5-1.jpeg" class="align-center" src="../_images/image-2-5-1.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>문제의 성격 파악</strong>: 분류, 회귀, 클러스터링, 강화 학습 중 어떤 문제인가?</p></li>
@@ -1323,8 +849,8 @@ document.write(`
 <li><p><strong>시간과 자원</strong>: 학습에 소요되는 시간과 필요한 자원 고려</p></li>
 </ul>
 </section>
-<section id="id48">
-<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id48" title="Link to this heading">#</a></h3>
+<section id="id21">
+<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-2.jpeg"><img alt="../_images/image-2-5-2.jpeg" class="align-center" src="../_images/image-2-5-2.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>데이터 크기</strong>: 대용량 데이터는 더 강력한 알고리즘 필요</p></li>
@@ -1332,8 +858,8 @@ document.write(`
 <li><p><strong>데이터 품질</strong>: 노이즈가 많거나 불완전한 데이터는 전처리의 중요성</p></li>
 </ul>
 </section>
-<section id="id49">
-<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id49" title="Link to this heading">#</a></h3>
+<section id="id22">
+<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-3.jpeg"><img alt="../_images/image-2-5-3.jpeg" class="align-center" src="../_images/image-2-5-3.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>정확도와 오류율</strong>: 모델의 예측 정확도 평가</p></li>
@@ -1341,8 +867,8 @@ document.write(`
 <li><p><strong>성능 지표</strong>: 정밀도, 재현율, F1 점수 등 다양한 성능 지표 사용</p></li>
 </ul>
 </section>
-<section id="id50">
-<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id50" title="Link to this heading">#</a></h3>
+<section id="id23">
+<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-5-4.jpeg"><img alt="../_images/image-2-5-4.jpeg" class="align-center" src="../_images/image-2-5-4.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>적절한 데이터 준비</strong>: 데이터의 질과 양에 주의</p></li>
@@ -1384,24 +910,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="index.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Week 5: 기계학습</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="session2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">머신러닝 모델의 학습과 평가</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -1418,81 +926,42 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 정의</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">기본 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">역사적 배경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">톰 미첼의 정의 (1998년)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">핵심 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">데이터 중심의 접근</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">머신러닝의 역사적 배경</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">역사적 배경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1952년 - 새무얼의 체커 프로그램</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">연도별 주요 개발 모델과 특징</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">머신러닝의 학습 개념</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">학습의 기본 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">학습의 예시</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">전통적 프로그래밍과 머신러닝의 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">전통적 프로그래밍</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">머신러닝</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">기본적인 작동 방식의 차이</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">머신러닝과 인공지능과의 관계</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">머신러닝과 인공지능의 관계 및 차이점</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">머신러닝과 인공지능의 관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">머신러닝과 인공지능의 차이점</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">머신러닝의 활용 분야</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">산업별 활용의 다양성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">기술의 발전과 성과</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">데이터 과학자의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">복잡한 문제 해결</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">사람의 능력 보완 및 대체</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">머신러닝 학습 방법의 기본 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">각 학습 방법의 적용 예시와 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">학습 데이터의 역할과 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">실제 사례를 통한 학습 방법의 이해</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">지도 학습의 대표적인 알고리즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">지도 학습의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비지도 학습의 정의 및 핵심 개념</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">비지도 학습의 대표적인 알고리즘 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 장단점 및 도전 과제</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">비지도 학습 vs 지도 학습</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">강화 학습의 기본 개념과 메커니즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">보상 시스템과 환경의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">강화 학습의 기본 개념과 메커니즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">보상 시스템과 환경의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">특정 문제에 적합한 학습 방법 결정하기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">머신러닝 모델의 성능 평가 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">특정 문제에 적합한 학습 방법 결정하기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">머신러닝 모델의 성능 평가 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
 </ul>
 </li>
 </ul>
