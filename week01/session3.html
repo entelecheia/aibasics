@@ -1022,7 +1022,110 @@ document.write(`
 <li><p>적절한 휴리스틱 함수 선택 시 최적해 찾기 가능</p></li>
 </ul>
 </li>
+<li><p>A* 알고리즘 예제: 2차원 격자 미로에서 시작점 <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0]</span></code>에서 종료점 <code class="docutils literal notranslate"><span class="pre">[5,</span> <span class="pre">5]</span></code>까지의 최단 경로를 탐색하는 프로그램</p></li>
 </ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Node</span><span class="p">:</span>
+    <span class="c1"># 노드 초기화</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># 노드 비교</span>
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">position</span>
+
+<span class="k">def</span> <span class="nf">astar</span><span class="p">(</span><span class="n">maze</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="c1"># 시작 노드와 종료 노드 생성</span>
+    <span class="n">start_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">start</span><span class="p">))</span>
+    <span class="n">start_node</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">start_node</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">start_node</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">end_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">end</span><span class="p">))</span>
+    <span class="n">end_node</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">end_node</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">end_node</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># 열린 목록, 닫힌 목록 초기화</span>
+    <span class="n">open_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">closed_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># 시작 노드를 열린 목록에 추가</span>
+    <span class="n">open_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_node</span><span class="p">)</span>
+
+    <span class="c1"># 열린 목록이 빌 때까지 반복</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">open_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># 현재 노드를 가져옴</span>
+        <span class="n">current_node</span> <span class="o">=</span> <span class="n">open_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">current_index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">open_list</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">f</span> <span class="o">&lt;</span> <span class="n">current_node</span><span class="o">.</span><span class="n">f</span><span class="p">:</span>
+                <span class="n">current_node</span> <span class="o">=</span> <span class="n">item</span>
+                <span class="n">current_index</span> <span class="o">=</span> <span class="n">index</span>
+
+        <span class="c1"># 현재 노드를 열린 목록에서 제거하고 닫힌 목록에 추가</span>
+        <span class="n">open_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">current_index</span><span class="p">)</span>
+        <span class="n">closed_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_node</span><span class="p">)</span>
+
+        <span class="c1"># 목표 노드를 찾은 경우</span>
+        <span class="k">if</span> <span class="n">current_node</span> <span class="o">==</span> <span class="n">end_node</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">current</span> <span class="o">=</span> <span class="n">current_node</span>
+            <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+                <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">parent</span>
+            <span class="k">return</span> <span class="n">path</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># 반환된 경로</span>
+
+        <span class="c1"># 인접한 노드 생성</span>
+        <span class="n">children</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">new_position</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]:</span>
+            <span class="n">node_position</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_node</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">new_position</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">current_node</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">new_position</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="c1"># 노드 위치가 미로 범위 내에 있는지 확인</span>
+            <span class="k">if</span> <span class="n">node_position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">maze</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">node_position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">node_position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">maze</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">maze</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">node_position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># 노드 위치가 장애물인지 확인</span>
+            <span class="k">if</span> <span class="n">maze</span><span class="p">[</span><span class="n">node_position</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">node_position</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># 새로운 노드 생성 및 부모 설정</span>
+            <span class="n">new_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">current_node</span><span class="p">,</span> <span class="n">node_position</span><span class="p">)</span>
+            <span class="n">children</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_node</span><span class="p">)</span>
+
+        <span class="c1"># 자식들에 대해</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">children</span><span class="p">:</span>
+            <span class="c1"># 자식이 닫힌 목록에 있는지 확인</span>
+            <span class="k">if</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">closed_list</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># 자식의 g, h, f 값 계산</span>
+            <span class="n">child</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">current_node</span><span class="o">.</span><span class="n">g</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">child</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="p">((</span><span class="n">child</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">end_node</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">((</span><span class="n">child</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">end_node</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">child</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">g</span> <span class="o">+</span> <span class="n">child</span><span class="o">.</span><span class="n">h</span>
+
+            <span class="c1"># 자식이 이미 열린 목록에 있고, g 값이 더 큰 경우 무시</span>
+            <span class="k">for</span> <span class="n">open_node</span> <span class="ow">in</span> <span class="n">open_list</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">child</span> <span class="o">==</span> <span class="n">open_node</span> <span class="ow">and</span> <span class="n">child</span><span class="o">.</span><span class="n">g</span> <span class="o">&gt;</span> <span class="n">open_node</span><span class="o">.</span><span class="n">g</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+            <span class="c1"># 자식을 열린 목록에 추가</span>
+            <span class="n">open_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+
+<span class="c1"># 미로 (0: 이동 가능, 1: 장애물)</span>
+<span class="n">maze</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+
+<span class="c1"># 시작점과 종료점</span>
+<span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="n">astar</span><span class="p">(</span><span class="n">maze</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="queens">
 <h3>인공지능 알고리즘: 8-Queens 문제<a class="headerlink" href="#queens" title="Link to this heading">#</a></h3>
