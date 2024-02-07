@@ -1,0 +1,980 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>머신러닝 모델의 학습과 평가 &#8212; AI 세상 속으로</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-examples.css?v=e236af4b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/book.css?v=b36e1efd" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/js/hoverxref.js"></script>
+    <script src="../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../_static/js/micromodal.min.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BQJE5V9RK2"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-BQJE5V9RK2');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-BQJE5V9RK2');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week05/session3';</script>
+    <link rel="icon" href="../_static/chu-favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AI 세상 속으로</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    인공지능, 머신러닝, 딥러닝 그게 뭐야?
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week01/index.html">Week 1: 인공지능 소개</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week01/session1.html">인공지능의 역사</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week01/session2.html">인공지능의 유형들</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week01/session3.html">인공지능 문제 해결 및 탐색전략</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="session1.html">머신러닝의 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session2.html">머신러닝 학습 방법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab.html">머신러닝 알고리즘 실습</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week06/index.html">Week 6: 추천시스템</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week06/session1.html">추천 시스템의 기본 개념</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week06/session2.html">추천 시스템의 고급 주제</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week06/lab.html">추천 시스템 실습</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week10/index.html">Week 10: 자연어처리</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week10/session1.html">자연어처리의 이해</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/session2.html">자연어처리 기법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/session3.html">언어 모델</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week11/index.html">Week 11: 생성형 AI</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week11/session1.html">생성형 AI 입문</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/session2.html">프롬프트 엔지니어링</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/session3.html">AI 에이전트</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/chu-aie/aibasics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/chu-aie/aibasics/edit/main/book/week05/session3.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/chu-aie/aibasics/issues/new?title=Issue%20on%20page%20%2Fweek05/session3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week05/session3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>머신러닝 모델의 학습과 평가</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">특정 문제에 적합한 학습 방법 결정하기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">머신러닝 모델의 성능 평가 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">목표와 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">선형 회귀 모델의 기본 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">최소 제곱법 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비용함수와 손실함수의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">평균제곱오차의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">오차 함수와 목적 함수의 비교</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">경사하강법의 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">경사하강법의 다양한 변형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">경사하강법 시각화</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">과대적합과 과소적합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">최적화 알고리즘의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">과대적합과 과소적합 방지 전략</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">좋은 머신러닝 모델의 조건</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">데이터의 양과 질의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">모델 복잡도 조절</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">일반화, 정규화, 가중치 규제</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>머신러닝 모델의 학습과 평가<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-5-1.jpeg"><img alt="../_images/image-2-5-1.jpeg" class="align-center" src="../_images/image-2-5-1.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>문제의 성격 파악</strong>: 분류, 회귀, 클러스터링, 강화 학습 중 어떤 문제인가?</p></li>
+<li><p><strong>지도 학습과 비지도 학습의 구분</strong>: 레이블이 있는 데이터인지 여부를 고려</p></li>
+<li><p><strong>복잡도와 정확도</strong>: 문제의 복잡도에 따른 적합한 알고리즘 선택</p></li>
+<li><p><strong>시간과 자원</strong>: 학습에 소요되는 시간과 필요한 자원 고려</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-5-2.jpeg"><img alt="../_images/image-2-5-2.jpeg" class="align-center" src="../_images/image-2-5-2.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터 크기</strong>: 대용량 데이터는 더 강력한 알고리즘 필요</p></li>
+<li><p><strong>데이터 특성</strong>: 텍스트, 이미지, 숫자 등 데이터 유형에 따른 최적의 접근법 선택</p></li>
+<li><p><strong>데이터 품질</strong>: 노이즈가 많거나 불완전한 데이터는 전처리의 중요성</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-5-3.jpeg"><img alt="../_images/image-2-5-3.jpeg" class="align-center" src="../_images/image-2-5-3.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>정확도와 오류율</strong>: 모델의 예측 정확도 평가</p></li>
+<li><p><strong>교차 검증</strong>: 데이터의 여러 부분을 사용하여 모델 검증</p></li>
+<li><p><strong>성능 지표</strong>: 정밀도, 재현율, F1 점수 등 다양한 성능 지표 사용</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-5-4.jpeg"><img alt="../_images/image-2-5-4.jpeg" class="align-center" src="../_images/image-2-5-4.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>적절한 데이터 준비</strong>: 데이터의 질과 양에 주의</p></li>
+<li><p><strong>반복적인 실험</strong>: 다양한 모델과 매개변수로 실험</p></li>
+<li><p><strong>성능 튜닝</strong>: 하이퍼파라미터 조정을 통한 성능 최적화</p></li>
+<li><p><strong>결과 해석과 공유</strong>: 결과 해석의 중요성과 팀 내 공유</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2>머신러닝 모델 최적화의 기초<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3>목표와 개요<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-1.jpeg"><img alt="../_images/image-3-1-1.jpeg" class="align-center" src="../_images/image-3-1-1.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>목표</strong>: 모델의 예측 성능 극대화</p></li>
+<li><p><strong>중요성</strong>: 데이터 패턴 이해 증진 및 실제 복잡한 문제 해결</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-21.jpeg"><img alt="../_images/image-3-1-21.jpeg" class="align-center" src="../_images/image-3-1-21.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 데이터 관계를 직선(y = ax + b)으로 모델링</p>
+<ul>
+<li><p><strong>y</strong>: 종속 변수</p></li>
+<li><p><strong>x</strong>: 독립 변수</p></li>
+<li><p><strong>a</strong>: 기울기</p></li>
+<li><p><strong>b</strong>: y절편</p></li>
+</ul>
+</li>
+<li><p><strong>목적</strong>: 데이터 포인트에 가장 잘 맞는 직선 찾기</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>최소 제곱법 소개<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-31.jpeg"><img alt="../_images/image-3-1-31.jpeg" class="align-center" src="../_images/image-3-1-31.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>개념</strong>: 선형 회귀의 매개변수 a, b 찾는 방법</p></li>
+<li><p><strong>원리</strong>: 데이터 포인트와 선형 모델 간 거리(오차)의 제곱 최소화</p></li>
+<li><p><strong>수학적 접근</strong>: 오차 제곱 합 최소화를 통한 최적 매개변수 도출</p></li>
+</ul>
+</section>
+<section id="mse">
+<h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-1-41.jpeg"><img alt="../_images/image-3-1-41.jpeg" class="align-center" src="../_images/image-3-1-41.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>: 예측값과 실제값 간 차이의 수치화</p></li>
+<li><p><strong>계산식</strong>: MSE = (1/n) Σ(actual - prediction)²</p></li>
+<li><p><strong>중요성</strong>: 모델 성능 평가 및 비교의 핵심 지표</p></li>
+</ul>
+</section>
+</section>
+<section id="id11">
+<h2>비용함수와 손실함수<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>비용함수와 손실함수의 정의<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-11.jpeg"><img alt="../_images/image-3-2-11.jpeg" class="align-center" src="../_images/image-3-2-11.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>정의</strong>:</p>
+<ul>
+<li><p>손실함수(Loss Function): 개별 데이터 포인트에 대한 모델의 오차를 측정</p></li>
+<li><p>비용함수(Cost Function): 전체 데이터셋에 대한 모델의 성능을 측정</p></li>
+</ul>
+</li>
+<li><p><strong>중요성</strong>:</p>
+<ul>
+<li><p>이 함수들은 모델이 얼마나 잘 또는 잘못 예측하는지를 나타내며, 이를 최소화하는 것이 모델 학습의 목표</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id13">
+<h3>평균제곱오차의 역할<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-21.jpeg"><img alt="../_images/image-3-2-21.jpeg" class="align-center" src="../_images/image-3-2-21.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong>:</p>
+<ul>
+<li><p>MSE = (1/n) Σ(actual - prediction)²</p></li>
+<li><p>여기서 Σ는 합계, n은 샘플 수, actual은 실제 값, prediction은 예측값</p></li>
+</ul>
+</li>
+<li><p><strong>역할</strong>:</p>
+<ul>
+<li><p>MSE는 회귀 문제에서 자주 사용되는 손실 함수</p></li>
+<li><p>모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 낸 오차의 크기</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id14">
+<h3>오차 함수와 목적 함수의 비교<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-2-31.jpeg"><img alt="../_images/image-3-2-31.jpeg" class="align-center" src="../_images/image-3-2-31.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>오차 함수(Error Function)</strong>:</p>
+<ul>
+<li><p>개별 예측값과 실제값의 차이를 측정</p></li>
+<li><p>주로 손실 함수로 사용되며, 모델이 개별 데이터 포인트에서 얼마나 잘못 예측하는지를 나타냄</p></li>
+</ul>
+</li>
+<li><p><strong>목적 함수(Objective Function)</strong>:</p>
+<ul>
+<li><p>전체 데이터셋을 기반으로 한 모델의 전반적인 성능을 측정</p></li>
+<li><p>비용 함수와 같은 의미로 사용되며, 모델의 성능 최적화를 위한 목표를 설정</p></li>
+</ul>
+</li>
+<li><p><strong>차이점</strong>:</p>
+<ul>
+<li><p>오차 함수는 개별 데이터 포인트에 초점을 맞추고, 목적 함수는 전체 데이터셋에 대한 성능을 고려</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="gradient-descent">
+<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Link to this heading">#</a></h2>
+<section id="id15">
+<h3>경사하강법의 기본 원리<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-11.jpeg"><img alt="../_images/image-3-3-11.jpeg" class="align-center" src="../_images/image-3-3-11.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>기본 개념</strong>:</p>
+<ul>
+<li><p>경사하강법은 비용 함수의 최소점을 찾기 위한 반복적인 최적화 기법</p></li>
+<li><p>기울기(gradient)를 사용하여 각 단계에서 비용 함수를 줄여나가는 방식</p></li>
+</ul>
+</li>
+<li><p><strong>작동 원리</strong>:</p>
+<ul>
+<li><p>현재 위치에서 비용 함수의 기울기를 계산하고, 이를 통해 비용이 감소하는 방향으로 이동</p></li>
+<li><p>학습률(learning rate)은 이동 거리를 조절하는 파라미터로, 적절한 크기 설정이 중요</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id16">
+<h3>경사하강법의 다양한 변형<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-21.jpeg"><img alt="../_images/image-3-3-21.jpeg" class="align-center" src="../_images/image-3-3-21.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>SGD (Stochastic Gradient Descent)</strong>:</p>
+<ul>
+<li><p>매 반복에서 하나의 훈련 샘플을 사용하여 기울기를 계산</p></li>
+<li><p>빠른 계산이 가능하지만, 비용 함수의 변동이 클 수 있고, 최적의 해를 찾기 어려움</p></li>
+</ul>
+</li>
+<li><p><strong>Momentum</strong>:</p>
+<ul>
+<li><p>이전 단계의 기울기를 고려하여 관성의 개념을 도입</p></li>
+<li><p>이를 통해 더 안정적이고 빠르게 최소점에 도달할 수 있음</p></li>
+</ul>
+</li>
+<li><p><strong>AdaGrad, RMSprop, Adam</strong>:</p>
+<ul>
+<li><p>이 방법들은 학습률을 동적으로 조절하여 더 효율적인 최적화를 달성</p></li>
+<li><p>각각의 방법은 다른 방식으로 학습률을 조정</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id17">
+<h3>경사하강법 시각화<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-3-31.jpeg"><img alt="../_images/image-3-3-31.jpeg" class="align-center" src="../_images/image-3-3-31.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>비용함수의 모양과 경로</strong>:</p>
+<ul>
+<li><p>비용함수의 모양은 고차원이지만, 일반적으로 2D 또는 3D로 시각화하여 경사하강법의 경로를 이해</p></li>
+<li><p>시각화는 비용함수의 기울기와 학습률이 경로에 어떤 영향을 미치는지 보여줌</p></li>
+</ul>
+</li>
+<li><p><strong>시각적 이해</strong>:</p>
+<ul>
+<li><p>경사하강법의 진행 과정을 그래픽으로 나타내어 비용 함수의 최소점에 도달하는 과정을 시각적으로 이해</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id18">
+<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h3>과대적합과 과소적합<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-11.jpeg"><img alt="../_images/image-3-4-11.jpeg" class="align-center" src="../_images/image-3-4-11.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>과대적합(Overfitting)</strong>:</p>
+<ul>
+<li><p>모델이 학습 데이터에 너무 적합되어 새로운 데이터에 대한 예측 성능이 떨어지는 현상</p></li>
+<li><p>학습 데이터의 노이즈나 비정상적인 패턴까지 학습하는 경우 발생</p></li>
+</ul>
+</li>
+<li><p><strong>과소적합(Underfitting)</strong>:</p>
+<ul>
+<li><p>모델이 학습 데이터의 패턴을 충분히 학습하지 못해 일반화 성능이 낮은 상태</p></li>
+<li><p>모델이 너무 단순하거나 학습이 충분히 이루어지지 않은 경우 발생</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id20">
+<h3>최적화 알고리즘의 중요성<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-2.jpeg"><img alt="../_images/image-3-4-2.jpeg" class="align-center" src="../_images/image-3-4-2.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>일반화 능력 향상</strong>:</p>
+<ul>
+<li><p>최적화 알고리즘은 모델이 학습 데이터뿐만 아니라 새로운 데이터에도 잘 작동하도록 도와줌</p></li>
+<li><p>모델의 일반화 능력을 향상시켜 실제 세계의 다양한 데이터에 적용 가능하게 함</p></li>
+</ul>
+</li>
+<li><p><strong>적절한 모델 복잡도</strong>:</p>
+<ul>
+<li><p>최적화를 통해 모델의 복잡도를 조절하고, 과대적합과 과소적합 사이의 균형을 맞춤</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id21">
+<h3>과대적합과 과소적합 방지 전략<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-4-31.jpeg"><img alt="../_images/image-3-4-31.jpeg" class="align-center" src="../_images/image-3-4-31.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터 증강(Data Augmentation)</strong>:</p>
+<ul>
+<li><p>기존 데이터에 변형을 가해 데이터셋의 다양성을 증가시키는 방법</p></li>
+<li><p>과대적합을 방지하고 모델의 일반화 능력을 향상시킴</p></li>
+</ul>
+</li>
+<li><p><strong>교차 검증(Cross-Validation)</strong>:</p>
+<ul>
+<li><p>학습 데이터를 여러 부분으로 나누고, 이들을 교차하여 검증하는 방법</p></li>
+<li><p>모델의 성능을 보다 객관적으로 평가할 수 있음</p></li>
+</ul>
+</li>
+<li><p><strong>정규화(Regularization)</strong>:</p>
+<ul>
+<li><p>모델의 가중치에 제약을 두어 복잡도를 감소시키는 기술</p></li>
+<li><p>L1, L2 정규화 등이 있으며, 과대적합을 방지하는 데 효과적임</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id22">
+<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h3>데이터의 양과 질의 중요성<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-11.jpeg"><img alt="../_images/image-3-5-11.jpeg" class="align-center" src="../_images/image-3-5-11.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터의 중요성</strong>:</p>
+<ul>
+<li><p>머신러닝 모델의 성능은 사용하는 데이터의 양과 질에 크게 의존</p></li>
+<li><p>충분하고 다양한 데이터는 모델이 더 많은 패턴과 상황을 학습하게 함</p></li>
+</ul>
+</li>
+<li><p><strong>고품질 데이터의 특성</strong>:</p>
+<ul>
+<li><p>정확하고, 완전하며, 관련성이 높은 데이터</p></li>
+<li><p>노이즈가 적고, 편향되지 않은 데이터 셋</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id24">
+<h3>모델 복잡도 조절<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-21.jpeg"><img alt="../_images/image-3-5-21.jpeg" class="align-center" src="../_images/image-3-5-21.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>모델 복잡도의 중요성</strong>:</p>
+<ul>
+<li><p>모델이 너무 복잡하면 과대적합의 위험이 있고, 너무 단순하면 과소적합이 발생할 수 있음</p></li>
+</ul>
+</li>
+<li><p><strong>PCA (주성분 분석)</strong>:</p>
+<ul>
+<li><p>고차원 데이터의 차원을 축소하여 모델의 복잡도를 줄이는 기법</p></li>
+<li><p>중요한 정보를 유지하면서 데이터의 특성 수를 감소시킴</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id25">
+<h3>일반화, 정규화, 가중치 규제<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-3-5-31.jpeg"><img alt="../_images/image-3-5-31.jpeg" class="align-center" src="../_images/image-3-5-31.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>일반화(Generalization)</strong>:</p>
+<ul>
+<li><p>모델이 새로운 데이터에 대해 잘 예측하는 능력</p></li>
+<li><p>학습 데이터뿐만 아니라 테스트 데이터에서도 좋은 성능을 나타냄을 의미</p></li>
+</ul>
+</li>
+<li><p><strong>정규화(Regularization)</strong>:</p>
+<ul>
+<li><p>L1, L2 정규화와 같은 기법을 사용하여 모델의 과대적합을 방지</p></li>
+<li><p>모델의 가중치에 제약을 추가하여 복잡도를 줄임</p></li>
+</ul>
+</li>
+<li><p><strong>가중치 규제(Weight Regularization)</strong>:</p>
+<ul>
+<li><p>모델의 가중치가 너무 커지지 않도록 제한하여 과대적합을 방지</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "chu-aie/aibasics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week05"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">특정 문제에 적합한 학습 방법 결정하기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">머신러닝 모델의 성능 평가 방법</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">목표와 개요</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">선형 회귀 모델의 기본 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">최소 제곱법 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비용함수와 손실함수의 정의</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">평균제곱오차의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">오차 함수와 목적 함수의 비교</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">경사하강법의 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">경사하강법의 다양한 변형</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">경사하강법 시각화</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">과대적합과 과소적합</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">최적화 알고리즘의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">과대적합과 과소적합 방지 전략</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">좋은 머신러닝 모델의 조건</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">데이터의 양과 질의 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">모델 복잡도 조절</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">일반화, 정규화, 가중치 규제</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 김성진, 이영준, 장용준
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>머신러닝 모델의 학습과 평가 &#8212; AI 세상 속으로</title>
+    <title>머신러닝 학습 방법 &#8212; AI 세상 속으로</title>
   
   
   
@@ -221,7 +221,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Week 5: 기계학습</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="session1.html">머신러닝의 개요</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">머신러닝 모델의 학습과 평가</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">머신러닝 학습 방법</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lab.html">머신러닝 알고리즘 실습</a></li>
 </ul>
 </li>
@@ -445,7 +445,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>머신러닝 모델의 학습과 평가</h1>
+    <h1>머신러닝 학습 방법</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,65 +455,35 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">지도 학습의 대표적인 알고리즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비지도 학습의 정의 및 핵심 개념</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습의 대표적인 알고리즘 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 장단점 및 도전 과제</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">비지도 학습 vs 지도 학습</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">강화 학습의 기본 개념과 메커니즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">보상 시스템과 환경의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">특정 문제에 적합한 학습 방법 결정하기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">머신러닝 모델의 성능 평가 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">목표와 개요</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">선형 회귀 모델의 기본 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">최소 제곱법 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">비용함수와 손실함수의 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">평균제곱오차의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">오차 함수와 목적 함수의 비교</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">경사하강법의 기본 원리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">경사하강법의 다양한 변형</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">경사하강법 시각화</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">과대적합과 과소적합</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">최적화 알고리즘의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">과대적합과 과소적합 방지 전략</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">좋은 머신러닝 모델의 조건</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">데이터의 양과 질의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">모델 복잡도 조절</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">일반화, 정규화, 가중치 규제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">강화 학습의 기본 개념과 메커니즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">보상 시스템과 환경의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
 </ul>
 </li>
 </ul>
@@ -528,11 +498,105 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>머신러닝 모델의 학습과 평가<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>머신러닝 학습 방법<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>머신러닝의 학습 방법 개요<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>머신러닝 학습 방법의 기본 이해<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-11.jpeg"><img alt="../_images/image-2-1-11.jpeg" class="align-center" src="../_images/image-2-1-11.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>머신러닝의 정의</strong>: 컴퓨터가 데이터를 기반으로 학습하고, 예측하거나 결정을 내리는 과정</p></li>
+<li><p><strong>학습 방법의 중요성</strong>: 알고리즘의 성능과 정확도에 직접적인 영향을 미침</p></li>
+<li><p><strong>데이터와 알고리즘의 상호작용</strong>: 데이터를 통해 학습되며, 알고리즘에 따라 다른 결과 도출</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>지도 학습, 비지도 학습, 강화 학습의 차이점<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-21.jpeg"><img alt="../_images/image-2-1-21.jpeg" class="align-center" src="../_images/image-2-1-21.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>지도 학습(Supervised Learning)</strong>:</p>
+<ul>
+<li><p>레이블링된 데이터셋 사용</p></li>
+<li><p>예: 분류(Classification), 회귀(Regression)</p></li>
+</ul>
+</li>
+<li><p><strong>비지도 학습(Unsupervised Learning)</strong>:</p>
+<ul>
+<li><p>레이블 없는 데이터셋 사용</p></li>
+<li><p>예: 클러스터링(Clustering), 차원 축소</p></li>
+</ul>
+</li>
+<li><p><strong>강화 학습(Reinforcement Learning)</strong>:</p>
+<ul>
+<li><p>보상 시스템을 통한 학습</p></li>
+<li><p>예: 로봇 제어, 게임 AI</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id5">
+<h3>각 학습 방법의 적용 예시와 중요성<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-3.jpeg"><img alt="../_images/image-2-1-3.jpeg" class="align-center" src="../_images/image-2-1-3.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>지도 학습 예시</strong>:</p>
+<ul>
+<li><p>이미지 분류: 고양이와 개 구분</p></li>
+<li><p>주가 예측: 과거 데이터를 바탕으로 미래 주가 예측</p></li>
+</ul>
+</li>
+<li><p><strong>비지도 학습 예시</strong>:</p>
+<ul>
+<li><p>고객 세분화: 구매 패턴을 기반으로 유사한 고객 그룹화</p></li>
+<li><p>차원 축소: 데이터의 복잡성 감소</p></li>
+</ul>
+</li>
+<li><p><strong>강화 학습 예시</strong>:</p>
+<ul>
+<li><p>체스 게임: 각 수에 대한 보상을 통해 최적의 전략 학습</p></li>
+<li><p>자율 주행 자동차: 다양한 시나리오에서 최적의 운전 방법 학습</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id6">
+<h3>학습 데이터의 역할과 중요성<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-41.jpeg"><img alt="../_images/image-2-1-41.jpeg" class="align-center" src="../_images/image-2-1-41.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>데이터의 품질</strong>: 정확하고 다양한 데이터가 머신러닝 모델의 성능을 결정</p></li>
+<li><p><strong>데이터 전처리의 중요성</strong>: 불필요한 정보 제거, 필요한 정보 강조</p></li>
+<li><p><strong>데이터 다양성</strong>: 다양한 시나리오 및 사례를 포함하는 것이 중요</p></li>
+<li><p><strong>데이터 양</strong>: 충분한 양의 데이터를 통해 일반화 및 정확도 향상</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>실제 사례를 통한 학습 방법의 이해<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../_images/image-2-1-51.jpeg"><img alt="../_images/image-2-1-51.jpeg" class="align-center" src="../_images/image-2-1-51.jpeg" style="width: 60%;" /></a>
+<ul class="simple">
+<li><p><strong>의료 분야</strong>:</p>
+<ul>
+<li><p>지도 학습: X-레이 이미지를 통한 질병 진단</p></li>
+<li><p>비지도 학습: 환자 데이터를 클러스터링하여 유사 질병 그룹 생성</p></li>
+</ul>
+</li>
+<li><p><strong>금융 분야</strong>:</p>
+<ul>
+<li><p>지도 학습: 고객 신용 점수 예측</p></li>
+<li><p>강화 학습: 주식 시장에서의 자동 거래 시스템</p></li>
+</ul>
+</li>
+<li><p><strong>통신 분야</strong>:</p>
+<ul>
+<li><p>비지도 학습: 사용자 행동을 기반으로 하는 서비스 추천 시스템</p></li>
+<li><p>강화 학습: 네트워크 트래픽 최적화</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 <section id="supervised-learning">
 <h2>지도 학습 (Supervised Learning)<a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h2>
-<section id="id2">
-<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h3>지도 학습의 정의 및 기본 원리<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-11.jpeg"><img alt="../_images/image-2-2-11.jpeg" class="align-center" src="../_images/image-2-2-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 지도 학습은 입력 데이터와 그에 해당하는 출력(레이블)을 사용하여 모델을 훈련시키는 방법</p></li>
@@ -558,8 +622,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id3">
-<h3>지도 학습의 대표적인 알고리즘<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>지도 학습의 대표적인 알고리즘<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-31.jpeg"><img alt="../_images/image-2-2-31.jpeg" class="align-center" src="../_images/image-2-2-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>Naive Bayes 분류기</strong>:</p>
@@ -582,8 +646,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id4">
-<h3>지도 학습의 장단점<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h3>지도 학습의 장단점<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-2-41.jpeg"><img alt="../_images/image-2-2-41.jpeg" class="align-center" src="../_images/image-2-2-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -605,8 +669,8 @@ document.write(`
 </section>
 <section id="unsupervised-learning">
 <h2>비지도 학습 (Unsupervised Learning)<a class="headerlink" href="#unsupervised-learning" title="Link to this heading">#</a></h2>
-<section id="id5">
-<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h3>비지도 학습의 정의 및 핵심 개념<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-11.jpeg"><img alt="../_images/image-2-3-11.jpeg" class="align-center" src="../_images/image-2-3-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>정의</strong>: 레이블이나 분류가 없는 데이터를 분석하여 패턴, 구조, 관계 등을 찾아내는 학습 방법</p></li>
@@ -632,8 +696,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id6">
-<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>비지도 학습의 대표적인 알고리즘 소개<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-31.jpeg"><img alt="../_images/image-2-3-31.jpeg" class="align-center" src="../_images/image-2-3-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>K-means 클러스터링</strong>:</p>
@@ -650,8 +714,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id7">
-<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3>비지도 학습의 장단점 및 도전 과제<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-3-41.jpeg"><img alt="../_images/image-2-3-41.jpeg" class="align-center" src="../_images/image-2-3-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>장점</strong>:</p>
@@ -711,8 +775,8 @@ document.write(`
 </section>
 <section id="reinforcement-learning">
 <h2>강화 학습 (Reinforcement Learning)<a class="headerlink" href="#reinforcement-learning" title="Link to this heading">#</a></h2>
-<section id="id8">
-<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h3>강화 학습의 기본 개념과 메커니즘<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-11.jpeg"><img alt="../_images/image-2-4-11.jpeg" class="align-center" src="../_images/image-2-4-11.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>기본 개념</strong>: 에이전트가 환경과 상호작용하며 보상을 최대화하는 방법을 학습하는 과정</p></li>
@@ -720,8 +784,8 @@ document.write(`
 <li><p><strong>학습 목표</strong>: 장기적인 관점에서 최대의 보상을 얻을 수 있는 전략(정책)을 학습</p></li>
 </ul>
 </section>
-<section id="id9">
-<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="id15">
+<h3>보상 시스템과 환경의 역할<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-21.jpeg"><img alt="../_images/image-2-4-21.jpeg" class="align-center" src="../_images/image-2-4-21.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>보상 시스템</strong>: 에이전트의 행동에 따라 긍정적 또는 부정적인 보상을 제공</p></li>
@@ -729,8 +793,8 @@ document.write(`
 <li><p><strong>학습 과정</strong>: 에이전트는 보상을 기반으로 행동을 조정하여 성능을 개선</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id16">
+<h3>강화 학습의 대표적인 알고리즘 및 응용 예시<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-31.jpeg"><img alt="../_images/image-2-4-31.jpeg" class="align-center" src="../_images/image-2-4-31.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>알고리즘</strong>:</p>
@@ -747,8 +811,8 @@ document.write(`
 </li>
 </ul>
 </section>
-<section id="id11">
-<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h3>게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-41.jpeg"><img alt="../_images/image-2-4-41.jpeg" class="align-center" src="../_images/image-2-4-41.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>게임</strong>: 인공지능이 스스로 게임을 플레이하며 전략을 개발</p></li>
@@ -756,344 +820,13 @@ document.write(`
 <li><p><strong>자율주행 차량</strong>: 실시간으로 변화하는 도로 상황에 대응하는 전략 학습</p></li>
 </ul>
 </section>
-<section id="id12">
-<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id18">
+<h3>강화 학습의 현재 연구 동향 및 미래 가능성<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <a class="reference internal image-reference" href="../_images/image-2-4-5.jpeg"><img alt="../_images/image-2-4-5.jpeg" class="align-center" src="../_images/image-2-4-5.jpeg" style="width: 60%;" /></a>
 <ul class="simple">
 <li><p><strong>연구 동향</strong>: 복잡한 환경에서의 학습, 다중 에이전트 시스템, 실시간 학습</p></li>
 <li><p><strong>미래 가능성</strong>: 고도화된 의사결정 시스템, 스마트한 자동화 솔루션</p></li>
 <li><p><strong>사회적 영향</strong>: 교육, 의료, 산업 등 다양한 분야에서의 응용 가능성</p></li>
-</ul>
-</section>
-</section>
-<section id="id13">
-<h2>머신러닝 학습 방법의 선택과 적용<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
-<section id="id14">
-<h3>특정 문제에 적합한 학습 방법 결정하기<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-2-5-1.jpeg"><img alt="../_images/image-2-5-1.jpeg" class="align-center" src="../_images/image-2-5-1.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>문제의 성격 파악</strong>: 분류, 회귀, 클러스터링, 강화 학습 중 어떤 문제인가?</p></li>
-<li><p><strong>지도 학습과 비지도 학습의 구분</strong>: 레이블이 있는 데이터인지 여부를 고려</p></li>
-<li><p><strong>복잡도와 정확도</strong>: 문제의 복잡도에 따른 적합한 알고리즘 선택</p></li>
-<li><p><strong>시간과 자원</strong>: 학습에 소요되는 시간과 필요한 자원 고려</p></li>
-</ul>
-</section>
-<section id="id15">
-<h3>데이터의 종류와 양에 따른 학습 방법의 선택<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-2-5-2.jpeg"><img alt="../_images/image-2-5-2.jpeg" class="align-center" src="../_images/image-2-5-2.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>데이터 크기</strong>: 대용량 데이터는 더 강력한 알고리즘 필요</p></li>
-<li><p><strong>데이터 특성</strong>: 텍스트, 이미지, 숫자 등 데이터 유형에 따른 최적의 접근법 선택</p></li>
-<li><p><strong>데이터 품질</strong>: 노이즈가 많거나 불완전한 데이터는 전처리의 중요성</p></li>
-</ul>
-</section>
-<section id="id16">
-<h3>머신러닝 모델의 성능 평가 방법<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-2-5-3.jpeg"><img alt="../_images/image-2-5-3.jpeg" class="align-center" src="../_images/image-2-5-3.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>정확도와 오류율</strong>: 모델의 예측 정확도 평가</p></li>
-<li><p><strong>교차 검증</strong>: 데이터의 여러 부분을 사용하여 모델 검증</p></li>
-<li><p><strong>성능 지표</strong>: 정밀도, 재현율, F1 점수 등 다양한 성능 지표 사용</p></li>
-</ul>
-</section>
-<section id="id17">
-<h3>머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-2-5-4.jpeg"><img alt="../_images/image-2-5-4.jpeg" class="align-center" src="../_images/image-2-5-4.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>적절한 데이터 준비</strong>: 데이터의 질과 양에 주의</p></li>
-<li><p><strong>반복적인 실험</strong>: 다양한 모델과 매개변수로 실험</p></li>
-<li><p><strong>성능 튜닝</strong>: 하이퍼파라미터 조정을 통한 성능 최적화</p></li>
-<li><p><strong>결과 해석과 공유</strong>: 결과 해석의 중요성과 팀 내 공유</p></li>
-</ul>
-</section>
-</section>
-<section id="id18">
-<h2>머신러닝 모델 최적화의 기초<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
-<section id="id19">
-<h3>목표와 개요<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-1-1.jpeg"><img alt="../_images/image-3-1-1.jpeg" class="align-center" src="../_images/image-3-1-1.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>목표</strong>: 모델의 예측 성능 극대화</p></li>
-<li><p><strong>중요성</strong>: 데이터 패턴 이해 증진 및 실제 복잡한 문제 해결</p></li>
-</ul>
-</section>
-<section id="id20">
-<h3>선형 회귀 모델의 기본 개념<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-1-21.jpeg"><img alt="../_images/image-3-1-21.jpeg" class="align-center" src="../_images/image-3-1-21.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>정의</strong>: 데이터 관계를 직선(y = ax + b)으로 모델링</p>
-<ul>
-<li><p><strong>y</strong>: 종속 변수</p></li>
-<li><p><strong>x</strong>: 독립 변수</p></li>
-<li><p><strong>a</strong>: 기울기</p></li>
-<li><p><strong>b</strong>: y절편</p></li>
-</ul>
-</li>
-<li><p><strong>목적</strong>: 데이터 포인트에 가장 잘 맞는 직선 찾기</p></li>
-</ul>
-</section>
-<section id="id21">
-<h3>최소 제곱법 소개<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-1-31.jpeg"><img alt="../_images/image-3-1-31.jpeg" class="align-center" src="../_images/image-3-1-31.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>개념</strong>: 선형 회귀의 매개변수 a, b 찾는 방법</p></li>
-<li><p><strong>원리</strong>: 데이터 포인트와 선형 모델 간 거리(오차)의 제곱 최소화</p></li>
-<li><p><strong>수학적 접근</strong>: 오차 제곱 합 최소화를 통한 최적 매개변수 도출</p></li>
-</ul>
-</section>
-<section id="mse">
-<h3>평균 제곱 오차(MSE) 이해<a class="headerlink" href="#mse" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-1-41.jpeg"><img alt="../_images/image-3-1-41.jpeg" class="align-center" src="../_images/image-3-1-41.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>정의</strong>: 예측값과 실제값 간 차이의 수치화</p></li>
-<li><p><strong>계산식</strong>: MSE = (1/n) Σ(actual - prediction)²</p></li>
-<li><p><strong>중요성</strong>: 모델 성능 평가 및 비교의 핵심 지표</p></li>
-</ul>
-</section>
-</section>
-<section id="id22">
-<h2>비용함수와 손실함수<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
-<section id="id23">
-<h3>비용함수와 손실함수의 정의<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-11.jpeg"><img alt="../_images/image-3-2-11.jpeg" class="align-center" src="../_images/image-3-2-11.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>정의</strong>:</p>
-<ul>
-<li><p>손실함수(Loss Function): 개별 데이터 포인트에 대한 모델의 오차를 측정</p></li>
-<li><p>비용함수(Cost Function): 전체 데이터셋에 대한 모델의 성능을 측정</p></li>
-</ul>
-</li>
-<li><p><strong>중요성</strong>:</p>
-<ul>
-<li><p>이 함수들은 모델이 얼마나 잘 또는 잘못 예측하는지를 나타내며, 이를 최소화하는 것이 모델 학습의 목표</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id24">
-<h3>평균제곱오차의 역할<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-21.jpeg"><img alt="../_images/image-3-2-21.jpeg" class="align-center" src="../_images/image-3-2-21.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>평균 제곱 오차(Mean Squared Error, MSE)</strong>:</p>
-<ul>
-<li><p>MSE = (1/n) Σ(actual - prediction)²</p></li>
-<li><p>여기서 Σ는 합계, n은 샘플 수, actual은 실제 값, prediction은 예측값</p></li>
-</ul>
-</li>
-<li><p><strong>역할</strong>:</p>
-<ul>
-<li><p>MSE는 회귀 문제에서 자주 사용되는 손실 함수</p></li>
-<li><p>모델의 예측과 실제 값 사이의 거리를 제곱하여 평균을 낸 오차의 크기</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id25">
-<h3>오차 함수와 목적 함수의 비교<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-2-31.jpeg"><img alt="../_images/image-3-2-31.jpeg" class="align-center" src="../_images/image-3-2-31.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>오차 함수(Error Function)</strong>:</p>
-<ul>
-<li><p>개별 예측값과 실제값의 차이를 측정</p></li>
-<li><p>주로 손실 함수로 사용되며, 모델이 개별 데이터 포인트에서 얼마나 잘못 예측하는지를 나타냄</p></li>
-</ul>
-</li>
-<li><p><strong>목적 함수(Objective Function)</strong>:</p>
-<ul>
-<li><p>전체 데이터셋을 기반으로 한 모델의 전반적인 성능을 측정</p></li>
-<li><p>비용 함수와 같은 의미로 사용되며, 모델의 성능 최적화를 위한 목표를 설정</p></li>
-</ul>
-</li>
-<li><p><strong>차이점</strong>:</p>
-<ul>
-<li><p>오차 함수는 개별 데이터 포인트에 초점을 맞추고, 목적 함수는 전체 데이터셋에 대한 성능을 고려</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="gradient-descent">
-<h2>경사하강법 (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Link to this heading">#</a></h2>
-<section id="id26">
-<h3>경사하강법의 기본 원리<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-3-11.jpeg"><img alt="../_images/image-3-3-11.jpeg" class="align-center" src="../_images/image-3-3-11.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>기본 개념</strong>:</p>
-<ul>
-<li><p>경사하강법은 비용 함수의 최소점을 찾기 위한 반복적인 최적화 기법</p></li>
-<li><p>기울기(gradient)를 사용하여 각 단계에서 비용 함수를 줄여나가는 방식</p></li>
-</ul>
-</li>
-<li><p><strong>작동 원리</strong>:</p>
-<ul>
-<li><p>현재 위치에서 비용 함수의 기울기를 계산하고, 이를 통해 비용이 감소하는 방향으로 이동</p></li>
-<li><p>학습률(learning rate)은 이동 거리를 조절하는 파라미터로, 적절한 크기 설정이 중요</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id27">
-<h3>경사하강법의 다양한 변형<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-3-21.jpeg"><img alt="../_images/image-3-3-21.jpeg" class="align-center" src="../_images/image-3-3-21.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>SGD (Stochastic Gradient Descent)</strong>:</p>
-<ul>
-<li><p>매 반복에서 하나의 훈련 샘플을 사용하여 기울기를 계산</p></li>
-<li><p>빠른 계산이 가능하지만, 비용 함수의 변동이 클 수 있고, 최적의 해를 찾기 어려움</p></li>
-</ul>
-</li>
-<li><p><strong>Momentum</strong>:</p>
-<ul>
-<li><p>이전 단계의 기울기를 고려하여 관성의 개념을 도입</p></li>
-<li><p>이를 통해 더 안정적이고 빠르게 최소점에 도달할 수 있음</p></li>
-</ul>
-</li>
-<li><p><strong>AdaGrad, RMSprop, Adam</strong>:</p>
-<ul>
-<li><p>이 방법들은 학습률을 동적으로 조절하여 더 효율적인 최적화를 달성</p></li>
-<li><p>각각의 방법은 다른 방식으로 학습률을 조정</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id28">
-<h3>경사하강법 시각화<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-3-31.jpeg"><img alt="../_images/image-3-3-31.jpeg" class="align-center" src="../_images/image-3-3-31.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>비용함수의 모양과 경로</strong>:</p>
-<ul>
-<li><p>비용함수의 모양은 고차원이지만, 일반적으로 2D 또는 3D로 시각화하여 경사하강법의 경로를 이해</p></li>
-<li><p>시각화는 비용함수의 기울기와 학습률이 경로에 어떤 영향을 미치는지 보여줌</p></li>
-</ul>
-</li>
-<li><p><strong>시각적 이해</strong>:</p>
-<ul>
-<li><p>경사하강법의 진행 과정을 그래픽으로 나타내어 비용 함수의 최소점에 도달하는 과정을 시각적으로 이해</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="id29">
-<h2>머신러닝 모델의 일반화<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
-<section id="id30">
-<h3>과대적합과 과소적합<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-4-11.jpeg"><img alt="../_images/image-3-4-11.jpeg" class="align-center" src="../_images/image-3-4-11.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>과대적합(Overfitting)</strong>:</p>
-<ul>
-<li><p>모델이 학습 데이터에 너무 적합되어 새로운 데이터에 대한 예측 성능이 떨어지는 현상</p></li>
-<li><p>학습 데이터의 노이즈나 비정상적인 패턴까지 학습하는 경우 발생</p></li>
-</ul>
-</li>
-<li><p><strong>과소적합(Underfitting)</strong>:</p>
-<ul>
-<li><p>모델이 학습 데이터의 패턴을 충분히 학습하지 못해 일반화 성능이 낮은 상태</p></li>
-<li><p>모델이 너무 단순하거나 학습이 충분히 이루어지지 않은 경우 발생</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id31">
-<h3>최적화 알고리즘의 중요성<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-4-2.jpeg"><img alt="../_images/image-3-4-2.jpeg" class="align-center" src="../_images/image-3-4-2.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>일반화 능력 향상</strong>:</p>
-<ul>
-<li><p>최적화 알고리즘은 모델이 학습 데이터뿐만 아니라 새로운 데이터에도 잘 작동하도록 도와줌</p></li>
-<li><p>모델의 일반화 능력을 향상시켜 실제 세계의 다양한 데이터에 적용 가능하게 함</p></li>
-</ul>
-</li>
-<li><p><strong>적절한 모델 복잡도</strong>:</p>
-<ul>
-<li><p>최적화를 통해 모델의 복잡도를 조절하고, 과대적합과 과소적합 사이의 균형을 맞춤</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id32">
-<h3>과대적합과 과소적합 방지 전략<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-4-31.jpeg"><img alt="../_images/image-3-4-31.jpeg" class="align-center" src="../_images/image-3-4-31.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>데이터 증강(Data Augmentation)</strong>:</p>
-<ul>
-<li><p>기존 데이터에 변형을 가해 데이터셋의 다양성을 증가시키는 방법</p></li>
-<li><p>과대적합을 방지하고 모델의 일반화 능력을 향상시킴</p></li>
-</ul>
-</li>
-<li><p><strong>교차 검증(Cross-Validation)</strong>:</p>
-<ul>
-<li><p>학습 데이터를 여러 부분으로 나누고, 이들을 교차하여 검증하는 방법</p></li>
-<li><p>모델의 성능을 보다 객관적으로 평가할 수 있음</p></li>
-</ul>
-</li>
-<li><p><strong>정규화(Regularization)</strong>:</p>
-<ul>
-<li><p>모델의 가중치에 제약을 두어 복잡도를 감소시키는 기술</p></li>
-<li><p>L1, L2 정규화 등이 있으며, 과대적합을 방지하는 데 효과적임</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="id33">
-<h2>좋은 머신러닝 모델의 조건<a class="headerlink" href="#id33" title="Link to this heading">#</a></h2>
-<section id="id34">
-<h3>데이터의 양과 질의 중요성<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-5-11.jpeg"><img alt="../_images/image-3-5-11.jpeg" class="align-center" src="../_images/image-3-5-11.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>데이터의 중요성</strong>:</p>
-<ul>
-<li><p>머신러닝 모델의 성능은 사용하는 데이터의 양과 질에 크게 의존</p></li>
-<li><p>충분하고 다양한 데이터는 모델이 더 많은 패턴과 상황을 학습하게 함</p></li>
-</ul>
-</li>
-<li><p><strong>고품질 데이터의 특성</strong>:</p>
-<ul>
-<li><p>정확하고, 완전하며, 관련성이 높은 데이터</p></li>
-<li><p>노이즈가 적고, 편향되지 않은 데이터 셋</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id35">
-<h3>모델 복잡도 조절<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-5-21.jpeg"><img alt="../_images/image-3-5-21.jpeg" class="align-center" src="../_images/image-3-5-21.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>모델 복잡도의 중요성</strong>:</p>
-<ul>
-<li><p>모델이 너무 복잡하면 과대적합의 위험이 있고, 너무 단순하면 과소적합이 발생할 수 있음</p></li>
-</ul>
-</li>
-<li><p><strong>PCA (주성분 분석)</strong>:</p>
-<ul>
-<li><p>고차원 데이터의 차원을 축소하여 모델의 복잡도를 줄이는 기법</p></li>
-<li><p>중요한 정보를 유지하면서 데이터의 특성 수를 감소시킴</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="id36">
-<h3>일반화, 정규화, 가중치 규제<a class="headerlink" href="#id36" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/image-3-5-31.jpeg"><img alt="../_images/image-3-5-31.jpeg" class="align-center" src="../_images/image-3-5-31.jpeg" style="width: 60%;" /></a>
-<ul class="simple">
-<li><p><strong>일반화(Generalization)</strong>:</p>
-<ul>
-<li><p>모델이 새로운 데이터에 대해 잘 예측하는 능력</p></li>
-<li><p>학습 데이터뿐만 아니라 테스트 데이터에서도 좋은 성능을 나타냄을 의미</p></li>
-</ul>
-</li>
-<li><p><strong>정규화(Regularization)</strong>:</p>
-<ul>
-<li><p>L1, L2 정규화와 같은 기법을 사용하여 모델의 과대적합을 방지</p></li>
-<li><p>모델의 가중치에 제약을 추가하여 복잡도를 줄임</p></li>
-</ul>
-</li>
-<li><p><strong>가중치 규제(Weight Regularization)</strong>:</p>
-<ul>
-<li><p>모델의 가중치가 너무 커지지 않도록 제한하여 과대적합을 방지</p></li>
-</ul>
-</li>
 </ul>
 </section>
 </section>
@@ -1163,65 +896,35 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">머신러닝의 학습 방법 개요</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">머신러닝 학습 방법의 기본 이해</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습, 비지도 학습, 강화 학습의 차이점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">각 학습 방법의 적용 예시와 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">학습 데이터의 역할과 중요성</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">실제 사례를 통한 학습 방법의 이해</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">지도 학습 (Supervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">지도 학습의 정의 및 기본 원리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">지도 학습의 정의 및 기본 원리</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-regression">분류(Classification)와 회귀(Regression)의 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">지도 학습의 대표적인 알고리즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">지도 학습의 장단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">지도 학습의 대표적인 알고리즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">지도 학습의 장단점</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning">비지도 학습 (Unsupervised Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">비지도 학습의 정의 및 핵심 개념</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">비지도 학습의 정의 및 핵심 개념</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-dimensionality-reduction">클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">비지도 학습의 대표적인 알고리즘 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">비지도 학습의 장단점 및 도전 과제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">비지도 학습의 대표적인 알고리즘 소개</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">비지도 학습의 장단점 및 도전 과제</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">비지도 학습 vs 지도 학습</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reinforcement-learning">강화 학습 (Reinforcement Learning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">강화 학습의 기본 개념과 메커니즘</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">보상 시스템과 환경의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">머신러닝 학습 방법의 선택과 적용</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">특정 문제에 적합한 학습 방법 결정하기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">데이터의 종류와 양에 따른 학습 방법의 선택</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">머신러닝 모델의 성능 평가 방법</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">머신러닝 프로젝트의 성공적인 구현을 위한 전략 및 팁</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">머신러닝 모델 최적화의 기초</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">목표와 개요</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">선형 회귀 모델의 기본 개념</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">최소 제곱법 소개</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse">평균 제곱 오차(MSE) 이해</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">비용함수와 손실함수</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">비용함수와 손실함수의 정의</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">평균제곱오차의 역할</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">오차 함수와 목적 함수의 비교</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-descent">경사하강법 (Gradient Descent)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">경사하강법의 기본 원리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">경사하강법의 다양한 변형</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">경사하강법 시각화</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">머신러닝 모델의 일반화</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">과대적합과 과소적합</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">최적화 알고리즘의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">과대적합과 과소적합 방지 전략</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">좋은 머신러닝 모델의 조건</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">데이터의 양과 질의 중요성</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">모델 복잡도 조절</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">일반화, 정규화, 가중치 규제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">강화 학습의 기본 개념과 메커니즘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">보상 시스템과 환경의 역할</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">강화 학습의 대표적인 알고리즘 및 응용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">게임, 로봇공학, 자율주행 차량 등에서의 강화 학습 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">강화 학습의 현재 연구 동향 및 미래 가능성</a></li>
 </ul>
 </li>
 </ul>
