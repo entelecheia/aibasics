@@ -584,7 +584,7 @@ print(path)
 :align: center
 ```
 
-- **8-Queens 문제 소개 및 중요성**:
+- **8-Queens 문제**:
 
   - 8x8 체스판에 퀸 배치하는 제약 충족 문제
   - AI 연구에서 중요한 주제
