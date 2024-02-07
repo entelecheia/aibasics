@@ -472,6 +472,111 @@
   - 효율적 탐색 제공, 다양한 문제에 적용
   - 적절한 휴리스틱 함수 선택 시 최적해 찾기 가능
 
+- A\* 알고리즘 예제: 2차원 격자 미로에서 시작점 `[0, 0]`에서 종료점 `[5, 5]`까지의 최단 경로를 탐색하는 프로그램
+
+```python
+class Node:
+    # 노드 초기화
+    def __init__(self, parent=None, position=None):
+        self.parent = parent
+        self.position = position
+        self.g = 0
+        self.h = 0
+        self.f = 0
+
+    # 노드 비교
+    def __eq__(self, other):
+        return self.position == other.position
+
+def astar(maze, start, end):
+    # 시작 노드와 종료 노드 생성
+    start_node = Node(None, tuple(start))
+    start_node.g = start_node.h = start_node.f = 0
+    end_node = Node(None, tuple(end))
+    end_node.g = end_node.h = end_node.f = 0
+
+    # 열린 목록, 닫힌 목록 초기화
+    open_list = []
+    closed_list = []
+
+    # 시작 노드를 열린 목록에 추가
+    open_list.append(start_node)
+
+    # 열린 목록이 빌 때까지 반복
+    while len(open_list) > 0:
+        # 현재 노드를 가져옴
+        current_node = open_list[0]
+        current_index = 0
+        for index, item in enumerate(open_list):
+            if item.f < current_node.f:
+                current_node = item
+                current_index = index
+
+        # 현재 노드를 열린 목록에서 제거하고 닫힌 목록에 추가
+        open_list.pop(current_index)
+        closed_list.append(current_node)
+
+        # 목표 노드를 찾은 경우
+        if current_node == end_node:
+            path = []
+            current = current_node
+            while current is not None:
+                path.append(current.position)
+                current = current.parent
+            return path[::-1] # 반환된 경로
+
+        # 인접한 노드 생성
+        children = []
+        for new_position in [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1)]:
+            node_position = (current_node.position[0] + new_position[0], current_node.position[1] + new_position[1])
+
+            # 노드 위치가 미로 범위 내에 있는지 확인
+            if node_position[0] > (len(maze) - 1) or node_position[0] < 0 or node_position[1] > (len(maze[len(maze)-1]) -1) or node_position[1] < 0:
+                continue
+
+            # 노드 위치가 장애물인지 확인
+            if maze[node_position[0]][node_position[1]] != 0:
+                continue
+
+            # 새로운 노드 생성 및 부모 설정
+            new_node = Node(current_node, node_position)
+            children.append(new_node)
+
+        # 자식들에 대해
+        for child in children:
+            # 자식이 닫힌 목록에 있는지 확인
+            if child in closed_list:
+                continue
+
+            # 자식의 g, h, f 값 계산
+            child.g = current_node.g + 1
+            child.h = ((child.position[0] - end_node.position[0]) ** 2) + ((child.position[1] - end_node.position[1]) ** 2)
+            child.f = child.g + child.h
+
+            # 자식이 이미 열린 목록에 있고, g 값이 더 큰 경우 무시
+            for open_node in open_list:
+                if child == open_node and child.g > open_node.g:
+                    continue
+
+            # 자식을 열린 목록에 추가
+            open_list.append(child)
+
+# 미로 (0: 이동 가능, 1: 장애물)
+maze = [[0, 0, 0, 0, 1, 0],
+        [1, 1, 0, 0, 1, 0],
+        [0, 0, 0, 1, 1, 0],
+        [0, 1, 1, 0, 0, 0],
+        [0, 1, 0, 0, 1, 1],
+        [0, 0, 0, 0, 0, 0]]
+
+# 시작점과 종료점
+start = [0, 0]
+end = [5, 5]
+
+path = astar(maze, start, end)
+print(path)
+```
+
 ### 인공지능 알고리즘: 8-Queens 문제
 
 ```{image} figs/image-3-6-5.jpeg
