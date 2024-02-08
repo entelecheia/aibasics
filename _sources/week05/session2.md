@@ -149,7 +149,7 @@
 - **핵심 개념**: 입력 데이터만을 사용하여 데이터의 숨겨진 특성이나 구조를 발견
 - **목적**: 데이터의 내재된 구조를 이해하거나 새로운 통찰력을 얻는 것
 
-### 클러스터링(Clustering)과 차원 축소(Dimensionality Reduction) 이해
+### 클러스터링(Clustering)과 차원 축소(Dimensionality Reduction)
 
 ```{image} figs/image-2-3-2.jpeg
 :width: 60%
@@ -163,7 +163,7 @@
   - 고차원 데이터를 저차원으로 표현하여 복잡성 감소
   - 예: 시각화, 노이즈 제거, 효율적인 저장 및 계산
 
-### 비지도 학습의 대표적인 알고리즘 소개
+### 비지도 학습의 대표적인 알고리즘
 
 ```{image} figs/image-2-3-3.jpeg
 :width: 60%
