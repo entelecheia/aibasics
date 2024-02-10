@@ -1,5 +1,21 @@
 <!--next-version-placeholder-->
 
+## v0.8.0 (2024-02-10)
+
+### Feature
+
+* **book:** Uncomment week05/session3 in _toc.yml ([`b02a77f`](https://github.com/chu-aie/aibasics/commit/b02a77f7a0bd1c2d69172ea833ddec33138513ce))
+* **book:** Enrich week05/session1 contents ([`3228b22`](https://github.com/chu-aie/aibasics/commit/3228b2246927ddea9157f0e303d0efaf4d6b2e68))
+* **book:** Add A* algorithm example in session3.md ([`e11dcd1`](https://github.com/chu-aie/aibasics/commit/e11dcd1203af37543249d943d0e21ace69de0906))
+
+### Fix
+
+* **book:** Correct word usage from '주의' to '어텐션' in week10/session3.md ([`db2d60f`](https://github.com/chu-aie/aibasics/commit/db2d60fa2213c7c6001f0ed2222752eb856fe744))
+* **book:** Correct translation of 'encoder-only' and 'decoder-only' models ([`85950dc`](https://github.com/chu-aie/aibasics/commit/85950dc835607d161c21430154a5db965d1fc71d))
+* **book:** Correct terminology in week10/session2.md ([`61358bd`](https://github.com/chu-aie/aibasics/commit/61358bdb76423c809ede8fcdf15d700663858d62))
+* **book:** Remove comment delimiter from session3.md ([`6c8d978`](https://github.com/chu-aie/aibasics/commit/6c8d978a123b800fe9236c066eb1f77627136a09))
+* **book:** Correct typo in week01/session3.md ([`7291f8b`](https://github.com/chu-aie/aibasics/commit/7291f8be2a194cb90146b65b8ce8e07f4a6df457))
+
 ## v0.7.0 (2024-02-04)
 
 ### Feature
