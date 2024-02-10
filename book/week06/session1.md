@@ -2,20 +2,20 @@
 
 ## 추천 시스템 개요
 
-### 추천 시스템의 정의 및 필요성
+### 추천 시스템의 정의
 
 ```{image} figs/image-1-1-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
 - 추천 시스템이란 사용자의 취향과 선호에 맞는 아이템을 자동으로 추천하는 시스템
 - 온라인 쇼핑, 스트리밍 서비스 등에서 사용자 경험을 개인화하고 만족도를 높이는 데 중요
 
-### 추천 시스템의 역할과 중요성
+### 추천 시스템의 역할
 
 ```{image} figs/image-1-1-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -23,10 +23,10 @@
 - 사용자의 행동과 선호를 분석하여 관련 아이템 추천
 - 비즈니스 측면에서 고객 유지와 매출 증대에 기여
 
-### 다양한 추천 시스템의 예시
+### 다양한 추천 시스템
 
 ```{image} figs/image-1-1-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -37,7 +37,7 @@
 ### 사용자 경험 향상을 위한 추천 시스템의 역할
 
 ```{image} figs/image-1-1-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -48,7 +48,7 @@
 ### 추천 시스템의 기본 원리
 
 ```{image} figs/image-1-1-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -62,7 +62,7 @@
 ### 콘텐츠 기반 시스템의 정의와 작동 원리
 
 ```{image} figs/image-1-2-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -72,7 +72,7 @@
 ### 사용자 프로필과 아이템의 특성 매칭
 
 ```{image} figs/image-1-2-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -83,7 +83,7 @@
 ### 주요 알고리즘과 기술
 
 ```{image} figs/image-1-2-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -94,17 +94,17 @@
 ### 콘텐츠 기반 추천 시스템의 장단점
 
 ```{image} figs/image-1-2-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
 - 장점: 사용자의 명확한 선호를 반영, 새로운 아이템에 대한 추천 가능
 - 단점: 과거 선호에 국한된 추천, 다양성 부족, 콘텐츠 분석의 어려움
 
-### 실제 사례 연구
+### 실제 사례
 
 ```{image} figs/image-1-2-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -117,7 +117,7 @@
 ### 협업 필터링의 기본 개념
 
 ```{image} figs/image-1-3-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -128,17 +128,17 @@
 ### 사용자 기반 협업 필터링과 아이템 기반 협업 필터링
 
 ```{image} figs/image-1-3-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
-- **사용자 기반 협업 필터링**: 사용자 간의 유사성을 분석하여 추천 수행. 유사한 취향의 사용자가 좋아하는 아이템 추천.
-- **아이템 기반 협업 필터링**: 아이템 간 유사성 분석을 통해 추천. 사용자가 과거에 선호한 아이템과 유사한 아이템을 추천.
+- **사용자 기반 협업 필터링**: 사용자 간의 유사성을 분석하여 추천 수행. 유사한 취향의 사용자가 좋아하는 아이템 추천
+- **아이템 기반 협업 필터링**: 아이템 간 유사성 분석을 통해 추천. 사용자가 과거에 선호한 아이템과 유사한 아이템을 추천
 
 ### 유사도 측정 방법
 
 ```{image} figs/image-1-3-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -150,7 +150,7 @@
 ### 협업 필터링의 도전 과제와 한계점
 
 ```{image} figs/image-1-3-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -162,7 +162,7 @@
 ### 실제 적용 사례
 
 ```{image} figs/image-1-3-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -175,7 +175,7 @@
 ### 행렬 인수분해의 개념
 
 ```{image} figs/image-1-4-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -186,7 +186,7 @@
 ### 사용자-아이템 상호작용 행렬
 
 ```{image} figs/image-1-4-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -194,10 +194,10 @@
 - 예를 들어, 사용자가 아이템에 부여한 평점이나 구매 여부 등의 정보를 담음
 - 이 행렬은 일반적으로 매우 크고 희소한(sparse) 특성을 가짐
 
-### 행렬 인수분해의 알고리즘과 구현
+### 행렬 인수분해 알고리즘
 
 ```{image} figs/image-1-4-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -208,7 +208,7 @@
 ### 예측 정확도 향상 방법
 
 ```{image} figs/image-1-4-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -221,7 +221,7 @@
 ### 하이브리드 추천 시스템의 정의
 
 ```{image} figs/image-1-5-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -229,10 +229,10 @@
 - 이 시스템은 두 방법의 장점을 통합하여 더 정확하고 개인화된 추천을 제공
 - 사용자의 다양한 요구와 상황에 더 잘 대응할 수 있도록 설계됨
 
-### 다양한 하이브리드 방식의 소개
+### 다양한 하이브리드 방식
 
 ```{image} figs/image-1-5-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -244,7 +244,7 @@
 ### 콘텐츠 기반과 협업 필터링의 조합
 
 ```{image} figs/image-1-5-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -255,7 +255,7 @@
 ### 하이브리드 시스템의 장점 및 적용 분야
 
 ```{image} figs/image-1-5-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -266,7 +266,7 @@
 ### 실제 하이브리드 추천 시스템 사례
 
 ```{image} figs/image-1-5-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 

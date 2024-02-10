@@ -3,7 +3,6 @@
 [![pypi-image]][pypi-url]
 [![version-image]][release-url]
 [![release-date-image]][release-url]
-[![license-image]][license-url]
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->

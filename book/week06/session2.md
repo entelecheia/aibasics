@@ -5,7 +5,7 @@
 ### 평가 지표의 중요성과 목적
 
 ```{image} figs/image-2-1-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -16,7 +16,7 @@
 ### 정확도 지표: 정밀도, 재현율, F-점수
 
 ```{image} figs/image-2-1-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -26,19 +26,19 @@
 
 #### 정밀도 (Precision)
 
-- 수학적 정의: \( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} \)
+- 수학적 정의: $( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} )$
 - 계산 방법: 모델이 양성으로 예측한 항목 중 실제로 양성인 항목의 비율 계산
 - 예시: 100개의 추천 중 30개가 사용자가 선호하는 항목일 경우, 정밀도는 30/100 = 0.3
 
 #### 재현율 (Recall)
 
-- 수학적 정의: \( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} \)
+- 수학적 정의: $( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} )$
 - 계산 방법: 실제 양성인 항목 중 모델이 양성으로 정확히 예측한 항목의 비율 계산
 - 예시: 사용자가 선호하는 50개의 항목 중 모델이 30개를 맞춘 경우, 재현율은 30/50 = 0.6
 
 #### F-점수 (F-Score)
 
-- 수학적 정의: \( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \)
+- 수학적 정의: $( F\text{-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} )$
 - 계산 방법: 정밀도와 재현율의 조화 평균 계산
 - 예시: 위의 정밀도(0.3)와 재현율(0.6)을 사용하여 F-점수 계산 시, F-점수는 2 × (0.3 × 0.6) / (0.3 + 0.6) = 0.4
 
@@ -47,7 +47,7 @@
 ### 예측 정확도: RMSE, MAE
 
 ```{image} figs/image-2-1-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -57,19 +57,19 @@
 
 #### RMSE (Root Mean Square Error)
 
-- 수학적 정의: \( \text{RMSE} = \sqrt{\frac{1}{n}\sum\_{i=1}^{n}(\text{예측값}\_i - \text{실제값}\_i)^2} \)
+- 수학적 정의: $( \text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(\text{예측값}_i - \text{실제값}_i)^2} )$
 - 계산 방법: 예측값과 실제값의 차이를 제곱한 후 평균을 내고, 그 값의 제곱근을 취함
 - 예시: 5개의 평점 예측에서 각각의 오차가 [2, 1, 3, 2, 1]일 경우, RMSE는 √[(2² + 1² + 3² + 2² + 1²)/5] = 1.897
 
 #### MAE (Mean Absolute Error)
 
-- 수학적 정의: \( \text{MAE} = \frac{1}{n}\sum\_{i=1}^{n}|\text{예측값}\_i - \text{실제값}\_i| \)
+- 수학적 정의: $( \text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|\text{예측값}_i - \text{실제값}_i| )$
 - 계산 방법: 예측값과 실제값의 차이의 절대값을 평균냄
 
 ### 순위 관련 지표: NDCG, MAP
 
 ```{image} figs/image-2-1-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -87,12 +87,10 @@
 - 수학적 정의 및 계산 방법: 모든 쿼리에 대한 평균 정밀도의 평균을 계산
 - 예시: 여러 쿼리에 대한 각각의 정밀도를 계산하고, 이를 평균내어 MAP 점수 도출
 
-각 지표는 추천 시스템의 다양한 측면을 평가하기 위해 사용되며, 특정 상황에 따라 적합한 지표를 선택하여 평가하는 것이 중요합니다. 이러한 계산 방법과 예시를 통해 학생들은 추천 시스템의 성능을 보다 정확하게 이해하고 평가할 수 있습니다.
-
 ### 평가 지표의 선택 및 해석
 
 ```{image} figs/image-2-1-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -105,7 +103,7 @@
 ### 콜드 스타트 문제의 정의와 유형
 
 ```{image} figs/image-2-2-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -115,7 +113,7 @@
 ### 새로운 사용자와 새로운 아이템 문제
 
 ```{image} figs/image-2-2-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -129,7 +127,7 @@
 ### 콜드 스타트 해결 전략
 
 ```{image} figs/image-2-2-3-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -146,7 +144,7 @@
 ### 데이터 수집 및 활용 방법
 
 ```{image} figs/image-2-2-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -157,10 +155,10 @@
   - 사용자 프로파일 작성 및 개인화 추천 로직 적용
   - 아마존에서 사용자의 과거 구매 내역을 분석하여 관련 상품 추천
 
-### 실제 사례와 해결 사례 연구
+### 실제 사례와 해결 사례
 
 ```{image} figs/image-2-2-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -173,7 +171,7 @@
 ### 다양성과 정확도의 균형의 중요성
 
 ```{image} figs/image-2-3-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -184,7 +182,7 @@
 ### 다양성을 측정하는 방법
 
 ```{image} figs/image-2-3-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -194,7 +192,7 @@
 ### 사용자 만족도와 탐험
 
 ```{image} figs/image-2-3-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -205,7 +203,7 @@
 ### 정확도와 다양성의 트레이드오프
 
 ```{image} figs/image-2-3-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -215,7 +213,7 @@
 ### 개선 전략과 실제 적용 사례
 
 ```{image} figs/image-2-3-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -225,12 +223,12 @@
   - **트립어드바이저**: 과거 여행 경험과 새로운 목적지를 조합한 여행지 추천
   - **Pinterest**: 저장한 핀과 유사하지만 다른 핀들을 추천하여 다양성 증진
 
-## 4. 컨텍스트 인식 추천 시스템
+## 컨텍스트 인식 추천 시스템
 
 ### 컨텍스트 인식 추천의 정의
 
 ```{image} figs/image-2-4-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -243,7 +241,7 @@
 ### 컨텍스트의 종류와 활용 방법
 
 ```{image} figs/image-2-4-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -253,15 +251,13 @@
 - **개인적 상태**: 사용자의 감정 상태나 건강 정보 활용
 - **이전 상호작용**: 과거의 사용자 행동과 선호도 데이터 분석
 
-### 알고리즘과 기술의 소개
+### 알고리즘과 기술
 
 ```{image} figs/image-2-4-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
-- **협업 필터링**: 사용자 및 아이템 간 유사도를 기반으로 추천
-- **컨텐츠 기반 필터링**: 아이템의 속성과 사용자 프로필을 비교하여 추천
 - **머신러닝 기법**: 사용자 데이터와 컨텍스트 데이터를 학습하여 예측
 - **딥러닝과 NLP**: 자연어 처리를 통한 사용자 의도 및 감정 분석
 - **강화 학습**: 사용자 반응에 따른 추천 전략의 지속적 개선
@@ -269,7 +265,7 @@
 ### 컨텍스트 인식 추천의 효과와 한계
 
 ```{image} figs/image-2-4-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -279,10 +275,10 @@
 - **한계**: 개인정보 보호와 프라이버시 문제
 - **데이터 품질과 가용성**: 정확한 추천을 위한 고품질 데이터 필요
 
-### 실생활에서의 응용 예
+### 실생활에서의 응용
 
 ```{image} figs/image-2-4-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -292,16 +288,15 @@
 - **여행 추천 애플리케이션**: 현재 위치와 날씨를 반영한 관광지 및 식당 추천
 - **헬스케어 앱**: 사용자의 건강 상태와 활동 레벨에 맞는 운동 및 식단 추천
 
-## 5. 추천 시스템의 향후 전망
+## 추천 시스템의 향후 전망
 
 ### 인공지능과 머신러닝의 발전
 
 ```{image} figs/image-2-5-1.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
-- **혁신적 알고리즘**: 지속적인 연구를 통해 더 정교하고 효율적인 추천 알고리즘 개발
 - **딥러닝의 적용**: 이미지, 음성 인식과 자연어 처리의 발전이 추천 시스템에 통합
 - **자동화와 최적화**: 사용자 행동 예측 및 개인화된 추천의 자동화와 최적화
 - **인터랙티브 추천**: 사용자와의 실시간 상호작용을 통한 동적인 추천 방법 연구
@@ -310,7 +305,7 @@
 ### 개인화와 사용자 경험
 
 ```{image} figs/image-2-5-2.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -323,7 +318,7 @@
 ### 윤리적 고려사항과 개인정보 보호
 
 ```{image} figs/image-2-5-3.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -336,7 +331,7 @@
 ### 새로운 기술과 혁신적 접근
 
 ```{image} figs/image-2-5-4.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
@@ -349,7 +344,7 @@
 ### 산업과 사회에서의 영향
 
 ```{image} figs/image-2-5-5.jpeg
-:width: 90%
+:width: 60%
 :align: center
 ```
 
