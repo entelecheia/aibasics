@@ -41,6 +41,15 @@ html:
   use_edit_page_button: true
   favicon: chu-favicon.png
   google_analytics_id: G-BQJE5V9RK2 # google_analytics_id: Google Analytics ID
+  extra_footer: |
+    <script
+      data-embed-id="70528daf-2c29-4fba-9c3b-ff0516a8a19b"
+      data-base-api-url="https://chat.entelecheia.app/api/embed"
+      data-brand-image-url="https://assets.entelecheia.ai/favicon.png"
+      data-chat-icon="magic"
+      data-no-sponsor="no"
+      src="https://chat.entelecheia.app/embed/anythingllm-chat-widget.min.js">
+    </script>
 
 sphinx:
   config:
