@@ -1,5 +1,11 @@
 <!--next-version-placeholder-->
 
+## v0.9.0 (2024-03-01)
+
+### Feature
+
+* **book:** Add chat widget to footer ([`6c3b766`](https://github.com/chu-aie/aibasics/commit/6c3b766692885bb93f3e5376bf41c8a807bbf4bb))
+
 ## v0.8.0 (2024-02-10)
 
 ### Feature
