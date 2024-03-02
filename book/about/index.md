@@ -4,7 +4,10 @@
 
 ## 김성진
 
-<img src="faculty/sjkim.jpeg" loading="lazy" width="100">
+```{image} faculty/sjkim.jpeg
+:width: 100
+:align: left
+```
 
 - 전공: 정보보호(공학박사)
 - 관심분야: (ML 기반) 악성코드 탐지, 웹보안, SNA, 이상징후 감지, IoT 보안
@@ -20,7 +23,10 @@
 
 ## 이영준
 
-<img src="faculty/yjlee.jpeg" loading="lazy" width="100">
+```{image} faculty/yjlee.jpeg
+:width: 100
+:align: left
+```
 
 - 전공: 경영학(박사), 경제학(석사), 정보산업공학(학사)
 - 관심분야: 인공지능, 자연어처리, Generative AI, Multimodal AI, Robotics, Sustainability
@@ -40,7 +46,10 @@
 
 ## 장용준
 
-<img src="faculty/yjchang.jpg" loading="lazy" width="100">
+```{image} faculty/yjchang.jpg
+:width: 100
+:align: left
+```
 
 - 전공: 정보통신공학(박사), 산업공학(석사, 학사)
 - 관심분야: 인공지능(기계학습, 패턴인식), 의료영상, 멀티미디어(비디오) 신호처리
