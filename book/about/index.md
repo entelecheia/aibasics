@@ -4,7 +4,7 @@
 
 ## 김성진
 
-```{image} faculty/sjkim.jpeg
+```{image} images/sjkim.jpeg
 :width: 100
 :align: left
 ```
@@ -23,7 +23,7 @@
 
 ## 이영준
 
-```{image} faculty/yjlee.jpeg
+```{image} images/yjlee.jpeg
 :width: 100
 :align: left
 ```
@@ -46,7 +46,7 @@
 
 ## 장용준
 
-```{image} faculty/yjchang.jpg
+```{image} images/yjchang.jpg
 :width: 100
 :align: left
 ```
