@@ -1,5 +1,19 @@
 <!--next-version-placeholder-->
 
+## v0.10.0 (2024-03-23)
+
+### Feature
+
+* **aibasics:** Add open_homepage function ([`e3658e1`](https://github.com/chu-aie/aibasics/commit/e3658e126a2317f41a01f9eb392c131db5659658))
+* **aibasics:** Add new target for homepage redirection ([`b3d43f7`](https://github.com/chu-aie/aibasics/commit/b3d43f716548bccdf2c9bb68bdd8fe1ba295f1c5))
+* **book/about:** Update index content and add Copyright Notice ([`ebbbe98`](https://github.com/chu-aie/aibasics/commit/ebbbe98cf8d8f6742b225a4114ac70bdb4b68136))
+* **book:** Add index and introductions for faculty members in about section ([`bc0db69`](https://github.com/chu-aie/aibasics/commit/bc0db698f0dde54f2c5204845132d33356606103))
+
+### Fix
+
+* **dependencies:** Update hyfi to version 136.1 ([`f726716`](https://github.com/chu-aie/aibasics/commit/f72671651a49c20b85953e1eb5c3da15950c57fa))
+* **book:** Correct typo in about section ([`550a267`](https://github.com/chu-aie/aibasics/commit/550a2679116482a8e69c60c22a6b43e4724516ee))
+
 ## v0.9.0 (2024-03-01)
 
 ### Feature
