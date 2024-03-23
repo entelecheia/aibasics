@@ -1,4 +1,8 @@
+"""Initialize the AI Basics package."""
+
 import os
+import webbrowser
+from typing import Dict
 
 from hyfi import HyFI
 
@@ -23,4 +27,13 @@ def get_version() -> str:
     return __version__
 
 
-__all__ = ["HyFI", "get_version"]
+def open_homepage(**args: Dict) -> None:
+    """
+    Open the homepage in the browser.
+    """
+    HyFI.print_about(**args)
+    if homepage := str(args.get("homepage", "")):
+        webbrowser.open_new_tab(homepage)
+
+
+__all__ = ["HyFI", "get_version", "open_homepage"]
