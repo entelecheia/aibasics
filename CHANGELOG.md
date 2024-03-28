@@ -1,5 +1,12 @@
 <!--next-version-placeholder-->
 
+## v0.10.1 (2024-03-28)
+
+### Fix
+
+* **aibasics:** Replace open_homepage function with the configuration ([`18f6bee`](https://github.com/chu-aie/aibasics/commit/18f6beea203bc1b6c5bd3051e483c15374dfeb2f))
+* **dependencies:** Update hyfi to version 1.36.3 ([`f9cc0f9`](https://github.com/chu-aie/aibasics/commit/f9cc0f9d3a8a1b42521da67237ef0ce374418287))
+
 ## v0.10.0 (2024-03-23)
 
 ### Feature
