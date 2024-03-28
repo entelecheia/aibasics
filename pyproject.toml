@@ -15,7 +15,7 @@ aibasics = 'aibasics.__cli__:main'
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
 click = "<=8.1.7"
-hyfi = "^1.36.1"
+hyfi = "^1.36.3"
 scikit-learn = "<=1.4.1.post1"
 seaborn = "<=0.13.2"
 
