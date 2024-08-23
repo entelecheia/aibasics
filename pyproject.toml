@@ -4,8 +4,8 @@ version = "0.10.1"
 description = "AI Uncovered: A Comprehensive Guide to AI Basics and Applications"
 authors = ["Young Joon Lee <yj.lee@chu.ac.kr>"]
 license = "CC-BY-4.0"
-homepage = "https://aibasics.halla.ai"
-repository = "https://github.com/chu-aie/aibasics"
+homepage = "https://aibasics.jeju.ai"
+repository = "https://github.com/entelecheia/aibasics"
 readme = "README.md"
 packages = [{ include = "aibasics", from = "src" }]
 

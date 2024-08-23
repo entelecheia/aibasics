@@ -11,17 +11,17 @@
 
 [hyperfast python template]: https://github.com/entelecheia/hyperfast-python-template
 [pypi-image]: https://img.shields.io/pypi/v/aibasics
-[license-image]: https://img.shields.io/github/license/chu-aie/aibasics
-[license-url]: https://github.com/chu-aie/aibasics/blob/main/LICENSE
-[version-image]: https://img.shields.io/github/v/release/chu-aie/aibasics?sort=semver
-[release-date-image]: https://img.shields.io/github/release-date/chu-aie/aibasics
-[release-url]: https://github.com/chu-aie/aibasics/releases
+[license-image]: https://img.shields.io/github/license/entelecheia/aibasics
+[license-url]: https://github.com/entelecheia/aibasics/blob/main/LICENSE
+[version-image]: https://img.shields.io/github/v/release/entelecheia/aibasics?sort=semver
+[release-date-image]: https://img.shields.io/github/release-date/entelecheia/aibasics
+[release-url]: https://github.com/entelecheia/aibasics/releases
 [jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
-[repo-url]: https://github.com/chu-aie/aibasics
+[repo-url]: https://github.com/entelecheia/aibasics
 [pypi-url]: https://pypi.org/project/aibasics
-[docs-url]: https://aibasics.halla.ai
-[changelog]: https://github.com/chu-aie/aibasics/blob/main/CHANGELOG.md
-[contributing guidelines]: https://github.com/chu-aie/aibasics/blob/main/CONTRIBUTING.md
+[docs-url]: https://aibasics.jeju.ai
+[changelog]: https://github.com/entelecheia/aibasics/blob/main/CHANGELOG.md
+[contributing guidelines]: https://github.com/entelecheia/aibasics/blob/main/CONTRIBUTING.md
 
 <!-- Links: -->
 
