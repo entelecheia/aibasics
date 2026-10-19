@@ -10,3 +10,11 @@ def test_get_version() -> None:
     version = get_version()
     # check version format
     assert version.count(".") in range(2, 5)
+
+
+def test_star_import() -> None:
+    """Every name in __all__ is defined, so `from aibasics import *` works."""
+    import aibasics  # pylint: disable=import-outside-toplevel
+
+    for name in aibasics.__all__:
+        assert hasattr(aibasics, name), name
