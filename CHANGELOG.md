@@ -1,5 +1,13 @@
 <!--next-version-placeholder-->
 
+## v1.0.1 (2026-10-19)
+
+### Bug Fixes
+
+- Keep the book out of the sdist (#172) ([#173](https://github.com/entelecheia/aibasics/pull/173),
+  [`19ba8ea`](https://github.com/entelecheia/aibasics/commit/19ba8ead14e8984a42719870b6978c915307f347))
+
+
 ## v1.0.0 (2026-10-19)
 
 ### Bug Fixes
