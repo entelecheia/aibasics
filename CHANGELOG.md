@@ -1,5 +1,118 @@
 <!--next-version-placeholder-->
 
+## v1.0.0 (2026-10-19)
+
+### Bug Fixes
+
+- Include pip in the local notebook environment
+  ([#166](https://github.com/entelecheia/aibasics/pull/166),
+  [`2fcef12`](https://github.com/entelecheia/aibasics/commit/2fcef1293c709fd2f4794272ac76fb83b6f6b9fc))
+
+- Install pandas in the week06 lab (#168) ([#169](https://github.com/entelecheia/aibasics/pull/169),
+  [`c65500f`](https://github.com/entelecheia/aibasics/commit/c65500f4997b18b68720cb915d15e4eb381b99a5))
+
+- Remove undefined open_homepage from __all__
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Resolve follow-up issues (#164, #167) ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+### Build System
+
+- Move tooling from Poetry to uv ([#166](https://github.com/entelecheia/aibasics/pull/166),
+  [`2fcef12`](https://github.com/entelecheia/aibasics/commit/2fcef1293c709fd2f4794272ac76fb83b6f6b9fc))
+
+### Chores
+
+- Drop Codecov (config, upload step, badges)
+  ([#163](https://github.com/entelecheia/aibasics/pull/163),
+  [`4f52a84`](https://github.com/entelecheia/aibasics/commit/4f52a84ab556a98782199f21f64f241dd338a55e))
+
+- Remove the HyFI dependency ([#163](https://github.com/entelecheia/aibasics/pull/163),
+  [`4f52a84`](https://github.com/entelecheia/aibasics/commit/4f52a84ab556a98782199f21f64f241dd338a55e))
+
+- Update branch filter for deploy-docs workflow
+  ([`4ba4552`](https://github.com/entelecheia/aibasics/commit/4ba45528c26f801796fee07ad4895690fe3b2484))
+
+- Update documentation URL to https://aibasics.jeju.ai
+  ([`1e66b3f`](https://github.com/entelecheia/aibasics/commit/1e66b3f0c84fb75fcd38d59d3885ae2417d20b93))
+
+- **deps**: Bump codecov/codecov-action from 4 to 5
+  ([`4667d72`](https://github.com/entelecheia/aibasics/commit/4667d721f9e6459e46800f58d6d68378e0a0c284))
+
+- **deps**: Bump docutils from 0.20.1 to 0.21.2
+  ([`aa25ab4`](https://github.com/entelecheia/aibasics/commit/aa25ab4e6cf2c83b0a9a0c7fab927730042c96fd))
+
+- **deps**: Bump hyfi from 1.36.3 to 1.36.4
+  ([`2449025`](https://github.com/entelecheia/aibasics/commit/244902543ba890f34e13f4301d0e6bf21e167462))
+
+- **deps**: Bump hyfi from 1.36.4 to 1.37.0
+  ([`f64b7de`](https://github.com/entelecheia/aibasics/commit/f64b7de363a2f7172cb99b3bce9f6a6c9a4e2239))
+
+- **deps**: Bump jupyter-book from 1.0.0 to 1.0.2
+  ([`c4ce9fb`](https://github.com/entelecheia/aibasics/commit/c4ce9fb49117fdff5b93449869196d57b1e453d5))
+
+- **deps**: Bump jupyter-book from 1.0.2 to 1.0.3
+  ([`0cf36f7`](https://github.com/entelecheia/aibasics/commit/0cf36f75867480f940636e6286ac5a9d29cc4281))
+
+- **deps**: Bump jupyter-book from 1.0.3 to 1.0.4
+  ([`69038fa`](https://github.com/entelecheia/aibasics/commit/69038face0ff21b9a12556817024343872dbea5d))
+
+- **deps**: Bump peaceiris/actions-gh-pages from 3 to 4
+  ([`acfc6f9`](https://github.com/entelecheia/aibasics/commit/acfc6f99195c6e62948be74b6ecbec57aa658850))
+
+- **deps**: Bump scikit-learn from 1.4.1.post1 to 1.4.2
+  ([`df3227d`](https://github.com/entelecheia/aibasics/commit/df3227d33c98efc4f81d6bb16814bbca7611cf80))
+
+- **deps**: Bump scikit-learn from 1.5.0 to 1.5.1
+  ([`aede859`](https://github.com/entelecheia/aibasics/commit/aede859b4aab2da8a2dc8655a4bc6e9bcfd55f36))
+
+- **deps**: Bump scikit-learn from 1.5.1 to 1.5.2
+  ([`5c66359`](https://github.com/entelecheia/aibasics/commit/5c663593744fec785f8cf74edf8cb427f3751b07))
+
+- **deps**: Bump scikit-learn from 1.5.2 to 1.6.1
+  ([`ce7deee`](https://github.com/entelecheia/aibasics/commit/ce7deeeb0ad4e58b4ef01416cd76c56f0d7b5f90))
+
+- **docs**: Add index.html for redirecting to aibasics.jeju.ai
+  ([`5bac647`](https://github.com/entelecheia/aibasics/commit/5bac647b7a180f052221c7aaca1e417a5e46a505))
+
+### Continuous Integration
+
+- Always validate PRs beyond the files API limit (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Count renamed paths and avoid grep -q in the docs-only check (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Make releases retryable and keep ci-ok reported for docs-only PRs (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Pin the Pages action and serialize book deploys
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Run full validation when the PR files API fails (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- State that only tags from this release workflow can be republished (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+- Validate the tag before a republish (entelecheia/hyfi#479)
+  ([#171](https://github.com/entelecheia/aibasics/pull/171),
+  [`e7bedf4`](https://github.com/entelecheia/aibasics/commit/e7bedf4bfdc1b13160a0013688b2b08aaab34e48))
+
+### Documentation
+
+- Add REVIEW.md for the pre-merge review ([#163](https://github.com/entelecheia/aibasics/pull/163),
+  [`4f52a84`](https://github.com/entelecheia/aibasics/commit/4f52a84ab556a98782199f21f64f241dd338a55e))
+
+
 ## v0.10.1 (2024-03-28)
 
 ### Fix
