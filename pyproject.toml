@@ -41,6 +41,10 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/aibasics"]
 
+# Keep book/ (notebooks, media) out of the sdist; PyPI caps files at 100 MB.
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "LICENSE", "CHANGELOG.md"]
+
 [tool.ruff]
 target-version = "py311"
 line-length = 100
