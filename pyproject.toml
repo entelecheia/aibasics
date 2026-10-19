@@ -15,7 +15,6 @@ aibasics = 'aibasics.__cli__:main'
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
 click = "<=8.1.7"
-hyfi = "^1.36.3"
 scikit-learn = "<=1.6.1"
 seaborn = "<=0.13.2"
 
@@ -33,7 +32,7 @@ pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
 
 [tool.poe]
-include = [".tasks.toml", ".tasks-extra.toml"]
+include = [".tasks.toml"]
 
 [tool.black]
 # 'extend-exclude' excludes files or directories in addition to the defaults

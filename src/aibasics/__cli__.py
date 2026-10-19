@@ -1,11 +1,11 @@
 """Command line interface for aibasics"""
 
-from hyfi import hyfi_main
+from aibasics import get_version
 
 
 def main() -> None:
     """Main function for the CLI"""
-    hyfi_main()
+    print(f"aibasics {get_version()}")
 
 
 if __name__ == "__main__":
