@@ -6,8 +6,6 @@
 [![jupyter-book-image]][docs-url]
 
 <!-- Links: -->
-[codecov-image]: https://codecov.io/gh/entelecheia/aibasics/branch/main/graph/badge.svg?token=dzfp4tGZ87
-[codecov-url]: https://codecov.io/gh/entelecheia/aibasics
 [pypi-image]: https://img.shields.io/pypi/v/aibasics
 [license-image]: https://img.shields.io/github/license/entelecheia/aibasics
 [license-url]: https://github.com/entelecheia/aibasics/blob/main/LICENSE
