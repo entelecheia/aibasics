@@ -27,7 +27,9 @@ aibasics = "aibasics.__cli__:main"
 [dependency-groups]
 test = ["pytest>=8", "pytest-cov>=5"]
 lint = ["ruff>=0.15"]
-dev = [{ include-group = "test" }, { include-group = "lint" }]
+# pip: the labs run `%pip install`, which needs it in the kernel env.
+notebook = ["pip"]
+dev = [{ include-group = "test" }, { include-group = "lint" }, { include-group = "notebook" }]
 
 [tool.uv]
 default-groups = ["dev"]
