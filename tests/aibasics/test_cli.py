@@ -1,22 +1,14 @@
 """
 test cli module
 """
+
 import subprocess
-from typing import List, Tuple
 
-
-def capture(command: List[str]) -> Tuple[bytes, bytes, int]:
-    proc = subprocess.Popen(
-        command,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
-    out, err = proc.communicate()
-    return out, err, proc.returncode
+from aibasics import get_version
 
 
 def test_cli() -> None:
-    """Test cli module"""
-    command = ["aibasics"]
-    out, err, exitcode = capture(command)
-    assert exitcode == 0
+    """The installed entry point prints the version."""
+    proc = subprocess.run(["aibasics"], capture_output=True, text=True, check=False)
+    assert proc.returncode == 0
+    assert proc.stdout.strip() == f"aibasics {get_version()}"
